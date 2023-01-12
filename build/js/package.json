@@ -1,0 +1,23 @@
+{
+  "name": "bujo",
+  "version": "1.0-SNAPSHOT",
+  "private": true,
+  "workspaces": [
+    "packages/bujo",
+    "packages/bujo-test",
+    "packages_imported/kotlin/1.7.20-Beta",
+    "packages_imported/ktor-ktor-client-core-js-ir/2.1.1",
+    "packages_imported/kotlin-test-js-runner/1.7.20-Beta",
+    "packages_imported/kotlin-wrappers-kotlin-emotion-js-ir/11.10.4-pre.386",
+    "packages_imported/kotlin-wrappers-kotlin-react-core-js-ir/18.2.0-pre.386",
+    "packages_imported/kotlin-wrappers-kotlin-csstype-js-ir/3.1.1-pre.386",
+    "packages_imported/kotlin-wrappers-kotlin-react-dom-js-ir/18.2.0-pre.386",
+    "packages_imported/kotlin-wrappers-kotlin-browser-js-ir/0.0.1-pre.386"
+  ],
+  "resolutions": {},
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}
