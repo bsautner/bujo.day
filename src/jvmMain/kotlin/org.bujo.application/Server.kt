@@ -19,11 +19,9 @@ import kotlinx.html.*
 fun HTML.index() {
     head {
         title("BUJO!")
+        link(rel = "stylesheet", type = "text/css", href = "/static/app.css")
     }
     body {
-        div {
-            +"Entry"
-        }
         div {
             id = "root"
         }
@@ -33,7 +31,7 @@ fun HTML.index() {
 
 fun main() {
     println("Starting Up")
-    embeddedServer(Netty, port = 8081, host = "127.0.0.1") {
+    embeddedServer(Netty, port = 8082) {
         install(ContentNegotiation) {
             json()
         }
@@ -41,6 +39,7 @@ fun main() {
             allowMethod(HttpMethod.Get)
             allowMethod(HttpMethod.Post)
             allowMethod(HttpMethod.Delete)
+            allowMethod(HttpMethod.Put)
             anyHost()
         }
         install(Compression) {
@@ -60,14 +59,11 @@ fun main() {
                 post {
 
                     val entry = call.receive<Entry>()
-                    println("post! ${entry.id}")
                     DAO.insertEntry(entry.value)
-
                     call.respond(HttpStatusCode.OK)
 
                 }
                 delete {
-                    println("delete ${call.parameters["id"]}")
                     call.parameters["id"]?.let {
                         val id = it.toLong()
                         DAO.deleteEntry(id)
@@ -76,7 +72,6 @@ fun main() {
 
                 }
                 put {
-                    println("PUT")
                     val entry = call.receive<Entry>()
                     DAO.updateEntry(entry)
                     call.respond(HttpStatusCode.OK)

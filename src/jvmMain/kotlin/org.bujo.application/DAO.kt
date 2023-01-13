@@ -8,7 +8,8 @@ import java.util.*
 object DAO {
 
     private lateinit var db: Connection
-    val url = "44.205.141.49:3306"
+  //  val url = "44.205.141.49:3306"
+    val url = "localhost:3306"
 
     init {
         println("initializing DAO")
@@ -18,6 +19,7 @@ object DAO {
             connectionProps["password"] = "foo"
             db = DriverManager.getConnection("jdbc:mysql://$url/bujo", connectionProps)
         }
+
     }
 
     fun insertEntry(entry: String) {

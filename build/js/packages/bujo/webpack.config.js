@@ -51,6 +51,23 @@ config.ignoreWarnings = [/Failed to parse source map/]
     config.plugins.push(new webpack.ProgressPlugin(handler))
 })(config);
 
+// KotlinWebpackCssRule[css]
+;(function(config) {
+            const use = [{
+    loader: 'style-loader',
+    options: {}
+},{
+    loader: 'css-loader',
+    options: {}
+}]
+config.module.rules.push({
+    test: /\.css$/,
+    use: use,
+    exclude: undefined,
+    include: undefined,
+})
+})(config);
+
 // noinspection JSUnnecessarySemicolon
 ;(function(config) {
     const tcErrorPlugin = require('kotlin-test-js-runner/tc-log-error-webpack');

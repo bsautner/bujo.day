@@ -89,7 +89,6 @@
   var parameter = kotlin_io_ktor_ktor_client_core.$_$.g;
   var HttpClient = kotlin_io_ktor_ktor_client_core.$_$.k;
   var ReactHTML_getInstance = kotlin_org_jetbrains_kotlin_wrappers_kotlin_react_dom.$_$.a;
-  var println = kotlin_kotlin.$_$.x7;
   var FC = kotlin_org_jetbrains_kotlin_wrappers_kotlin_react.$_$.a;
   var ensureNotNull = kotlin_kotlin.$_$.ic;
   var create = kotlin_org_jetbrains_kotlin_wrappers_kotlin_react.$_$.b;
@@ -97,6 +96,7 @@
   var THROW_ISE = kotlin_kotlin.$_$.wb;
   var getLocalDelegateReference = kotlin_kotlin.$_$.m8;
   var toString = kotlin_kotlin.$_$.m9;
+  var println = kotlin_kotlin.$_$.x7;
   var emptyList = kotlin_kotlin.$_$.l5;
   var useEffectOnce = kotlin_org_jetbrains_kotlin_wrappers_kotlin_react_core.$_$.a;
   var KMutableProperty0 = kotlin_kotlin.$_$.x9;
@@ -116,10 +116,12 @@
   $deleteEntryCOROUTINE$3.prototype.constructor = $deleteEntryCOROUTINE$3;
   Welcome$lambda$lambda$slambda.prototype = Object.create(CoroutineImpl.prototype);
   Welcome$lambda$lambda$slambda.prototype.constructor = Welcome$lambda$lambda$slambda;
-  Welcome$lambda$lambda$lambda$lambda$slambda.prototype = Object.create(CoroutineImpl.prototype);
-  Welcome$lambda$lambda$lambda$lambda$slambda.prototype.constructor = Welcome$lambda$lambda$lambda$lambda$slambda;
   Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype = Object.create(CoroutineImpl.prototype);
   Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.constructor = Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda;
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype = Object.create(CoroutineImpl.prototype);
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype.constructor = Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1;
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype = Object.create(CoroutineImpl.prototype);
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype.constructor = Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3;
   //endregion
   function Companion() {
     Companion_instance = this;
@@ -595,8 +597,7 @@
   var buttonComponent;
   function buttonComponent$lambda($this$FC, props) {
     init_properties_ButtonComponent_kt_hmmtm1();
-    var entry = {_v: ''};
-    var clickHandler = buttonComponent$lambda$lambda(props, entry);
+    var clickHandler = buttonComponent$lambda$lambda(props);
     var tmp$ret$3;
     // Inline function 'react.dom.html.ReactHTML.button' call
     var tmp0__get_button__p7sxb3 = ReactHTML_getInstance();
@@ -611,19 +612,18 @@
     tmp$ret$2 = tmp$ret$1;
     tmp$ret$3 = tmp$ret$2;
     var tmp = tmp$ret$3;
-    $this$FC.h3x(tmp, buttonComponent$lambda$lambda_0(clickHandler));
+    $this$FC.h3x(tmp, buttonComponent$lambda$lambda_0(props, clickHandler));
     return Unit_getInstance();
   }
-  function buttonComponent$lambda$lambda($props, $entry) {
+  function buttonComponent$lambda$lambda($props) {
     return function (it) {
-      println('click');
-      $props.onSubmit($entry._v);
+      $props.onSubmit();
       return Unit_getInstance();
     };
   }
-  function buttonComponent$lambda$lambda_0($clickHandler) {
+  function buttonComponent$lambda$lambda_0($props, $clickHandler) {
     return function ($this$invoke) {
-      $this$invoke.g3x('save');
+      $this$invoke.g3x($props.text);
       var tmp0_css = $this$invoke;
       var tmp$ret$3;
       // Inline function 'emotion.css.ClassName' call
@@ -802,7 +802,7 @@
     return Welcome;
   }
   var Welcome;
-  function Welcome$lambda($this$FC, props) {
+  function Welcome$lambda($this$FC, _anonymous_parameter_0__qggqh8) {
     init_properties_Welcome_kt_w2afe6();
     var entryText$delegate = useState('');
     var entryId$delegate = useState(new Long(0, 0));
@@ -1071,22 +1071,22 @@
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda$lambda$slambda($entryId$delegate, $entryText$delegate, $entries$delegate, resultContinuation) {
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda($entryId$delegate, $entryText$delegate, $entries$delegate, resultContinuation) {
     this.n40_1 = $entryId$delegate;
     this.o40_1 = $entryText$delegate;
     this.p40_1 = $entries$delegate;
     CoroutineImpl.call(this, resultContinuation);
   }
-  Welcome$lambda$lambda$lambda$lambda$slambda.prototype.x1a = function ($this$launch, $cont) {
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.x1a = function ($this$launch, $cont) {
     var tmp = this.y1a($this$launch, $cont);
     tmp.ph_1 = Unit_getInstance();
     tmp.qh_1 = null;
     return tmp.wh();
   };
-  Welcome$lambda$lambda$lambda$lambda$slambda.prototype.xh = function (p1, $cont) {
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.xh = function (p1, $cont) {
     return this.x1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
   };
-  Welcome$lambda$lambda$lambda$lambda$slambda.prototype.wh = function () {
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.wh = function () {
     var suspendResult = this.ph_1;
     $sm: do
       try {
@@ -1144,30 +1144,160 @@
       }
      while (true);
   };
-  Welcome$lambda$lambda$lambda$lambda$slambda.prototype.y1a = function ($this$launch, completion) {
-    var i = new Welcome$lambda$lambda$lambda$lambda$slambda(this.n40_1, this.o40_1, this.p40_1, completion);
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.y1a = function ($this$launch, completion) {
+    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda(this.n40_1, this.o40_1, this.p40_1, completion);
     i.q40_1 = $this$launch;
     return i;
   };
-  Welcome$lambda$lambda$lambda$lambda$slambda.$metadata$ = classMeta('Welcome$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
-  function Welcome$lambda$lambda$lambda$lambda$slambda_0($entryId$delegate, $entryText$delegate, $entries$delegate, resultContinuation) {
-    var i = new Welcome$lambda$lambda$lambda$lambda$slambda($entryId$delegate, $entryText$delegate, $entries$delegate, resultContinuation);
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.$metadata$ = classMeta('Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_0($entryId$delegate, $entryText$delegate, $entries$delegate, resultContinuation) {
+    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda($entryId$delegate, $entryText$delegate, $entries$delegate, resultContinuation);
     var l = function ($this$launch, $cont) {
       return i.x1a($this$launch, $cont);
     };
     l.$arity = 1;
     return l;
   }
-  function Welcome$lambda$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate, $entries$delegate) {
-    return function (it) {
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda($entryId$delegate, $entryText$delegate, $entries$delegate) {
+    return function () {
       var tmp = get_mainScope();
-      launch$default(tmp, null, null, Welcome$lambda$lambda$lambda$lambda$slambda_0($entryId$delegate, $entryText$delegate, $entries$delegate, null), 3, null);
+      launch$default(tmp, null, null, Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_0($entryId$delegate, $entryText$delegate, $entries$delegate, null), 3, null);
+      return Unit_getInstance();
+    };
+  }
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda($entryId$delegate, $entryText$delegate, $entries$delegate) {
+    return function ($this$invoke) {
+      $this$invoke.text = 'Save';
+      $this$invoke.onSubmit = Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda($entryId$delegate, $entryText$delegate, $entries$delegate);
+      return Unit_getInstance();
+    };
+  }
+  function Welcome$lambda$lambda$lambda$lambda$lambda($entryId$delegate, $entryText$delegate, $entries$delegate) {
+    return function ($this$invoke) {
+      var tmp = get_buttonComponent();
+      $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda$lambda($entryId$delegate, $entryText$delegate, $entries$delegate));
+      return Unit_getInstance();
+    };
+  }
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1($entryId$delegate, $entryText$delegate, resultContinuation) {
+    this.a41_1 = $entryId$delegate;
+    this.b41_1 = $entryText$delegate;
+    CoroutineImpl.call(this, resultContinuation);
+  }
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype.x1a = function ($this$launch, $cont) {
+    var tmp = this.y1a($this$launch, $cont);
+    tmp.ph_1 = Unit_getInstance();
+    tmp.qh_1 = null;
+    return tmp.wh();
+  };
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype.xh = function (p1, $cont) {
+    return this.x1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
+  };
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype.wh = function () {
+    var suspendResult = this.ph_1;
+    $sm: do
+      try {
+        var tmp = this.nh_1;
+        if (tmp === 0) {
+          this.oh_1 = 1;
+          invoke$lambda_3(this.a41_1, new Long(0, 0));
+          invoke$lambda_1(this.b41_1, '');
+          return Unit_getInstance();
+        } else if (tmp === 1) {
+          throw this.qh_1;
+        }
+      } catch ($p) {
+        throw $p;
+      }
+     while (true);
+  };
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype.y1a = function ($this$launch, completion) {
+    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1(this.a41_1, this.b41_1, completion);
+    i.c41_1 = $this$launch;
+    return i;
+  };
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.$metadata$ = classMeta('Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_2($entryId$delegate, $entryText$delegate, resultContinuation) {
+    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1($entryId$delegate, $entryText$delegate, resultContinuation);
+    var l = function ($this$launch, $cont) {
+      return i.x1a($this$launch, $cont);
+    };
+    l.$arity = 1;
+    return l;
+  }
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate) {
+    return function () {
+      var tmp = get_mainScope();
+      launch$default(tmp, null, null, Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_2($entryId$delegate, $entryText$delegate, null), 3, null);
+      return Unit_getInstance();
+    };
+  }
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate) {
+    return function ($this$invoke) {
+      $this$invoke.text = 'New';
+      $this$invoke.onSubmit = Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate);
+      return Unit_getInstance();
+    };
+  }
+  function Welcome$lambda$lambda$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate) {
+    return function ($this$invoke) {
+      var tmp = get_buttonComponent();
+      $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate));
+      return Unit_getInstance();
+    };
+  }
+  function Welcome$lambda$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate, $entries$delegate) {
+    return function ($this$invoke) {
+      var tmp$ret$3;
+      // Inline function 'react.dom.html.ReactHTML.td' call
+      var tmp0__get_td__p4dsv3 = ReactHTML_getInstance();
+      var tmp$ret$2;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$1;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$0 = 'td';
+      tmp$ret$1 = tmp$ret$0;
+      tmp$ret$2 = tmp$ret$1;
+      tmp$ret$3 = tmp$ret$2;
+      var tmp = tmp$ret$3;
+      $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda($entryId$delegate, $entryText$delegate, $entries$delegate));
+      var tmp$ret$7;
+      // Inline function 'react.dom.html.ReactHTML.td' call
+      var tmp1__get_td__sddrnk = ReactHTML_getInstance();
+      var tmp$ret$6;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$5;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$4;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$4 = 'td';
+      tmp$ret$5 = tmp$ret$4;
+      tmp$ret$6 = tmp$ret$5;
+      tmp$ret$7 = tmp$ret$6;
+      var tmp_0 = tmp$ret$7;
+      $this$invoke.h3x(tmp_0, Welcome$lambda$lambda$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate));
       return Unit_getInstance();
     };
   }
   function Welcome$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate, $entries$delegate) {
     return function ($this$invoke) {
-      $this$invoke.onSubmit = Welcome$lambda$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate, $entries$delegate);
+      var tmp$ret$3;
+      // Inline function 'react.dom.html.ReactHTML.tr' call
+      var tmp0__get_tr__p4dsj1 = ReactHTML_getInstance();
+      var tmp$ret$2;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$1;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$0 = 'tr';
+      tmp$ret$1 = tmp$ret$0;
+      tmp$ret$2 = tmp$ret$1;
+      tmp$ret$3 = tmp$ret$2;
+      var tmp = tmp$ret$3;
+      $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate, $entries$delegate));
       return Unit_getInstance();
     };
   }
@@ -1204,7 +1334,20 @@
       tmp$ret$5 = tmp$ret$4;
       tmp$ret$6 = css(tmp$ret$5);
       tmp0_css.className = tmp$ret$6;
-      var tmp = get_buttonComponent();
+      var tmp$ret$10;
+      // Inline function 'react.dom.html.ReactHTML.table' call
+      var tmp1__get_table__pm8xdu = ReactHTML_getInstance();
+      var tmp$ret$9;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$8;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$7;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$7 = 'table';
+      tmp$ret$8 = tmp$ret$7;
+      tmp$ret$9 = tmp$ret$8;
+      tmp$ret$10 = tmp$ret$9;
+      var tmp = tmp$ret$10;
       $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate, $entries$delegate));
       return Unit_getInstance();
     };
@@ -1256,21 +1399,21 @@
     $this$invoke.g3x('Entries');
     return Unit_getInstance();
   }
-  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda($it, $entries$delegate, resultContinuation) {
-    this.a41_1 = $it;
-    this.b41_1 = $entries$delegate;
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3($it, $entries$delegate, resultContinuation) {
+    this.l41_1 = $it;
+    this.m41_1 = $entries$delegate;
     CoroutineImpl.call(this, resultContinuation);
   }
-  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.x1a = function ($this$launch, $cont) {
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype.x1a = function ($this$launch, $cont) {
     var tmp = this.y1a($this$launch, $cont);
     tmp.ph_1 = Unit_getInstance();
     tmp.qh_1 = null;
     return tmp.wh();
   };
-  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.xh = function (p1, $cont) {
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype.xh = function (p1, $cont) {
     return this.x1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
   };
-  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.wh = function () {
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype.wh = function () {
     var suspendResult = this.ph_1;
     $sm: do
       try {
@@ -1279,7 +1422,7 @@
           case 0:
             this.oh_1 = 3;
             this.nh_1 = 1;
-            suspendResult = deleteEntry(this.a41_1, this);
+            suspendResult = deleteEntry(this.l41_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -1295,7 +1438,7 @@
             continue $sm;
           case 2:
             var ARGUMENT = suspendResult;
-            invoke$lambda_5(this.b41_1, ARGUMENT);
+            invoke$lambda_5(this.m41_1, ARGUMENT);
             return Unit_getInstance();
           case 3:
             throw this.qh_1;
@@ -1310,61 +1453,80 @@
       }
      while (true);
   };
-  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.y1a = function ($this$launch, completion) {
-    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda(this.a41_1, this.b41_1, completion);
-    i.c41_1 = $this$launch;
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype.y1a = function ($this$launch, completion) {
+    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3(this.l41_1, this.m41_1, completion);
+    i.n41_1 = $this$launch;
     return i;
   };
-  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.$metadata$ = classMeta('Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
-  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_0($it, $entries$delegate, resultContinuation) {
-    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda($it, $entries$delegate, resultContinuation);
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.$metadata$ = classMeta('Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_4($it, $entries$delegate, resultContinuation) {
+    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3($it, $entries$delegate, resultContinuation);
     var l = function ($this$launch, $cont) {
       return i.x1a($this$launch, $cont);
     };
     l.$arity = 1;
     return l;
   }
-  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda($entries$delegate) {
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1($entries$delegate) {
     return function (it) {
       println('callback ' + toString(it));
       var tmp = get_mainScope();
-      launch$default(tmp, null, null, Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_0(it, $entries$delegate, null), 3, null);
+      launch$default(tmp, null, null, Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_4(it, $entries$delegate, null), 3, null);
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda($element, $entries$delegate) {
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda_1($element, $entries$delegate) {
     return function ($this$invoke) {
       $this$invoke.id = $element.u3x_1;
-      $this$invoke.onSubmit = Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda($entries$delegate);
+      $this$invoke.onSubmit = Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1($entries$delegate);
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda$lambda$lambda($element, $entries$delegate) {
+  function Welcome$lambda$lambda$lambda$lambda$lambda_1($element, $entries$delegate) {
     return function ($this$invoke) {
       var tmp = get_deleteEntryButtonComponent();
-      $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda$lambda($element, $entries$delegate));
+      $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda$lambda_1($element, $entries$delegate));
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda$lambda$lambda_0($element) {
+  function Welcome$lambda$lambda$lambda$lambda$lambda_2($element) {
     return function ($this$invoke) {
       var d = new Date($element.v3x_1);
       $this$invoke.g3x(d.toDateString());
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda_0($element, $entryText$delegate, $entryId$delegate) {
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda_2($element) {
+    return function ($this$invoke) {
+      $this$invoke.g3x($element.w3x_1);
+      return Unit_getInstance();
+    };
+  }
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda_3($element, $entryText$delegate, $entryId$delegate) {
     return function (it) {
-      println($element.w3x_1);
       invoke$lambda_1($entryText$delegate, $element.w3x_1);
       invoke$lambda_3($entryId$delegate, $element.u3x_1);
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda$lambda$lambda_1($element, $entryText$delegate, $entryId$delegate) {
+  function Welcome$lambda$lambda$lambda$lambda$lambda_3($element, $entryText$delegate, $entryId$delegate) {
     return function ($this$invoke) {
-      $this$invoke.g3x($element.w3x_1);
-      $this$invoke.onClick = Welcome$lambda$lambda$lambda$lambda$lambda$lambda_0($element, $entryText$delegate, $entryId$delegate);
+      var tmp$ret$3;
+      // Inline function 'react.dom.html.ReactHTML.div' call
+      var tmp0__get_div__2k2o9m = ReactHTML_getInstance();
+      var tmp$ret$2;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$1;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$0 = 'div';
+      tmp$ret$1 = tmp$ret$0;
+      tmp$ret$2 = tmp$ret$1;
+      tmp$ret$3 = tmp$ret$2;
+      var tmp = tmp$ret$3;
+      $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda$lambda_2($element));
+      $this$invoke.onClick = Welcome$lambda$lambda$lambda$lambda$lambda$lambda_3($element, $entryText$delegate, $entryId$delegate);
       return Unit_getInstance();
     };
   }
@@ -1384,7 +1546,7 @@
       tmp$ret$2 = tmp$ret$1;
       tmp$ret$3 = tmp$ret$2;
       var tmp = tmp$ret$3;
-      $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda($element, $entries$delegate));
+      $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda_1($element, $entries$delegate));
       var tmp$ret$7;
       // Inline function 'react.dom.html.ReactHTML.td' call
       var tmp1__get_td__sddrnk = ReactHTML_getInstance();
@@ -1399,7 +1561,7 @@
       tmp$ret$6 = tmp$ret$5;
       tmp$ret$7 = tmp$ret$6;
       var tmp_0 = tmp$ret$7;
-      $this$invoke.h3x(tmp_0, Welcome$lambda$lambda$lambda$lambda$lambda_0($element));
+      $this$invoke.h3x(tmp_0, Welcome$lambda$lambda$lambda$lambda$lambda_2($element));
       var tmp$ret$11;
       // Inline function 'react.dom.html.ReactHTML.td' call
       var tmp2__get_td__vmdqg1 = ReactHTML_getInstance();
@@ -1414,7 +1576,7 @@
       tmp$ret$10 = tmp$ret$9;
       tmp$ret$11 = tmp$ret$10;
       var tmp_1 = tmp$ret$11;
-      $this$invoke.h3x(tmp_1, Welcome$lambda$lambda$lambda$lambda$lambda_1($element, $entryText$delegate, $entryId$delegate));
+      $this$invoke.h3x(tmp_1, Welcome$lambda$lambda$lambda$lambda$lambda_3($element, $entryText$delegate, $entryId$delegate));
       return Unit_getInstance();
     };
   }

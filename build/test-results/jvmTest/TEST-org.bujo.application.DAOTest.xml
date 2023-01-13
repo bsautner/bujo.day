@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.bujo.application.DAOTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-10T19:26:51" hostname="arch" time="0.527">
-  <properties/>
-  <testcase name="testInsertEntry()[jvm]" classname="org.bujo.application.DAOTest" time="0.527"/>
-  <system-out><![CDATA[initializing DAO
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

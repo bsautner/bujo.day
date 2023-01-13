@@ -1,6 +1,6 @@
 import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpack
 
-val kotlinVersion = "1.7.20-RC"
+val kotlinVersion = "1.8"
 val serializationVersion = "1.4.0"
 val ktorVersion = "2.1.1"
 val logbackVersion = "1.4.1"
@@ -11,6 +11,7 @@ plugins {
     kotlin("multiplatform") version "1.7.20-Beta"
     application
     kotlin("plugin.serialization") version "1.7.20-Beta"
+    id("io.ktor.plugin") version "2.2.2"
 }
 
 
@@ -39,11 +40,12 @@ kotlin {
         binaries.executable()
         browser {
             binaries.executable()
-//            commonWebpackConfig {
-//                cssSupport {
-//                    enabled.set(true)
-//                }
-//            }
+            commonWebpackConfig {
+                cssSupport {
+                    enabled = true
+                    //enabled.set(true)
+                }
+            }
         }
     }
     sourceSets {

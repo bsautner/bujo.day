@@ -1,9 +1,12 @@
-import csstype.*
-import react.FC
-import react.Props
+import csstype.AlignItems
+import csstype.Display
+import csstype.JustifyContent
+import csstype.px
 import emotion.react.css
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
+import react.FC
+import react.Props
 import react.dom.html.ReactHTML.div
 import react.dom.html.ReactHTML.h2
 import react.dom.html.ReactHTML.hr
@@ -20,7 +23,7 @@ external interface WelcomeProps : Props {
 }
 private val mainScope = MainScope()
 
-val Welcome = FC<WelcomeProps> { props ->
+val Welcome = FC<WelcomeProps> { _ ->
     var entryText by useState("")
     var entryId by useState(0L)
 
@@ -59,25 +62,48 @@ val Welcome = FC<WelcomeProps> { props ->
             justifyContent = JustifyContent.center
         }
 
-        buttonComponent {
-            onSubmit = {
+        table {
+            tr {
+                td {
+                    buttonComponent {
+                        text = "Save"
+                        onSubmit = {
 
-                mainScope.launch {
-                    val e = Entry(entryId, 0L, entryText)
-                    if (entryId == 0L) {
-                        postEntry(e)
-                       entryText = ""
-                    } else {
-                        putEntry(e)
+                            mainScope.launch {
+                                val e = Entry(entryId, 0L, entryText)
+                                if (entryId == 0L) {
+                                    postEntry(e)
+                                    entryText = ""
+                                } else {
+                                    putEntry(e)
+                                }
+
+                                entries = getEntries()
+
+                            }
+
+
+                        }
                     }
-
-                    entries = getEntries()
-
                 }
+                td {
+                    buttonComponent {
+                        text = "New"
+                        onSubmit = {
+
+                            mainScope.launch {
+                                entryId = 0L
+                                entryText = ""
+
+                            }
 
 
+                        }
+                    }
+                }
             }
         }
+
 
 
 
@@ -116,9 +142,13 @@ val Welcome = FC<WelcomeProps> { props ->
                     }
 
                     td {
-                        +item.value
+
+                        div {
+
+                            +item.value
+                        }
                         onClick = {
-                            println(item.value)
+
                             entryText = item.value
                             entryId = item.id
                         }

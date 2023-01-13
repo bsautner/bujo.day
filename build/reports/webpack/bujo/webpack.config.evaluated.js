@@ -27,6 +27,21 @@
           'source-map-loader'
         ],
         enforce: 'pre'
+      },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader',
+            options: {}
+          },
+          {
+            loader: 'css-loader',
+            options: {}
+          }
+        ],
+        exclude: undefined,
+        include: undefined
       }
     ]
   },
