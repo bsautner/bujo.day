@@ -33,27 +33,27 @@
   //endregion
   function HandlerRegistration() {
   }
-  HandlerRegistration.prototype.x2w = function () {
-    return this.w2w_1;
+  HandlerRegistration.prototype.y2w = function () {
+    return this.x2w_1;
   };
   HandlerRegistration.$metadata$ = classMeta('HandlerRegistration', [DisposableHandle], undefined, undefined, undefined, LinkedListNode.prototype);
   function Events() {
-    this.y2w_1 = new CopyOnWriteHashMap();
+    this.z2w_1 = new CopyOnWriteHashMap();
   }
-  Events.prototype.z2w = function (definition, value) {
+  Events.prototype.a2x = function (definition, value) {
     var exception = null;
-    var tmp0_safe_receiver = this.y2w_1.i2(definition);
+    var tmp0_safe_receiver = this.z2w_1.i2(definition);
     if (tmp0_safe_receiver == null)
       null;
     else {
       // Inline function 'kotlinx.coroutines.internal.LinkedListHead.forEach' call
-      var cur = tmp0_safe_receiver.br_1;
+      var cur = tmp0_safe_receiver.cr_1;
       while (!equals(cur, tmp0_safe_receiver)) {
         if (cur instanceof HandlerRegistration) {
           // Inline function 'io.ktor.events.Events.raise.<anonymous>' call
           var tmp0__anonymous__q1qw7t = cur;
           try {
-            var tmp = tmp0__anonymous__q1qw7t.w2w_1;
+            var tmp = tmp0__anonymous__q1qw7t.x2w_1;
             (typeof tmp === 'function' ? tmp : THROW_CCE())(value);
           } catch ($p) {
             if ($p instanceof Error) {
@@ -79,7 +79,7 @@
             }
           }
         }
-        cur = cur.br_1;
+        cur = cur.cr_1;
       }
     }
     var tmp1_safe_receiver = exception;

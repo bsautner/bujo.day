@@ -86,16 +86,16 @@
       inductionVariable = inductionVariable + 1 | 0;
       var tmp$ret$0;
       // Inline function 'io.ktor.websocket.Companion.byCodeMap.<anonymous>' call
-      tmp$ret$0 = element.z20_1;
+      tmp$ret$0 = element.a21_1;
       tmp0_associateByTo.a(tmp$ret$0, element);
     }
     tmp$ret$1 = tmp0_associateByTo;
     tmp$ret$2 = tmp$ret$1;
-    tmp.a21_1 = tmp$ret$2;
-    this.b21_1 = Codes_INTERNAL_ERROR_getInstance();
+    tmp.b21_1 = tmp$ret$2;
+    this.c21_1 = Codes_INTERNAL_ERROR_getInstance();
   }
-  Companion.prototype.c21 = function (code) {
-    return this.a21_1.i2(code);
+  Companion.prototype.d21 = function (code) {
+    return this.b21_1.i2(code);
   };
   Companion.$metadata$ = objectMeta('Companion');
   var Companion_instance;
@@ -129,10 +129,10 @@
   }
   function Codes(name, ordinal, code) {
     Enum.call(this, name, ordinal);
-    this.z20_1 = code;
+    this.a21_1 = code;
   }
-  Codes.prototype.d21 = function () {
-    return this.z20_1;
+  Codes.prototype.e21 = function () {
+    return this.a21_1;
   };
   Codes.$metadata$ = classMeta('Codes', undefined, undefined, undefined, undefined, Enum.prototype);
   function Codes_NORMAL_getInstance() {
@@ -184,25 +184,25 @@
     return Codes_TRY_AGAIN_LATER_instance;
   }
   function CloseReason(code, message) {
-    this.e21_1 = code;
-    this.f21_1 = message;
+    this.f21_1 = code;
+    this.g21_1 = message;
   }
-  CloseReason.prototype.d21 = function () {
-    return this.e21_1;
-  };
-  CloseReason.prototype.j1 = function () {
+  CloseReason.prototype.e21 = function () {
     return this.f21_1;
   };
-  CloseReason.prototype.g21 = function () {
-    return Companion_getInstance().c21(this.e21_1);
+  CloseReason.prototype.j1 = function () {
+    return this.g21_1;
+  };
+  CloseReason.prototype.h21 = function () {
+    return Companion_getInstance().d21(this.f21_1);
   };
   CloseReason.prototype.toString = function () {
-    var tmp0_elvis_lhs = this.g21();
-    return 'CloseReason(reason=' + toString(tmp0_elvis_lhs == null ? this.e21_1 : tmp0_elvis_lhs) + ', message=' + this.f21_1 + ')';
+    var tmp0_elvis_lhs = this.h21();
+    return 'CloseReason(reason=' + toString(tmp0_elvis_lhs == null ? this.f21_1 : tmp0_elvis_lhs) + ', message=' + this.g21_1 + ')';
   };
   CloseReason.prototype.hashCode = function () {
-    var result = this.e21_1;
-    result = imul(result, 31) + getStringHashCode(this.f21_1) | 0;
+    var result = this.f21_1;
+    result = imul(result, 31) + getStringHashCode(this.g21_1) | 0;
     return result;
   };
   CloseReason.prototype.equals = function (other) {
@@ -211,9 +211,9 @@
     if (!(other instanceof CloseReason))
       return false;
     var tmp0_other_with_cast = other instanceof CloseReason ? other : THROW_CCE();
-    if (!(this.e21_1 === tmp0_other_with_cast.e21_1))
-      return false;
     if (!(this.f21_1 === tmp0_other_with_cast.f21_1))
+      return false;
+    if (!(this.g21_1 === tmp0_other_with_cast.g21_1))
       return false;
     return true;
   };
@@ -224,7 +224,7 @@
   function NonDisposableHandle() {
     NonDisposableHandle_instance = this;
   }
-  NonDisposableHandle.prototype.rm = function () {
+  NonDisposableHandle.prototype.sm = function () {
   };
   NonDisposableHandle.prototype.toString = function () {
     return 'NonDisposableHandle';
@@ -264,7 +264,7 @@
       var tmp$ret$2;
       // Inline function 'io.ktor.websocket.Companion.maxOpcode.<anonymous>' call
       var tmp1__anonymous__uwfjfc = maxElem;
-      tmp$ret$2 = tmp1__anonymous__uwfjfc.k21_1;
+      tmp$ret$2 = tmp1__anonymous__uwfjfc.l21_1;
       var maxValue = tmp$ret$2;
       var inductionVariable = 1;
       if (inductionVariable <= lastIndex)
@@ -274,7 +274,7 @@
           var e = tmp0_maxByOrNull[i];
           var tmp$ret$3;
           // Inline function 'io.ktor.websocket.Companion.maxOpcode.<anonymous>' call
-          tmp$ret$3 = e.k21_1;
+          tmp$ret$3 = e.l21_1;
           var v = tmp$ret$3;
           if (compareTo(maxValue, v) < 0) {
             maxElem = e;
@@ -284,10 +284,10 @@
          while (!(i === lastIndex));
       tmp$ret$1 = maxElem;
     }
-    tmp.l21_1 = ensureNotNull(tmp$ret$1).k21_1;
+    tmp.m21_1 = ensureNotNull(tmp$ret$1).l21_1;
     var tmp_0 = this;
     var tmp_1 = 0;
-    var tmp_2 = this.l21_1 + 1 | 0;
+    var tmp_2 = this.m21_1 + 1 | 0;
     var tmp$ret$4;
     // Inline function 'kotlin.arrayOfNulls' call
     tmp$ret$4 = fillArrayVal(Array(tmp_2), null);
@@ -310,7 +310,7 @@
           inductionVariable_0 = inductionVariable_0 + 1 | 0;
           var tmp$ret$5;
           // Inline function 'io.ktor.websocket.Companion.byOpcodeArray.<anonymous>' call
-          tmp$ret$5 = element.k21_1 === tmp_4;
+          tmp$ret$5 = element.l21_1 === tmp_4;
           if (tmp$ret$5) {
             if (found) {
               tmp$ret$6 = null;
@@ -330,7 +330,7 @@
       tmp_3[tmp_4] = tmp$ret$7;
       tmp_1 = tmp_1 + 1 | 0;
     }
-    tmp_0.m21_1 = tmp_3;
+    tmp_0.n21_1 = tmp_3;
   }
   Companion_0.$metadata$ = objectMeta('Companion');
   var Companion_instance_0;
@@ -357,11 +357,11 @@
   }
   function FrameType(name, ordinal, controlFrame, opcode) {
     Enum.call(this, name, ordinal);
-    this.j21_1 = controlFrame;
-    this.k21_1 = opcode;
+    this.k21_1 = controlFrame;
+    this.l21_1 = opcode;
   }
-  FrameType.prototype.n21 = function () {
-    return this.k21_1;
+  FrameType.prototype.o21 = function () {
+    return this.l21_1;
   };
   FrameType.$metadata$ = classMeta('FrameType', undefined, undefined, undefined, undefined, Enum.prototype);
   function FrameType_TEXT_getInstance() {
@@ -402,12 +402,12 @@
     var tmp$ret$0;
     $l$block: {
       // Inline function 'io.ktor.utils.io.core.toByteArray' call
-      var tmp0_toByteArray = Charsets_getInstance().c1f_1;
-      if (tmp0_toByteArray.equals(Charsets_getInstance().c1f_1)) {
+      var tmp0_toByteArray = Charsets_getInstance().d1f_1;
+      if (tmp0_toByteArray.equals(Charsets_getInstance().d1f_1)) {
         tmp$ret$0 = encodeToByteArray(text);
         break $l$block;
       }
-      tmp$ret$0 = encodeToByteArray_0(tmp0_toByteArray.f1f(), text, 0, text.length);
+      tmp$ret$0 = encodeToByteArray_0(tmp0_toByteArray.g1f(), text, 0, text.length);
     }
     Text_init_$Init$(true, tmp$ret$0, $this);
     return $this;
@@ -423,13 +423,13 @@
       var builder = BytePacketBuilder_init_$Create$(null, 1, null);
       try {
         // Inline function 'io.ktor.websocket.Close.<init>.<anonymous>' call
-        writeShort(builder, reason.e21_1);
-        writeText$default(builder, reason.f21_1, 0, 0, null, 14, null);
-        tmp$ret$0 = builder.t17();
+        writeShort(builder, reason.f21_1);
+        writeText$default(builder, reason.g21_1, 0, 0, null, 14, null);
+        tmp$ret$0 = builder.u17();
         break $l$block;
       } catch ($p) {
         if ($p instanceof Error) {
-          builder.np();
+          builder.op();
           throw $p;
         } else {
           throw $p;
@@ -460,7 +460,7 @@
   Close.$metadata$ = classMeta('Close', undefined, undefined, undefined, undefined, Frame.prototype);
   function Companion_1() {
     Companion_instance_1 = this;
-    this.o21_1 = new Int8Array(0);
+    this.p21_1 = new Int8Array(0);
   }
   Companion_1.$metadata$ = objectMeta('Companion');
   var Companion_instance_1;
@@ -471,16 +471,16 @@
   }
   function Frame(fin, frameType, data, disposableHandle, rsv1, rsv2, rsv3) {
     Companion_getInstance_1();
-    this.p21_1 = fin;
-    this.q21_1 = frameType;
-    this.r21_1 = data;
-    this.s21_1 = disposableHandle;
-    this.t21_1 = rsv1;
-    this.u21_1 = rsv2;
-    this.v21_1 = rsv3;
+    this.q21_1 = fin;
+    this.r21_1 = frameType;
+    this.s21_1 = data;
+    this.t21_1 = disposableHandle;
+    this.u21_1 = rsv1;
+    this.v21_1 = rsv2;
+    this.w21_1 = rsv3;
   }
   Frame.prototype.toString = function () {
-    return 'Frame ' + this.q21_1 + ' (fin=' + this.p21_1 + ', buffer len = ' + this.r21_1.length + ')';
+    return 'Frame ' + this.r21_1 + ' (fin=' + this.q21_1 + ', buffer len = ' + this.s21_1.length + ')';
   };
   Frame.$metadata$ = classMeta('Frame');
   //region block: exports

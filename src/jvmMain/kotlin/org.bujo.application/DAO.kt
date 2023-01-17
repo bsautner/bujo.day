@@ -1,15 +1,16 @@
 package org.bujo.application
 
-import Entry
+import Event
+import EventType
 import java.sql.Connection
 import java.sql.DriverManager
 import java.util.*
-
+import java.sql.*
 object DAO {
 
     private lateinit var db: Connection
-  //  val url = "44.205.141.49:3306"
-    val url = "localhost:3306"
+     val url = "44.205.141.49:3306"
+ //   val url = "localhost:3306"
 
     init {
         println("initializing DAO")
@@ -22,14 +23,42 @@ object DAO {
 
     }
 
-    fun insertEntry(entry: String) {
+    fun insertEntry(event: Event) {
         val q = """
             insert into table_events (text)
-            values ('$entry');
+            values (?);
         """.trimIndent()
-        with(db.createStatement()) {
-            execute(q)
+        val stmt = db.prepareStatement(q,  Statement.RETURN_GENERATED_KEYS)
+        stmt.setString(1, event.value)
+        stmt.executeUpdate()
+
+
+        stmt.generatedKeys.use {
+            if (it.next()) {
+                val id = it.getLong(1)
+                println("Entry added with id: $id")
+                updateTypes(id, event.eventTypes)
+
+            }
         }
+    }
+
+    fun updateTypes(id: Long, types: List<Long>) {
+        val d = """
+            delete from table_event_type_matrix where table_events_fk = '$id'
+        """.trimIndent()
+        with (db.createStatement()) {
+            execute(d)
+        }
+        types.forEach {
+            val i = """
+            insert into table_event_type_matrix (table_events_fk, table_event_type_fk) values($id, $it)
+        """.trimIndent()
+            with (db.createStatement()) {
+                execute(i)
+            }
+        }
+
     }
 
     fun deleteEntry(id: Long) {
@@ -39,30 +68,105 @@ object DAO {
         with (db.createStatement()) {
             execute(q)
         }
+        updateTypes(id, emptyList())
     }
 
-    fun getAllEntries() : List<Entry> {
+    fun getAllEntries() : List<Event> {
 
         val q = """
            select * from table_events order by timestamp desc;
         """.trimIndent()
-        val l = mutableListOf<Entry>()
+        val l = mutableListOf<Event>()
          with(db.createStatement()) {
              val rs = executeQuery(q)
              while (rs.next()) {
                  val ts = rs.getTimestamp(rs.findColumn("timestamp"))
-                 l.add(Entry(rs.getLong(rs.findColumn("table_events_pk")), ts.time,  rs.getString(3)))
+                 val id = rs.getLong(rs.findColumn("table_events_pk"))
+                 val types = getEventTypes(id)
+                 val typeIds = mutableListOf<Long>()
+                 types.forEach {
+                     typeIds.add(it.id)
+                 }
+                 l.add(Event(id, ts.time,  rs.getString(3), typeIds))
              }
          }
         return l
     }
 
-    fun updateEntry(entry: Entry) {
+    fun updateEntry(event: Event) {
         val q = """
-            update table_events set text='${entry.value}' where table_events_pk = ${entry.id}
+            update table_events set text='${event.value}' where table_events_pk = ${event.id}
         """.trimIndent()
         with (db.createStatement()) {
             execute(q)
         }
     }
+
+
+    fun getAllTypes() : List<EventType> {
+
+        val q = """
+           select * from table_event_type order by name desc;
+        """.trimIndent()
+        val l = mutableListOf<EventType>()
+        with(db.createStatement()) {
+            val rs = executeQuery(q)
+            while (rs.next()) {
+
+                l.add(EventType(rs.getLong(rs.findColumn("table_event_type_pk")), rs.getString(rs.findColumn("name")), false))
+            }
+        }
+        return l
+    }
+
+    private fun getEntryTypeById(typeId: Long) : EventType {
+        val q = """
+           select * from table_event_type where table_event_type_pk = $typeId;
+        """.trimIndent()
+        with(db.createStatement()) {
+            val rs = executeQuery(q)
+            rs.next()
+            return EventType(rs.getLong(rs.findColumn("table_event_type_pk")), rs.getString(rs.findColumn("name")), false)
+        }
+    }
+
+    private fun getEventTypes(eventID: Long) : List<EventType> {
+        val q = """
+            select * from table_event_type_matrix where table_events_fk = $eventID
+        """.trimIndent()
+        val list = mutableListOf<EventType>()
+        with(db.createStatement()) {
+            val rs = executeQuery(q)
+            while (rs.next()) {
+                list.add(getEntryTypeById(rs.getLong(rs.findColumn("table_event_type_fk"))))
+            }
+        }
+        return list
+
+    }
+
+    fun getEvent(id: Long): Event {
+        val q = """
+           select * from table_events where table_events_pk = $id;
+        """.trimIndent()
+
+        with(db.createStatement()) {
+            val rs = executeQuery(q)
+            if (rs.next()) {
+                val ts = rs.getTimestamp(rs.findColumn("timestamp"))
+                val id = rs.getLong(rs.findColumn("table_events_pk"))
+                val types = getEventTypes(id)
+                val typeIds = mutableListOf<Long>()
+                types.forEach {
+                    typeIds.add(it.id)
+                }
+                return Event(id, ts.time,  rs.getString(3), typeIds)
+            }
+            else {
+                throw IllegalStateException()
+            }
+        }
+
+    }
+
 }

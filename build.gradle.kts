@@ -40,7 +40,9 @@ kotlin {
         binaries.executable()
         browser {
             binaries.executable()
+
             commonWebpackConfig {
+
                 cssSupport {
                     enabled = true
                     //enabled.set(true)
@@ -104,7 +106,13 @@ kotlin {
         val jsTest by getting
     }
 }
+dependencies {
+    implementation("org.junit.jupiter:junit-jupiter:5.8.1")
+    // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2")
 
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.8.2")
+}
 application {
     mainClass.set("org.bujo.application.ServerKt")
 }

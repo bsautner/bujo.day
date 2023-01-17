@@ -1,6 +1,7 @@
 package org.bujo.application
 
-import Entry
+import Event
+import EventType
 import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
@@ -15,6 +16,7 @@ import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import kotlinx.html.*
+import java.time.format.DateTimeFormatter
 
 fun HTML.index() {
     head {
@@ -31,7 +33,7 @@ fun HTML.index() {
 
 fun main() {
     println("Starting Up")
-    embeddedServer(Netty, port = 8082) {
+    embeddedServer(Netty, port = 8084) {
         install(ContentNegotiation) {
             json()
         }
@@ -52,14 +54,28 @@ fun main() {
             static("/static") {
                 resources()
             }
-            route("/entry") {
+
+            route("/events") {
                 get {
                     call.respond(DAO.getAllEntries())
                 }
+            }
+
+            route(Event.path) {
+                get {
+                    call.parameters["id"]?.let {
+
+                        val id = it.toLong()
+                        val event = DAO.getEvent(id)
+                        call.respond(event)
+                    }
+                }
                 post {
 
-                    val entry = call.receive<Entry>()
-                    DAO.insertEntry(entry.value)
+                    println("POST!")
+                    val event = call.receive<Event>()
+                    DAO.insertEntry(event)
+
                     call.respond(HttpStatusCode.OK)
 
                 }
@@ -72,9 +88,15 @@ fun main() {
 
                 }
                 put {
-                    val entry = call.receive<Entry>()
-                    DAO.updateEntry(entry)
+                    val event = call.receive<Event>()
+                    DAO.updateEntry(event)
                     call.respond(HttpStatusCode.OK)
+                }
+            }
+            route(EventType.path) {
+                get {
+                    call.respond(DAO.getAllTypes())
+
                 }
             }
         }

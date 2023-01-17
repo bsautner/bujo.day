@@ -62,7 +62,7 @@
     }
   }
   function unaryPlus(_this__u8e3s4) {
-    this.e3x(_this__u8e3s4);
+    this.f3x(_this__u8e3s4);
   }
   function unaryPlus_0(_this__u8e3s4) {
     var tmp$ret$2;
@@ -74,10 +74,10 @@
     tmp$ret$0 = _this__u8e3s4;
     tmp$ret$1 = tmp$ret$0;
     tmp$ret$2 = tmp$ret$1;
-    this.f3x(tmp$ret$2);
+    this.g3x(tmp$ret$2);
   }
   function invoke(_this__u8e3s4, block) {
-    this.f3x(create(_this__u8e3s4, block));
+    this.g3x(create(_this__u8e3s4, block));
   }
   //endregion
   function get_CHILDREN() {
@@ -221,10 +221,10 @@
     return createElement.apply(null, [Fragment, void 1].concat([].slice.call(children.slice())));
   }
   //region block: post-declaration
-  ChildrenBuilderImpl.prototype.f3x = unaryPlus;
-  ChildrenBuilderImpl.prototype.g3x = unaryPlus_0;
-  ChildrenBuilderImpl.prototype.e3x = child;
-  ChildrenBuilderImpl.prototype.h3x = invoke;
+  ChildrenBuilderImpl.prototype.g3x = unaryPlus;
+  ChildrenBuilderImpl.prototype.h3x = unaryPlus_0;
+  ChildrenBuilderImpl.prototype.f3x = child;
+  ChildrenBuilderImpl.prototype.i3x = invoke;
   //endregion
   //region block: exports
   _.$_$ = _.$_$ || {};

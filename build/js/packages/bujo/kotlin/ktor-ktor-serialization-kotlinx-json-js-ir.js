@@ -41,17 +41,17 @@
     if (!(($mask0 & 1) === 0))
       json_0 = get_DefaultJson();
     if (!(($mask0 & 2) === 0))
-      contentType = Application_getInstance().i1p_1;
+      contentType = Application_getInstance().j1p_1;
     return json(_this__u8e3s4, json_0, contentType);
   }
   function DefaultJson$lambda($this$Json) {
     init_properties_JsonSupport_kt_xg0arx();
-    $this$Json.r2n_1 = true;
-    $this$Json.u2n_1 = true;
-    $this$Json.b2o_1 = true;
+    $this$Json.s2n_1 = true;
     $this$Json.v2n_1 = true;
-    $this$Json.w2n_1 = false;
-    $this$Json.z2n_1 = false;
+    $this$Json.c2o_1 = true;
+    $this$Json.w2n_1 = true;
+    $this$Json.x2n_1 = false;
+    $this$Json.a2o_1 = false;
     return Unit_getInstance();
   }
   var properties_initialized_JsonSupport_kt_9cgd93;

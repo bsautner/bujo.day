@@ -20,7 +20,7 @@
   function ReactHTML() {
     ReactHTML_instance = this;
   }
-  ReactHTML.prototype.i3x = function () {
+  ReactHTML.prototype.j3x = function () {
     var tmp$ret$2;
     // Inline function 'react.IntrinsicType' call
     var tmp$ret$1;
@@ -32,7 +32,7 @@
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
   };
-  ReactHTML.prototype.j3x = function () {
+  ReactHTML.prototype.k3x = function () {
     var tmp$ret$2;
     // Inline function 'react.IntrinsicType' call
     var tmp$ret$1;
@@ -44,7 +44,7 @@
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
   };
-  ReactHTML.prototype.k3x = function () {
+  ReactHTML.prototype.l3x = function () {
     var tmp$ret$2;
     // Inline function 'react.IntrinsicType' call
     var tmp$ret$1;
@@ -56,7 +56,7 @@
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
   };
-  ReactHTML.prototype.l3x = function () {
+  ReactHTML.prototype.m3x = function () {
     var tmp$ret$2;
     // Inline function 'react.IntrinsicType' call
     var tmp$ret$1;
@@ -68,18 +68,6 @@
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
   };
-  ReactHTML.prototype.m3x = function () {
-    var tmp$ret$2;
-    // Inline function 'react.IntrinsicType' call
-    var tmp$ret$1;
-    // Inline function 'kotlin.js.unsafeCast' call
-    var tmp$ret$0;
-    // Inline function 'kotlin.js.asDynamic' call
-    tmp$ret$0 = 'label';
-    tmp$ret$1 = tmp$ret$0;
-    tmp$ret$2 = tmp$ret$1;
-    return tmp$ret$2;
-  };
   ReactHTML.prototype.n3x = function () {
     var tmp$ret$2;
     // Inline function 'react.IntrinsicType' call
@@ -87,7 +75,7 @@
     // Inline function 'kotlin.js.unsafeCast' call
     var tmp$ret$0;
     // Inline function 'kotlin.js.asDynamic' call
-    tmp$ret$0 = 'table';
+    tmp$ret$0 = 'input';
     tmp$ret$1 = tmp$ret$0;
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
@@ -99,7 +87,7 @@
     // Inline function 'kotlin.js.unsafeCast' call
     var tmp$ret$0;
     // Inline function 'kotlin.js.asDynamic' call
-    tmp$ret$0 = 'td';
+    tmp$ret$0 = 'label';
     tmp$ret$1 = tmp$ret$0;
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
@@ -111,12 +99,36 @@
     // Inline function 'kotlin.js.unsafeCast' call
     var tmp$ret$0;
     // Inline function 'kotlin.js.asDynamic' call
-    tmp$ret$0 = 'textarea';
+    tmp$ret$0 = 'table';
     tmp$ret$1 = tmp$ret$0;
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
   };
   ReactHTML.prototype.q3x = function () {
+    var tmp$ret$2;
+    // Inline function 'react.IntrinsicType' call
+    var tmp$ret$1;
+    // Inline function 'kotlin.js.unsafeCast' call
+    var tmp$ret$0;
+    // Inline function 'kotlin.js.asDynamic' call
+    tmp$ret$0 = 'td';
+    tmp$ret$1 = tmp$ret$0;
+    tmp$ret$2 = tmp$ret$1;
+    return tmp$ret$2;
+  };
+  ReactHTML.prototype.r3x = function () {
+    var tmp$ret$2;
+    // Inline function 'react.IntrinsicType' call
+    var tmp$ret$1;
+    // Inline function 'kotlin.js.unsafeCast' call
+    var tmp$ret$0;
+    // Inline function 'kotlin.js.asDynamic' call
+    tmp$ret$0 = 'textarea';
+    tmp$ret$1 = tmp$ret$0;
+    tmp$ret$2 = tmp$ret$1;
+    return tmp$ret$2;
+  };
+  ReactHTML.prototype.s3x = function () {
     var tmp$ret$2;
     // Inline function 'react.IntrinsicType' call
     var tmp$ret$1;

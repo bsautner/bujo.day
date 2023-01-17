@@ -23,17 +23,17 @@
   //endregion
   function loop(_this__u8e3s4, action) {
     while (true) {
-      action(_this__u8e3s4.vi_1);
+      action(_this__u8e3s4.wi_1);
     }
   }
   function loop_0(_this__u8e3s4, action) {
     while (true) {
-      action(_this__u8e3s4.wi_1);
+      action(_this__u8e3s4.xi_1);
     }
   }
   function update(_this__u8e3s4, function_0) {
     while (true) {
-      var cur = _this__u8e3s4.wi_1;
+      var cur = _this__u8e3s4.xi_1;
       var upd = function_0(cur);
       if (_this__u8e3s4.atomicfu$compareAndSet(cur, upd))
         return Unit_getInstance();
@@ -41,7 +41,7 @@
   }
   function updateAndGet(_this__u8e3s4, function_0) {
     while (true) {
-      var cur = _this__u8e3s4.wi_1;
+      var cur = _this__u8e3s4.xi_1;
       var upd = function_0(cur);
       if (_this__u8e3s4.atomicfu$compareAndSet(cur, upd))
         return upd;
@@ -70,201 +70,201 @@
   };
   atomicfu$TraceBase.$metadata$ = classMeta('TraceBase');
   function AtomicRef(value) {
-    this.vi_1 = value;
-  }
-  AtomicRef.prototype.xi = function (_set____db54di) {
-    this.vi_1 = _set____db54di;
-  };
-  AtomicRef.prototype.yi = function () {
-    return this.vi_1;
-  };
-  AtomicRef.prototype.atomicfu$compareAndSet = function (expect, update) {
-    if (!(this.vi_1 === expect))
-      return false;
-    this.vi_1 = update;
-    return true;
-  };
-  AtomicRef.prototype.atomicfu$getAndSet = function (value) {
-    var oldValue = this.vi_1;
-    this.vi_1 = value;
-    return oldValue;
-  };
-  AtomicRef.prototype.toString = function () {
-    return toString(this.vi_1);
-  };
-  AtomicRef.$metadata$ = classMeta('AtomicRef');
-  Object.defineProperty(AtomicRef.prototype, 'kotlinx$atomicfu$value', {
-    configurable: true,
-    get: AtomicRef.prototype.yi,
-    set: AtomicRef.prototype.xi
-  });
-  function atomic$ref$1(initial) {
-    return atomic(initial, None_getInstance());
-  }
-  function AtomicBoolean(value) {
-    this.zi_1 = value;
-  }
-  AtomicBoolean.prototype.aj = function (_set____db54di) {
-    this.zi_1 = _set____db54di;
-  };
-  AtomicBoolean.prototype.yi = function () {
-    return this.zi_1;
-  };
-  AtomicBoolean.prototype.atomicfu$compareAndSet = function (expect, update) {
-    if (!(this.zi_1 === expect))
-      return false;
-    this.zi_1 = update;
-    return true;
-  };
-  AtomicBoolean.prototype.atomicfu$getAndSet = function (value) {
-    var oldValue = this.zi_1;
-    this.zi_1 = value;
-    return oldValue;
-  };
-  AtomicBoolean.prototype.toString = function () {
-    return this.zi_1.toString();
-  };
-  AtomicBoolean.$metadata$ = classMeta('AtomicBoolean');
-  Object.defineProperty(AtomicBoolean.prototype, 'kotlinx$atomicfu$value', {
-    configurable: true,
-    get: AtomicBoolean.prototype.yi,
-    set: AtomicBoolean.prototype.aj
-  });
-  function atomic$boolean$1(initial) {
-    return atomic_0(initial, None_getInstance());
-  }
-  function AtomicInt(value) {
     this.wi_1 = value;
   }
-  AtomicInt.prototype.bj = function (_set____db54di) {
+  AtomicRef.prototype.yi = function (_set____db54di) {
     this.wi_1 = _set____db54di;
   };
-  AtomicInt.prototype.yi = function () {
+  AtomicRef.prototype.zi = function () {
     return this.wi_1;
   };
-  AtomicInt.prototype.atomicfu$compareAndSet = function (expect, update) {
+  AtomicRef.prototype.atomicfu$compareAndSet = function (expect, update) {
     if (!(this.wi_1 === expect))
       return false;
     this.wi_1 = update;
     return true;
   };
-  AtomicInt.prototype.atomicfu$getAndSet = function (value) {
+  AtomicRef.prototype.atomicfu$getAndSet = function (value) {
     var oldValue = this.wi_1;
     this.wi_1 = value;
     return oldValue;
   };
+  AtomicRef.prototype.toString = function () {
+    return toString(this.wi_1);
+  };
+  AtomicRef.$metadata$ = classMeta('AtomicRef');
+  Object.defineProperty(AtomicRef.prototype, 'kotlinx$atomicfu$value', {
+    configurable: true,
+    get: AtomicRef.prototype.zi,
+    set: AtomicRef.prototype.yi
+  });
+  function atomic$ref$1(initial) {
+    return atomic(initial, None_getInstance());
+  }
+  function AtomicBoolean(value) {
+    this.aj_1 = value;
+  }
+  AtomicBoolean.prototype.bj = function (_set____db54di) {
+    this.aj_1 = _set____db54di;
+  };
+  AtomicBoolean.prototype.zi = function () {
+    return this.aj_1;
+  };
+  AtomicBoolean.prototype.atomicfu$compareAndSet = function (expect, update) {
+    if (!(this.aj_1 === expect))
+      return false;
+    this.aj_1 = update;
+    return true;
+  };
+  AtomicBoolean.prototype.atomicfu$getAndSet = function (value) {
+    var oldValue = this.aj_1;
+    this.aj_1 = value;
+    return oldValue;
+  };
+  AtomicBoolean.prototype.toString = function () {
+    return this.aj_1.toString();
+  };
+  AtomicBoolean.$metadata$ = classMeta('AtomicBoolean');
+  Object.defineProperty(AtomicBoolean.prototype, 'kotlinx$atomicfu$value', {
+    configurable: true,
+    get: AtomicBoolean.prototype.zi,
+    set: AtomicBoolean.prototype.bj
+  });
+  function atomic$boolean$1(initial) {
+    return atomic_0(initial, None_getInstance());
+  }
+  function AtomicInt(value) {
+    this.xi_1 = value;
+  }
+  AtomicInt.prototype.cj = function (_set____db54di) {
+    this.xi_1 = _set____db54di;
+  };
+  AtomicInt.prototype.zi = function () {
+    return this.xi_1;
+  };
+  AtomicInt.prototype.atomicfu$compareAndSet = function (expect, update) {
+    if (!(this.xi_1 === expect))
+      return false;
+    this.xi_1 = update;
+    return true;
+  };
+  AtomicInt.prototype.atomicfu$getAndSet = function (value) {
+    var oldValue = this.xi_1;
+    this.xi_1 = value;
+    return oldValue;
+  };
   AtomicInt.prototype.atomicfu$getAndIncrement = function () {
     var tmp0_this = this;
-    var tmp1 = tmp0_this.wi_1;
-    tmp0_this.wi_1 = tmp1 + 1 | 0;
+    var tmp1 = tmp0_this.xi_1;
+    tmp0_this.xi_1 = tmp1 + 1 | 0;
     return tmp1;
   };
   AtomicInt.prototype.atomicfu$getAndDecrement = function () {
     var tmp0_this = this;
-    var tmp1 = tmp0_this.wi_1;
-    tmp0_this.wi_1 = tmp1 - 1 | 0;
+    var tmp1 = tmp0_this.xi_1;
+    tmp0_this.xi_1 = tmp1 - 1 | 0;
     return tmp1;
   };
   AtomicInt.prototype.atomicfu$getAndAdd = function (delta) {
-    var oldValue = this.wi_1;
+    var oldValue = this.xi_1;
     var tmp0_this = this;
-    tmp0_this.wi_1 = tmp0_this.wi_1 + delta | 0;
+    tmp0_this.xi_1 = tmp0_this.xi_1 + delta | 0;
     return oldValue;
   };
   AtomicInt.prototype.atomicfu$addAndGet = function (delta) {
     var tmp0_this = this;
-    tmp0_this.wi_1 = tmp0_this.wi_1 + delta | 0;
-    return this.wi_1;
+    tmp0_this.xi_1 = tmp0_this.xi_1 + delta | 0;
+    return this.xi_1;
   };
   AtomicInt.prototype.atomicfu$incrementAndGet = function () {
     var tmp0_this = this;
-    tmp0_this.wi_1 = tmp0_this.wi_1 + 1 | 0;
-    return tmp0_this.wi_1;
+    tmp0_this.xi_1 = tmp0_this.xi_1 + 1 | 0;
+    return tmp0_this.xi_1;
   };
   AtomicInt.prototype.atomicfu$decrementAndGet = function () {
     var tmp0_this = this;
-    tmp0_this.wi_1 = tmp0_this.wi_1 - 1 | 0;
-    return tmp0_this.wi_1;
-  };
-  AtomicInt.prototype.cj = function (delta) {
-    this.atomicfu$getAndAdd(delta);
+    tmp0_this.xi_1 = tmp0_this.xi_1 - 1 | 0;
+    return tmp0_this.xi_1;
   };
   AtomicInt.prototype.dj = function (delta) {
+    this.atomicfu$getAndAdd(delta);
+  };
+  AtomicInt.prototype.ej = function (delta) {
     this.atomicfu$getAndAdd(-delta | 0);
   };
   AtomicInt.prototype.toString = function () {
-    return this.wi_1.toString();
+    return this.xi_1.toString();
   };
   AtomicInt.$metadata$ = classMeta('AtomicInt');
   Object.defineProperty(AtomicInt.prototype, 'kotlinx$atomicfu$value', {
     configurable: true,
-    get: AtomicInt.prototype.yi,
-    set: AtomicInt.prototype.bj
+    get: AtomicInt.prototype.zi,
+    set: AtomicInt.prototype.cj
   });
   function atomic$int$1(initial) {
     return atomic_1(initial, None_getInstance());
   }
   function AtomicLong(value) {
-    this.ej_1 = value;
+    this.fj_1 = value;
   }
-  AtomicLong.prototype.fj = function (_set____db54di) {
-    this.ej_1 = _set____db54di;
+  AtomicLong.prototype.gj = function (_set____db54di) {
+    this.fj_1 = _set____db54di;
   };
-  AtomicLong.prototype.yi = function () {
-    return this.ej_1;
+  AtomicLong.prototype.zi = function () {
+    return this.fj_1;
   };
   AtomicLong.prototype.atomicfu$compareAndSet = function (expect, update) {
-    if (!this.ej_1.equals(expect))
+    if (!this.fj_1.equals(expect))
       return false;
-    this.ej_1 = update;
+    this.fj_1 = update;
     return true;
   };
   AtomicLong.prototype.atomicfu$getAndSet = function (value) {
-    var oldValue = this.ej_1;
-    this.ej_1 = value;
+    var oldValue = this.fj_1;
+    this.fj_1 = value;
     return oldValue;
   };
   AtomicLong.prototype.atomicfu$getAndIncrement$long = function () {
     var tmp0_this = this;
-    var tmp1 = tmp0_this.ej_1;
-    tmp0_this.ej_1 = tmp1.ah();
+    var tmp1 = tmp0_this.fj_1;
+    tmp0_this.fj_1 = tmp1.bh();
     return tmp1;
   };
   AtomicLong.prototype.atomicfu$getAndDecrement$long = function () {
     var tmp0_this = this;
-    var tmp1 = tmp0_this.ej_1;
-    tmp0_this.ej_1 = tmp1.bh();
+    var tmp1 = tmp0_this.fj_1;
+    tmp0_this.fj_1 = tmp1.ch();
     return tmp1;
   };
   AtomicLong.prototype.atomicfu$getAndAdd$long = function (delta) {
-    var oldValue = this.ej_1;
+    var oldValue = this.fj_1;
     var tmp0_this = this;
-    tmp0_this.ej_1 = tmp0_this.ej_1.a6(delta);
+    tmp0_this.fj_1 = tmp0_this.fj_1.a6(delta);
     return oldValue;
   };
   AtomicLong.prototype.atomicfu$addAndGet$long = function (delta) {
     var tmp0_this = this;
-    tmp0_this.ej_1 = tmp0_this.ej_1.a6(delta);
-    return this.ej_1;
+    tmp0_this.fj_1 = tmp0_this.fj_1.a6(delta);
+    return this.fj_1;
   };
   AtomicLong.prototype.atomicfu$incrementAndGet$long = function () {
     var tmp0_this = this;
-    tmp0_this.ej_1 = tmp0_this.ej_1.ah();
-    return tmp0_this.ej_1;
+    tmp0_this.fj_1 = tmp0_this.fj_1.bh();
+    return tmp0_this.fj_1;
   };
   AtomicLong.prototype.atomicfu$decrementAndGet$long = function () {
     var tmp0_this = this;
-    tmp0_this.ej_1 = tmp0_this.ej_1.bh();
-    return tmp0_this.ej_1;
+    tmp0_this.fj_1 = tmp0_this.fj_1.ch();
+    return tmp0_this.fj_1;
   };
   AtomicLong.prototype.toString = function () {
-    return this.ej_1.toString();
+    return this.fj_1.toString();
   };
   AtomicLong.$metadata$ = classMeta('AtomicLong');
   Object.defineProperty(AtomicLong.prototype, 'kotlinx$atomicfu$value', {
     configurable: true,
-    get: AtomicLong.prototype.yi,
-    set: AtomicLong.prototype.fj
+    get: AtomicLong.prototype.zi,
+    set: AtomicLong.prototype.gj
   });
   function atomic$long$1(initial) {
     return atomic_2(initial, None_getInstance());

@@ -51,21 +51,26 @@
 }(this, function (_, $module$_emotion_css_2enn37, $module$react_dom_client_y5z5eu, $module$react, kotlin_kotlin, kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core, kotlin_io_ktor_ktor_client_content_negotiation, kotlin_io_ktor_ktor_serialization_kotlinx_json, kotlin_io_ktor_ktor_client_core, kotlin_io_ktor_ktor_http, kotlin_io_ktor_ktor_utils, kotlin_org_jetbrains_kotlin_wrappers_kotlin_react_dom, kotlin_org_jetbrains_kotlin_wrappers_kotlin_react, kotlin_org_jetbrains_kotlin_wrappers_kotlin_react_core, kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core) {
   'use strict';
   //region block: imports
+  var imul = Math.imul;
   var css = $module$_emotion_css_2enn37.css;
   var createRoot = $module$react_dom_client_y5z5eu.createRoot;
   var useState = $module$react.useState;
   var objectMeta = kotlin_kotlin.$_$.i9;
-  var PluginGeneratedSerialDescriptor = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.v1;
-  var LongSerializer_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.l;
-  var StringSerializer_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.m;
+  var PluginGeneratedSerialDescriptor = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.x1;
+  var LongSerializer_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.m;
+  var StringSerializer_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.n;
+  var ArrayListSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.s1;
   var Unit_getInstance = kotlin_kotlin.$_$.c4;
   var Long = kotlin_kotlin.$_$.rb;
   var UnknownFieldException_init_$Create$ = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.d;
   var THROW_CCE = kotlin_kotlin.$_$.vb;
-  var typeParametersSerializers = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.s1;
-  var GeneratedSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.t1;
-  var throwMissingFieldException = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.y1;
+  var typeParametersSerializers = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.u1;
+  var GeneratedSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.v1;
+  var throwMissingFieldException = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.a2;
   var classMeta = kotlin_kotlin.$_$.h8;
+  var BooleanSerializer_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.l;
+  var toString = kotlin_kotlin.$_$.m9;
+  var getStringHashCode = kotlin_kotlin.$_$.o8;
   var Plugin_getInstance = kotlin_io_ktor_ktor_client_content_negotiation.$_$.a;
   var json$default = kotlin_io_ktor_ktor_serialization_kotlinx_json.$_$.a;
   var CoroutineImpl = kotlin_kotlin.$_$.t7;
@@ -87,6 +92,7 @@
   var createInvariantKTypeProjection = kotlin_kotlin.$_$.a;
   var isInterface = kotlin_kotlin.$_$.z8;
   var parameter = kotlin_io_ktor_ktor_client_core.$_$.g;
+  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.w;
   var HttpClient = kotlin_io_ktor_ktor_client_core.$_$.k;
   var ReactHTML_getInstance = kotlin_org_jetbrains_kotlin_wrappers_kotlin_react_dom.$_$.a;
   var FC = kotlin_org_jetbrains_kotlin_wrappers_kotlin_react.$_$.a;
@@ -95,7 +101,6 @@
   var KProperty0 = kotlin_kotlin.$_$.y9;
   var THROW_ISE = kotlin_kotlin.$_$.wb;
   var getLocalDelegateReference = kotlin_kotlin.$_$.m8;
-  var toString = kotlin_kotlin.$_$.m9;
   var println = kotlin_kotlin.$_$.x7;
   var emptyList = kotlin_kotlin.$_$.l5;
   var useEffectOnce = kotlin_org_jetbrains_kotlin_wrappers_kotlin_react_core.$_$.a;
@@ -114,6 +119,10 @@
   $getEntriesCOROUTINE$2.prototype.constructor = $getEntriesCOROUTINE$2;
   $deleteEntryCOROUTINE$3.prototype = Object.create(CoroutineImpl.prototype);
   $deleteEntryCOROUTINE$3.prototype.constructor = $deleteEntryCOROUTINE$3;
+  $loadEventCOROUTINE$4.prototype = Object.create(CoroutineImpl.prototype);
+  $loadEventCOROUTINE$4.prototype.constructor = $loadEventCOROUTINE$4;
+  $getEventTypesCOROUTINE$5.prototype = Object.create(CoroutineImpl.prototype);
+  $getEventTypesCOROUTINE$5.prototype.constructor = $getEventTypesCOROUTINE$5;
   Welcome$lambda$lambda$slambda.prototype = Object.create(CoroutineImpl.prototype);
   Welcome$lambda$lambda$slambda.prototype.constructor = Welcome$lambda$lambda$slambda;
   Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype = Object.create(CoroutineImpl.prototype);
@@ -122,10 +131,14 @@
   Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype.constructor = Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1;
   Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype = Object.create(CoroutineImpl.prototype);
   Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype.constructor = Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3;
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5.prototype = Object.create(CoroutineImpl.prototype);
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5.prototype.constructor = Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5;
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype = Object.create(CoroutineImpl.prototype);
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.constructor = Welcome$lambda$lambda$lambda$lambda$lambda$lambda$slambda;
   //endregion
   function Companion() {
     Companion_instance = this;
-    this.r3x_1 = '/entry';
+    this.t3x_1 = '/entry';
   }
   Companion.$metadata$ = objectMeta('Companion');
   var Companion_instance;
@@ -136,19 +149,20 @@
   }
   function $serializer() {
     $serializer_instance = this;
-    var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('Entry', this, 3);
-    tmp0_serialDesc.v2d('id', false);
-    tmp0_serialDesc.v2d('timestamp', false);
-    tmp0_serialDesc.v2d('value', false);
-    this.s3x_1 = tmp0_serialDesc;
+    var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('Event', this, 4);
+    tmp0_serialDesc.w2d('id', false);
+    tmp0_serialDesc.w2d('timestamp', false);
+    tmp0_serialDesc.w2d('value', false);
+    tmp0_serialDesc.w2d('eventTypes', false);
+    this.u3x_1 = tmp0_serialDesc;
   }
-  $serializer.prototype.g24 = function () {
-    return this.s3x_1;
+  $serializer.prototype.h24 = function () {
+    return this.u3x_1;
   };
-  $serializer.prototype.x2d = function () {
+  $serializer.prototype.y2d = function () {
     var tmp$ret$2;
     // Inline function 'kotlin.arrayOf' call
-    var tmp0_arrayOf = [LongSerializer_getInstance(), LongSerializer_getInstance(), StringSerializer_getInstance()];
+    var tmp0_arrayOf = [LongSerializer_getInstance(), LongSerializer_getInstance(), StringSerializer_getInstance(), new ArrayListSerializer(LongSerializer_getInstance())];
     var tmp$ret$1;
     // Inline function 'kotlin.js.unsafeCast' call
     var tmp$ret$0;
@@ -158,58 +172,66 @@
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
   };
-  $serializer.prototype.i24 = function (decoder) {
-    var tmp0_desc = this.s3x_1;
+  $serializer.prototype.j24 = function (decoder) {
+    var tmp0_desc = this.u3x_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
     var tmp3_bitMask0 = 0;
     var tmp4_local0 = new Long(0, 0);
     var tmp5_local1 = new Long(0, 0);
     var tmp6_local2 = null;
-    var tmp7_input = decoder.d27(tmp0_desc);
-    if (tmp7_input.q27()) {
-      tmp4_local0 = tmp7_input.j27(tmp0_desc, 0);
+    var tmp7_local3 = null;
+    var tmp8_input = decoder.e27(tmp0_desc);
+    if (tmp8_input.r27()) {
+      tmp4_local0 = tmp8_input.k27(tmp0_desc, 0);
       tmp3_bitMask0 = tmp3_bitMask0 | 1;
-      tmp5_local1 = tmp7_input.j27(tmp0_desc, 1);
+      tmp5_local1 = tmp8_input.k27(tmp0_desc, 1);
       tmp3_bitMask0 = tmp3_bitMask0 | 2;
-      tmp6_local2 = tmp7_input.n27(tmp0_desc, 2);
+      tmp6_local2 = tmp8_input.o27(tmp0_desc, 2);
       tmp3_bitMask0 = tmp3_bitMask0 | 4;
+      tmp7_local3 = tmp8_input.p27(tmp0_desc, 3, new ArrayListSerializer(LongSerializer_getInstance()), tmp7_local3);
+      tmp3_bitMask0 = tmp3_bitMask0 | 8;
     } else
       while (tmp1_flag) {
-        tmp2_index = tmp7_input.r27(tmp0_desc);
+        tmp2_index = tmp8_input.s27(tmp0_desc);
         switch (tmp2_index) {
           case -1:
             tmp1_flag = false;
             break;
           case 0:
-            tmp4_local0 = tmp7_input.j27(tmp0_desc, 0);
+            tmp4_local0 = tmp8_input.k27(tmp0_desc, 0);
             tmp3_bitMask0 = tmp3_bitMask0 | 1;
             break;
           case 1:
-            tmp5_local1 = tmp7_input.j27(tmp0_desc, 1);
+            tmp5_local1 = tmp8_input.k27(tmp0_desc, 1);
             tmp3_bitMask0 = tmp3_bitMask0 | 2;
             break;
           case 2:
-            tmp6_local2 = tmp7_input.n27(tmp0_desc, 2);
+            tmp6_local2 = tmp8_input.o27(tmp0_desc, 2);
             tmp3_bitMask0 = tmp3_bitMask0 | 4;
+            break;
+          case 3:
+            tmp7_local3 = tmp8_input.p27(tmp0_desc, 3, new ArrayListSerializer(LongSerializer_getInstance()), tmp7_local3);
+            tmp3_bitMask0 = tmp3_bitMask0 | 8;
             break;
           default:
             throw UnknownFieldException_init_$Create$(tmp2_index);
         }
       }
-    tmp7_input.e27(tmp0_desc);
-    return Entry_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, null);
+    tmp8_input.f27(tmp0_desc);
+    return Event_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, null);
   };
-  $serializer.prototype.t3x = function (encoder, value) {
-    var tmp0_desc = this.s3x_1;
-    var tmp1_output = encoder.d27(tmp0_desc);
-    tmp1_output.k28(tmp0_desc, 0, value.u3x_1);
-    tmp1_output.k28(tmp0_desc, 1, value.v3x_1);
-    tmp1_output.o28(tmp0_desc, 2, value.w3x_1);
-    tmp1_output.e27(tmp0_desc);
+  $serializer.prototype.v3x = function (encoder, value) {
+    var tmp0_desc = this.u3x_1;
+    var tmp1_output = encoder.e27(tmp0_desc);
+    tmp1_output.l28(tmp0_desc, 0, value.w3x_1);
+    tmp1_output.l28(tmp0_desc, 1, value.x3x_1);
+    tmp1_output.p28(tmp0_desc, 2, value.y3x_1);
+    tmp1_output.q28(tmp0_desc, 3, new ArrayListSerializer(LongSerializer_getInstance()), value.z3x_1);
+    tmp1_output.f27(tmp0_desc);
   };
-  $serializer.prototype.h24 = function (encoder, value) {
-    return this.t3x(encoder, value instanceof Entry ? value : THROW_CCE());
+  $serializer.prototype.i24 = function (encoder, value) {
+    return this.v3x(encoder, value instanceof Event ? value : THROW_CCE());
   };
   $serializer.$metadata$ = objectMeta('$serializer', [GeneratedSerializer]);
   var $serializer_instance;
@@ -218,67 +240,230 @@
       new $serializer();
     return $serializer_instance;
   }
-  function Entry_init_$Init$(seen1, id, timestamp, value, serializationConstructorMarker, $this) {
-    if (!(7 === (7 & seen1))) {
-      throwMissingFieldException(seen1, 7, $serializer_getInstance().s3x_1);
+  function Event_init_$Init$(seen1, id, timestamp, value, eventTypes, serializationConstructorMarker, $this) {
+    if (!(15 === (15 & seen1))) {
+      throwMissingFieldException(seen1, 15, $serializer_getInstance().u3x_1);
     }
-    $this.u3x_1 = id;
-    $this.v3x_1 = timestamp;
-    $this.w3x_1 = value;
+    $this.w3x_1 = id;
+    $this.x3x_1 = timestamp;
+    $this.y3x_1 = value;
+    $this.z3x_1 = eventTypes;
     return $this;
   }
-  function Entry_init_$Create$(seen1, id, timestamp, value, serializationConstructorMarker) {
-    return Entry_init_$Init$(seen1, id, timestamp, value, serializationConstructorMarker, Object.create(Entry.prototype));
+  function Event_init_$Create$(seen1, id, timestamp, value, eventTypes, serializationConstructorMarker) {
+    return Event_init_$Init$(seen1, id, timestamp, value, eventTypes, serializationConstructorMarker, Object.create(Event.prototype));
   }
-  function Entry(id, timestamp, value) {
+  function Event(id, timestamp, value, eventTypes) {
     Companion_getInstance_0();
-    this.u3x_1 = id;
-    this.v3x_1 = timestamp;
-    this.w3x_1 = value;
+    this.w3x_1 = id;
+    this.x3x_1 = timestamp;
+    this.y3x_1 = value;
+    this.z3x_1 = eventTypes;
   }
-  Entry.prototype.x3x = function () {
-    return this.u3x_1;
-  };
-  Entry.prototype.y3x = function () {
-    return this.v3x_1;
-  };
-  Entry.prototype.t = function () {
+  Event.prototype.a3y = function () {
     return this.w3x_1;
   };
-  Entry.$metadata$ = classMeta('Entry', undefined, undefined, {0: $serializer_getInstance});
+  Event.prototype.b3y = function () {
+    return this.x3x_1;
+  };
+  Event.prototype.t = function () {
+    return this.y3x_1;
+  };
+  Event.$metadata$ = classMeta('Event', undefined, undefined, {0: $serializer_getInstance});
+  function Companion_0() {
+    Companion_instance_0 = this;
+    this.c3y_1 = '/type';
+  }
+  Companion_0.$metadata$ = objectMeta('Companion');
+  var Companion_instance_0;
+  function Companion_getInstance_1() {
+    if (Companion_instance_0 == null)
+      new Companion_0();
+    return Companion_instance_0;
+  }
+  function $serializer_0() {
+    $serializer_instance_0 = this;
+    var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('EventType', this, 3);
+    tmp0_serialDesc.w2d('id', false);
+    tmp0_serialDesc.w2d('text', false);
+    tmp0_serialDesc.w2d('selected', false);
+    this.d3y_1 = tmp0_serialDesc;
+  }
+  $serializer_0.prototype.h24 = function () {
+    return this.d3y_1;
+  };
+  $serializer_0.prototype.y2d = function () {
+    var tmp$ret$2;
+    // Inline function 'kotlin.arrayOf' call
+    var tmp0_arrayOf = [LongSerializer_getInstance(), StringSerializer_getInstance(), BooleanSerializer_getInstance()];
+    var tmp$ret$1;
+    // Inline function 'kotlin.js.unsafeCast' call
+    var tmp$ret$0;
+    // Inline function 'kotlin.js.asDynamic' call
+    tmp$ret$0 = tmp0_arrayOf;
+    tmp$ret$1 = tmp$ret$0;
+    tmp$ret$2 = tmp$ret$1;
+    return tmp$ret$2;
+  };
+  $serializer_0.prototype.j24 = function (decoder) {
+    var tmp0_desc = this.d3y_1;
+    var tmp1_flag = true;
+    var tmp2_index = 0;
+    var tmp3_bitMask0 = 0;
+    var tmp4_local0 = new Long(0, 0);
+    var tmp5_local1 = null;
+    var tmp6_local2 = false;
+    var tmp7_input = decoder.e27(tmp0_desc);
+    if (tmp7_input.r27()) {
+      tmp4_local0 = tmp7_input.k27(tmp0_desc, 0);
+      tmp3_bitMask0 = tmp3_bitMask0 | 1;
+      tmp5_local1 = tmp7_input.o27(tmp0_desc, 1);
+      tmp3_bitMask0 = tmp3_bitMask0 | 2;
+      tmp6_local2 = tmp7_input.g27(tmp0_desc, 2);
+      tmp3_bitMask0 = tmp3_bitMask0 | 4;
+    } else
+      while (tmp1_flag) {
+        tmp2_index = tmp7_input.s27(tmp0_desc);
+        switch (tmp2_index) {
+          case -1:
+            tmp1_flag = false;
+            break;
+          case 0:
+            tmp4_local0 = tmp7_input.k27(tmp0_desc, 0);
+            tmp3_bitMask0 = tmp3_bitMask0 | 1;
+            break;
+          case 1:
+            tmp5_local1 = tmp7_input.o27(tmp0_desc, 1);
+            tmp3_bitMask0 = tmp3_bitMask0 | 2;
+            break;
+          case 2:
+            tmp6_local2 = tmp7_input.g27(tmp0_desc, 2);
+            tmp3_bitMask0 = tmp3_bitMask0 | 4;
+            break;
+          default:
+            throw UnknownFieldException_init_$Create$(tmp2_index);
+        }
+      }
+    tmp7_input.f27(tmp0_desc);
+    return EventType_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, null);
+  };
+  $serializer_0.prototype.e3y = function (encoder, value) {
+    var tmp0_desc = this.d3y_1;
+    var tmp1_output = encoder.e27(tmp0_desc);
+    tmp1_output.l28(tmp0_desc, 0, value.f3y_1);
+    tmp1_output.p28(tmp0_desc, 1, value.g3y_1);
+    tmp1_output.h28(tmp0_desc, 2, value.h3y_1);
+    tmp1_output.f27(tmp0_desc);
+  };
+  $serializer_0.prototype.i24 = function (encoder, value) {
+    return this.e3y(encoder, value instanceof EventType ? value : THROW_CCE());
+  };
+  $serializer_0.$metadata$ = objectMeta('$serializer', [GeneratedSerializer]);
+  var $serializer_instance_0;
+  function $serializer_getInstance_0() {
+    if ($serializer_instance_0 == null)
+      new $serializer_0();
+    return $serializer_instance_0;
+  }
+  function EventType_init_$Init$(seen1, id, text, selected, serializationConstructorMarker, $this) {
+    if (!(7 === (7 & seen1))) {
+      throwMissingFieldException(seen1, 7, $serializer_getInstance_0().d3y_1);
+    }
+    $this.f3y_1 = id;
+    $this.g3y_1 = text;
+    $this.h3y_1 = selected;
+    return $this;
+  }
+  function EventType_init_$Create$(seen1, id, text, selected, serializationConstructorMarker) {
+    return EventType_init_$Init$(seen1, id, text, selected, serializationConstructorMarker, Object.create(EventType.prototype));
+  }
+  function EventType(id, text, selected) {
+    Companion_getInstance_1();
+    this.f3y_1 = id;
+    this.g3y_1 = text;
+    this.h3y_1 = selected;
+  }
+  EventType.prototype.a3y = function () {
+    return this.f3y_1;
+  };
+  EventType.prototype.i3y = function () {
+    return this.g3y_1;
+  };
+  EventType.prototype.j3y = function (_set____db54di) {
+    this.h3y_1 = _set____db54di;
+  };
+  EventType.prototype.k3y = function () {
+    return this.h3y_1;
+  };
+  EventType.prototype.toString = function () {
+    return 'EventType(id=' + toString(this.f3y_1) + ', text=' + this.g3y_1 + ', selected=' + this.h3y_1 + ')';
+  };
+  EventType.prototype.hashCode = function () {
+    var result = this.f3y_1.hashCode();
+    result = imul(result, 31) + getStringHashCode(this.g3y_1) | 0;
+    result = imul(result, 31) + (this.h3y_1 | 0) | 0;
+    return result;
+  };
+  EventType.prototype.equals = function (other) {
+    if (this === other)
+      return true;
+    if (!(other instanceof EventType))
+      return false;
+    var tmp0_other_with_cast = other instanceof EventType ? other : THROW_CCE();
+    if (!this.f3y_1.equals(tmp0_other_with_cast.f3y_1))
+      return false;
+    if (!(this.g3y_1 === tmp0_other_with_cast.g3y_1))
+      return false;
+    if (!(this.h3y_1 === tmp0_other_with_cast.h3y_1))
+      return false;
+    return true;
+  };
+  EventType.$metadata$ = classMeta('EventType', undefined, undefined, {0: $serializer_getInstance_0});
   function get_jsonClient() {
     init_properties_ApiClient_kt_yp1dip();
     return jsonClient;
   }
   var jsonClient;
-  function postEntry(entry, $cont) {
-    var tmp = new $postEntryCOROUTINE$0(entry, $cont);
-    tmp.ph_1 = Unit_getInstance();
-    tmp.qh_1 = null;
-    return tmp.wh();
+  function postEntry(event, $cont) {
+    var tmp = new $postEntryCOROUTINE$0(event, $cont);
+    tmp.qh_1 = Unit_getInstance();
+    tmp.rh_1 = null;
+    return tmp.xh();
   }
-  function putEntry(entry, $cont) {
-    var tmp = new $putEntryCOROUTINE$1(entry, $cont);
-    tmp.ph_1 = Unit_getInstance();
-    tmp.qh_1 = null;
-    return tmp.wh();
+  function putEntry(event, $cont) {
+    var tmp = new $putEntryCOROUTINE$1(event, $cont);
+    tmp.qh_1 = Unit_getInstance();
+    tmp.rh_1 = null;
+    return tmp.xh();
   }
   function getEntries($cont) {
     var tmp = new $getEntriesCOROUTINE$2($cont);
-    tmp.ph_1 = Unit_getInstance();
-    tmp.qh_1 = null;
-    return tmp.wh();
+    tmp.qh_1 = Unit_getInstance();
+    tmp.rh_1 = null;
+    return tmp.xh();
   }
   function deleteEntry(id, $cont) {
     var tmp = new $deleteEntryCOROUTINE$3(id, $cont);
-    tmp.ph_1 = Unit_getInstance();
-    tmp.qh_1 = null;
-    return tmp.wh();
+    tmp.qh_1 = Unit_getInstance();
+    tmp.rh_1 = null;
+    return tmp.xh();
+  }
+  function loadEvent(id, $cont) {
+    var tmp = new $loadEventCOROUTINE$4(id, $cont);
+    tmp.qh_1 = Unit_getInstance();
+    tmp.rh_1 = null;
+    return tmp.xh();
+  }
+  function getEventTypes($cont) {
+    var tmp = new $getEventTypesCOROUTINE$5($cont);
+    tmp.qh_1 = Unit_getInstance();
+    tmp.rh_1 = null;
+    return tmp.xh();
   }
   function jsonClient$lambda($this$HttpClient) {
     init_properties_ApiClient_kt_yp1dip();
     var tmp = Plugin_getInstance();
-    $this$HttpClient.n30(tmp, jsonClient$lambda$lambda);
+    $this$HttpClient.o30(tmp, jsonClient$lambda$lambda);
     return Unit_getInstance();
   }
   function jsonClient$lambda$lambda($this$install) {
@@ -286,107 +471,18 @@
     json$default($this$install, null, null, 3, null);
     return Unit_getInstance();
   }
-  function $postEntryCOROUTINE$0(entry, resultContinuation) {
+  function $postEntryCOROUTINE$0(event, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.h3y_1 = entry;
+    this.t3y_1 = event;
   }
-  $postEntryCOROUTINE$0.prototype.wh = function () {
-    var suspendResult = this.ph_1;
+  $postEntryCOROUTINE$0.prototype.xh = function () {
+    var suspendResult = this.qh_1;
     $sm: do
       try {
-        var tmp = this.nh_1;
+        var tmp = this.oh_1;
         switch (tmp) {
           case 0:
-            this.oh_1 = 2;
-            var tmp_0 = this;
-            tmp_0.i3y_1 = get_jsonClient();
-            var tmp_1 = this;
-            Companion_getInstance_0();
-            tmp_1.j3y_1 = '/entry';
-            var tmp_2 = this;
-            var tmp0_apply = new HttpRequestBuilder();
-            url(tmp0_apply, this.j3y_1);
-            contentType(tmp0_apply, Application_getInstance().i1p_1);
-            var tmp0_subject = this.h3y_1;
-            if (tmp0_subject == null) {
-              tmp0_apply.j2z_1 = NullBody_getInstance();
-              var tmp_3 = JsType_getInstance();
-              var tmp_4 = getKClass(Entry);
-              var tmp_5;
-              try {
-                tmp_5 = createKType(getKClass(Entry), arrayOf([]), false);
-              } catch ($p) {
-                var tmp_6;
-                if ($p instanceof Error) {
-                  tmp_6 = null;
-                } else {
-                  throw $p;
-                }
-                tmp_5 = tmp_6;
-              }
-              tmp0_apply.h35(typeInfoImpl(tmp_3, tmp_4, tmp_5));
-            } else {
-              if (tmp0_subject instanceof OutgoingContent) {
-                tmp0_apply.j2z_1 = this.h3y_1;
-                tmp0_apply.h35(null);
-              } else {
-                tmp0_apply.j2z_1 = this.h3y_1;
-                var tmp_7 = JsType_getInstance();
-                var tmp_8 = getKClass(Entry);
-                var tmp_9;
-                try {
-                  tmp_9 = createKType(getKClass(Entry), arrayOf([]), false);
-                } catch ($p) {
-                  var tmp_10;
-                  if ($p instanceof Error) {
-                    tmp_10 = null;
-                  } else {
-                    throw $p;
-                  }
-                  tmp_9 = tmp_10;
-                }
-                tmp0_apply.h35(typeInfoImpl(tmp_7, tmp_8, tmp_9));
-              }
-            }
-
-            tmp_2.k3y_1 = tmp0_apply;
-            this.k3y_1.h2z_1 = Companion_getInstance().f1v_1;
-            this.nh_1 = 1;
-            suspendResult = (new HttpStatement(this.k3y_1, this.i3y_1)).k3p(this);
-            if (suspendResult === get_COROUTINE_SUSPENDED()) {
-              return suspendResult;
-            }
-
-            continue $sm;
-          case 1:
-            ;
-            return Unit_getInstance();
-          case 2:
-            throw this.qh_1;
-        }
-      } catch ($p) {
-        if (this.oh_1 === 2) {
-          throw $p;
-        } else {
-          this.nh_1 = this.oh_1;
-          this.qh_1 = $p;
-        }
-      }
-     while (true);
-  };
-  $postEntryCOROUTINE$0.$metadata$ = classMeta('$postEntryCOROUTINE$0', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
-  function $putEntryCOROUTINE$1(entry, resultContinuation) {
-    CoroutineImpl.call(this, resultContinuation);
-    this.t3y_1 = entry;
-  }
-  $putEntryCOROUTINE$1.prototype.wh = function () {
-    var suspendResult = this.ph_1;
-    $sm: do
-      try {
-        var tmp = this.nh_1;
-        switch (tmp) {
-          case 0:
-            this.oh_1 = 2;
+            this.ph_1 = 2;
             var tmp_0 = this;
             tmp_0.u3y_1 = get_jsonClient();
             var tmp_1 = this;
@@ -395,15 +491,15 @@
             var tmp_2 = this;
             var tmp0_apply = new HttpRequestBuilder();
             url(tmp0_apply, this.v3y_1);
-            contentType(tmp0_apply, Application_getInstance().i1p_1);
+            contentType(tmp0_apply, Application_getInstance().j1p_1);
             var tmp0_subject = this.t3y_1;
             if (tmp0_subject == null) {
-              tmp0_apply.j2z_1 = NullBody_getInstance();
+              tmp0_apply.k2z_1 = NullBody_getInstance();
               var tmp_3 = JsType_getInstance();
-              var tmp_4 = getKClass(Entry);
+              var tmp_4 = getKClass(Event);
               var tmp_5;
               try {
-                tmp_5 = createKType(getKClass(Entry), arrayOf([]), false);
+                tmp_5 = createKType(getKClass(Event), arrayOf([]), false);
               } catch ($p) {
                 var tmp_6;
                 if ($p instanceof Error) {
@@ -413,18 +509,18 @@
                 }
                 tmp_5 = tmp_6;
               }
-              tmp0_apply.h35(typeInfoImpl(tmp_3, tmp_4, tmp_5));
+              tmp0_apply.i35(typeInfoImpl(tmp_3, tmp_4, tmp_5));
             } else {
               if (tmp0_subject instanceof OutgoingContent) {
-                tmp0_apply.j2z_1 = this.t3y_1;
-                tmp0_apply.h35(null);
+                tmp0_apply.k2z_1 = this.t3y_1;
+                tmp0_apply.i35(null);
               } else {
-                tmp0_apply.j2z_1 = this.t3y_1;
+                tmp0_apply.k2z_1 = this.t3y_1;
                 var tmp_7 = JsType_getInstance();
-                var tmp_8 = getKClass(Entry);
+                var tmp_8 = getKClass(Event);
                 var tmp_9;
                 try {
-                  tmp_9 = createKType(getKClass(Entry), arrayOf([]), false);
+                  tmp_9 = createKType(getKClass(Event), arrayOf([]), false);
                 } catch ($p) {
                   var tmp_10;
                   if ($p instanceof Error) {
@@ -434,14 +530,14 @@
                   }
                   tmp_9 = tmp_10;
                 }
-                tmp0_apply.h35(typeInfoImpl(tmp_7, tmp_8, tmp_9));
+                tmp0_apply.i35(typeInfoImpl(tmp_7, tmp_8, tmp_9));
               }
             }
 
             tmp_2.w3y_1 = tmp0_apply;
-            this.w3y_1.h2z_1 = Companion_getInstance().g1v_1;
-            this.nh_1 = 1;
-            suspendResult = (new HttpStatement(this.w3y_1, this.u3y_1)).k3p(this);
+            this.w3y_1.i2z_1 = Companion_getInstance().g1v_1;
+            this.oh_1 = 1;
+            suspendResult = (new HttpStatement(this.w3y_1, this.u3y_1)).l3p(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -451,14 +547,103 @@
             ;
             return Unit_getInstance();
           case 2:
-            throw this.qh_1;
+            throw this.rh_1;
         }
       } catch ($p) {
-        if (this.oh_1 === 2) {
+        if (this.ph_1 === 2) {
           throw $p;
         } else {
-          this.nh_1 = this.oh_1;
-          this.qh_1 = $p;
+          this.oh_1 = this.ph_1;
+          this.rh_1 = $p;
+        }
+      }
+     while (true);
+  };
+  $postEntryCOROUTINE$0.$metadata$ = classMeta('$postEntryCOROUTINE$0', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
+  function $putEntryCOROUTINE$1(event, resultContinuation) {
+    CoroutineImpl.call(this, resultContinuation);
+    this.f3z_1 = event;
+  }
+  $putEntryCOROUTINE$1.prototype.xh = function () {
+    var suspendResult = this.qh_1;
+    $sm: do
+      try {
+        var tmp = this.oh_1;
+        switch (tmp) {
+          case 0:
+            this.ph_1 = 2;
+            var tmp_0 = this;
+            tmp_0.g3z_1 = get_jsonClient();
+            var tmp_1 = this;
+            Companion_getInstance_0();
+            tmp_1.h3z_1 = '/entry';
+            var tmp_2 = this;
+            var tmp0_apply = new HttpRequestBuilder();
+            url(tmp0_apply, this.h3z_1);
+            contentType(tmp0_apply, Application_getInstance().j1p_1);
+            var tmp0_subject = this.f3z_1;
+            if (tmp0_subject == null) {
+              tmp0_apply.k2z_1 = NullBody_getInstance();
+              var tmp_3 = JsType_getInstance();
+              var tmp_4 = getKClass(Event);
+              var tmp_5;
+              try {
+                tmp_5 = createKType(getKClass(Event), arrayOf([]), false);
+              } catch ($p) {
+                var tmp_6;
+                if ($p instanceof Error) {
+                  tmp_6 = null;
+                } else {
+                  throw $p;
+                }
+                tmp_5 = tmp_6;
+              }
+              tmp0_apply.i35(typeInfoImpl(tmp_3, tmp_4, tmp_5));
+            } else {
+              if (tmp0_subject instanceof OutgoingContent) {
+                tmp0_apply.k2z_1 = this.f3z_1;
+                tmp0_apply.i35(null);
+              } else {
+                tmp0_apply.k2z_1 = this.f3z_1;
+                var tmp_7 = JsType_getInstance();
+                var tmp_8 = getKClass(Event);
+                var tmp_9;
+                try {
+                  tmp_9 = createKType(getKClass(Event), arrayOf([]), false);
+                } catch ($p) {
+                  var tmp_10;
+                  if ($p instanceof Error) {
+                    tmp_10 = null;
+                  } else {
+                    throw $p;
+                  }
+                  tmp_9 = tmp_10;
+                }
+                tmp0_apply.i35(typeInfoImpl(tmp_7, tmp_8, tmp_9));
+              }
+            }
+
+            tmp_2.i3z_1 = tmp0_apply;
+            this.i3z_1.i2z_1 = Companion_getInstance().h1v_1;
+            this.oh_1 = 1;
+            suspendResult = (new HttpStatement(this.i3z_1, this.g3z_1)).l3p(this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            ;
+            return Unit_getInstance();
+          case 2:
+            throw this.rh_1;
+        }
+      } catch ($p) {
+        if (this.ph_1 === 2) {
+          throw $p;
+        } else {
+          this.oh_1 = this.ph_1;
+          this.rh_1 = $p;
         }
       }
      while (true);
@@ -467,41 +652,158 @@
   function $getEntriesCOROUTINE$2(resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
   }
-  $getEntriesCOROUTINE$2.prototype.wh = function () {
-    var suspendResult = this.ph_1;
+  $getEntriesCOROUTINE$2.prototype.xh = function () {
+    var suspendResult = this.qh_1;
     $sm: do
       try {
-        var tmp = this.nh_1;
+        var tmp = this.oh_1;
         switch (tmp) {
           case 0:
-            this.oh_1 = 3;
+            this.ph_1 = 3;
             var tmp_0 = this;
-            tmp_0.f3z_1 = get_jsonClient();
+            tmp_0.r3z_1 = get_jsonClient();
             var tmp_1 = this;
-            Companion_getInstance_0();
-            tmp_1.g3z_1 = '/entry';
-            var tmp_2 = this;
             var tmp0_apply = new HttpRequestBuilder();
-            url(tmp0_apply, this.g3z_1);
+            url(tmp0_apply, '/events');
             ;
-            tmp_2.h3z_1 = tmp0_apply;
-            this.h3z_1.h2z_1 = Companion_getInstance().e1v_1;
-            this.nh_1 = 1;
-            suspendResult = (new HttpStatement(this.h3z_1, this.f3z_1)).k3p(this);
+            tmp_1.s3z_1 = tmp0_apply;
+            this.s3z_1.i2z_1 = Companion_getInstance().f1v_1;
+            this.oh_1 = 1;
+            suspendResult = (new HttpStatement(this.s3z_1, this.r3z_1)).l3p(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.i3z_1 = suspendResult;
-            this.nh_1 = 2;
-            var tmp_3 = this.i3z_1.o32();
+            this.t3z_1 = suspendResult;
+            this.oh_1 = 2;
+            var tmp_2 = this.t3z_1.p32();
+            var tmp_3 = JsType_getInstance();
+            var tmp_4 = getKClass(List);
+            var tmp_5;
+            try {
+              tmp_5 = createKType(getKClass(List), arrayOf([createInvariantKTypeProjection(createKType(getKClass(Event), arrayOf([]), false))]), false);
+            } catch ($p) {
+              var tmp_6;
+              if ($p instanceof Error) {
+                tmp_6 = null;
+              } else {
+                throw $p;
+              }
+              tmp_5 = tmp_6;
+            }
+
+            suspendResult = tmp_2.s31(typeInfoImpl(tmp_3, tmp_4, tmp_5), this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 2:
+            return (!(suspendResult == null) ? isInterface(suspendResult, List) : false) ? suspendResult : THROW_CCE();
+          case 3:
+            throw this.rh_1;
+        }
+      } catch ($p) {
+        if (this.ph_1 === 3) {
+          throw $p;
+        } else {
+          this.oh_1 = this.ph_1;
+          this.rh_1 = $p;
+        }
+      }
+     while (true);
+  };
+  $getEntriesCOROUTINE$2.$metadata$ = classMeta('$getEntriesCOROUTINE$2', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
+  function $deleteEntryCOROUTINE$3(id, resultContinuation) {
+    CoroutineImpl.call(this, resultContinuation);
+    this.c40_1 = id;
+  }
+  $deleteEntryCOROUTINE$3.prototype.xh = function () {
+    var suspendResult = this.qh_1;
+    $sm: do
+      try {
+        var tmp = this.oh_1;
+        switch (tmp) {
+          case 0:
+            this.ph_1 = 2;
+            var tmp_0 = this;
+            tmp_0.d40_1 = get_jsonClient();
+            var tmp_1 = this;
+            Companion_getInstance_0();
+            tmp_1.e40_1 = '/entry';
+            var tmp_2 = this;
+            var tmp0_apply = new HttpRequestBuilder();
+            url(tmp0_apply, this.e40_1);
+            parameter(tmp0_apply, 'id', this.c40_1);
+            ;
+            tmp_2.f40_1 = tmp0_apply;
+            this.f40_1.i2z_1 = Companion_getInstance().j1v_1;
+            this.oh_1 = 1;
+            suspendResult = (new HttpStatement(this.f40_1, this.d40_1)).l3p(this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            ;
+            return Unit_getInstance();
+          case 2:
+            throw this.rh_1;
+        }
+      } catch ($p) {
+        if (this.ph_1 === 2) {
+          throw $p;
+        } else {
+          this.oh_1 = this.ph_1;
+          this.rh_1 = $p;
+        }
+      }
+     while (true);
+  };
+  $deleteEntryCOROUTINE$3.$metadata$ = classMeta('$deleteEntryCOROUTINE$3', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
+  function $loadEventCOROUTINE$4(id, resultContinuation) {
+    CoroutineImpl.call(this, resultContinuation);
+    this.o40_1 = id;
+  }
+  $loadEventCOROUTINE$4.prototype.xh = function () {
+    var suspendResult = this.qh_1;
+    $sm: do
+      try {
+        var tmp = this.oh_1;
+        switch (tmp) {
+          case 0:
+            this.ph_1 = 3;
+            var tmp_0 = this;
+            tmp_0.p40_1 = get_jsonClient();
+            var tmp_1 = this;
+            Companion_getInstance_0();
+            tmp_1.q40_1 = '/entry';
+            var tmp_2 = this;
+            var tmp0_apply = new HttpRequestBuilder();
+            url(tmp0_apply, this.q40_1);
+            parameter(tmp0_apply, 'id', this.o40_1);
+            ;
+            tmp_2.r40_1 = tmp0_apply;
+            this.r40_1.i2z_1 = Companion_getInstance().f1v_1;
+            this.oh_1 = 1;
+            suspendResult = (new HttpStatement(this.r40_1, this.p40_1)).l3p(this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            this.s40_1 = suspendResult;
+            this.oh_1 = 2;
+            var tmp_3 = this.s40_1.p32();
             var tmp_4 = JsType_getInstance();
-            var tmp_5 = getKClass(List);
+            var tmp_5 = getKClass(Event);
             var tmp_6;
             try {
-              tmp_6 = createKType(getKClass(List), arrayOf([createInvariantKTypeProjection(createKType(getKClass(Entry), arrayOf([]), false))]), false);
+              tmp_6 = createKType(getKClass(Event), arrayOf([]), false);
             } catch ($p) {
               var tmp_7;
               if ($p instanceof Error) {
@@ -512,76 +814,111 @@
               tmp_6 = tmp_7;
             }
 
-            suspendResult = tmp_3.r31(typeInfoImpl(tmp_4, tmp_5, tmp_6), this);
+            suspendResult = tmp_3.s31(typeInfoImpl(tmp_4, tmp_5, tmp_6), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 2:
-            return (!(suspendResult == null) ? isInterface(suspendResult, List) : false) ? suspendResult : THROW_CCE();
+            var event = suspendResult instanceof Event ? suspendResult : THROW_CCE();
+            WIP_getInstance().f41_1 = event.w3x_1;
+            WIP_getInstance().h41_1.ia();
+            WIP_getInstance().h41_1.l(event.z3x_1);
+            ;
+            return event;
           case 3:
-            throw this.qh_1;
+            throw this.rh_1;
         }
       } catch ($p) {
-        if (this.oh_1 === 3) {
+        if (this.ph_1 === 3) {
           throw $p;
         } else {
-          this.nh_1 = this.oh_1;
-          this.qh_1 = $p;
+          this.oh_1 = this.ph_1;
+          this.rh_1 = $p;
         }
       }
      while (true);
   };
-  $getEntriesCOROUTINE$2.$metadata$ = classMeta('$getEntriesCOROUTINE$2', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
-  function $deleteEntryCOROUTINE$3(id, resultContinuation) {
+  $loadEventCOROUTINE$4.$metadata$ = classMeta('$loadEventCOROUTINE$4', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
+  function $getEventTypesCOROUTINE$5(resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.r3z_1 = id;
   }
-  $deleteEntryCOROUTINE$3.prototype.wh = function () {
-    var suspendResult = this.ph_1;
+  $getEventTypesCOROUTINE$5.prototype.xh = function () {
+    var suspendResult = this.qh_1;
     $sm: do
       try {
-        var tmp = this.nh_1;
+        var tmp = this.oh_1;
         switch (tmp) {
           case 0:
-            this.oh_1 = 2;
+            this.ph_1 = 3;
             var tmp_0 = this;
-            tmp_0.s3z_1 = get_jsonClient();
+            tmp_0.b41_1 = get_jsonClient();
             var tmp_1 = this;
-            Companion_getInstance_0();
-            tmp_1.t3z_1 = '/entry';
+            Companion_getInstance_1();
+            tmp_1.c41_1 = '/type';
             var tmp_2 = this;
             var tmp0_apply = new HttpRequestBuilder();
-            url(tmp0_apply, this.t3z_1);
-            parameter(tmp0_apply, 'id', this.r3z_1);
+            url(tmp0_apply, this.c41_1);
             ;
-            tmp_2.u3z_1 = tmp0_apply;
-            this.u3z_1.h2z_1 = Companion_getInstance().i1v_1;
-            this.nh_1 = 1;
-            suspendResult = (new HttpStatement(this.u3z_1, this.s3z_1)).k3p(this);
+            tmp_2.d41_1 = tmp0_apply;
+            this.d41_1.i2z_1 = Companion_getInstance().f1v_1;
+            this.oh_1 = 1;
+            suspendResult = (new HttpStatement(this.d41_1, this.b41_1)).l3p(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            ;
-            return Unit_getInstance();
+            this.e41_1 = suspendResult;
+            this.oh_1 = 2;
+            var tmp_3 = this.e41_1.p32();
+            var tmp_4 = JsType_getInstance();
+            var tmp_5 = getKClass(List);
+            var tmp_6;
+            try {
+              tmp_6 = createKType(getKClass(List), arrayOf([createInvariantKTypeProjection(createKType(getKClass(EventType), arrayOf([]), false))]), false);
+            } catch ($p) {
+              var tmp_7;
+              if ($p instanceof Error) {
+                tmp_7 = null;
+              } else {
+                throw $p;
+              }
+              tmp_6 = tmp_7;
+            }
+
+            suspendResult = tmp_3.s31(typeInfoImpl(tmp_4, tmp_5, tmp_6), this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
           case 2:
-            throw this.qh_1;
+            var response = (!(suspendResult == null) ? isInterface(suspendResult, List) : false) ? suspendResult : THROW_CCE();
+            var list = ArrayList_init_$Create$();
+            var tmp0_iterator = response.d();
+            while (tmp0_iterator.e()) {
+              var element = tmp0_iterator.f();
+              list.b(new EventType(element.f3y_1, element.g3y_1, WIP_getInstance().h41_1.l1(element.f3y_1)));
+            }
+
+            return list;
+          case 3:
+            throw this.rh_1;
         }
       } catch ($p) {
-        if (this.oh_1 === 2) {
+        if (this.ph_1 === 3) {
           throw $p;
         } else {
-          this.nh_1 = this.oh_1;
-          this.qh_1 = $p;
+          this.oh_1 = this.ph_1;
+          this.rh_1 = $p;
         }
       }
      while (true);
   };
-  $deleteEntryCOROUTINE$3.$metadata$ = classMeta('$deleteEntryCOROUTINE$3', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
+  $getEventTypesCOROUTINE$5.$metadata$ = classMeta('$getEventTypesCOROUTINE$5', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
   var properties_initialized_ApiClient_kt_hvyiqd;
   function init_properties_ApiClient_kt_yp1dip() {
     if (properties_initialized_ApiClient_kt_hvyiqd) {
@@ -612,7 +949,7 @@
     tmp$ret$2 = tmp$ret$1;
     tmp$ret$3 = tmp$ret$2;
     var tmp = tmp$ret$3;
-    $this$FC.h3x(tmp, buttonComponent$lambda$lambda_0(props, clickHandler));
+    $this$FC.i3x(tmp, buttonComponent$lambda$lambda_0(props, clickHandler));
     return Unit_getInstance();
   }
   function buttonComponent$lambda$lambda($props) {
@@ -623,7 +960,7 @@
   }
   function buttonComponent$lambda$lambda_0($props, $clickHandler) {
     return function ($this$invoke) {
-      $this$invoke.g3x($props.text);
+      $this$invoke.h3x($props.text);
       var tmp0_css = $this$invoke;
       var tmp$ret$3;
       // Inline function 'emotion.css.ClassName' call
@@ -688,7 +1025,7 @@
     tmp$ret$2 = tmp$ret$1;
     tmp$ret$3 = tmp$ret$2;
     var tmp = tmp$ret$3;
-    $this$FC.h3x(tmp, deleteEntryButtonComponent$lambda$lambda_0(clickHandler));
+    $this$FC.i3x(tmp, deleteEntryButtonComponent$lambda$lambda_0(clickHandler));
     return Unit_getInstance();
   }
   function invoke$lambda($entryId$delegate) {
@@ -713,7 +1050,7 @@
   }
   function deleteEntryButtonComponent$lambda$lambda_0($clickHandler) {
     return function ($this$invoke) {
-      $this$invoke.g3x('X');
+      $this$invoke.h3x('X');
       var tmp0_css = $this$invoke;
       var tmp$ret$3;
       // Inline function 'emotion.css.ClassName' call
@@ -766,7 +1103,7 @@
     tmp$ret$2 = tmp$ret$1;
     tmp$ret$3 = tmp$ret$2;
     var tmp = tmp$ret$3;
-    $this$FC.h3x(tmp, inputComponent$lambda$lambda_0(props, changeHandler));
+    $this$FC.i3x(tmp, inputComponent$lambda$lambda_0(props, changeHandler));
     return Unit_getInstance();
   }
   function inputComponent$lambda$lambda($props) {
@@ -792,6 +1129,113 @@
       inputComponent = FC(inputComponent$lambda);
     }
   }
+  function get_selectableButtonComponent() {
+    init_properties_SelectableButtonComponent_kt_mo60in();
+    return selectableButtonComponent;
+  }
+  var selectableButtonComponent;
+  function selectableButtonComponent$lambda($this$FC, props) {
+    init_properties_SelectableButtonComponent_kt_mo60in();
+    var clickHandler = selectableButtonComponent$lambda$lambda(props);
+    var tmp$ret$3;
+    // Inline function 'react.dom.html.ReactHTML.label' call
+    var tmp0__get_label__ojxecp = ReactHTML_getInstance();
+    var tmp$ret$2;
+    // Inline function 'react.IntrinsicType' call
+    var tmp$ret$1;
+    // Inline function 'kotlin.js.unsafeCast' call
+    var tmp$ret$0;
+    // Inline function 'kotlin.js.asDynamic' call
+    tmp$ret$0 = 'label';
+    tmp$ret$1 = tmp$ret$0;
+    tmp$ret$2 = tmp$ret$1;
+    tmp$ret$3 = tmp$ret$2;
+    var tmp = tmp$ret$3;
+    $this$FC.i3x(tmp, selectableButtonComponent$lambda$lambda_0(props, clickHandler));
+    return Unit_getInstance();
+  }
+  function selectableButtonComponent$lambda$lambda($props) {
+    return function (it) {
+      $props.onSubmit();
+      return Unit_getInstance();
+    };
+  }
+  function selectableButtonComponent$lambda$lambda$lambda($props, $clickHandler) {
+    return function ($this$invoke) {
+      $this$invoke.type = (/*union*/{button: 'button', checkbox: 'checkbox', color: 'color', date: 'date', datetimeLocal: 'datetime-local', email: 'email', file: 'file', hidden: 'hidden', image: 'image', month: 'month', number: 'number', password: 'password', radio: 'radio', range: 'range', reset: 'reset', search: 'search', submit: 'submit', tel: 'tel', text: 'text', time: 'time', url: 'url', week: 'week'}/*union*/).checkbox;
+      $this$invoke.id = $props.text;
+      $this$invoke.onChange = $clickHandler;
+      $this$invoke.checked = $props.selected;
+      return Unit_getInstance();
+    };
+  }
+  function selectableButtonComponent$lambda$lambda_0($props, $clickHandler) {
+    return function ($this$invoke) {
+      var tmp$ret$3;
+      // Inline function 'react.dom.html.ReactHTML.input' call
+      var tmp0__get_input__prnny7 = ReactHTML_getInstance();
+      var tmp$ret$2;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$1;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$0 = 'input';
+      tmp$ret$1 = tmp$ret$0;
+      tmp$ret$2 = tmp$ret$1;
+      tmp$ret$3 = tmp$ret$2;
+      var tmp = tmp$ret$3;
+      $this$invoke.i3x(tmp, selectableButtonComponent$lambda$lambda$lambda($props, $clickHandler));
+      $this$invoke.h3x($props.text);
+      return Unit_getInstance();
+    };
+  }
+  var properties_initialized_SelectableButtonComponent_kt_jbvuyj;
+  function init_properties_SelectableButtonComponent_kt_mo60in() {
+    if (properties_initialized_SelectableButtonComponent_kt_jbvuyj) {
+    } else {
+      properties_initialized_SelectableButtonComponent_kt_jbvuyj = true;
+      selectableButtonComponent = FC(selectableButtonComponent$lambda);
+    }
+  }
+  function WIP() {
+    WIP_instance = this;
+    this.f41_1 = new Long(0, 0);
+    this.g41_1 = '';
+    var tmp = this;
+    var tmp$ret$0;
+    // Inline function 'kotlin.collections.mutableListOf' call
+    tmp$ret$0 = ArrayList_init_$Create$();
+    tmp.h41_1 = tmp$ret$0;
+    this.i41_1 = new Long(0, 0);
+  }
+  WIP.prototype.j41 = function (_set____db54di) {
+    this.f41_1 = _set____db54di;
+  };
+  WIP.prototype.a3y = function () {
+    return this.f41_1;
+  };
+  WIP.prototype.k41 = function (_set____db54di) {
+    this.g41_1 = _set____db54di;
+  };
+  WIP.prototype.i3y = function () {
+    return this.g41_1;
+  };
+  WIP.prototype.l41 = function () {
+    return this.h41_1;
+  };
+  WIP.prototype.u1c = function () {
+    this.f41_1 = new Long(0, 0);
+    this.g41_1 = '';
+    this.h41_1.ia();
+  };
+  WIP.$metadata$ = objectMeta('WIP');
+  var WIP_instance;
+  function WIP_getInstance() {
+    if (WIP_instance == null)
+      new WIP();
+    return WIP_instance;
+  }
   function get_mainScope() {
     init_properties_Welcome_kt_w2afe6();
     return mainScope;
@@ -804,10 +1248,11 @@
   var Welcome;
   function Welcome$lambda($this$FC, _anonymous_parameter_0__qggqh8) {
     init_properties_Welcome_kt_w2afe6();
-    var entryText$delegate = useState('');
-    var entryId$delegate = useState(new Long(0, 0));
+    var entryText$delegate = useState(WIP_getInstance().g41_1);
+    var entryId$delegate = useState(WIP_getInstance().f41_1);
     var entries$delegate = useState(emptyList());
-    useEffectOnce(Welcome$lambda$lambda(entries$delegate));
+    var types$delegate = useState(emptyList());
+    useEffectOnce(Welcome$lambda$lambda(entries$delegate, types$delegate));
     var tmp$ret$3;
     // Inline function 'react.dom.html.ReactHTML.div' call
     var tmp0__get_div__2k2o9m = ReactHTML_getInstance();
@@ -822,7 +1267,7 @@
     tmp$ret$2 = tmp$ret$1;
     tmp$ret$3 = tmp$ret$2;
     var tmp = tmp$ret$3;
-    $this$FC.h3x(tmp, Welcome$lambda$lambda_0(entryText$delegate));
+    $this$FC.i3x(tmp, Welcome$lambda$lambda_0(types$delegate, entryText$delegate));
     var tmp$ret$7;
     // Inline function 'react.dom.html.ReactHTML.div' call
     var tmp1__get_div__r5s89x = ReactHTML_getInstance();
@@ -837,7 +1282,7 @@
     tmp$ret$6 = tmp$ret$5;
     tmp$ret$7 = tmp$ret$6;
     var tmp_0 = tmp$ret$7;
-    $this$FC.h3x(tmp_0, Welcome$lambda$lambda_1(entryId$delegate, entryText$delegate, entries$delegate));
+    $this$FC.i3x(tmp_0, Welcome$lambda$lambda_1(entryId$delegate, entryText$delegate, entries$delegate, types$delegate));
     var tmp$ret$11;
     // Inline function 'react.dom.html.ReactHTML.hr' call
     var tmp2__get_hr__vmdz0b = ReactHTML_getInstance();
@@ -852,7 +1297,7 @@
     tmp$ret$10 = tmp$ret$9;
     tmp$ret$11 = tmp$ret$10;
     var tmp_1 = tmp$ret$11;
-    $this$FC.h3x(tmp_1, Welcome$lambda$lambda_2);
+    $this$FC.i3x(tmp_1, Welcome$lambda$lambda_2);
     var tmp$ret$15;
     // Inline function 'react.dom.html.ReactHTML.div' call
     var tmp3__get_div__fkdzdv = ReactHTML_getInstance();
@@ -867,7 +1312,7 @@
     tmp$ret$14 = tmp$ret$13;
     tmp$ret$15 = tmp$ret$14;
     var tmp_2 = tmp$ret$15;
-    $this$FC.h3x(tmp_2, Welcome$lambda$lambda_3);
+    $this$FC.i3x(tmp_2, Welcome$lambda$lambda_3);
     var tmp$ret$19;
     // Inline function 'react.dom.html.ReactHTML.div' call
     var tmp4__get_div__pqv61q = ReactHTML_getInstance();
@@ -882,7 +1327,7 @@
     tmp$ret$18 = tmp$ret$17;
     tmp$ret$19 = tmp$ret$18;
     var tmp_3 = tmp$ret$19;
-    $this$FC.h3x(tmp_3, Welcome$lambda$lambda_4(entries$delegate, entryText$delegate, entryId$delegate));
+    $this$FC.i3x(tmp_3, Welcome$lambda$lambda_4(entries$delegate, entryText$delegate, entryId$delegate, types$delegate));
     return Unit_getInstance();
   }
   function invoke$lambda_0($entryText$delegate) {
@@ -954,28 +1399,52 @@
     tmp$ret$0 = $entries$delegate;
     return tmp$ret$0[1](value);
   }
-  function Welcome$lambda$lambda$slambda($entries$delegate, resultContinuation) {
-    this.d40_1 = $entries$delegate;
+  function invoke$lambda_6($types$delegate) {
+    init_properties_Welcome_kt_w2afe6();
+    var tmp$ret$1;
+    // Inline function 'react.StateInstance.getValue' call
+    var tmp0_getValue = getLocalDelegateReference('types', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    var tmp$ret$0;
+    // Inline function 'kotlin.js.asDynamic' call
+    tmp$ret$0 = $types$delegate;
+    tmp$ret$1 = tmp$ret$0[0];
+    return tmp$ret$1;
+  }
+  function invoke$lambda_7($types$delegate, value) {
+    init_properties_Welcome_kt_w2afe6();
+    var tmp0_setValue = getLocalDelegateReference('types', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    var tmp$ret$0;
+    // Inline function 'kotlin.js.asDynamic' call
+    tmp$ret$0 = $types$delegate;
+    return tmp$ret$0[1](value);
+  }
+  function Welcome$lambda$lambda$slambda($entries$delegate, $types$delegate, resultContinuation) {
+    this.u41_1 = $entries$delegate;
+    this.v41_1 = $types$delegate;
     CoroutineImpl.call(this, resultContinuation);
   }
-  Welcome$lambda$lambda$slambda.prototype.x1a = function ($this$launch, $cont) {
-    var tmp = this.y1a($this$launch, $cont);
-    tmp.ph_1 = Unit_getInstance();
-    tmp.qh_1 = null;
-    return tmp.wh();
+  Welcome$lambda$lambda$slambda.prototype.y1a = function ($this$launch, $cont) {
+    var tmp = this.z1a($this$launch, $cont);
+    tmp.qh_1 = Unit_getInstance();
+    tmp.rh_1 = null;
+    return tmp.xh();
   };
-  Welcome$lambda$lambda$slambda.prototype.xh = function (p1, $cont) {
-    return this.x1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
+  Welcome$lambda$lambda$slambda.prototype.yh = function (p1, $cont) {
+    return this.y1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
   };
-  Welcome$lambda$lambda$slambda.prototype.wh = function () {
-    var suspendResult = this.ph_1;
+  Welcome$lambda$lambda$slambda.prototype.xh = function () {
+    var suspendResult = this.qh_1;
     $sm: do
       try {
-        var tmp = this.nh_1;
+        var tmp = this.oh_1;
         switch (tmp) {
           case 0:
-            this.oh_1 = 2;
-            this.nh_1 = 1;
+            this.ph_1 = 3;
+            this.oh_1 = 1;
             suspendResult = getEntries(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
@@ -983,57 +1452,204 @@
 
             continue $sm;
           case 1:
-            var ARGUMENT = suspendResult;
-            invoke$lambda_5(this.d40_1, ARGUMENT);
-            return Unit_getInstance();
+            this.x41_1 = suspendResult;
+            invoke$lambda_5(this.u41_1, this.x41_1);
+            this.oh_1 = 2;
+            suspendResult = getEventTypes(this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
           case 2:
-            throw this.qh_1;
+            var ARGUMENT = suspendResult;
+            invoke$lambda_7(this.v41_1, ARGUMENT);
+            return Unit_getInstance();
+          case 3:
+            throw this.rh_1;
         }
       } catch ($p) {
-        if (this.oh_1 === 2) {
+        if (this.ph_1 === 3) {
           throw $p;
         } else {
-          this.nh_1 = this.oh_1;
-          this.qh_1 = $p;
+          this.oh_1 = this.ph_1;
+          this.rh_1 = $p;
         }
       }
      while (true);
   };
-  Welcome$lambda$lambda$slambda.prototype.y1a = function ($this$launch, completion) {
-    var i = new Welcome$lambda$lambda$slambda(this.d40_1, completion);
-    i.e40_1 = $this$launch;
+  Welcome$lambda$lambda$slambda.prototype.z1a = function ($this$launch, completion) {
+    var i = new Welcome$lambda$lambda$slambda(this.u41_1, this.v41_1, completion);
+    i.w41_1 = $this$launch;
     return i;
   };
   Welcome$lambda$lambda$slambda.$metadata$ = classMeta('Welcome$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
-  function Welcome$lambda$lambda$slambda_0($entries$delegate, resultContinuation) {
-    var i = new Welcome$lambda$lambda$slambda($entries$delegate, resultContinuation);
+  function Welcome$lambda$lambda$slambda_0($entries$delegate, $types$delegate, resultContinuation) {
+    var i = new Welcome$lambda$lambda$slambda($entries$delegate, $types$delegate, resultContinuation);
     var l = function ($this$launch, $cont) {
-      return i.x1a($this$launch, $cont);
+      return i.y1a($this$launch, $cont);
     };
     l.$arity = 1;
     return l;
   }
-  function Welcome$lambda$lambda($entries$delegate) {
+  function Welcome$lambda$lambda($entries$delegate, $types$delegate) {
     return function ($this$useEffectOnce) {
       var tmp = get_mainScope();
-      launch$default(tmp, null, null, Welcome$lambda$lambda$slambda_0($entries$delegate, null), 3, null);
+      launch$default(tmp, null, null, Welcome$lambda$lambda$slambda_0($entries$delegate, $types$delegate, null), 3, null);
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda$lambda($entryText$delegate) {
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda($element, $types$delegate, resultContinuation) {
+    this.g42_1 = $element;
+    this.h42_1 = $types$delegate;
+    CoroutineImpl.call(this, resultContinuation);
+  }
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.y1a = function ($this$launch, $cont) {
+    var tmp = this.z1a($this$launch, $cont);
+    tmp.qh_1 = Unit_getInstance();
+    tmp.rh_1 = null;
+    return tmp.xh();
+  };
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.yh = function (p1, $cont) {
+    return this.y1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
+  };
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.xh = function () {
+    var suspendResult = this.qh_1;
+    $sm: do
+      try {
+        var tmp = this.oh_1;
+        switch (tmp) {
+          case 0:
+            this.ph_1 = 2;
+            this.g42_1.h3y_1 = !this.g42_1.h3y_1;
+            println(this.g42_1.h3y_1);
+            if (this.g42_1.h3y_1) {
+              WIP_getInstance().h41_1.b(this.g42_1.f3y_1);
+            } else {
+              WIP_getInstance().h41_1.ga(this.g42_1.f3y_1);
+            }
+
+            this.oh_1 = 1;
+            suspendResult = getEventTypes(this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            var ARGUMENT = suspendResult;
+            invoke$lambda_7(this.h42_1, ARGUMENT);
+            return Unit_getInstance();
+          case 2:
+            throw this.rh_1;
+        }
+      } catch ($p) {
+        if (this.ph_1 === 2) {
+          throw $p;
+        } else {
+          this.oh_1 = this.ph_1;
+          this.rh_1 = $p;
+        }
+      }
+     while (true);
+  };
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.z1a = function ($this$launch, completion) {
+    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda(this.g42_1, this.h42_1, completion);
+    i.i42_1 = $this$launch;
+    return i;
+  };
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.$metadata$ = classMeta('Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_0($element, $types$delegate, resultContinuation) {
+    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda($element, $types$delegate, resultContinuation);
+    var l = function ($this$launch, $cont) {
+      return i.y1a($this$launch, $cont);
+    };
+    l.$arity = 1;
+    return l;
+  }
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda($element, $types$delegate) {
+    return function () {
+      var tmp = get_mainScope();
+      launch$default(tmp, null, null, Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_0($element, $types$delegate, null), 3, null);
+      return Unit_getInstance();
+    };
+  }
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda($element, $types$delegate) {
+    return function ($this$invoke) {
+      $this$invoke.text = $element.g3y_1;
+      $this$invoke.selected = $element.h3y_1;
+      $this$invoke.onSubmit = Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda($element, $types$delegate);
+      return Unit_getInstance();
+    };
+  }
+  function Welcome$lambda$lambda$lambda$lambda$lambda($element, $types$delegate) {
+    return function ($this$invoke) {
+      var tmp = get_selectableButtonComponent();
+      $this$invoke.i3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda$lambda($element, $types$delegate));
+      return Unit_getInstance();
+    };
+  }
+  function Welcome$lambda$lambda$lambda$lambda($element, $types$delegate) {
+    return function ($this$invoke) {
+      var tmp$ret$3;
+      // Inline function 'react.dom.html.ReactHTML.td' call
+      var tmp0__get_td__p4dsv3 = ReactHTML_getInstance();
+      var tmp$ret$2;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$1;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$0 = 'td';
+      tmp$ret$1 = tmp$ret$0;
+      tmp$ret$2 = tmp$ret$1;
+      tmp$ret$3 = tmp$ret$2;
+      var tmp = tmp$ret$3;
+      $this$invoke.i3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda($element, $types$delegate));
+      return Unit_getInstance();
+    };
+  }
+  function Welcome$lambda$lambda$lambda($types$delegate) {
+    return function ($this$invoke) {
+      var tmp0_forEach = invoke$lambda_6($types$delegate);
+      var tmp0_iterator = tmp0_forEach.d();
+      while (tmp0_iterator.e()) {
+        var element = tmp0_iterator.f();
+        // Inline function 'Welcome.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
+        var tmp$ret$3;
+        // Inline function 'react.dom.html.ReactHTML.tr' call
+        var tmp0__get_tr__p4dsj1 = ReactHTML_getInstance();
+        var tmp$ret$2;
+        // Inline function 'react.IntrinsicType' call
+        var tmp$ret$1;
+        // Inline function 'kotlin.js.unsafeCast' call
+        var tmp$ret$0;
+        // Inline function 'kotlin.js.asDynamic' call
+        tmp$ret$0 = 'tr';
+        tmp$ret$1 = tmp$ret$0;
+        tmp$ret$2 = tmp$ret$1;
+        tmp$ret$3 = tmp$ret$2;
+        var tmp = tmp$ret$3;
+        $this$invoke.i3x(tmp, Welcome$lambda$lambda$lambda$lambda(element, $types$delegate));
+      }
+      return Unit_getInstance();
+    };
+  }
+  function Welcome$lambda$lambda$lambda$lambda_0($entryText$delegate) {
     return function (it) {
       invoke$lambda_1($entryText$delegate, it);
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda($entryText$delegate) {
+  function Welcome$lambda$lambda$lambda_0($entryText$delegate) {
     return function ($this$invoke) {
-      $this$invoke.onChange = Welcome$lambda$lambda$lambda$lambda($entryText$delegate);
+      $this$invoke.onChange = Welcome$lambda$lambda$lambda$lambda_0($entryText$delegate);
       $this$invoke.text = invoke$lambda_0($entryText$delegate);
+      WIP_getInstance().g41_1 = $this$invoke.text;
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda_0($entryText$delegate) {
+  function Welcome$lambda$lambda_0($types$delegate, $entryText$delegate) {
     return function ($this$invoke) {
       var tmp0_css = $this$invoke;
       var tmp$ret$6;
@@ -1066,45 +1682,103 @@
       tmp$ret$5 = tmp$ret$4;
       tmp$ret$6 = css(tmp$ret$5);
       tmp0_css.className = tmp$ret$6;
-      var tmp = get_inputComponent();
-      $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda($entryText$delegate));
+      var tmp$ret$10;
+      // Inline function 'react.dom.html.ReactHTML.table' call
+      var tmp1__get_table__pm8xdu = ReactHTML_getInstance();
+      var tmp$ret$9;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$8;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$7;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$7 = 'table';
+      tmp$ret$8 = tmp$ret$7;
+      tmp$ret$9 = tmp$ret$8;
+      tmp$ret$10 = tmp$ret$9;
+      var tmp = tmp$ret$10;
+      $this$invoke.i3x(tmp, Welcome$lambda$lambda$lambda($types$delegate));
+      var tmp_0 = get_inputComponent();
+      $this$invoke.i3x(tmp_0, Welcome$lambda$lambda$lambda_0($entryText$delegate));
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda($entryId$delegate, $entryText$delegate, $entries$delegate, resultContinuation) {
-    this.n40_1 = $entryId$delegate;
-    this.o40_1 = $entryText$delegate;
-    this.p40_1 = $entries$delegate;
+  function Welcome$lambda$lambda$lambda$lambda$lambda_0($this$invoke) {
+    init_properties_Welcome_kt_w2afe6();
+    var tmp$ret$3;
+    // Inline function 'react.dom.html.ReactHTML.input' call
+    var tmp0__get_input__prnny7 = ReactHTML_getInstance();
+    var tmp$ret$2;
+    // Inline function 'react.IntrinsicType' call
+    var tmp$ret$1;
+    // Inline function 'kotlin.js.unsafeCast' call
+    var tmp$ret$0;
+    // Inline function 'kotlin.js.asDynamic' call
+    tmp$ret$0 = 'input';
+    tmp$ret$1 = tmp$ret$0;
+    tmp$ret$2 = tmp$ret$1;
+    tmp$ret$3 = tmp$ret$2;
+    var tmp = tmp$ret$3;
+    $this$invoke.i3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda$lambda_0);
+    return Unit_getInstance();
+  }
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda_0($this$invoke) {
+    init_properties_Welcome_kt_w2afe6();
+    $this$invoke.type = (/*union*/{button: 'button', checkbox: 'checkbox', color: 'color', date: 'date', datetimeLocal: 'datetime-local', email: 'email', file: 'file', hidden: 'hidden', image: 'image', month: 'month', number: 'number', password: 'password', radio: 'radio', range: 'range', reset: 'reset', search: 'search', submit: 'submit', tel: 'tel', text: 'text', time: 'time', url: 'url', week: 'week'}/*union*/).date;
+    var d = '1975-04-11';
+    println(d);
+    $this$invoke.value = d;
+    $this$invoke.onChange = Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0(d);
+    return Unit_getInstance();
+  }
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0($d) {
+    return function (it) {
+      println(it.timeStamp);
+      println($d);
+      return Unit_getInstance();
+    };
+  }
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1($entryId$delegate, $entryText$delegate, $entries$delegate, resultContinuation) {
+    this.r42_1 = $entryId$delegate;
+    this.s42_1 = $entryText$delegate;
+    this.t42_1 = $entries$delegate;
     CoroutineImpl.call(this, resultContinuation);
   }
-  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.x1a = function ($this$launch, $cont) {
-    var tmp = this.y1a($this$launch, $cont);
-    tmp.ph_1 = Unit_getInstance();
-    tmp.qh_1 = null;
-    return tmp.wh();
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype.y1a = function ($this$launch, $cont) {
+    var tmp = this.z1a($this$launch, $cont);
+    tmp.qh_1 = Unit_getInstance();
+    tmp.rh_1 = null;
+    return tmp.xh();
   };
-  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.xh = function (p1, $cont) {
-    return this.x1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype.yh = function (p1, $cont) {
+    return this.y1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
   };
-  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.wh = function () {
-    var suspendResult = this.ph_1;
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype.xh = function () {
+    var suspendResult = this.qh_1;
     $sm: do
       try {
-        var tmp = this.nh_1;
+        var tmp = this.oh_1;
         switch (tmp) {
           case 0:
-            this.oh_1 = 5;
-            this.r40_1 = new Entry(invoke$lambda_2(this.n40_1), new Long(0, 0), invoke$lambda_0(this.o40_1));
-            if (invoke$lambda_2(this.n40_1).equals(new Long(0, 0))) {
-              this.nh_1 = 2;
-              suspendResult = postEntry(this.r40_1, this);
+            this.ph_1 = 5;
+            this.v42_1 = new Event(invoke$lambda_2(this.r42_1), new Long(0, 0), invoke$lambda_0(this.s42_1), WIP_getInstance().h41_1);
+            var tmp_0 = this;
+            tmp_0.w42_1 = WIP_getInstance().h41_1;
+            var tmp0_iterator = this.w42_1.d();
+            while (tmp0_iterator.e()) {
+              var element = tmp0_iterator.f();
+              println('Got Type ' + toString(element));
+            }
+
+            if (invoke$lambda_2(this.r42_1).equals(new Long(0, 0))) {
+              this.oh_1 = 2;
+              suspendResult = postEntry(this.v42_1, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
               continue $sm;
             } else {
-              this.nh_1 = 1;
-              suspendResult = putEntry(this.r40_1, this);
+              this.oh_1 = 1;
+              suspendResult = putEntry(this.v42_1, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
@@ -1113,14 +1787,14 @@
 
             break;
           case 1:
-            this.nh_1 = 3;
+            this.oh_1 = 3;
             continue $sm;
           case 2:
-            invoke$lambda_1(this.o40_1, '');
-            this.nh_1 = 3;
+            invoke$lambda_1(this.s42_1, '');
+            this.oh_1 = 3;
             continue $sm;
           case 3:
-            this.nh_1 = 4;
+            this.oh_1 = 4;
             suspendResult = getEntries(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
@@ -1129,124 +1803,142 @@
             continue $sm;
           case 4:
             var ARGUMENT = suspendResult;
-            invoke$lambda_5(this.p40_1, ARGUMENT);
+            invoke$lambda_5(this.t42_1, ARGUMENT);
             return Unit_getInstance();
           case 5:
-            throw this.qh_1;
+            throw this.rh_1;
         }
       } catch ($p) {
-        if (this.oh_1 === 5) {
+        if (this.ph_1 === 5) {
           throw $p;
         } else {
-          this.nh_1 = this.oh_1;
-          this.qh_1 = $p;
+          this.oh_1 = this.ph_1;
+          this.rh_1 = $p;
         }
       }
      while (true);
   };
-  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.y1a = function ($this$launch, completion) {
-    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda(this.n40_1, this.o40_1, this.p40_1, completion);
-    i.q40_1 = $this$launch;
-    return i;
-  };
-  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda.$metadata$ = classMeta('Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
-  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_0($entryId$delegate, $entryText$delegate, $entries$delegate, resultContinuation) {
-    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda($entryId$delegate, $entryText$delegate, $entries$delegate, resultContinuation);
-    var l = function ($this$launch, $cont) {
-      return i.x1a($this$launch, $cont);
-    };
-    l.$arity = 1;
-    return l;
-  }
-  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda($entryId$delegate, $entryText$delegate, $entries$delegate) {
-    return function () {
-      var tmp = get_mainScope();
-      launch$default(tmp, null, null, Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_0($entryId$delegate, $entryText$delegate, $entries$delegate, null), 3, null);
-      return Unit_getInstance();
-    };
-  }
-  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda($entryId$delegate, $entryText$delegate, $entries$delegate) {
-    return function ($this$invoke) {
-      $this$invoke.text = 'Save';
-      $this$invoke.onSubmit = Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda($entryId$delegate, $entryText$delegate, $entries$delegate);
-      return Unit_getInstance();
-    };
-  }
-  function Welcome$lambda$lambda$lambda$lambda$lambda($entryId$delegate, $entryText$delegate, $entries$delegate) {
-    return function ($this$invoke) {
-      var tmp = get_buttonComponent();
-      $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda$lambda($entryId$delegate, $entryText$delegate, $entries$delegate));
-      return Unit_getInstance();
-    };
-  }
-  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1($entryId$delegate, $entryText$delegate, resultContinuation) {
-    this.a41_1 = $entryId$delegate;
-    this.b41_1 = $entryText$delegate;
-    CoroutineImpl.call(this, resultContinuation);
-  }
-  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype.x1a = function ($this$launch, $cont) {
-    var tmp = this.y1a($this$launch, $cont);
-    tmp.ph_1 = Unit_getInstance();
-    tmp.qh_1 = null;
-    return tmp.wh();
-  };
-  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype.xh = function (p1, $cont) {
-    return this.x1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
-  };
-  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype.wh = function () {
-    var suspendResult = this.ph_1;
-    $sm: do
-      try {
-        var tmp = this.nh_1;
-        if (tmp === 0) {
-          this.oh_1 = 1;
-          invoke$lambda_3(this.a41_1, new Long(0, 0));
-          invoke$lambda_1(this.b41_1, '');
-          return Unit_getInstance();
-        } else if (tmp === 1) {
-          throw this.qh_1;
-        }
-      } catch ($p) {
-        throw $p;
-      }
-     while (true);
-  };
-  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype.y1a = function ($this$launch, completion) {
-    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1(this.a41_1, this.b41_1, completion);
-    i.c41_1 = $this$launch;
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype.z1a = function ($this$launch, completion) {
+    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1(this.r42_1, this.s42_1, this.t42_1, completion);
+    i.u42_1 = $this$launch;
     return i;
   };
   Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.$metadata$ = classMeta('Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
-  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_2($entryId$delegate, $entryText$delegate, resultContinuation) {
-    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1($entryId$delegate, $entryText$delegate, resultContinuation);
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_2($entryId$delegate, $entryText$delegate, $entries$delegate, resultContinuation) {
+    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1($entryId$delegate, $entryText$delegate, $entries$delegate, resultContinuation);
     var l = function ($this$launch, $cont) {
-      return i.x1a($this$launch, $cont);
+      return i.y1a($this$launch, $cont);
     };
     l.$arity = 1;
     return l;
   }
-  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate) {
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1($entryId$delegate, $entryText$delegate, $entries$delegate) {
     return function () {
       var tmp = get_mainScope();
-      launch$default(tmp, null, null, Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_2($entryId$delegate, $entryText$delegate, null), 3, null);
+      launch$default(tmp, null, null, Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_2($entryId$delegate, $entryText$delegate, $entries$delegate, null), 3, null);
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate) {
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda_1($entryId$delegate, $entryText$delegate, $entries$delegate) {
     return function ($this$invoke) {
-      $this$invoke.text = 'New';
-      $this$invoke.onSubmit = Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate);
+      $this$invoke.text = 'Save';
+      $this$invoke.onSubmit = Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1($entryId$delegate, $entryText$delegate, $entries$delegate);
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate) {
+  function Welcome$lambda$lambda$lambda$lambda$lambda_1($entryId$delegate, $entryText$delegate, $entries$delegate) {
     return function ($this$invoke) {
       var tmp = get_buttonComponent();
-      $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate));
+      $this$invoke.i3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda$lambda_1($entryId$delegate, $entryText$delegate, $entries$delegate));
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate, $entries$delegate) {
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3($entryId$delegate, $entryText$delegate, $types$delegate, resultContinuation) {
+    this.f43_1 = $entryId$delegate;
+    this.g43_1 = $entryText$delegate;
+    this.h43_1 = $types$delegate;
+    CoroutineImpl.call(this, resultContinuation);
+  }
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype.y1a = function ($this$launch, $cont) {
+    var tmp = this.z1a($this$launch, $cont);
+    tmp.qh_1 = Unit_getInstance();
+    tmp.rh_1 = null;
+    return tmp.xh();
+  };
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype.yh = function (p1, $cont) {
+    return this.y1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
+  };
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype.xh = function () {
+    var suspendResult = this.qh_1;
+    $sm: do
+      try {
+        var tmp = this.oh_1;
+        switch (tmp) {
+          case 0:
+            this.ph_1 = 2;
+            invoke$lambda_3(this.f43_1, new Long(0, 0));
+            invoke$lambda_1(this.g43_1, '');
+            WIP_getInstance().u1c();
+            this.oh_1 = 1;
+            suspendResult = getEventTypes(this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            var ARGUMENT = suspendResult;
+            invoke$lambda_7(this.h43_1, ARGUMENT);
+            return Unit_getInstance();
+          case 2:
+            throw this.rh_1;
+        }
+      } catch ($p) {
+        if (this.ph_1 === 2) {
+          throw $p;
+        } else {
+          this.oh_1 = this.ph_1;
+          this.rh_1 = $p;
+        }
+      }
+     while (true);
+  };
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype.z1a = function ($this$launch, completion) {
+    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3(this.f43_1, this.g43_1, this.h43_1, completion);
+    i.i43_1 = $this$launch;
+    return i;
+  };
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.$metadata$ = classMeta('Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_4($entryId$delegate, $entryText$delegate, $types$delegate, resultContinuation) {
+    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3($entryId$delegate, $entryText$delegate, $types$delegate, resultContinuation);
+    var l = function ($this$launch, $cont) {
+      return i.y1a($this$launch, $cont);
+    };
+    l.$arity = 1;
+    return l;
+  }
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2($entryId$delegate, $entryText$delegate, $types$delegate) {
+    return function () {
+      var tmp = get_mainScope();
+      launch$default(tmp, null, null, Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_4($entryId$delegate, $entryText$delegate, $types$delegate, null), 3, null);
+      return Unit_getInstance();
+    };
+  }
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda_2($entryId$delegate, $entryText$delegate, $types$delegate) {
+    return function ($this$invoke) {
+      $this$invoke.text = 'New';
+      $this$invoke.onSubmit = Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2($entryId$delegate, $entryText$delegate, $types$delegate);
+      return Unit_getInstance();
+    };
+  }
+  function Welcome$lambda$lambda$lambda$lambda$lambda_2($entryId$delegate, $entryText$delegate, $types$delegate) {
+    return function ($this$invoke) {
+      var tmp = get_buttonComponent();
+      $this$invoke.i3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda$lambda_2($entryId$delegate, $entryText$delegate, $types$delegate));
+      return Unit_getInstance();
+    };
+  }
+  function Welcome$lambda$lambda$lambda$lambda_1($entryId$delegate, $entryText$delegate, $entries$delegate, $types$delegate) {
     return function ($this$invoke) {
       var tmp$ret$3;
       // Inline function 'react.dom.html.ReactHTML.td' call
@@ -1262,7 +1954,7 @@
       tmp$ret$2 = tmp$ret$1;
       tmp$ret$3 = tmp$ret$2;
       var tmp = tmp$ret$3;
-      $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda($entryId$delegate, $entryText$delegate, $entries$delegate));
+      $this$invoke.i3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda_0);
       var tmp$ret$7;
       // Inline function 'react.dom.html.ReactHTML.td' call
       var tmp1__get_td__sddrnk = ReactHTML_getInstance();
@@ -1277,11 +1969,26 @@
       tmp$ret$6 = tmp$ret$5;
       tmp$ret$7 = tmp$ret$6;
       var tmp_0 = tmp$ret$7;
-      $this$invoke.h3x(tmp_0, Welcome$lambda$lambda$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate));
+      $this$invoke.i3x(tmp_0, Welcome$lambda$lambda$lambda$lambda$lambda_1($entryId$delegate, $entryText$delegate, $entries$delegate));
+      var tmp$ret$11;
+      // Inline function 'react.dom.html.ReactHTML.td' call
+      var tmp2__get_td__vmdqg1 = ReactHTML_getInstance();
+      var tmp$ret$10;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$9;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$8;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$8 = 'td';
+      tmp$ret$9 = tmp$ret$8;
+      tmp$ret$10 = tmp$ret$9;
+      tmp$ret$11 = tmp$ret$10;
+      var tmp_1 = tmp$ret$11;
+      $this$invoke.i3x(tmp_1, Welcome$lambda$lambda$lambda$lambda$lambda_2($entryId$delegate, $entryText$delegate, $types$delegate));
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate, $entries$delegate) {
+  function Welcome$lambda$lambda$lambda_1($entryId$delegate, $entryText$delegate, $entries$delegate, $types$delegate) {
     return function ($this$invoke) {
       var tmp$ret$3;
       // Inline function 'react.dom.html.ReactHTML.tr' call
@@ -1297,11 +2004,11 @@
       tmp$ret$2 = tmp$ret$1;
       tmp$ret$3 = tmp$ret$2;
       var tmp = tmp$ret$3;
-      $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate, $entries$delegate));
+      $this$invoke.i3x(tmp, Welcome$lambda$lambda$lambda$lambda_1($entryId$delegate, $entryText$delegate, $entries$delegate, $types$delegate));
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda_1($entryId$delegate, $entryText$delegate, $entries$delegate) {
+  function Welcome$lambda$lambda_1($entryId$delegate, $entryText$delegate, $entries$delegate, $types$delegate) {
     return function ($this$invoke) {
       var tmp0_css = $this$invoke;
       var tmp$ret$6;
@@ -1348,7 +2055,7 @@
       tmp$ret$9 = tmp$ret$8;
       tmp$ret$10 = tmp$ret$9;
       var tmp = tmp$ret$10;
-      $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda_0($entryId$delegate, $entryText$delegate, $entries$delegate));
+      $this$invoke.i3x(tmp, Welcome$lambda$lambda$lambda_1($entryId$delegate, $entryText$delegate, $entries$delegate, $types$delegate));
       return Unit_getInstance();
     };
   }
@@ -1372,10 +2079,10 @@
     tmp$ret$2 = tmp$ret$1;
     tmp$ret$3 = tmp$ret$2;
     var tmp = tmp$ret$3;
-    $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda_1);
+    $this$invoke.i3x(tmp, Welcome$lambda$lambda$lambda_2);
     return Unit_getInstance();
   }
-  function Welcome$lambda$lambda$lambda_1($this$invoke) {
+  function Welcome$lambda$lambda$lambda_2($this$invoke) {
     init_properties_Welcome_kt_w2afe6();
     var tmp$ret$3;
     // Inline function 'react.dom.html.ReactHTML.label' call
@@ -1391,45 +2098,48 @@
     tmp$ret$2 = tmp$ret$1;
     tmp$ret$3 = tmp$ret$2;
     var tmp = tmp$ret$3;
-    $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda$lambda_1);
+    $this$invoke.i3x(tmp, Welcome$lambda$lambda$lambda$lambda_2);
     return Unit_getInstance();
   }
-  function Welcome$lambda$lambda$lambda$lambda_1($this$invoke) {
+  function Welcome$lambda$lambda$lambda$lambda_2($this$invoke) {
     init_properties_Welcome_kt_w2afe6();
-    $this$invoke.g3x('Entries');
+    $this$invoke.h3x('Entries');
     return Unit_getInstance();
   }
-  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3($it, $entries$delegate, resultContinuation) {
-    this.l41_1 = $it;
-    this.m41_1 = $entries$delegate;
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5($it, $entries$delegate, $entryText$delegate, $entryId$delegate, $types$delegate, resultContinuation) {
+    this.r43_1 = $it;
+    this.s43_1 = $entries$delegate;
+    this.t43_1 = $entryText$delegate;
+    this.u43_1 = $entryId$delegate;
+    this.v43_1 = $types$delegate;
     CoroutineImpl.call(this, resultContinuation);
   }
-  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype.x1a = function ($this$launch, $cont) {
-    var tmp = this.y1a($this$launch, $cont);
-    tmp.ph_1 = Unit_getInstance();
-    tmp.qh_1 = null;
-    return tmp.wh();
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5.prototype.y1a = function ($this$launch, $cont) {
+    var tmp = this.z1a($this$launch, $cont);
+    tmp.qh_1 = Unit_getInstance();
+    tmp.rh_1 = null;
+    return tmp.xh();
   };
-  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype.xh = function (p1, $cont) {
-    return this.x1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5.prototype.yh = function (p1, $cont) {
+    return this.y1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
   };
-  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype.wh = function () {
-    var suspendResult = this.ph_1;
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5.prototype.xh = function () {
+    var suspendResult = this.qh_1;
     $sm: do
       try {
-        var tmp = this.nh_1;
+        var tmp = this.oh_1;
         switch (tmp) {
           case 0:
-            this.oh_1 = 3;
-            this.nh_1 = 1;
-            suspendResult = deleteEntry(this.l41_1, this);
+            this.ph_1 = 5;
+            this.oh_1 = 1;
+            suspendResult = deleteEntry(this.r43_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.nh_1 = 2;
+            this.oh_1 = 2;
             suspendResult = getEntries(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
@@ -1437,79 +2147,176 @@
 
             continue $sm;
           case 2:
-            var ARGUMENT = suspendResult;
-            invoke$lambda_5(this.m41_1, ARGUMENT);
-            return Unit_getInstance();
+            this.x43_1 = suspendResult;
+            invoke$lambda_5(this.s43_1, this.x43_1);
+            if (WIP_getInstance().f41_1.equals(this.r43_1)) {
+              WIP_getInstance().u1c();
+              invoke$lambda_1(this.t43_1, WIP_getInstance().g41_1);
+              invoke$lambda_3(this.u43_1, WIP_getInstance().f41_1);
+              this.oh_1 = 3;
+              suspendResult = getEventTypes(this);
+              if (suspendResult === get_COROUTINE_SUSPENDED()) {
+                return suspendResult;
+              }
+              continue $sm;
+            } else {
+              this.oh_1 = 4;
+              continue $sm;
+            }
+
+            break;
           case 3:
-            throw this.qh_1;
+            var ARGUMENT = suspendResult;
+            invoke$lambda_7(this.v43_1, ARGUMENT);
+            this.oh_1 = 4;
+            continue $sm;
+          case 4:
+            return Unit_getInstance();
+          case 5:
+            throw this.rh_1;
         }
       } catch ($p) {
-        if (this.oh_1 === 3) {
+        if (this.ph_1 === 5) {
           throw $p;
         } else {
-          this.nh_1 = this.oh_1;
-          this.qh_1 = $p;
+          this.oh_1 = this.ph_1;
+          this.rh_1 = $p;
         }
       }
      while (true);
   };
-  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype.y1a = function ($this$launch, completion) {
-    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3(this.l41_1, this.m41_1, completion);
-    i.n41_1 = $this$launch;
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5.prototype.z1a = function ($this$launch, completion) {
+    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5(this.r43_1, this.s43_1, this.t43_1, this.u43_1, this.v43_1, completion);
+    i.w43_1 = $this$launch;
     return i;
   };
-  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.$metadata$ = classMeta('Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
-  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_4($it, $entries$delegate, resultContinuation) {
-    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3($it, $entries$delegate, resultContinuation);
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5.$metadata$ = classMeta('Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_6($it, $entries$delegate, $entryText$delegate, $entryId$delegate, $types$delegate, resultContinuation) {
+    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5($it, $entries$delegate, $entryText$delegate, $entryId$delegate, $types$delegate, resultContinuation);
     var l = function ($this$launch, $cont) {
-      return i.x1a($this$launch, $cont);
+      return i.y1a($this$launch, $cont);
     };
     l.$arity = 1;
     return l;
   }
-  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1($entries$delegate) {
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3($entries$delegate, $entryText$delegate, $entryId$delegate, $types$delegate) {
     return function (it) {
       println('callback ' + toString(it));
       var tmp = get_mainScope();
-      launch$default(tmp, null, null, Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_4(it, $entries$delegate, null), 3, null);
+      launch$default(tmp, null, null, Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda$slambda_6(it, $entries$delegate, $entryText$delegate, $entryId$delegate, $types$delegate, null), 3, null);
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda_1($element, $entries$delegate) {
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda_3($element, $entries$delegate, $entryText$delegate, $entryId$delegate, $types$delegate) {
     return function ($this$invoke) {
-      $this$invoke.id = $element.u3x_1;
-      $this$invoke.onSubmit = Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1($entries$delegate);
+      $this$invoke.id = $element.w3x_1;
+      $this$invoke.onSubmit = Welcome$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3($entries$delegate, $entryText$delegate, $entryId$delegate, $types$delegate);
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda$lambda$lambda_1($element, $entries$delegate) {
+  function Welcome$lambda$lambda$lambda$lambda$lambda_3($element, $entries$delegate, $entryText$delegate, $entryId$delegate, $types$delegate) {
     return function ($this$invoke) {
       var tmp = get_deleteEntryButtonComponent();
-      $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda$lambda_1($element, $entries$delegate));
+      $this$invoke.i3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda$lambda_3($element, $entries$delegate, $entryText$delegate, $entryId$delegate, $types$delegate));
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda$lambda$lambda_2($element) {
+  function Welcome$lambda$lambda$lambda$lambda$lambda_4($element) {
     return function ($this$invoke) {
-      var d = new Date($element.v3x_1);
-      $this$invoke.g3x(d.toDateString());
+      var d = new Date($element.x3x_1);
+      $this$invoke.h3x(d.toDateString());
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda_2($element) {
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda_4($element) {
     return function ($this$invoke) {
-      $this$invoke.g3x($element.w3x_1);
+      $this$invoke.h3x($element.y3x_1);
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda_3($element, $entryText$delegate, $entryId$delegate) {
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$slambda($element, $entryText$delegate, $entryId$delegate, $types$delegate, resultContinuation) {
+    this.g44_1 = $element;
+    this.h44_1 = $entryText$delegate;
+    this.i44_1 = $entryId$delegate;
+    this.j44_1 = $types$delegate;
+    CoroutineImpl.call(this, resultContinuation);
+  }
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.y1a = function ($this$launch, $cont) {
+    var tmp = this.z1a($this$launch, $cont);
+    tmp.qh_1 = Unit_getInstance();
+    tmp.rh_1 = null;
+    return tmp.xh();
+  };
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.yh = function (p1, $cont) {
+    return this.y1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
+  };
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.xh = function () {
+    var suspendResult = this.qh_1;
+    $sm: do
+      try {
+        var tmp = this.oh_1;
+        switch (tmp) {
+          case 0:
+            this.ph_1 = 3;
+            WIP_getInstance().g41_1 = this.g44_1.y3x_1;
+            WIP_getInstance().f41_1 = this.g44_1.w3x_1;
+            invoke$lambda_1(this.h44_1, this.g44_1.y3x_1);
+            invoke$lambda_3(this.i44_1, this.g44_1.w3x_1);
+            this.oh_1 = 1;
+            suspendResult = loadEvent(this.g44_1.w3x_1, this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            ;
+            this.oh_1 = 2;
+            suspendResult = getEventTypes(this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 2:
+            var ARGUMENT = suspendResult;
+            invoke$lambda_7(this.j44_1, ARGUMENT);
+            return Unit_getInstance();
+          case 3:
+            throw this.rh_1;
+        }
+      } catch ($p) {
+        if (this.ph_1 === 3) {
+          throw $p;
+        } else {
+          this.oh_1 = this.ph_1;
+          this.rh_1 = $p;
+        }
+      }
+     while (true);
+  };
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.z1a = function ($this$launch, completion) {
+    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$slambda(this.g44_1, this.h44_1, this.i44_1, this.j44_1, completion);
+    i.k44_1 = $this$launch;
+    return i;
+  };
+  Welcome$lambda$lambda$lambda$lambda$lambda$lambda$slambda.$metadata$ = classMeta('Welcome$lambda$lambda$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda$slambda_0($element, $entryText$delegate, $entryId$delegate, $types$delegate, resultContinuation) {
+    var i = new Welcome$lambda$lambda$lambda$lambda$lambda$lambda$slambda($element, $entryText$delegate, $entryId$delegate, $types$delegate, resultContinuation);
+    var l = function ($this$launch, $cont) {
+      return i.y1a($this$launch, $cont);
+    };
+    l.$arity = 1;
+    return l;
+  }
+  function Welcome$lambda$lambda$lambda$lambda$lambda$lambda_5($element, $entryText$delegate, $entryId$delegate, $types$delegate) {
     return function (it) {
-      invoke$lambda_1($entryText$delegate, $element.w3x_1);
-      invoke$lambda_3($entryId$delegate, $element.u3x_1);
+      var tmp = get_mainScope();
+      launch$default(tmp, null, null, Welcome$lambda$lambda$lambda$lambda$lambda$lambda$slambda_0($element, $entryText$delegate, $entryId$delegate, $types$delegate, null), 3, null);
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda$lambda$lambda_3($element, $entryText$delegate, $entryId$delegate) {
+  function Welcome$lambda$lambda$lambda$lambda$lambda_5($element, $entryText$delegate, $entryId$delegate, $types$delegate) {
     return function ($this$invoke) {
       var tmp$ret$3;
       // Inline function 'react.dom.html.ReactHTML.div' call
@@ -1525,12 +2332,12 @@
       tmp$ret$2 = tmp$ret$1;
       tmp$ret$3 = tmp$ret$2;
       var tmp = tmp$ret$3;
-      $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda$lambda_2($element));
-      $this$invoke.onClick = Welcome$lambda$lambda$lambda$lambda$lambda$lambda_3($element, $entryText$delegate, $entryId$delegate);
+      $this$invoke.i3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda$lambda_4($element));
+      $this$invoke.onClick = Welcome$lambda$lambda$lambda$lambda$lambda$lambda_5($element, $entryText$delegate, $entryId$delegate, $types$delegate);
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda$lambda_2($element, $entries$delegate, $entryText$delegate, $entryId$delegate) {
+  function Welcome$lambda$lambda$lambda$lambda_3($element, $entries$delegate, $entryText$delegate, $entryId$delegate, $types$delegate) {
     return function ($this$invoke) {
       var tmp$ret$3;
       // Inline function 'react.dom.html.ReactHTML.td' call
@@ -1546,7 +2353,7 @@
       tmp$ret$2 = tmp$ret$1;
       tmp$ret$3 = tmp$ret$2;
       var tmp = tmp$ret$3;
-      $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda_1($element, $entries$delegate));
+      $this$invoke.i3x(tmp, Welcome$lambda$lambda$lambda$lambda$lambda_3($element, $entries$delegate, $entryText$delegate, $entryId$delegate, $types$delegate));
       var tmp$ret$7;
       // Inline function 'react.dom.html.ReactHTML.td' call
       var tmp1__get_td__sddrnk = ReactHTML_getInstance();
@@ -1561,7 +2368,7 @@
       tmp$ret$6 = tmp$ret$5;
       tmp$ret$7 = tmp$ret$6;
       var tmp_0 = tmp$ret$7;
-      $this$invoke.h3x(tmp_0, Welcome$lambda$lambda$lambda$lambda$lambda_2($element));
+      $this$invoke.i3x(tmp_0, Welcome$lambda$lambda$lambda$lambda$lambda_4($element));
       var tmp$ret$11;
       // Inline function 'react.dom.html.ReactHTML.td' call
       var tmp2__get_td__vmdqg1 = ReactHTML_getInstance();
@@ -1576,11 +2383,11 @@
       tmp$ret$10 = tmp$ret$9;
       tmp$ret$11 = tmp$ret$10;
       var tmp_1 = tmp$ret$11;
-      $this$invoke.h3x(tmp_1, Welcome$lambda$lambda$lambda$lambda$lambda_3($element, $entryText$delegate, $entryId$delegate));
+      $this$invoke.i3x(tmp_1, Welcome$lambda$lambda$lambda$lambda$lambda_5($element, $entryText$delegate, $entryId$delegate, $types$delegate));
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda$lambda_2($entries$delegate, $entryText$delegate, $entryId$delegate) {
+  function Welcome$lambda$lambda$lambda_3($entries$delegate, $entryText$delegate, $entryId$delegate, $types$delegate) {
     return function ($this$invoke) {
       var tmp0_forEach = invoke$lambda_4($entries$delegate);
       var tmp0_iterator = tmp0_forEach.d();
@@ -1601,12 +2408,12 @@
         tmp$ret$2 = tmp$ret$1;
         tmp$ret$3 = tmp$ret$2;
         var tmp = tmp$ret$3;
-        $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda$lambda_2(element, $entries$delegate, $entryText$delegate, $entryId$delegate));
+        $this$invoke.i3x(tmp, Welcome$lambda$lambda$lambda$lambda_3(element, $entries$delegate, $entryText$delegate, $entryId$delegate, $types$delegate));
       }
       return Unit_getInstance();
     };
   }
-  function Welcome$lambda$lambda_4($entries$delegate, $entryText$delegate, $entryId$delegate) {
+  function Welcome$lambda$lambda_4($entries$delegate, $entryText$delegate, $entryId$delegate, $types$delegate) {
     return function ($this$invoke) {
       var tmp$ret$3;
       // Inline function 'react.dom.html.ReactHTML.table' call
@@ -1622,7 +2429,7 @@
       tmp$ret$2 = tmp$ret$1;
       tmp$ret$3 = tmp$ret$2;
       var tmp = tmp$ret$3;
-      $this$invoke.h3x(tmp, Welcome$lambda$lambda$lambda_2($entries$delegate, $entryText$delegate, $entryId$delegate));
+      $this$invoke.i3x(tmp, Welcome$lambda$lambda$lambda_3($entries$delegate, $entryText$delegate, $entryId$delegate, $types$delegate));
       return Unit_getInstance();
     };
   }
@@ -1636,7 +2443,8 @@
     }
   }
   //region block: post-declaration
-  $serializer.prototype.y2d = typeParametersSerializers;
+  $serializer.prototype.z2d = typeParametersSerializers;
+  $serializer_0.prototype.z2d = typeParametersSerializers;
   //endregion
   main();
   return _;
