@@ -43,12 +43,6 @@ if (typeof Math.clz32 === 'undefined') {
     };
   }(Math.log, Math.LN2);
 }
-if (typeof String.prototype.startsWith === 'undefined') {
-  Object.defineProperty(String.prototype, 'startsWith', {value: function (searchString, position) {
-    position = position || 0;
-    return this.lastIndexOf(searchString, position) === position;
-  }});
-}
 if (typeof String.prototype.endsWith === 'undefined') {
   Object.defineProperty(String.prototype, 'endsWith', {value: function (searchString, position) {
     var subjectString = this.toString();
@@ -58,6 +52,12 @@ if (typeof String.prototype.endsWith === 'undefined') {
     position -= searchString.length;
     var lastIndex = subjectString.indexOf(searchString, position);
     return lastIndex !== -1 && lastIndex === position;
+  }});
+}
+if (typeof String.prototype.startsWith === 'undefined') {
+  Object.defineProperty(String.prototype, 'startsWith', {value: function (searchString, position) {
+    position = position || 0;
+    return this.lastIndexOf(searchString, position) === position;
   }});
 }
 if (typeof Math.imul === 'undefined') {
@@ -788,6 +788,22 @@ if (typeof Math.imul === 'undefined') {
     tmp$ret$0 = new sam$kotlin_Comparator$0_0(tmp);
     return sortedWith(_this__u8e3s4, tmp$ret$0);
   }
+  function find(_this__u8e3s4, predicate) {
+    var tmp$ret$0;
+    $l$block: {
+      // Inline function 'kotlin.collections.firstOrNull' call
+      var tmp0_iterator = _this__u8e3s4.d();
+      while (tmp0_iterator.e()) {
+        var element = tmp0_iterator.f();
+        if (predicate(element)) {
+          tmp$ret$0 = element;
+          break $l$block;
+        }
+      }
+      tmp$ret$0 = null;
+    }
+    return tmp$ret$0;
+  }
   function toCollection_0(_this__u8e3s4, destination) {
     var tmp0_iterator = _this__u8e3s4.d();
     while (tmp0_iterator.e()) {
@@ -1044,22 +1060,6 @@ if (typeof Math.imul === 'undefined') {
       throw IllegalArgumentException_init_$Create$_0(toString_2(message));
     }
     return take(_this__u8e3s4, coerceAtLeast(_this__u8e3s4.g() - n | 0, 0));
-  }
-  function find(_this__u8e3s4, predicate) {
-    var tmp$ret$0;
-    $l$block: {
-      // Inline function 'kotlin.collections.firstOrNull' call
-      var tmp0_iterator = _this__u8e3s4.d();
-      while (tmp0_iterator.e()) {
-        var element = tmp0_iterator.f();
-        if (predicate(element)) {
-          tmp$ret$0 = element;
-          break $l$block;
-        }
-      }
-      tmp$ret$0 = null;
-    }
-    return tmp$ret$0;
   }
   function singleOrNull_0(_this__u8e3s4) {
     return _this__u8e3s4.g() === 1 ? _this__u8e3s4.h(0) : null;

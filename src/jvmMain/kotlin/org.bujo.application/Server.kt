@@ -109,6 +109,11 @@ fun Application.applicationModule() {
                 DAO.addType(type)
                 call.respond(HttpStatusCode.OK)
             }
+            delete {
+                val types = call.receive<List<Long>>()
+                DAO.deleteTypes(types)
+                call.respond(HttpStatusCode.OK)
+            }
         }
     }
 }

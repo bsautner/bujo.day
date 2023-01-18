@@ -51,7 +51,7 @@
     // Inline function 'kotlin.js.unsafeCast' call
     var tmp$ret$0;
     // Inline function 'kotlin.js.asDynamic' call
-    tmp$ret$0 = 'h2';
+    tmp$ret$0 = 'hr';
     tmp$ret$1 = tmp$ret$0;
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
@@ -63,7 +63,7 @@
     // Inline function 'kotlin.js.unsafeCast' call
     var tmp$ret$0;
     // Inline function 'kotlin.js.asDynamic' call
-    tmp$ret$0 = 'hr';
+    tmp$ret$0 = 'input';
     tmp$ret$1 = tmp$ret$0;
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
@@ -75,7 +75,7 @@
     // Inline function 'kotlin.js.unsafeCast' call
     var tmp$ret$0;
     // Inline function 'kotlin.js.asDynamic' call
-    tmp$ret$0 = 'input';
+    tmp$ret$0 = 'label';
     tmp$ret$1 = tmp$ret$0;
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
@@ -87,7 +87,7 @@
     // Inline function 'kotlin.js.unsafeCast' call
     var tmp$ret$0;
     // Inline function 'kotlin.js.asDynamic' call
-    tmp$ret$0 = 'label';
+    tmp$ret$0 = 'li';
     tmp$ret$1 = tmp$ret$0;
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
@@ -148,6 +148,18 @@
     var tmp$ret$0;
     // Inline function 'kotlin.js.asDynamic' call
     tmp$ret$0 = 'tr';
+    tmp$ret$1 = tmp$ret$0;
+    tmp$ret$2 = tmp$ret$1;
+    return tmp$ret$2;
+  };
+  ReactHTML.prototype.m3z = function () {
+    var tmp$ret$2;
+    // Inline function 'react.IntrinsicType' call
+    var tmp$ret$1;
+    // Inline function 'kotlin.js.unsafeCast' call
+    var tmp$ret$0;
+    // Inline function 'kotlin.js.asDynamic' call
+    tmp$ret$0 = 'ul';
     tmp$ret$1 = tmp$ret$0;
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;

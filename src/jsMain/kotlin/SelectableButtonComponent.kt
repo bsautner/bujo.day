@@ -1,4 +1,5 @@
 import csstype.AlignContent
+import csstype.ClassName
 import csstype.attr
 import emotion.react.css
 import org.w3c.dom.HTMLButtonElement
@@ -36,10 +37,12 @@ val selectableButtonComponent = FC<SelectButtonProps> { props ->
     label {
       //  onClick = clickHandler
         input {
+
              type = InputType.checkbox
              id = props.text
              onChange = clickHandler
              checked = props.selected
+
 
 
         }

@@ -63,3 +63,10 @@ suspend fun addType(type: String) {
     }
 }
 
+suspend fun deleteTypes(list : List<Long>) {
+    jsonClient.delete(EventType.path) {
+        contentType(ContentType.Application.Json)
+        setBody(list)
+    }
+}
+

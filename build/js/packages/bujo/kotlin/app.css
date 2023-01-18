@@ -20,6 +20,12 @@ body {
     padding: 8px;
     border: 1px solid #ddd;
     vertical-align: top;
+    max-width: 800px;
+}
+
+.styled-td {
+    padding: 10px;
+    vertical-align: top;
 }
 
 .checkboxes {
@@ -39,4 +45,11 @@ body {
 .form-table-header {
    horiz-align: left;
     padding-bottom: 8px;
+}
+
+.centered {
+    /*height: 100vh; !* Magic here *!*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

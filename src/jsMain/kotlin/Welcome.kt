@@ -1,17 +1,30 @@
+import csstype.AlignContent
 import csstype.ClassName
+import csstype.Cursor.Companion.contextMenu
+import csstype.VerticalAlign
+import emotion.react.css
 import io.ktor.util.date.*
+import kotlinx.browser.window
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
 import react.FC
 import react.Props
+import react.dom.html.ReactHTML
+import react.dom.html.ReactHTML.button
 import react.dom.html.ReactHTML.div
 import react.dom.html.ReactHTML.h2
 import react.dom.html.ReactHTML.hr
 import react.dom.html.ReactHTML.label
+import react.dom.html.ReactHTML.li
+import react.dom.html.ReactHTML.menu
+import react.dom.html.ReactHTML.menuitem
 import react.dom.html.ReactHTML.table
 import react.dom.html.ReactHTML.td
 import react.dom.html.ReactHTML.th
 import react.dom.html.ReactHTML.tr
+import react.dom.html.ReactHTML.ul
+import react.dom.html.TdAlign
+import react.dom.html.TdVAlign
 import react.useEffectOnce
 import react.useState
 import kotlin.js.Date
@@ -47,7 +60,7 @@ val Welcome = FC<WelcomeProps> { _ ->
 
 
     div {
-
+        className = ClassName("centered")
 
         table {
             className = ClassName("form-table")
@@ -57,6 +70,23 @@ val Welcome = FC<WelcomeProps> { _ ->
                     className = ClassName("form-table-header")
                     label {
                         +"Label"
+                    }
+                    button {
+                        +"X"
+                        onClick = {
+                            if (window.confirm("Are you sure you want to delete the checked labels? They will be removed from all entries!")) {
+                                mainScope.launch {
+                                    deleteTypes(WIP.types)
+                                    WIP.types.clear()
+                                    entries = getEntries()
+                                    types = getEventTypes()
+                                }
+                            }
+                            else {
+
+                                println("nevermind!")
+                            }
+                        }
                     }
                 }
                 th {
@@ -74,6 +104,8 @@ val Welcome = FC<WelcomeProps> { _ ->
                     table {
                         tr {
                             td {
+
+
                                 inputComponent {
 
                                     text = newLabelText
@@ -82,6 +114,7 @@ val Welcome = FC<WelcomeProps> { _ ->
                                     onChange = {
                                         newLabelText = it
                                     }
+
                                 }
                             }
                             td {
@@ -89,10 +122,11 @@ val Welcome = FC<WelcomeProps> { _ ->
                                     text = "+"
                                     onSubmit = {
                                         mainScope.launch {
-                                            println(newLabelText)
-                                            addType(newLabelText)
-                                            newLabelText = ""
-                                            types = getEventTypes()
+                                            if (newLabelText.isNotEmpty()) {
+                                                addType(newLabelText)
+                                                newLabelText = ""
+                                                types = getEventTypes()
+                                            }
                                         }
 
                                     }
@@ -140,8 +174,10 @@ val Welcome = FC<WelcomeProps> { _ ->
             tr {
                 td {}
                 td {
+                    align = TdAlign.right
                     table {
                         tr {
+
 
                             td {
 
@@ -162,19 +198,17 @@ val Welcome = FC<WelcomeProps> { _ ->
                                     onSubmit = {
 
                                         mainScope.launch {
-                                            val e = Event(entryId, WIP.timestamp, entryText, WIP.types)
-                                            WIP.types.forEach {
-                                                println("Got Type $it")
-                                            }
-                                            if (entryId == 0L) {
-                                                postEntry(e)
-                                                entryText = ""
-                                            } else {
-                                                putEntry(e)
-                                            }
+                                            if (entryText.isNotBlank()) {
+                                                val e = Event(entryId, WIP.timestamp, entryText, WIP.types)
+                                                 if (entryId == 0L) {
+                                                    postEntry(e)
+                                                    entryText = ""
+                                                } else {
+                                                    putEntry(e)
+                                                }
 
-                                            entries = getEntries()
-
+                                                entries = getEntries()
+                                            }
                                         }
 
 
@@ -203,29 +237,41 @@ val Welcome = FC<WelcomeProps> { _ ->
                     }
                 }
             }
-
-
-        }
-
-
-    }
-
-    hr {}
-    div {
-        h2 {
-            label {
-                +"Entries"
+            tr {
+                td {
+                    hr
+                }
             }
+            tr {
+                td {
+
+                }
+            }
+
+
         }
+
+
     }
 
-    div {
+//    hr {}
+//    div {
+//        className = ClassName("centered")
+//        h2 {
+//            label {
+//                +"Entries"
+//            }
+//        }
+//    }
 
+    div {
+        className = ClassName("centered")
         table {
             this.className = ClassName("styled-table")
             entries.forEach { item ->
                 tr {
                     td {
+                        className = ClassName("styled-td")
                         deleteEntryButtonComponent {
                             id = item.id
                             onSubmit = {
@@ -246,13 +292,15 @@ val Welcome = FC<WelcomeProps> { _ ->
                         }
                     }
                     td {
+                        className = ClassName("styled-td")
+
                         val d = Date(item.timestamp)
                         +d.toDateString()
 
                     }
 
                     td {
-
+                        className = ClassName("styled-td")
                         div {
 
                             +item.value
@@ -271,6 +319,31 @@ val Welcome = FC<WelcomeProps> { _ ->
                             }
 
                         }
+                    }
+                    td {
+                        className = ClassName("styled-td")
+                        ul {
+                            item.eventTypes.forEach { type ->
+                                types.find {
+                                    it.id == type
+                                }.let {
+
+
+                                        ReactHTML.li {
+
+                                                    label {
+                                                        val e = it?.text ?: ""
+                                                        +e
+                                                    }
+                                        }
+
+                                }
+
+
+
+                            }
+                        }
+
                     }
                 }
             }

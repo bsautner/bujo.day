@@ -192,4 +192,22 @@ object DAO {
         }
     }
 
+    fun deleteTypes(types: List<Long>) {
+        types.forEach {
+            val q = """
+                delete from table_event_type_matrix where table_event_type_fk = $it;
+            """.trimIndent()
+            with(db.createStatement()) {
+                execute(q)
+            }
+
+            val q2 = """
+                delete from table_event_type where table_event_type_pk = $it;
+            """.trimIndent()
+            with(db.createStatement()) {
+                execute(q2)
+            }
+        }
+    }
+
 }
