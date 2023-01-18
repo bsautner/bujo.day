@@ -95,6 +95,10 @@
     },
     "b88f1c8005f52d141f855838d0c4ab43": {
       "src": "/home/ben/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-annotations-common/1.7.20-Beta/13cec66443e01bd76e2d3c0fd24152b9f08f717e/kotlin-test-annotations-common-1.7.20-Beta.jar"
+    },
+    "c757ea0193ef52274111b7dfcef33aa3": {
+      "src": "/home/ben/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-datetime-js/0.4.0/254f7fbd94ca83b23368b6abdd89d9ad72e0a832/kotlinx-datetime-jsir-0.4.0.klib",
+      "target": "Kotlin-DateTime-library-kotlinx-datetime-js-ir/0.4.0"
     }
   }
 }

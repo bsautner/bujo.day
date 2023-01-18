@@ -13,78 +13,78 @@
   'use strict';
   //region block: imports
   var imul = Math.imul;
-  var interfaceMeta = kotlin_kotlin.$_$.q8;
+  var interfaceMeta = kotlin_kotlin.$_$.u8;
   var getKClassFromExpression = kotlin_kotlin.$_$.d;
-  var StringCompanionObject_getInstance = kotlin_kotlin.$_$.s3;
-  var Unit_getInstance = kotlin_kotlin.$_$.c4;
-  var emptyList = kotlin_kotlin.$_$.l5;
+  var StringCompanionObject_getInstance = kotlin_kotlin.$_$.w3;
+  var Unit_getInstance = kotlin_kotlin.$_$.g4;
+  var emptyList = kotlin_kotlin.$_$.p5;
   var LazyThreadSafetyMode_PUBLICATION_getInstance = kotlin_kotlin.$_$.g;
-  var lazy = kotlin_kotlin.$_$.nc;
-  var classMeta = kotlin_kotlin.$_$.h8;
-  var KProperty1 = kotlin_kotlin.$_$.z9;
-  var getPropertyCallableRef = kotlin_kotlin.$_$.n8;
-  var IllegalArgumentException_init_$Init$ = kotlin_kotlin.$_$.v1;
-  var captureStack = kotlin_kotlin.$_$.b8;
-  var IllegalArgumentException_init_$Init$_0 = kotlin_kotlin.$_$.x1;
-  var IllegalArgumentException = kotlin_kotlin.$_$.pb;
-  var collectionSizeOrDefault = kotlin_kotlin.$_$.x4;
+  var lazy = kotlin_kotlin.$_$.tc;
+  var classMeta = kotlin_kotlin.$_$.l8;
+  var KProperty1 = kotlin_kotlin.$_$.ea;
+  var getPropertyCallableRef = kotlin_kotlin.$_$.r8;
+  var IllegalArgumentException_init_$Init$ = kotlin_kotlin.$_$.y1;
+  var captureStack = kotlin_kotlin.$_$.f8;
+  var IllegalArgumentException_init_$Init$_0 = kotlin_kotlin.$_$.a2;
+  var IllegalArgumentException = kotlin_kotlin.$_$.vb;
+  var collectionSizeOrDefault = kotlin_kotlin.$_$.b5;
   var ArrayList_init_$Create$ = kotlin_kotlin.$_$.v;
-  var toString = kotlin_kotlin.$_$.m9;
-  var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.w1;
-  var THROW_CCE = kotlin_kotlin.$_$.vb;
-  var isInterface = kotlin_kotlin.$_$.z8;
-  var KClass = kotlin_kotlin.$_$.w9;
-  var copyToArray = kotlin_kotlin.$_$.j5;
-  var Triple = kotlin_kotlin.$_$.xb;
+  var toString = kotlin_kotlin.$_$.r9;
+  var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.z1;
+  var THROW_CCE = kotlin_kotlin.$_$.bc;
+  var isInterface = kotlin_kotlin.$_$.d9;
+  var KClass = kotlin_kotlin.$_$.ba;
+  var copyToArray = kotlin_kotlin.$_$.n5;
+  var Triple = kotlin_kotlin.$_$.dc;
   var getKClass = kotlin_kotlin.$_$.e;
-  var Pair = kotlin_kotlin.$_$.tb;
-  var Entry = kotlin_kotlin.$_$.m4;
-  var LinkedHashMap = kotlin_kotlin.$_$.j4;
-  var MutableMap = kotlin_kotlin.$_$.r4;
-  var Map = kotlin_kotlin.$_$.n4;
-  var HashMap = kotlin_kotlin.$_$.f4;
-  var LinkedHashSet = kotlin_kotlin.$_$.k4;
-  var MutableSet = kotlin_kotlin.$_$.s4;
-  var Set = kotlin_kotlin.$_$.t4;
-  var HashSet = kotlin_kotlin.$_$.g4;
-  var ArrayList = kotlin_kotlin.$_$.d4;
-  var MutableList = kotlin_kotlin.$_$.p4;
-  var List = kotlin_kotlin.$_$.l4;
-  var Collection = kotlin_kotlin.$_$.e4;
-  var equals = kotlin_kotlin.$_$.j8;
-  var getStringHashCode = kotlin_kotlin.$_$.o8;
-  var Iterator = kotlin_kotlin.$_$.i4;
-  var Iterable = kotlin_kotlin.$_$.h4;
-  var isBlank = kotlin_kotlin.$_$.ha;
-  var toList = kotlin_kotlin.$_$.v6;
+  var Pair = kotlin_kotlin.$_$.zb;
+  var Entry = kotlin_kotlin.$_$.q4;
+  var LinkedHashMap = kotlin_kotlin.$_$.n4;
+  var MutableMap = kotlin_kotlin.$_$.v4;
+  var Map = kotlin_kotlin.$_$.r4;
+  var HashMap = kotlin_kotlin.$_$.j4;
+  var LinkedHashSet = kotlin_kotlin.$_$.o4;
+  var MutableSet = kotlin_kotlin.$_$.w4;
+  var Set = kotlin_kotlin.$_$.x4;
+  var HashSet = kotlin_kotlin.$_$.k4;
+  var ArrayList = kotlin_kotlin.$_$.h4;
+  var MutableList = kotlin_kotlin.$_$.t4;
+  var List = kotlin_kotlin.$_$.p4;
+  var Collection = kotlin_kotlin.$_$.i4;
+  var equals = kotlin_kotlin.$_$.n8;
+  var getStringHashCode = kotlin_kotlin.$_$.s8;
+  var Iterator = kotlin_kotlin.$_$.m4;
+  var Iterable = kotlin_kotlin.$_$.l4;
+  var isBlank = kotlin_kotlin.$_$.ma;
+  var toList = kotlin_kotlin.$_$.z6;
   var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.w;
   var HashSet_init_$Create$ = kotlin_kotlin.$_$.c1;
-  var toHashSet = kotlin_kotlin.$_$.s6;
-  var toBooleanArray = kotlin_kotlin.$_$.r6;
-  var withIndex = kotlin_kotlin.$_$.b7;
-  var to = kotlin_kotlin.$_$.tc;
-  var toMap = kotlin_kotlin.$_$.w6;
-  var lazy_0 = kotlin_kotlin.$_$.oc;
-  var contentEquals = kotlin_kotlin.$_$.y4;
-  var until = kotlin_kotlin.$_$.v9;
+  var toHashSet = kotlin_kotlin.$_$.w6;
+  var toBooleanArray = kotlin_kotlin.$_$.v6;
+  var withIndex = kotlin_kotlin.$_$.f7;
+  var to = kotlin_kotlin.$_$.zc;
+  var toMap = kotlin_kotlin.$_$.a7;
+  var lazy_0 = kotlin_kotlin.$_$.uc;
+  var contentEquals = kotlin_kotlin.$_$.c5;
+  var until = kotlin_kotlin.$_$.aa;
   var joinToString$default = kotlin_kotlin.$_$.i;
-  var objectMeta = kotlin_kotlin.$_$.i9;
-  var ensureNotNull = kotlin_kotlin.$_$.ic;
-  var Long = kotlin_kotlin.$_$.rb;
-  var Char = kotlin_kotlin.$_$.hb;
-  var isObject = kotlin_kotlin.$_$.b9;
-  var Duration__toIsoString_impl_9h6wsm = kotlin_kotlin.$_$.l2;
-  var Duration = kotlin_kotlin.$_$.fb;
-  var Companion_getInstance = kotlin_kotlin.$_$.u3;
-  var toIntOrNull = kotlin_kotlin.$_$.ua;
-  var hashCode = kotlin_kotlin.$_$.p8;
-  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.a2;
-  var isArray = kotlin_kotlin.$_$.r8;
-  var arrayIterator = kotlin_kotlin.$_$.z7;
-  var asList = kotlin_kotlin.$_$.w4;
+  var objectMeta = kotlin_kotlin.$_$.n9;
+  var ensureNotNull = kotlin_kotlin.$_$.oc;
+  var Long = kotlin_kotlin.$_$.xb;
+  var Char = kotlin_kotlin.$_$.nb;
+  var isObject = kotlin_kotlin.$_$.f9;
+  var Duration__toIsoString_impl_9h6wsm = kotlin_kotlin.$_$.p2;
+  var Duration = kotlin_kotlin.$_$.kb;
+  var Companion_getInstance = kotlin_kotlin.$_$.y3;
+  var toIntOrNull = kotlin_kotlin.$_$.za;
+  var hashCode = kotlin_kotlin.$_$.t8;
+  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.d2;
+  var isArray = kotlin_kotlin.$_$.v8;
+  var arrayIterator = kotlin_kotlin.$_$.d8;
+  var asList = kotlin_kotlin.$_$.a5;
   var ArrayList_init_$Create$_1 = kotlin_kotlin.$_$.x;
-  var step = kotlin_kotlin.$_$.u9;
-  var getValue = kotlin_kotlin.$_$.t5;
+  var step = kotlin_kotlin.$_$.z9;
+  var getValue = kotlin_kotlin.$_$.x5;
   var HashMap_init_$Create$ = kotlin_kotlin.$_$.z;
   var HashMap_init_$Create$_0 = kotlin_kotlin.$_$.a1;
   var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.f1;
@@ -92,70 +92,70 @@
   var HashSet_init_$Create$_0 = kotlin_kotlin.$_$.d1;
   var LinkedHashSet_init_$Create$ = kotlin_kotlin.$_$.h1;
   var LinkedHashSet_init_$Create$_0 = kotlin_kotlin.$_$.i1;
-  var longArray = kotlin_kotlin.$_$.f9;
-  var Companion_getInstance_0 = kotlin_kotlin.$_$.w3;
-  var get_lastIndex = kotlin_kotlin.$_$.w5;
-  var countTrailingZeroBits = kotlin_kotlin.$_$.gc;
+  var longArray = kotlin_kotlin.$_$.j9;
+  var Companion_getInstance_0 = kotlin_kotlin.$_$.a4;
+  var get_lastIndex = kotlin_kotlin.$_$.a6;
+  var countTrailingZeroBits = kotlin_kotlin.$_$.mc;
   var HashSet_init_$Create$_1 = kotlin_kotlin.$_$.b1;
-  var KTypeParameter = kotlin_kotlin.$_$.aa;
-  var contentHashCode = kotlin_kotlin.$_$.z4;
-  var fillArrayVal = kotlin_kotlin.$_$.l8;
-  var booleanArray = kotlin_kotlin.$_$.a8;
-  var emptyMap = kotlin_kotlin.$_$.m5;
-  var Companion_getInstance_1 = kotlin_kotlin.$_$.v3;
-  var isCharArray = kotlin_kotlin.$_$.u8;
-  var charArray = kotlin_kotlin.$_$.d8;
-  var DoubleCompanionObject_getInstance = kotlin_kotlin.$_$.o3;
-  var isDoubleArray = kotlin_kotlin.$_$.w8;
-  var FloatCompanionObject_getInstance = kotlin_kotlin.$_$.p3;
-  var isFloatArray = kotlin_kotlin.$_$.x8;
-  var isLongArray = kotlin_kotlin.$_$.a9;
-  var IntCompanionObject_getInstance = kotlin_kotlin.$_$.q3;
-  var isIntArray = kotlin_kotlin.$_$.y8;
-  var ShortCompanionObject_getInstance = kotlin_kotlin.$_$.r3;
-  var isShortArray = kotlin_kotlin.$_$.c9;
-  var ByteCompanionObject_getInstance = kotlin_kotlin.$_$.n3;
-  var isByteArray = kotlin_kotlin.$_$.t8;
-  var BooleanCompanionObject_getInstance = kotlin_kotlin.$_$.m3;
-  var isBooleanArray = kotlin_kotlin.$_$.s8;
-  var coerceAtLeast = kotlin_kotlin.$_$.o9;
-  var copyOf = kotlin_kotlin.$_$.d5;
-  var copyOf_0 = kotlin_kotlin.$_$.f5;
-  var copyOf_1 = kotlin_kotlin.$_$.g5;
-  var copyOf_2 = kotlin_kotlin.$_$.b5;
-  var copyOf_3 = kotlin_kotlin.$_$.i5;
-  var copyOf_4 = kotlin_kotlin.$_$.a5;
-  var copyOf_5 = kotlin_kotlin.$_$.e5;
-  var copyOf_6 = kotlin_kotlin.$_$.c5;
-  var Unit = kotlin_kotlin.$_$.cc;
-  var trimIndent = kotlin_kotlin.$_$.db;
-  var equals_0 = kotlin_kotlin.$_$.fa;
-  var charSequenceLength = kotlin_kotlin.$_$.f8;
-  var charSequenceGet = kotlin_kotlin.$_$.e8;
-  var toString_0 = kotlin_kotlin.$_$.t2;
-  var titlecase = kotlin_kotlin.$_$.ra;
-  var isLowerCase = kotlin_kotlin.$_$.ka;
-  var PrimitiveClasses_getInstance = kotlin_kotlin.$_$.t3;
-  var mapOf = kotlin_kotlin.$_$.e6;
-  var lastOrNull = kotlin_kotlin.$_$.z5;
-  var get_lastIndex_0 = kotlin_kotlin.$_$.x5;
-  var _UInt___get_data__impl__f0vqqw = kotlin_kotlin.$_$.c3;
-  var UInt = kotlin_kotlin.$_$.zb;
-  var _UInt___init__impl__l7qpdl = kotlin_kotlin.$_$.b3;
-  var _ULong___get_data__impl__fggpzb = kotlin_kotlin.$_$.f3;
-  var ULong = kotlin_kotlin.$_$.ac;
-  var _ULong___init__impl__c78o9k = kotlin_kotlin.$_$.e3;
-  var _UByte___get_data__impl__jof9qr = kotlin_kotlin.$_$.z2;
-  var UByte = kotlin_kotlin.$_$.yb;
-  var _UByte___init__impl__g9hnc4 = kotlin_kotlin.$_$.y2;
-  var _UShort___get_data__impl__g0245 = kotlin_kotlin.$_$.i3;
-  var UShort = kotlin_kotlin.$_$.bc;
-  var _UShort___init__impl__jigrne = kotlin_kotlin.$_$.h3;
-  var Annotation = kotlin_kotlin.$_$.gb;
-  var get_indices = kotlin_kotlin.$_$.v5;
-  var IndexOutOfBoundsException_init_$Create$ = kotlin_kotlin.$_$.e2;
-  var get_indices_0 = kotlin_kotlin.$_$.u5;
-  var get_js = kotlin_kotlin.$_$.e9;
+  var KTypeParameter = kotlin_kotlin.$_$.fa;
+  var contentHashCode = kotlin_kotlin.$_$.d5;
+  var fillArrayVal = kotlin_kotlin.$_$.p8;
+  var booleanArray = kotlin_kotlin.$_$.e8;
+  var emptyMap = kotlin_kotlin.$_$.q5;
+  var Companion_getInstance_1 = kotlin_kotlin.$_$.z3;
+  var isCharArray = kotlin_kotlin.$_$.y8;
+  var charArray = kotlin_kotlin.$_$.h8;
+  var DoubleCompanionObject_getInstance = kotlin_kotlin.$_$.s3;
+  var isDoubleArray = kotlin_kotlin.$_$.a9;
+  var FloatCompanionObject_getInstance = kotlin_kotlin.$_$.t3;
+  var isFloatArray = kotlin_kotlin.$_$.b9;
+  var isLongArray = kotlin_kotlin.$_$.e9;
+  var IntCompanionObject_getInstance = kotlin_kotlin.$_$.u3;
+  var isIntArray = kotlin_kotlin.$_$.c9;
+  var ShortCompanionObject_getInstance = kotlin_kotlin.$_$.v3;
+  var isShortArray = kotlin_kotlin.$_$.g9;
+  var ByteCompanionObject_getInstance = kotlin_kotlin.$_$.r3;
+  var isByteArray = kotlin_kotlin.$_$.x8;
+  var BooleanCompanionObject_getInstance = kotlin_kotlin.$_$.q3;
+  var isBooleanArray = kotlin_kotlin.$_$.w8;
+  var coerceAtLeast = kotlin_kotlin.$_$.t9;
+  var copyOf = kotlin_kotlin.$_$.h5;
+  var copyOf_0 = kotlin_kotlin.$_$.j5;
+  var copyOf_1 = kotlin_kotlin.$_$.k5;
+  var copyOf_2 = kotlin_kotlin.$_$.f5;
+  var copyOf_3 = kotlin_kotlin.$_$.m5;
+  var copyOf_4 = kotlin_kotlin.$_$.e5;
+  var copyOf_5 = kotlin_kotlin.$_$.i5;
+  var copyOf_6 = kotlin_kotlin.$_$.g5;
+  var Unit = kotlin_kotlin.$_$.ic;
+  var trimIndent = kotlin_kotlin.$_$.ib;
+  var equals_0 = kotlin_kotlin.$_$.ka;
+  var charSequenceLength = kotlin_kotlin.$_$.j8;
+  var charSequenceGet = kotlin_kotlin.$_$.i8;
+  var toString_0 = kotlin_kotlin.$_$.x2;
+  var titlecase = kotlin_kotlin.$_$.wa;
+  var isLowerCase = kotlin_kotlin.$_$.pa;
+  var PrimitiveClasses_getInstance = kotlin_kotlin.$_$.x3;
+  var mapOf = kotlin_kotlin.$_$.i6;
+  var lastOrNull = kotlin_kotlin.$_$.d6;
+  var get_lastIndex_0 = kotlin_kotlin.$_$.b6;
+  var _UInt___get_data__impl__f0vqqw = kotlin_kotlin.$_$.g3;
+  var UInt = kotlin_kotlin.$_$.fc;
+  var _UInt___init__impl__l7qpdl = kotlin_kotlin.$_$.f3;
+  var _ULong___get_data__impl__fggpzb = kotlin_kotlin.$_$.j3;
+  var ULong = kotlin_kotlin.$_$.gc;
+  var _ULong___init__impl__c78o9k = kotlin_kotlin.$_$.i3;
+  var _UByte___get_data__impl__jof9qr = kotlin_kotlin.$_$.d3;
+  var UByte = kotlin_kotlin.$_$.ec;
+  var _UByte___init__impl__g9hnc4 = kotlin_kotlin.$_$.c3;
+  var _UShort___get_data__impl__g0245 = kotlin_kotlin.$_$.m3;
+  var UShort = kotlin_kotlin.$_$.hc;
+  var _UShort___init__impl__jigrne = kotlin_kotlin.$_$.l3;
+  var Annotation = kotlin_kotlin.$_$.lb;
+  var get_indices = kotlin_kotlin.$_$.z5;
+  var IndexOutOfBoundsException_init_$Create$ = kotlin_kotlin.$_$.h2;
+  var get_indices_0 = kotlin_kotlin.$_$.y5;
+  var get_js = kotlin_kotlin.$_$.i9;
   var findAssociatedObject = kotlin_kotlin.$_$.c;
   //endregion
   //region block: pre-declaration
@@ -360,7 +360,7 @@
     return function ($this$buildSerialDescriptor) {
       var tmp = serializer_1(StringCompanionObject_getInstance()).h24();
       $this$buildSerialDescriptor.v24('type', tmp, null, false, 12, null);
-      var tmp_0 = 'kotlinx.serialization.Polymorphic<' + this$0.w24_1.pd() + '>';
+      var tmp_0 = 'kotlinx.serialization.Polymorphic<' + this$0.w24_1.rd() + '>';
       var tmp_1 = CONTEXTUAL_getInstance();
       var tmp_2 = buildSerialDescriptor$default(tmp_0, tmp_1, [], null, 12, null);
       $this$buildSerialDescriptor.v24('value', tmp_2, null, false, 12, null);
@@ -476,10 +476,10 @@
   }
   function serializerByKTypeImpl(_this__u8e3s4, type, failOnMissingTypeArgSerializer) {
     var rootClass = kclass(type);
-    var isNullable = type.ae();
+    var isNullable = type.ce();
     var tmp$ret$4;
     // Inline function 'kotlin.collections.map' call
-    var tmp0_map = type.zd();
+    var tmp0_map = type.be();
     var tmp$ret$3;
     // Inline function 'kotlin.collections.mapTo' call
     var tmp0_mapTo = ArrayList_init_$Create$(collectionSizeOrDefault(tmp0_map, 10));
@@ -605,7 +605,7 @@
       if (isReferenceArray(rootClass)) {
         var tmp$ret$5;
         // Inline function 'kotlinx.serialization.internal.cast' call
-        var tmp_2 = typeArguments.h(0).yd();
+        var tmp_2 = typeArguments.h(0).ae();
         var tmp0_cast = ArraySerializer((!(tmp_2 == null) ? isInterface(tmp_2, KClass) : false) ? tmp_2 : THROW_CCE(), serializers.h(0));
         tmp$ret$5 = isInterface(tmp0_cast, KSerializer) ? tmp0_cast : THROW_CCE();
         return tmp$ret$5;
@@ -772,7 +772,7 @@
   function ContextDescriptor(original, kClass) {
     this.l25_1 = original;
     this.m25_1 = kClass;
-    this.n25_1 = this.l25_1.o25() + '<' + this.m25_1.pd() + '>';
+    this.n25_1 = this.l25_1.o25() + '<' + this.m25_1.rd() + '>';
   }
   ContextDescriptor.prototype.p25 = function () {
     return this.l25_1.p25();
@@ -1174,7 +1174,7 @@
   function SerialKind() {
   }
   SerialKind.prototype.toString = function () {
-    return ensureNotNull(getKClassFromExpression(this).pd());
+    return ensureNotNull(getKClassFromExpression(this).rd());
   };
   SerialKind.prototype.hashCode = function () {
     return getStringHashCode(this.toString());
@@ -1691,11 +1691,11 @@
   };
   AbstractPolymorphicSerializer.$metadata$ = classMeta('AbstractPolymorphicSerializer', [KSerializer]);
   function throwSubtypeNotRegistered(subClass, baseClass) {
-    var tmp0_elvis_lhs = subClass.pd();
+    var tmp0_elvis_lhs = subClass.rd();
     throwSubtypeNotRegistered_0(tmp0_elvis_lhs == null ? '' + subClass : tmp0_elvis_lhs, baseClass);
   }
   function throwSubtypeNotRegistered_0(subClassName, baseClass) {
-    var scope = "in the scope of '" + baseClass.pd() + "'";
+    var scope = "in the scope of '" + baseClass.rd() + "'";
     throw SerializationException_init_$Create$(subClassName == null ? 'Class discriminator was missing and no default polymorphic serializers were registered ' + scope : "Class '" + subClassName + "' is not registered for polymorphic serialization " + scope + '.\n' + "Mark the base class as 'sealed' or register the serializer explicitly.");
   }
   function DurationSerializer() {
@@ -1965,7 +1965,7 @@
     return _this__u8e3s4.u17();
   };
   PrimitiveArraySerializer.prototype.y29 = function (_this__u8e3s4, size) {
-    return _this__u8e3s4.kb(size);
+    return _this__u8e3s4.mb(size);
   };
   PrimitiveArraySerializer.prototype.z29 = function (_this__u8e3s4) {
     throw IllegalStateException_init_$Create$('This method lead to boxing and must not be used, use writeContents instead');
@@ -2005,7 +2005,7 @@
       requiredCapacity = this.w29() + 1 | 0;
     var tmp;
     if ($handler == null) {
-      this.kb(requiredCapacity);
+      this.mb(requiredCapacity);
       tmp = Unit_getInstance();
     } else {
       tmp = $handler(requiredCapacity);
@@ -2167,13 +2167,13 @@
     return this.z2a((!(_this__u8e3s4 == null) ? isArray(_this__u8e3s4) : false) ? _this__u8e3s4 : THROW_CCE());
   };
   ReferenceArraySerializer.prototype.a2b = function (_this__u8e3s4, size) {
-    return _this__u8e3s4.kb(size);
+    return _this__u8e3s4.mb(size);
   };
   ReferenceArraySerializer.prototype.y29 = function (_this__u8e3s4, size) {
     return this.a2b(_this__u8e3s4 instanceof ArrayList ? _this__u8e3s4 : THROW_CCE(), size);
   };
   ReferenceArraySerializer.prototype.b2b = function (_this__u8e3s4, index, element) {
-    _this__u8e3s4.ra(index, element);
+    _this__u8e3s4.ta(index, element);
   };
   ReferenceArraySerializer.prototype.b2a = function (_this__u8e3s4, index, element) {
     var tmp = _this__u8e3s4 instanceof ArrayList ? _this__u8e3s4 : THROW_CCE();
@@ -2430,13 +2430,13 @@
     return this.z2b((!(_this__u8e3s4 == null) ? isInterface(_this__u8e3s4, List) : false) ? _this__u8e3s4 : THROW_CCE());
   };
   ArrayListSerializer.prototype.a2c = function (_this__u8e3s4, size) {
-    return _this__u8e3s4.kb(size);
+    return _this__u8e3s4.mb(size);
   };
   ArrayListSerializer.prototype.y29 = function (_this__u8e3s4, size) {
     return this.a2c(_this__u8e3s4 instanceof ArrayList ? _this__u8e3s4 : THROW_CCE(), size);
   };
   ArrayListSerializer.prototype.b2c = function (_this__u8e3s4, index, element) {
-    _this__u8e3s4.ra(index, element);
+    _this__u8e3s4.ta(index, element);
   };
   ArrayListSerializer.prototype.b2a = function (_this__u8e3s4, index, element) {
     var tmp = _this__u8e3s4 instanceof ArrayList ? _this__u8e3s4 : THROW_CCE();
@@ -2555,7 +2555,7 @@
     var slot = (index >>> 6 | 0) - 1 | 0;
     Companion_getInstance_0();
     var offsetInSlot = index & (64 - 1 | 0);
-    $this.t2c_1[slot] = $this.t2c_1[slot].eh((new Long(1, 0)).c7(offsetInSlot));
+    $this.t2c_1[slot] = $this.t2c_1[slot].n7((new Long(1, 0)).c7(offsetInSlot));
   }
   function nextUnmarkedHighIndex($this) {
     var inductionVariable = 0;
@@ -2569,8 +2569,8 @@
         var slotOffset = imul(tmp, 64);
         var slotMarks = $this.t2c_1[slot];
         while (!slotMarks.equals(new Long(-1, -1))) {
-          var indexInSlot = countTrailingZeroBits(slotMarks.dh());
-          slotMarks = slotMarks.eh((new Long(1, 0)).c7(indexInSlot));
+          var indexInSlot = countTrailingZeroBits(slotMarks.eh());
+          slotMarks = slotMarks.n7((new Long(1, 0)).c7(indexInSlot));
           var index = slotOffset + indexInSlot | 0;
           if ($this.r2c_1($this.q2c_1, index)) {
             $this.t2c_1[slot] = slotMarks;
@@ -2608,7 +2608,7 @@
   ElementMarker.prototype.u2c = function (index) {
     Companion_getInstance_0();
     if (index < 64) {
-      this.s2c_1 = this.s2c_1.eh((new Long(1, 0)).c7(index));
+      this.s2c_1 = this.s2c_1.n7((new Long(1, 0)).c7(index));
     } else {
       markHigh(this, index);
     }
@@ -2616,8 +2616,8 @@
   ElementMarker.prototype.v2c = function () {
     var elementsCount = this.q2c_1.q25();
     while (!this.s2c_1.equals(new Long(-1, -1))) {
-      var index = countTrailingZeroBits(this.s2c_1.dh());
-      this.s2c_1 = this.s2c_1.eh((new Long(1, 0)).c7(index));
+      var index = countTrailingZeroBits(this.s2c_1.eh());
+      this.s2c_1 = this.s2c_1.n7((new Long(1, 0)).c7(index));
       if (this.r2c_1(this.q2c_1, index)) {
         return index;
       }
@@ -2963,11 +2963,11 @@
   }
   function serializerNotRegistered(_this__u8e3s4) {
     init_properties_Platform_common_kt_9ujmfm();
-    throw SerializationException_init_$Create$("Serializer for class '" + _this__u8e3s4.pd() + "' is not found.\n" + 'Mark the class as @Serializable or provide the serializer explicitly.');
+    throw SerializationException_init_$Create$("Serializer for class '" + _this__u8e3s4.rd() + "' is not found.\n" + 'Mark the class as @Serializable or provide the serializer explicitly.');
   }
   function kclass(_this__u8e3s4) {
     init_properties_Platform_common_kt_9ujmfm();
-    var t = _this__u8e3s4.yd();
+    var t = _this__u8e3s4.ae();
     var tmp;
     if (!(t == null) ? isInterface(t, KClass) : false) {
       tmp = t;
@@ -3718,12 +3718,12 @@
     PrimitiveArrayBuilder.call(this);
     this.m2e_1 = bufferWithData;
     this.n2e_1 = bufferWithData.length;
-    this.kb(10);
+    this.mb(10);
   }
   CharArrayBuilder.prototype.w29 = function () {
     return this.n2e_1;
   };
-  CharArrayBuilder.prototype.kb = function (requiredCapacity) {
+  CharArrayBuilder.prototype.mb = function (requiredCapacity) {
     if (this.m2e_1.length < requiredCapacity)
       this.m2e_1 = copyOf(this.m2e_1, coerceAtLeast(requiredCapacity, imul(this.m2e_1.length, 2)));
   };
@@ -3743,12 +3743,12 @@
     PrimitiveArrayBuilder.call(this);
     this.v2e_1 = bufferWithData;
     this.w2e_1 = bufferWithData.length;
-    this.kb(10);
+    this.mb(10);
   }
   DoubleArrayBuilder.prototype.w29 = function () {
     return this.w2e_1;
   };
-  DoubleArrayBuilder.prototype.kb = function (requiredCapacity) {
+  DoubleArrayBuilder.prototype.mb = function (requiredCapacity) {
     if (this.v2e_1.length < requiredCapacity)
       this.v2e_1 = copyOf_0(this.v2e_1, coerceAtLeast(requiredCapacity, imul(this.v2e_1.length, 2)));
   };
@@ -3768,12 +3768,12 @@
     PrimitiveArrayBuilder.call(this);
     this.e2f_1 = bufferWithData;
     this.f2f_1 = bufferWithData.length;
-    this.kb(10);
+    this.mb(10);
   }
   FloatArrayBuilder.prototype.w29 = function () {
     return this.f2f_1;
   };
-  FloatArrayBuilder.prototype.kb = function (requiredCapacity) {
+  FloatArrayBuilder.prototype.mb = function (requiredCapacity) {
     if (this.e2f_1.length < requiredCapacity)
       this.e2f_1 = copyOf_1(this.e2f_1, coerceAtLeast(requiredCapacity, imul(this.e2f_1.length, 2)));
   };
@@ -3793,12 +3793,12 @@
     PrimitiveArrayBuilder.call(this);
     this.n2f_1 = bufferWithData;
     this.o2f_1 = bufferWithData.length;
-    this.kb(10);
+    this.mb(10);
   }
   LongArrayBuilder.prototype.w29 = function () {
     return this.o2f_1;
   };
-  LongArrayBuilder.prototype.kb = function (requiredCapacity) {
+  LongArrayBuilder.prototype.mb = function (requiredCapacity) {
     if (this.n2f_1.length < requiredCapacity)
       this.n2f_1 = copyOf_2(this.n2f_1, coerceAtLeast(requiredCapacity, imul(this.n2f_1.length, 2)));
   };
@@ -3818,12 +3818,12 @@
     PrimitiveArrayBuilder.call(this);
     this.w2f_1 = bufferWithData;
     this.x2f_1 = bufferWithData.length;
-    this.kb(10);
+    this.mb(10);
   }
   IntArrayBuilder.prototype.w29 = function () {
     return this.x2f_1;
   };
-  IntArrayBuilder.prototype.kb = function (requiredCapacity) {
+  IntArrayBuilder.prototype.mb = function (requiredCapacity) {
     if (this.w2f_1.length < requiredCapacity)
       this.w2f_1 = copyOf_3(this.w2f_1, coerceAtLeast(requiredCapacity, imul(this.w2f_1.length, 2)));
   };
@@ -3843,12 +3843,12 @@
     PrimitiveArrayBuilder.call(this);
     this.f2g_1 = bufferWithData;
     this.g2g_1 = bufferWithData.length;
-    this.kb(10);
+    this.mb(10);
   }
   ShortArrayBuilder.prototype.w29 = function () {
     return this.g2g_1;
   };
-  ShortArrayBuilder.prototype.kb = function (requiredCapacity) {
+  ShortArrayBuilder.prototype.mb = function (requiredCapacity) {
     if (this.f2g_1.length < requiredCapacity)
       this.f2g_1 = copyOf_4(this.f2g_1, coerceAtLeast(requiredCapacity, imul(this.f2g_1.length, 2)));
   };
@@ -3868,12 +3868,12 @@
     PrimitiveArrayBuilder.call(this);
     this.o2g_1 = bufferWithData;
     this.p2g_1 = bufferWithData.length;
-    this.kb(10);
+    this.mb(10);
   }
   ByteArrayBuilder.prototype.w29 = function () {
     return this.p2g_1;
   };
-  ByteArrayBuilder.prototype.kb = function (requiredCapacity) {
+  ByteArrayBuilder.prototype.mb = function (requiredCapacity) {
     if (this.o2g_1.length < requiredCapacity)
       this.o2g_1 = copyOf_5(this.o2g_1, coerceAtLeast(requiredCapacity, imul(this.o2g_1.length, 2)));
   };
@@ -3893,12 +3893,12 @@
     PrimitiveArrayBuilder.call(this);
     this.x2g_1 = bufferWithData;
     this.y2g_1 = bufferWithData.length;
-    this.kb(10);
+    this.mb(10);
   }
   BooleanArrayBuilder.prototype.w29 = function () {
     return this.y2g_1;
   };
-  BooleanArrayBuilder.prototype.kb = function (requiredCapacity) {
+  BooleanArrayBuilder.prototype.mb = function (requiredCapacity) {
     if (this.x2g_1.length < requiredCapacity)
       this.x2g_1 = copyOf_6(this.x2g_1, coerceAtLeast(requiredCapacity, imul(this.x2g_1.length, 2)));
   };
@@ -4202,7 +4202,7 @@
     var tmp0_iterator = keys.d();
     while (tmp0_iterator.e()) {
       var primitive = tmp0_iterator.f();
-      var simpleName = capitalize(ensureNotNull(primitive.pd()));
+      var simpleName = capitalize(ensureNotNull(primitive.rd()));
       var qualifiedName = 'kotlin.' + simpleName;
       if (equals_0(serialName, qualifiedName, true) ? true : equals_0(serialName, simpleName, true)) {
         throw IllegalArgumentException_init_$Create$(trimIndent('\n                The name of serial descriptor should uniquely identify associated serializer.\n                For serial name ' + serialName + ' there already exist ' + capitalize(simpleName) + 'Serializer.\n                Please refer to SerialDescriptor documentation for additional information.\n            '));
@@ -4246,7 +4246,7 @@
     if (properties_initialized_Primitives_kt_6dpii6) {
     } else {
       properties_initialized_Primitives_kt_6dpii6 = true;
-      BUILTIN_SERIALIZERS = mapOf([to(PrimitiveClasses_getInstance().if(), serializer_1(StringCompanionObject_getInstance())), to(getKClass(Char), serializer_2(Companion_getInstance_1())), to(PrimitiveClasses_getInstance().lf(), CharArraySerializer()), to(PrimitiveClasses_getInstance().gf(), serializer_3(DoubleCompanionObject_getInstance())), to(PrimitiveClasses_getInstance().rf(), DoubleArraySerializer()), to(PrimitiveClasses_getInstance().ff(), serializer_4(FloatCompanionObject_getInstance())), to(PrimitiveClasses_getInstance().qf(), FloatArraySerializer()), to(getKClass(Long), serializer_5(Companion_getInstance_0())), to(PrimitiveClasses_getInstance().pf(), LongArraySerializer()), to(PrimitiveClasses_getInstance().ef(), serializer_6(IntCompanionObject_getInstance())), to(PrimitiveClasses_getInstance().of(), IntArraySerializer()), to(PrimitiveClasses_getInstance().df(), serializer_7(ShortCompanionObject_getInstance())), to(PrimitiveClasses_getInstance().nf(), ShortArraySerializer()), to(PrimitiveClasses_getInstance().cf(), serializer_8(ByteCompanionObject_getInstance())), to(PrimitiveClasses_getInstance().mf(), ByteArraySerializer()), to(PrimitiveClasses_getInstance().bf(), serializer_9(BooleanCompanionObject_getInstance())), to(PrimitiveClasses_getInstance().kf(), BooleanArraySerializer()), to(getKClass(Unit), serializer_10(Unit_getInstance())), to(getKClass(Duration), serializer_11(Companion_getInstance()))]);
+      BUILTIN_SERIALIZERS = mapOf([to(PrimitiveClasses_getInstance().kf(), serializer_1(StringCompanionObject_getInstance())), to(getKClass(Char), serializer_2(Companion_getInstance_1())), to(PrimitiveClasses_getInstance().nf(), CharArraySerializer()), to(PrimitiveClasses_getInstance().if(), serializer_3(DoubleCompanionObject_getInstance())), to(PrimitiveClasses_getInstance().tf(), DoubleArraySerializer()), to(PrimitiveClasses_getInstance().hf(), serializer_4(FloatCompanionObject_getInstance())), to(PrimitiveClasses_getInstance().sf(), FloatArraySerializer()), to(getKClass(Long), serializer_5(Companion_getInstance_0())), to(PrimitiveClasses_getInstance().rf(), LongArraySerializer()), to(PrimitiveClasses_getInstance().gf(), serializer_6(IntCompanionObject_getInstance())), to(PrimitiveClasses_getInstance().qf(), IntArraySerializer()), to(PrimitiveClasses_getInstance().ff(), serializer_7(ShortCompanionObject_getInstance())), to(PrimitiveClasses_getInstance().pf(), ShortArraySerializer()), to(PrimitiveClasses_getInstance().ef(), serializer_8(ByteCompanionObject_getInstance())), to(PrimitiveClasses_getInstance().of(), ByteArraySerializer()), to(PrimitiveClasses_getInstance().df(), serializer_9(BooleanCompanionObject_getInstance())), to(PrimitiveClasses_getInstance().mf(), BooleanArraySerializer()), to(getKClass(Unit), serializer_10(Unit_getInstance())), to(getKClass(Duration), serializer_11(Companion_getInstance()))]);
     }
   }
   function NamedValueDecoder() {
@@ -4615,9 +4615,9 @@
   };
   TripleSerializer_0.prototype.s2j = function (encoder, value) {
     var structuredEncoder = encoder.e27(this.r2j_1);
-    structuredEncoder.q28(this.r2j_1, 0, this.o2j_1, value.v7_1);
-    structuredEncoder.q28(this.r2j_1, 1, this.p2j_1, value.w7_1);
-    structuredEncoder.q28(this.r2j_1, 2, this.q2j_1, value.x7_1);
+    structuredEncoder.q28(this.r2j_1, 0, this.o2j_1, value.y7_1);
+    structuredEncoder.q28(this.r2j_1, 1, this.p2j_1, value.z7_1);
+    structuredEncoder.q28(this.r2j_1, 2, this.q2j_1, value.a8_1);
     structuredEncoder.f27(this.r2j_1);
   };
   TripleSerializer_0.prototype.i24 = function (encoder, value) {
@@ -4706,7 +4706,7 @@
     tmp.a28(tmp$ret$0);
   };
   UIntSerializer.prototype.i24 = function (encoder, value) {
-    return this.u2j(encoder, value instanceof UInt ? value.i8_1 : THROW_CCE());
+    return this.u2j(encoder, value instanceof UInt ? value.l8_1 : THROW_CCE());
   };
   UIntSerializer.prototype.v2j = function (decoder) {
     var tmp$ret$0;
@@ -4740,7 +4740,7 @@
     tmp.b28(tmp$ret$0);
   };
   ULongSerializer.prototype.i24 = function (encoder, value) {
-    return this.x2j(encoder, value instanceof ULong ? value.p8_1 : THROW_CCE());
+    return this.x2j(encoder, value instanceof ULong ? value.r8_1 : THROW_CCE());
   };
   ULongSerializer.prototype.y2j = function (decoder) {
     var tmp$ret$0;
@@ -4774,7 +4774,7 @@
     tmp.y27(tmp$ret$0);
   };
   UByteSerializer.prototype.i24 = function (encoder, value) {
-    return this.a2k(encoder, value instanceof UByte ? value.c8_1 : THROW_CCE());
+    return this.a2k(encoder, value instanceof UByte ? value.f8_1 : THROW_CCE());
   };
   UByteSerializer.prototype.b2k = function (decoder) {
     var tmp$ret$0;
@@ -4808,7 +4808,7 @@
     tmp.z27(tmp$ret$0);
   };
   UShortSerializer.prototype.i24 = function (encoder, value) {
-    return this.d2k(encoder, value instanceof UShort ? value.v8_1 : THROW_CCE());
+    return this.d2k(encoder, value instanceof UShort ? value.x8_1 : THROW_CCE());
   };
   UShortSerializer.prototype.e2k = function (decoder) {
     var tmp$ret$0;
@@ -5049,7 +5049,7 @@
   };
   SerializableWith.$metadata$ = classMeta('SerializableWith', [Annotation], 0);
   function isInstanceOf(_this__u8e3s4, kclass) {
-    return kclass.qd(_this__u8e3s4);
+    return kclass.sd(_this__u8e3s4);
   }
   function toNativeArrayImpl(_this__u8e3s4, eClass) {
     var tmp$ret$0;
@@ -5084,7 +5084,7 @@
     return tmp;
   }
   function isReferenceArray(rootClass) {
-    return rootClass.equals(PrimitiveClasses_getInstance().hf());
+    return rootClass.equals(PrimitiveClasses_getInstance().jf());
   }
   function constructSerializerForGivenTypeArgs(_this__u8e3s4, args) {
     var tmp;
@@ -5119,7 +5119,7 @@
     return tmp;
   }
   function platformSpecificSerializerNotRegistered(_this__u8e3s4) {
-    throw SerializationException_init_$Create$("Serializer for class '" + _this__u8e3s4.pd() + "' is not found.\n" + 'Mark the class as @Serializable or provide the serializer explicitly.\n' + 'On Kotlin/JS explicitly declared serializer should be used for interfaces and enums without @Serializable annotation');
+    throw SerializationException_init_$Create$("Serializer for class '" + _this__u8e3s4.rd() + "' is not found.\n" + 'Mark the class as @Serializable or provide the serializer explicitly.\n' + 'On Kotlin/JS explicitly declared serializer should be used for interfaces and enums without @Serializable annotation');
   }
   function get_isInterface(_this__u8e3s4) {
     var tmp$ret$0;
@@ -5187,69 +5187,70 @@
   _.$_$.a = buildSerialDescriptor$default;
   _.$_$.b = decodeSerializableElement$default;
   _.$_$.c = SerializationException_init_$Init$;
-  _.$_$.d = UnknownFieldException_init_$Create$;
-  _.$_$.e = SEALED_getInstance;
-  _.$_$.f = STRING_getInstance;
-  _.$_$.g = CONTEXTUAL_getInstance;
-  _.$_$.h = ENUM_getInstance;
-  _.$_$.i = LIST_getInstance;
-  _.$_$.j = MAP_getInstance;
-  _.$_$.k = Companion_getInstance_2;
-  _.$_$.l = BooleanSerializer_getInstance;
-  _.$_$.m = LongSerializer_getInstance;
-  _.$_$.n = StringSerializer_getInstance;
-  _.$_$.o = ListSerializer;
-  _.$_$.p = MapSerializer;
-  _.$_$.q = SetSerializer;
-  _.$_$.r = get_nullable;
-  _.$_$.s = serializer_1;
-  _.$_$.t = serializer_15;
-  _.$_$.u = serializer_12;
-  _.$_$.v = serializer_14;
-  _.$_$.w = serializer_13;
-  _.$_$.x = PolymorphicKind;
-  _.$_$.y = PrimitiveKind;
-  _.$_$.z = PrimitiveSerialDescriptor;
-  _.$_$.a1 = get_annotations;
-  _.$_$.b1 = get_isInline;
-  _.$_$.c1 = get_isNullable;
-  _.$_$.d1 = SerialDescriptor;
-  _.$_$.e1 = ENUM;
-  _.$_$.f1 = getContextualDescriptor;
-  _.$_$.g1 = AbstractDecoder;
-  _.$_$.h1 = AbstractEncoder;
-  _.$_$.i1 = decodeCollectionSize;
-  _.$_$.j1 = decodeSequentially;
-  _.$_$.k1 = CompositeDecoder;
-  _.$_$.l1 = CompositeEncoder;
-  _.$_$.m1 = decodeSerializableValue;
-  _.$_$.n1 = Decoder;
-  _.$_$.o1 = beginCollection;
-  _.$_$.p1 = encodeNotNullMark;
-  _.$_$.q1 = Encoder;
-  _.$_$.r1 = AbstractPolymorphicSerializer;
-  _.$_$.s1 = ArrayListSerializer;
-  _.$_$.t1 = ElementMarker;
-  _.$_$.u1 = typeParametersSerializers;
-  _.$_$.v1 = GeneratedSerializer;
-  _.$_$.w1 = NamedValueDecoder;
-  _.$_$.x1 = PluginGeneratedSerialDescriptor;
-  _.$_$.y1 = SerializerFactory;
-  _.$_$.z1 = jsonCachedSerialNames;
-  _.$_$.a2 = throwMissingFieldException;
-  _.$_$.b2 = EmptySerializersModule_0;
-  _.$_$.c2 = contextual;
-  _.$_$.d2 = SerializersModuleCollector;
-  _.$_$.e2 = BinaryFormat;
-  _.$_$.f2 = DeserializationStrategy;
-  _.$_$.g2 = KSerializer;
-  _.$_$.h2 = MissingFieldException;
-  _.$_$.i2 = SealedClassSerializer;
-  _.$_$.j2 = SerializationException;
-  _.$_$.k2 = StringFormat;
-  _.$_$.l2 = findPolymorphicSerializer;
-  _.$_$.m2 = serializerOrNull;
-  _.$_$.n2 = serializer;
+  _.$_$.d = SerializationException_init_$Create$;
+  _.$_$.e = UnknownFieldException_init_$Create$;
+  _.$_$.f = SEALED_getInstance;
+  _.$_$.g = STRING_getInstance;
+  _.$_$.h = CONTEXTUAL_getInstance;
+  _.$_$.i = ENUM_getInstance;
+  _.$_$.j = LIST_getInstance;
+  _.$_$.k = MAP_getInstance;
+  _.$_$.l = Companion_getInstance_2;
+  _.$_$.m = BooleanSerializer_getInstance;
+  _.$_$.n = LongSerializer_getInstance;
+  _.$_$.o = StringSerializer_getInstance;
+  _.$_$.p = ListSerializer;
+  _.$_$.q = MapSerializer;
+  _.$_$.r = SetSerializer;
+  _.$_$.s = get_nullable;
+  _.$_$.t = serializer_1;
+  _.$_$.u = serializer_15;
+  _.$_$.v = serializer_12;
+  _.$_$.w = serializer_14;
+  _.$_$.x = serializer_13;
+  _.$_$.y = PolymorphicKind;
+  _.$_$.z = PrimitiveKind;
+  _.$_$.a1 = PrimitiveSerialDescriptor;
+  _.$_$.b1 = get_annotations;
+  _.$_$.c1 = get_isInline;
+  _.$_$.d1 = get_isNullable;
+  _.$_$.e1 = SerialDescriptor;
+  _.$_$.f1 = ENUM;
+  _.$_$.g1 = getContextualDescriptor;
+  _.$_$.h1 = AbstractDecoder;
+  _.$_$.i1 = AbstractEncoder;
+  _.$_$.j1 = decodeCollectionSize;
+  _.$_$.k1 = decodeSequentially;
+  _.$_$.l1 = CompositeDecoder;
+  _.$_$.m1 = CompositeEncoder;
+  _.$_$.n1 = decodeSerializableValue;
+  _.$_$.o1 = Decoder;
+  _.$_$.p1 = beginCollection;
+  _.$_$.q1 = encodeNotNullMark;
+  _.$_$.r1 = Encoder;
+  _.$_$.s1 = AbstractPolymorphicSerializer;
+  _.$_$.t1 = ArrayListSerializer;
+  _.$_$.u1 = ElementMarker;
+  _.$_$.v1 = typeParametersSerializers;
+  _.$_$.w1 = GeneratedSerializer;
+  _.$_$.x1 = NamedValueDecoder;
+  _.$_$.y1 = PluginGeneratedSerialDescriptor;
+  _.$_$.z1 = SerializerFactory;
+  _.$_$.a2 = jsonCachedSerialNames;
+  _.$_$.b2 = throwMissingFieldException;
+  _.$_$.c2 = EmptySerializersModule_0;
+  _.$_$.d2 = contextual;
+  _.$_$.e2 = SerializersModuleCollector;
+  _.$_$.f2 = BinaryFormat;
+  _.$_$.g2 = DeserializationStrategy;
+  _.$_$.h2 = KSerializer;
+  _.$_$.i2 = MissingFieldException;
+  _.$_$.j2 = SealedClassSerializer;
+  _.$_$.k2 = SerializationException;
+  _.$_$.l2 = StringFormat;
+  _.$_$.m2 = findPolymorphicSerializer;
+  _.$_$.n2 = serializerOrNull;
+  _.$_$.o2 = serializer;
   //endregion
   return _;
 }));

@@ -33,72 +33,77 @@ fun HTML.index() {
 
 fun main() {
     println("Starting Up")
-    embeddedServer(Netty, port = 8084) {
-        install(ContentNegotiation) {
-            json()
+    embeddedServer(Netty, port = 8084, module = Application::applicationModule).start(wait = true)
+}
+
+fun Application.applicationModule() {
+    install(ContentNegotiation) {
+        json()
+    }
+    install(CORS) {
+        allowMethod(HttpMethod.Get)
+        allowMethod(HttpMethod.Post)
+        allowMethod(HttpMethod.Delete)
+        allowMethod(HttpMethod.Put)
+        anyHost()
+    }
+    install(Compression) {
+        gzip()
+    }
+    routing {
+        get("/") {
+            call.respondHtml(HttpStatusCode.OK, HTML::index)
         }
-        install(CORS) {
-            allowMethod(HttpMethod.Get)
-            allowMethod(HttpMethod.Post)
-            allowMethod(HttpMethod.Delete)
-            allowMethod(HttpMethod.Put)
-            anyHost()
+        static("/static") {
+            resources()
         }
-        install(Compression) {
-            gzip()
+
+        route("/events") {
+            get {
+                call.respond(DAO.getAllEntries())
+            }
         }
-        routing {
-            get("/") {
-                call.respondHtml(HttpStatusCode.OK, HTML::index)
-            }
-            static("/static") {
-                resources()
-            }
 
-            route("/events") {
-                get {
-                    call.respond(DAO.getAllEntries())
+        route(Event.path) {
+            get {
+                call.parameters["id"]?.let {
+
+                    val id = it.toLong()
+                    val event = DAO.getEvent(id)
+                    call.respond(event)
                 }
             }
+            post {
 
-            route(Event.path) {
-                get {
-                    call.parameters["id"]?.let {
+                println("POST!")
+                val event = call.receive<Event>()
+                DAO.insertEntry(event)
 
-                        val id = it.toLong()
-                        val event = DAO.getEvent(id)
-                        call.respond(event)
-                    }
-                }
-                post {
+                call.respond(HttpStatusCode.OK)
 
-                    println("POST!")
-                    val event = call.receive<Event>()
-                    DAO.insertEntry(event)
-
-                    call.respond(HttpStatusCode.OK)
-
-                }
-                delete {
-                    call.parameters["id"]?.let {
-                        val id = it.toLong()
-                        DAO.deleteEntry(id)
-                        call.respond(HttpStatusCode.OK)
-                    }
-
-                }
-                put {
-                    val event = call.receive<Event>()
-                    DAO.updateEntry(event)
+            }
+            delete {
+                call.parameters["id"]?.let {
+                    val id = it.toLong()
+                    DAO.deleteEntry(id)
                     call.respond(HttpStatusCode.OK)
                 }
-            }
-            route(EventType.path) {
-                get {
-                    call.respond(DAO.getAllTypes())
 
-                }
+            }
+            put {
+                println("PUT!")
+
+                val event = call.receive<Event>()
+                println(event.timestamp)
+                DAO.updateEntry(event)
+                call.respond(HttpStatusCode.OK)
             }
         }
-    }.start(wait = true)
+        route(EventType.path) {
+            get {
+                call.respond(DAO.getAllTypes())
+
+            }
+        }
+    }
 }

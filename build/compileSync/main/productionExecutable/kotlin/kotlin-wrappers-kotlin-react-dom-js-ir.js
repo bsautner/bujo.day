@@ -12,15 +12,15 @@
 }(this, function (_, kotlin_kotlin) {
   'use strict';
   //region block: imports
-  var Unit_getInstance = kotlin_kotlin.$_$.c4;
-  var objectMeta = kotlin_kotlin.$_$.i9;
+  var Unit_getInstance = kotlin_kotlin.$_$.g4;
+  var objectMeta = kotlin_kotlin.$_$.n9;
   //endregion
   //region block: pre-declaration
   //endregion
   function ReactHTML() {
     ReactHTML_instance = this;
   }
-  ReactHTML.prototype.j3x = function () {
+  ReactHTML.prototype.b3z = function () {
     var tmp$ret$2;
     // Inline function 'react.IntrinsicType' call
     var tmp$ret$1;
@@ -32,7 +32,7 @@
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
   };
-  ReactHTML.prototype.k3x = function () {
+  ReactHTML.prototype.c3z = function () {
     var tmp$ret$2;
     // Inline function 'react.IntrinsicType' call
     var tmp$ret$1;
@@ -44,7 +44,7 @@
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
   };
-  ReactHTML.prototype.l3x = function () {
+  ReactHTML.prototype.d3z = function () {
     var tmp$ret$2;
     // Inline function 'react.IntrinsicType' call
     var tmp$ret$1;
@@ -56,7 +56,7 @@
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
   };
-  ReactHTML.prototype.m3x = function () {
+  ReactHTML.prototype.e3z = function () {
     var tmp$ret$2;
     // Inline function 'react.IntrinsicType' call
     var tmp$ret$1;
@@ -68,7 +68,7 @@
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
   };
-  ReactHTML.prototype.n3x = function () {
+  ReactHTML.prototype.f3z = function () {
     var tmp$ret$2;
     // Inline function 'react.IntrinsicType' call
     var tmp$ret$1;
@@ -80,7 +80,7 @@
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
   };
-  ReactHTML.prototype.o3x = function () {
+  ReactHTML.prototype.g3z = function () {
     var tmp$ret$2;
     // Inline function 'react.IntrinsicType' call
     var tmp$ret$1;
@@ -92,7 +92,7 @@
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
   };
-  ReactHTML.prototype.p3x = function () {
+  ReactHTML.prototype.h3z = function () {
     var tmp$ret$2;
     // Inline function 'react.IntrinsicType' call
     var tmp$ret$1;
@@ -104,7 +104,7 @@
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
   };
-  ReactHTML.prototype.q3x = function () {
+  ReactHTML.prototype.i3z = function () {
     var tmp$ret$2;
     // Inline function 'react.IntrinsicType' call
     var tmp$ret$1;
@@ -116,7 +116,7 @@
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
   };
-  ReactHTML.prototype.r3x = function () {
+  ReactHTML.prototype.j3z = function () {
     var tmp$ret$2;
     // Inline function 'react.IntrinsicType' call
     var tmp$ret$1;
@@ -128,7 +128,7 @@
     tmp$ret$2 = tmp$ret$1;
     return tmp$ret$2;
   };
-  ReactHTML.prototype.s3x = function () {
+  ReactHTML.prototype.k3z = function () {
     var tmp$ret$2;
     // Inline function 'react.IntrinsicType' call
     var tmp$ret$1;

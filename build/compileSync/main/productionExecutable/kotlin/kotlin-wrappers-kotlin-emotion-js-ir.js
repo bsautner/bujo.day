@@ -16,7 +16,7 @@
   'use strict';
   //region block: imports
   var css = $module$_emotion_css_2enn37.css;
-  var Unit_getInstance = kotlin_kotlin.$_$.c4;
+  var Unit_getInstance = kotlin_kotlin.$_$.g4;
   //endregion
   //region block: pre-declaration
   //endregion

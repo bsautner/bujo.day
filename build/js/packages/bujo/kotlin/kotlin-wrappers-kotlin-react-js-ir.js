@@ -18,10 +18,10 @@
   var createElement = $module$react.createElement;
   var isValidElement = $module$react.isValidElement;
   var Fragment = $module$react.Fragment;
-  var Unit_getInstance = kotlin_kotlin.$_$.c4;
-  var interfaceMeta = kotlin_kotlin.$_$.q8;
-  var classMeta = kotlin_kotlin.$_$.h8;
-  var single = kotlin_kotlin.$_$.p6;
+  var Unit_getInstance = kotlin_kotlin.$_$.g4;
+  var interfaceMeta = kotlin_kotlin.$_$.u8;
+  var classMeta = kotlin_kotlin.$_$.l8;
+  var single = kotlin_kotlin.$_$.t6;
   //endregion
   //region block: pre-declaration
   function child(element) {
@@ -62,7 +62,7 @@
     }
   }
   function unaryPlus(_this__u8e3s4) {
-    this.f3x(_this__u8e3s4);
+    this.x3y(_this__u8e3s4);
   }
   function unaryPlus_0(_this__u8e3s4) {
     var tmp$ret$2;
@@ -74,10 +74,10 @@
     tmp$ret$0 = _this__u8e3s4;
     tmp$ret$1 = tmp$ret$0;
     tmp$ret$2 = tmp$ret$1;
-    this.g3x(tmp$ret$2);
+    this.y3y(tmp$ret$2);
   }
   function invoke(_this__u8e3s4, block) {
-    this.g3x(create(_this__u8e3s4, block));
+    this.y3y(create(_this__u8e3s4, block));
   }
   //endregion
   function get_CHILDREN() {
@@ -221,10 +221,10 @@
     return createElement.apply(null, [Fragment, void 1].concat([].slice.call(children.slice())));
   }
   //region block: post-declaration
-  ChildrenBuilderImpl.prototype.g3x = unaryPlus;
-  ChildrenBuilderImpl.prototype.h3x = unaryPlus_0;
-  ChildrenBuilderImpl.prototype.f3x = child;
-  ChildrenBuilderImpl.prototype.i3x = invoke;
+  ChildrenBuilderImpl.prototype.y3y = unaryPlus;
+  ChildrenBuilderImpl.prototype.z3y = unaryPlus_0;
+  ChildrenBuilderImpl.prototype.x3y = child;
+  ChildrenBuilderImpl.prototype.a3z = invoke;
   //endregion
   //region block: exports
   _.$_$ = _.$_$ || {};

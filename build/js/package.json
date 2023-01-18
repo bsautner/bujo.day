@@ -7,6 +7,7 @@
     "packages/bujo-test",
     "packages_imported/kotlin/1.7.20-Beta",
     "packages_imported/ktor-ktor-client-core-js-ir/2.1.1",
+    "packages_imported/Kotlin-DateTime-library-kotlinx-datetime-js-ir/0.4.0",
     "packages_imported/kotlin-test-js-runner/1.7.20-Beta",
     "packages_imported/kotlin-wrappers-kotlin-emotion-js-ir/11.10.4-pre.386",
     "packages_imported/kotlin-wrappers-kotlin-react-core-js-ir/18.2.0-pre.386",

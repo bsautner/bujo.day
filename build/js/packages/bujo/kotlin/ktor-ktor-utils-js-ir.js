@@ -22,84 +22,84 @@
   'use strict';
   //region block: imports
   var imul = Math.imul;
-  var charSequenceLength = kotlin_kotlin.$_$.f8;
-  var Unit_getInstance = kotlin_kotlin.$_$.c4;
-  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.a2;
+  var charSequenceLength = kotlin_kotlin.$_$.j8;
+  var Unit_getInstance = kotlin_kotlin.$_$.g4;
+  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.d2;
   var getKClassFromExpression = kotlin_kotlin.$_$.d;
-  var THROW_CCE = kotlin_kotlin.$_$.vb;
-  var getStringHashCode = kotlin_kotlin.$_$.o8;
-  var classMeta = kotlin_kotlin.$_$.h8;
-  var interfaceMeta = kotlin_kotlin.$_$.q8;
-  var CoroutineImpl = kotlin_kotlin.$_$.t7;
-  var Long = kotlin_kotlin.$_$.rb;
-  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.e7;
+  var THROW_CCE = kotlin_kotlin.$_$.bc;
+  var getStringHashCode = kotlin_kotlin.$_$.s8;
+  var classMeta = kotlin_kotlin.$_$.l8;
+  var interfaceMeta = kotlin_kotlin.$_$.u8;
+  var CoroutineImpl = kotlin_kotlin.$_$.x7;
+  var Long = kotlin_kotlin.$_$.xb;
+  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.i7;
   var readBytes$default = kotlin_io_ktor_ktor_io.$_$.g;
   var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.f1;
-  var isObject = kotlin_kotlin.$_$.b9;
-  var equals = kotlin_kotlin.$_$.j8;
-  var hashCode = kotlin_kotlin.$_$.p8;
-  var MutableMap = kotlin_kotlin.$_$.r4;
-  var ensureNotNull = kotlin_kotlin.$_$.ic;
-  var Entry = kotlin_kotlin.$_$.m4;
-  var isInterface = kotlin_kotlin.$_$.z8;
-  var MutableEntry = kotlin_kotlin.$_$.q4;
-  var charArray = kotlin_kotlin.$_$.d8;
-  var charSequenceGet = kotlin_kotlin.$_$.e8;
-  var toString = kotlin_kotlin.$_$.t2;
-  var Char = kotlin_kotlin.$_$.hb;
+  var isObject = kotlin_kotlin.$_$.f9;
+  var equals = kotlin_kotlin.$_$.n8;
+  var hashCode = kotlin_kotlin.$_$.t8;
+  var MutableMap = kotlin_kotlin.$_$.v4;
+  var ensureNotNull = kotlin_kotlin.$_$.oc;
+  var Entry = kotlin_kotlin.$_$.q4;
+  var isInterface = kotlin_kotlin.$_$.d9;
+  var MutableEntry = kotlin_kotlin.$_$.u4;
+  var charArray = kotlin_kotlin.$_$.h8;
+  var charSequenceGet = kotlin_kotlin.$_$.i8;
+  var toString = kotlin_kotlin.$_$.x2;
+  var Char = kotlin_kotlin.$_$.nb;
   var SupervisorJob = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.k1;
-  var AbstractCoroutineContextElement = kotlin_kotlin.$_$.h7;
+  var AbstractCoroutineContextElement = kotlin_kotlin.$_$.l7;
   var Key_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.o;
-  var get = kotlin_kotlin.$_$.o7;
-  var fold = kotlin_kotlin.$_$.n7;
-  var minusKey = kotlin_kotlin.$_$.p7;
-  var plus = kotlin_kotlin.$_$.s7;
+  var get = kotlin_kotlin.$_$.s7;
+  var fold = kotlin_kotlin.$_$.r7;
+  var minusKey = kotlin_kotlin.$_$.t7;
+  var plus = kotlin_kotlin.$_$.w7;
   var CoroutineExceptionHandler = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.b1;
-  var MutableIterator = kotlin_kotlin.$_$.o4;
-  var collectionSizeOrDefault = kotlin_kotlin.$_$.x4;
+  var MutableIterator = kotlin_kotlin.$_$.s4;
+  var collectionSizeOrDefault = kotlin_kotlin.$_$.b5;
   var ArrayList_init_$Create$ = kotlin_kotlin.$_$.v;
-  var Set = kotlin_kotlin.$_$.t4;
-  var toString_0 = kotlin_kotlin.$_$.m9;
-  var MutableSet = kotlin_kotlin.$_$.s4;
-  var firstOrNull = kotlin_kotlin.$_$.q5;
+  var Set = kotlin_kotlin.$_$.x4;
+  var toString_0 = kotlin_kotlin.$_$.r9;
+  var MutableSet = kotlin_kotlin.$_$.w4;
+  var firstOrNull = kotlin_kotlin.$_$.u5;
   var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.w;
   var LinkedHashMap_init_$Create$_0 = kotlin_kotlin.$_$.e1;
-  var to = kotlin_kotlin.$_$.tc;
-  var addAll = kotlin_kotlin.$_$.u4;
+  var to = kotlin_kotlin.$_$.zc;
+  var addAll = kotlin_kotlin.$_$.y4;
   var StringBuilder_init_$Create$ = kotlin_kotlin.$_$.n1;
-  var get_lastIndex = kotlin_kotlin.$_$.na;
-  var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.m2;
-  var Char__plus_impl_qi7pgj = kotlin_kotlin.$_$.q2;
-  var equals_0 = kotlin_kotlin.$_$.fa;
-  var emptyMap = kotlin_kotlin.$_$.m5;
+  var get_lastIndex = kotlin_kotlin.$_$.sa;
+  var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.q2;
+  var Char__plus_impl_qi7pgj = kotlin_kotlin.$_$.u2;
+  var equals_0 = kotlin_kotlin.$_$.ka;
+  var emptyMap = kotlin_kotlin.$_$.q5;
   var atomic$ref$1 = kotlin_org_jetbrains_kotlinx_atomicfu.$_$.c;
-  var objectMeta = kotlin_kotlin.$_$.i9;
-  var Comparable = kotlin_kotlin.$_$.ib;
-  var Enum = kotlin_kotlin.$_$.mb;
-  var isSuspendFunction = kotlin_kotlin.$_$.d9;
-  var MutableList = kotlin_kotlin.$_$.p4;
-  var ArrayList = kotlin_kotlin.$_$.d4;
-  var emptyList = kotlin_kotlin.$_$.l5;
-  var get_lastIndex_0 = kotlin_kotlin.$_$.x5;
-  var last = kotlin_kotlin.$_$.a6;
-  var mutableListOf = kotlin_kotlin.$_$.f6;
+  var objectMeta = kotlin_kotlin.$_$.n9;
+  var Comparable = kotlin_kotlin.$_$.ob;
+  var Enum = kotlin_kotlin.$_$.sb;
+  var isSuspendFunction = kotlin_kotlin.$_$.h9;
+  var MutableList = kotlin_kotlin.$_$.t4;
+  var ArrayList = kotlin_kotlin.$_$.h4;
+  var emptyList = kotlin_kotlin.$_$.p5;
+  var get_lastIndex_0 = kotlin_kotlin.$_$.b6;
+  var last = kotlin_kotlin.$_$.e6;
+  var mutableListOf = kotlin_kotlin.$_$.j6;
   var CoroutineScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.e1;
-  var extendThrowable = kotlin_kotlin.$_$.k8;
-  var captureStack = kotlin_kotlin.$_$.b8;
+  var extendThrowable = kotlin_kotlin.$_$.o8;
+  var captureStack = kotlin_kotlin.$_$.f8;
   var recoverStackTrace = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.x;
-  var Companion_getInstance = kotlin_kotlin.$_$.x3;
-  var _Result___init__impl__xyqfz8 = kotlin_kotlin.$_$.u2;
-  var createFailure = kotlin_kotlin.$_$.hc;
-  var Result__exceptionOrNull_impl_p6xea9 = kotlin_kotlin.$_$.v2;
-  var _Result___get_isFailure__impl__jpiriv = kotlin_kotlin.$_$.w2;
-  var IntCompanionObject_getInstance = kotlin_kotlin.$_$.q3;
-  var Continuation = kotlin_kotlin.$_$.m7;
-  var fillArrayVal = kotlin_kotlin.$_$.l8;
-  var toList = kotlin_kotlin.$_$.u6;
-  var isNaN_0 = kotlin_kotlin.$_$.mc;
-  var numberToLong = kotlin_kotlin.$_$.h9;
-  var IllegalStateException = kotlin_kotlin.$_$.qb;
-  var IllegalStateException_init_$Init$ = kotlin_kotlin.$_$.z1;
+  var Companion_getInstance = kotlin_kotlin.$_$.b4;
+  var _Result___init__impl__xyqfz8 = kotlin_kotlin.$_$.y2;
+  var createFailure = kotlin_kotlin.$_$.nc;
+  var Result__exceptionOrNull_impl_p6xea9 = kotlin_kotlin.$_$.z2;
+  var _Result___get_isFailure__impl__jpiriv = kotlin_kotlin.$_$.a3;
+  var IntCompanionObject_getInstance = kotlin_kotlin.$_$.u3;
+  var Continuation = kotlin_kotlin.$_$.q7;
+  var fillArrayVal = kotlin_kotlin.$_$.p8;
+  var toList = kotlin_kotlin.$_$.y6;
+  var isNaN_0 = kotlin_kotlin.$_$.sc;
+  var numberToLong = kotlin_kotlin.$_$.m9;
+  var IllegalStateException = kotlin_kotlin.$_$.wb;
+  var IllegalStateException_init_$Init$ = kotlin_kotlin.$_$.c2;
   //endregion
   //region block: pre-declaration
   function get_0(key) {
@@ -285,8 +285,8 @@
   CaseInsensitiveMap.prototype.m = function () {
     return this.y1j_1.m();
   };
-  CaseInsensitiveMap.prototype.ia = function () {
-    this.y1j_1.ia();
+  CaseInsensitiveMap.prototype.ka = function () {
+    this.y1j_1.ka();
   };
   CaseInsensitiveMap.prototype.b1k = function (key, value) {
     return this.y1j_1.a(caseInsensitive(key), value);
@@ -319,9 +319,9 @@
     return this.c1k(from);
   };
   CaseInsensitiveMap.prototype.d1k = function (key) {
-    return this.y1j_1.jb(caseInsensitive(key));
+    return this.y1j_1.lb(caseInsensitive(key));
   };
-  CaseInsensitiveMap.prototype.jb = function (key) {
+  CaseInsensitiveMap.prototype.lb = function (key) {
     if (!(!(key == null) ? typeof key === 'string' : false))
       return null;
     return this.d1k((!(key == null) ? typeof key === 'string' : false) ? key : THROW_CCE());
@@ -368,7 +368,7 @@
     this.f1k_1 = newValue;
     return this.f1k_1;
   };
-  Entry_0.prototype.za = function (newValue) {
+  Entry_0.prototype.bb = function (newValue) {
     return this.g1k((newValue == null ? true : isObject(newValue)) ? newValue : THROW_CCE());
   };
   Entry_0.prototype.hashCode = function () {
@@ -455,8 +455,8 @@
   DelegatingMutableSet$iterator$1.prototype.f = function () {
     return this.j1k_1.l1k_1(this.i1k_1.f());
   };
-  DelegatingMutableSet$iterator$1.prototype.b9 = function () {
-    return this.i1k_1.b9();
+  DelegatingMutableSet$iterator$1.prototype.d9 = function () {
+    return this.i1k_1.d9();
   };
   DelegatingMutableSet$iterator$1.$metadata$ = classMeta(undefined, [MutableIterator]);
   function DelegatingMutableSet(delegate, convertTo, convert) {
@@ -516,8 +516,8 @@
   DelegatingMutableSet.prototype.l = function (elements) {
     return this.r1k(elements);
   };
-  DelegatingMutableSet.prototype.ia = function () {
-    this.k1k_1.ia();
+  DelegatingMutableSet.prototype.ka = function () {
+    this.k1k_1.ka();
   };
   DelegatingMutableSet.prototype.s1k = function (element) {
     return this.k1k_1.l1(this.m1k_1(element));
@@ -625,7 +625,7 @@
   StringValuesBuilderImpl.prototype.d1l = function (name, value) {
     this.e1l(value);
     var list = ensureListForKey(this, name);
-    list.ia();
+    list.ka();
     list.b(value);
   };
   StringValuesBuilderImpl.prototype.a1k = function (name) {
@@ -654,10 +654,10 @@
     tmp$ret$0 = Unit_getInstance();
   };
   StringValuesBuilderImpl.prototype.h1l = function (name) {
-    this.a1l_1.jb(name);
+    this.a1l_1.lb(name);
   };
-  StringValuesBuilderImpl.prototype.ia = function () {
-    this.a1l_1.ia();
+  StringValuesBuilderImpl.prototype.ka = function () {
+    this.a1l_1.ka();
   };
   StringValuesBuilderImpl.prototype.b1l = function (name) {
   };
@@ -882,7 +882,7 @@
     var tmp0_apply = StringBuilder_init_$Create$(tmp1_buildString);
     // Inline function 'kotlin.contracts.contract' call
     // Inline function 'io.ktor.util.toLowerCasePreservingASCIIRules.<anonymous>' call
-    tmp0_apply.sf(original, 0, firstIndex);
+    tmp0_apply.uf(original, 0, firstIndex);
     var inductionVariable_0 = firstIndex;
     var last_0 = get_lastIndex(original);
     if (inductionVariable_0 <= last_0)
@@ -1372,7 +1372,7 @@
   PhaseContent.prototype.g1n = function (destination) {
     var interceptors = this.c1n_1;
     if (destination instanceof ArrayList) {
-      destination.kb(destination.g() + interceptors.g() | 0);
+      destination.mb(destination.g() + interceptors.g() | 0);
     }
     var inductionVariable = 0;
     var last = interceptors.g();
@@ -1425,7 +1425,7 @@
         var current = phasesList.h(index);
         if (current === phase) {
           var content = PhaseContent_init_$Create$(phase, Last_getInstance());
-          phasesList.fa(index, content);
+          phasesList.ha(index, content);
           return content;
         }
         var tmp;
@@ -1654,7 +1654,7 @@
         lastRelatedPhaseIndex = equals(relatedTo, reference) ? i : lastRelatedPhaseIndex;
       }
        while (!(i === last));
-    this.l1n_1.ra(lastRelatedPhaseIndex + 1 | 0, PhaseContent_init_$Create$(phase, new After(reference)));
+    this.l1n_1.ta(lastRelatedPhaseIndex + 1 | 0, PhaseContent_init_$Create$(phase, new After(reference)));
   };
   Pipeline.prototype.v1n = function (reference, phase) {
     if (hasPhase(this, phase))
@@ -1663,7 +1663,7 @@
     if (index === -1) {
       throw new InvalidPhaseException('Phase ' + reference + ' was not registered for this pipeline');
     }
-    this.l1n_1.ra(index, PhaseContent_init_$Create$(phase, new Before(reference)));
+    this.l1n_1.ta(index, PhaseContent_init_$Create$(phase, new Before(reference)));
   };
   Pipeline.prototype.w1n = function (phase, block) {
     var tmp0_elvis_lhs = findPhase(this, phase);
@@ -1968,7 +1968,7 @@
     tmp0_set.a(key, value);
   };
   AttributesJs.prototype.k1j = function (key) {
-    this.m1o_1.jb(key);
+    this.m1o_1.lb(key);
   };
   AttributesJs.prototype.l1j = function (key, block) {
     var tmp0_safe_receiver = this.m1o_1.i2(key);
@@ -2026,7 +2026,7 @@
   CoroutineStackFrame.$metadata$ = interfaceMeta('CoroutineStackFrame');
   function GMTDate_0(timestamp) {
     var tmp0_safe_receiver = timestamp;
-    var tmp1_safe_receiver = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.md();
+    var tmp1_safe_receiver = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.od();
     var tmp;
     if (tmp1_safe_receiver == null) {
       tmp = null;
@@ -2056,6 +2056,9 @@
       timestamp = null;
     return GMTDate_0(timestamp);
   }
+  function getTimeMillis() {
+    return numberToLong((new Date()).getTime());
+  }
   function InvalidTimestampException(timestamp) {
     IllegalStateException_init_$Init$('Invalid date timestamp exception: ' + toString_0(timestamp), this);
     captureStack(this, InvalidTimestampException);
@@ -2065,7 +2068,7 @@
     return _this__u8e3s4;
   }
   function instanceOf(_this__u8e3s4, type) {
-    return type.qd(_this__u8e3s4);
+    return type.sd(_this__u8e3s4);
   }
   function Type() {
   }
@@ -2098,25 +2101,26 @@
   _.$_$.d = JsType_getInstance;
   _.$_$.e = PlatformUtils_getInstance;
   _.$_$.f = CopyOnWriteHashMap;
-  _.$_$.g = PipelineContext;
-  _.$_$.h = PipelinePhase;
-  _.$_$.i = Pipeline;
-  _.$_$.j = instanceOf;
-  _.$_$.k = typeInfoImpl;
-  _.$_$.l = AttributeKey;
-  _.$_$.m = Attributes_0;
-  _.$_$.n = forEach;
-  _.$_$.o = get_1;
-  _.$_$.p = StringValuesBuilderImpl;
-  _.$_$.q = StringValuesBuilder;
-  _.$_$.r = StringValuesImpl;
-  _.$_$.s = StringValues;
-  _.$_$.t = appendAll;
-  _.$_$.u = flattenEntries;
-  _.$_$.v = isLowerCase;
-  _.$_$.w = putAll;
-  _.$_$.x = toCharArray;
-  _.$_$.y = toLowerCasePreservingASCIIRules;
+  _.$_$.g = getTimeMillis;
+  _.$_$.h = PipelineContext;
+  _.$_$.i = PipelinePhase;
+  _.$_$.j = Pipeline;
+  _.$_$.k = instanceOf;
+  _.$_$.l = typeInfoImpl;
+  _.$_$.m = AttributeKey;
+  _.$_$.n = Attributes_0;
+  _.$_$.o = forEach;
+  _.$_$.p = get_1;
+  _.$_$.q = StringValuesBuilderImpl;
+  _.$_$.r = StringValuesBuilder;
+  _.$_$.s = StringValuesImpl;
+  _.$_$.t = StringValues;
+  _.$_$.u = appendAll;
+  _.$_$.v = flattenEntries;
+  _.$_$.w = isLowerCase;
+  _.$_$.x = putAll;
+  _.$_$.y = toCharArray;
+  _.$_$.z = toLowerCasePreservingASCIIRules;
   //endregion
   return _;
 }));

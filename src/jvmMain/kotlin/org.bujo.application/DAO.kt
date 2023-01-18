@@ -23,25 +23,7 @@ object DAO {
 
     }
 
-    fun insertEntry(event: Event) {
-        val q = """
-            insert into table_events (text)
-            values (?);
-        """.trimIndent()
-        val stmt = db.prepareStatement(q,  Statement.RETURN_GENERATED_KEYS)
-        stmt.setString(1, event.value)
-        stmt.executeUpdate()
 
-
-        stmt.generatedKeys.use {
-            if (it.next()) {
-                val id = it.getLong(1)
-                println("Entry added with id: $id")
-                updateTypes(id, event.eventTypes)
-
-            }
-        }
-    }
 
     fun updateTypes(id: Long, types: List<Long>) {
         val d = """
@@ -80,14 +62,14 @@ object DAO {
          with(db.createStatement()) {
              val rs = executeQuery(q)
              while (rs.next()) {
-                 val ts = rs.getTimestamp(rs.findColumn("timestamp"))
+                 val ts = rs.getLong(rs.findColumn("timestamp"))
                  val id = rs.getLong(rs.findColumn("table_events_pk"))
                  val types = getEventTypes(id)
                  val typeIds = mutableListOf<Long>()
                  types.forEach {
                      typeIds.add(it.id)
                  }
-                 l.add(Event(id, ts.time,  rs.getString(3), typeIds))
+                 l.add(Event(id, ts,  rs.getString(3), typeIds))
              }
          }
         return l
@@ -95,13 +77,34 @@ object DAO {
 
     fun updateEntry(event: Event) {
         val q = """
-            update table_events set text='${event.value}' where table_events_pk = ${event.id}
+            update table_events set text='${event.value}', timestamp=${event.timestamp} where table_events_pk = ${event.id}
         """.trimIndent()
         with (db.createStatement()) {
             execute(q)
         }
-    }
+        updateTypes(event.id, event.eventTypes)
 
+    }
+    fun insertEntry(event: Event) {
+        val q = """
+            insert into table_events (text, timestamp)
+            values (?, ?);
+        """.trimIndent()
+        val stmt = db.prepareStatement(q,  Statement.RETURN_GENERATED_KEYS)
+        stmt.setString(1, event.value)
+        stmt.setLong(2, event.timestamp)
+        stmt.executeUpdate()
+
+
+        stmt.generatedKeys.use {
+            if (it.next()) {
+                val id = it.getLong(1)
+                println("Entry added with id: $id")
+                updateTypes(id, event.eventTypes)
+
+            }
+        }
+    }
 
     fun getAllTypes() : List<EventType> {
 
@@ -153,14 +156,14 @@ object DAO {
         with(db.createStatement()) {
             val rs = executeQuery(q)
             if (rs.next()) {
-                val ts = rs.getTimestamp(rs.findColumn("timestamp"))
+                val ts = rs.getLong(rs.findColumn("timestamp"))
                 val id = rs.getLong(rs.findColumn("table_events_pk"))
                 val types = getEventTypes(id)
                 val typeIds = mutableListOf<Long>()
                 types.forEach {
                     typeIds.add(it.id)
                 }
-                return Event(id, ts.time,  rs.getString(3), typeIds)
+                return Event(id, ts,  rs.getString(3), typeIds)
             }
             else {
                 throw IllegalStateException()

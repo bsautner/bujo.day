@@ -3,6 +3,7 @@ import csstype.Display
 import csstype.JustifyContent
 import csstype.px
 import emotion.react.css
+import io.ktor.util.date.*
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
 import react.FC
@@ -32,12 +33,15 @@ private val mainScope = MainScope()
 val Welcome = FC<WelcomeProps> { _ ->
     var entryText by useState(WIP.text)
     var entryId by useState(WIP.id)
+    var entryTimestamp by useState(WIP.timestamp)
 
     var entries by useState(emptyList<Event>())
     var types by useState(emptyList<EventType>())
 
     useEffectOnce {
         mainScope.launch {
+            entryTimestamp = getTimeMillis()
+            println(entryTimestamp)
             entries = getEntries()
             types = getEventTypes()
 
@@ -108,18 +112,15 @@ val Welcome = FC<WelcomeProps> { _ ->
             tr {
 
                 td {
-                    input {
-                        type = InputType.date
 
-                        val d = formatJsDate(Date())
-                        println(d)
-                        value =d
-                       // defaultValue = "11/04/1975"
+                    dateComponent {
+                        timestamp = entryTimestamp
                         onChange = {
-                            println(it.timeStamp)
-                            println(d)
+                            WIP.timestamp = it
+                            entryTimestamp = it
                         }
                     }
+
                 }
 
                 td {
@@ -128,7 +129,7 @@ val Welcome = FC<WelcomeProps> { _ ->
                         onSubmit = {
 
                             mainScope.launch {
-                                val e = Event(entryId, 0L, entryText, WIP.types)
+                                val e = Event(entryId, WIP.timestamp, entryText, WIP.types)
                                 WIP.types.forEach {
                                     println("Got Type $it")
                                 }
@@ -155,6 +156,7 @@ val Welcome = FC<WelcomeProps> { _ ->
                             mainScope.launch {
                                 entryId = 0L
                                 entryText = ""
+                                entryTimestamp = getTimeMillis()
                                 WIP.reset()
                                 types = getEventTypes()
 
@@ -219,9 +221,11 @@ val Welcome = FC<WelcomeProps> { _ ->
                             mainScope.launch {
                                 WIP.text = item.value
                                 WIP.id = item.id
+                                WIP.timestamp = item.timestamp
 
                                 entryText = item.value
                                 entryId = item.id
+                                entryTimestamp = item.timestamp
                                 loadEvent(item.id)
                                 types = getEventTypes()
                             }

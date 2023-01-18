@@ -16,7 +16,7 @@
   'use strict';
   //region block: imports
   var useEffect = $module$react.useEffect;
-  var Unit_getInstance = kotlin_kotlin.$_$.c4;
+  var Unit_getInstance = kotlin_kotlin.$_$.g4;
   //endregion
   //region block: pre-declaration
   //endregion

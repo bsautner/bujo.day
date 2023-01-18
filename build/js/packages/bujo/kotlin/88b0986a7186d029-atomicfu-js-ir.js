@@ -12,10 +12,10 @@
 }(this, function (_, kotlin_kotlin) {
   'use strict';
   //region block: imports
-  var Unit_getInstance = kotlin_kotlin.$_$.c4;
-  var objectMeta = kotlin_kotlin.$_$.i9;
-  var classMeta = kotlin_kotlin.$_$.h8;
-  var toString = kotlin_kotlin.$_$.sc;
+  var Unit_getInstance = kotlin_kotlin.$_$.g4;
+  var objectMeta = kotlin_kotlin.$_$.n9;
+  var classMeta = kotlin_kotlin.$_$.l8;
+  var toString = kotlin_kotlin.$_$.yc;
   //endregion
   //region block: pre-declaration
   None.prototype = Object.create(atomicfu$TraceBase.prototype);
@@ -227,13 +227,13 @@
   AtomicLong.prototype.atomicfu$getAndIncrement$long = function () {
     var tmp0_this = this;
     var tmp1 = tmp0_this.fj_1;
-    tmp0_this.fj_1 = tmp1.bh();
+    tmp0_this.fj_1 = tmp1.dh();
     return tmp1;
   };
   AtomicLong.prototype.atomicfu$getAndDecrement$long = function () {
     var tmp0_this = this;
     var tmp1 = tmp0_this.fj_1;
-    tmp0_this.fj_1 = tmp1.ch();
+    tmp0_this.fj_1 = tmp1.m7();
     return tmp1;
   };
   AtomicLong.prototype.atomicfu$getAndAdd$long = function (delta) {
@@ -249,12 +249,12 @@
   };
   AtomicLong.prototype.atomicfu$incrementAndGet$long = function () {
     var tmp0_this = this;
-    tmp0_this.fj_1 = tmp0_this.fj_1.bh();
+    tmp0_this.fj_1 = tmp0_this.fj_1.dh();
     return tmp0_this.fj_1;
   };
   AtomicLong.prototype.atomicfu$decrementAndGet$long = function () {
     var tmp0_this = this;
-    tmp0_this.fj_1 = tmp0_this.fj_1.ch();
+    tmp0_this.fj_1 = tmp0_this.fj_1.m7();
     return tmp0_this.fj_1;
   };
   AtomicLong.prototype.toString = function () {

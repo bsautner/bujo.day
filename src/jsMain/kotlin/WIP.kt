@@ -1,11 +1,14 @@
+import io.ktor.util.date.*
+
 object WIP {
 
     var id = 0L
     var text = ""
     val types = mutableListOf<Long>()
-    val timestamp = 0L
+    var timestamp = getTimeMillis()
 
     fun reset() {
+        timestamp = getTimeMillis()
         id = 0L
         text = ""
         types.clear()

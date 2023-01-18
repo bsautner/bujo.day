@@ -24,51 +24,51 @@
 }(this, function (_, kotlin_kotlin, kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core, kotlin_io_ktor_ktor_http, kotlin_io_ktor_ktor_io, kotlin_io_ktor_ktor_serialization) {
   'use strict';
   //region block: imports
-  var classMeta = kotlin_kotlin.$_$.h8;
-  var CoroutineImpl = kotlin_kotlin.$_$.t7;
-  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.e7;
-  var SerializationException = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.j2;
-  var Unit_getInstance = kotlin_kotlin.$_$.c4;
-  var throwUninitializedPropertyAccessException = kotlin_kotlin.$_$.rc;
-  var toString = kotlin_kotlin.$_$.m9;
-  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.a2;
-  var THROW_CCE = kotlin_kotlin.$_$.vb;
-  var KSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.g2;
-  var isInterface = kotlin_kotlin.$_$.z8;
+  var classMeta = kotlin_kotlin.$_$.l8;
+  var CoroutineImpl = kotlin_kotlin.$_$.x7;
+  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.i7;
+  var SerializationException = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.k2;
+  var Unit_getInstance = kotlin_kotlin.$_$.g4;
+  var throwUninitializedPropertyAccessException = kotlin_kotlin.$_$.xc;
+  var toString = kotlin_kotlin.$_$.r9;
+  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.d2;
+  var THROW_CCE = kotlin_kotlin.$_$.bc;
+  var KSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.h2;
+  var isInterface = kotlin_kotlin.$_$.d9;
   var ByteArrayContent_init_$Create$ = kotlin_io_ktor_ktor_http.$_$.a;
-  var BinaryFormat = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.e2;
+  var BinaryFormat = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.f2;
   var withCharsetIfNeeded = kotlin_io_ktor_ktor_http.$_$.k1;
   var TextContent_init_$Create$ = kotlin_io_ktor_ktor_http.$_$.b;
-  var StringFormat = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.k2;
+  var StringFormat = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.l2;
   var getKClassFromExpression = kotlin_kotlin.$_$.d;
   var getKClass = kotlin_kotlin.$_$.e;
-  var Long = kotlin_kotlin.$_$.rb;
+  var Long = kotlin_kotlin.$_$.xb;
   var discard = kotlin_io_ktor_ktor_io.$_$.b1;
   var readBytes$default = kotlin_io_ktor_ktor_io.$_$.g;
   var readText$default = kotlin_io_ktor_ktor_io.$_$.h;
   var JsonConvertException = kotlin_io_ktor_ktor_serialization.$_$.f;
-  var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.w1;
+  var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.z1;
   var ContentConverter = kotlin_io_ktor_ktor_serialization.$_$.e;
-  var serializerOrNull = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.m2;
-  var serializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.n2;
-  var MapSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.p;
-  var Map = kotlin_kotlin.$_$.n4;
-  var SetSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.q;
-  var Set = kotlin_kotlin.$_$.t4;
-  var firstOrNull = kotlin_kotlin.$_$.r5;
-  var StringCompanionObject_getInstance = kotlin_kotlin.$_$.s3;
-  var serializer_0 = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.s;
-  var ListSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.o;
-  var isArray = kotlin_kotlin.$_$.r8;
-  var List = kotlin_kotlin.$_$.l4;
-  var get_nullable = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.r;
-  var filterNotNull = kotlin_kotlin.$_$.p5;
-  var collectionSizeOrDefault = kotlin_kotlin.$_$.x4;
+  var serializerOrNull = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.n2;
+  var serializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.o2;
+  var MapSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.q;
+  var Map = kotlin_kotlin.$_$.r4;
+  var SetSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.r;
+  var Set = kotlin_kotlin.$_$.x4;
+  var firstOrNull = kotlin_kotlin.$_$.v5;
+  var StringCompanionObject_getInstance = kotlin_kotlin.$_$.w3;
+  var serializer_0 = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.t;
+  var ListSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.p;
+  var isArray = kotlin_kotlin.$_$.v8;
+  var List = kotlin_kotlin.$_$.p4;
+  var get_nullable = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.s;
+  var filterNotNull = kotlin_kotlin.$_$.t5;
+  var collectionSizeOrDefault = kotlin_kotlin.$_$.b5;
   var ArrayList_init_$Create$ = kotlin_kotlin.$_$.v;
   var HashSet_init_$Create$ = kotlin_kotlin.$_$.c1;
   var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.w;
-  var singleOrNull = kotlin_kotlin.$_$.o6;
-  var Collection = kotlin_kotlin.$_$.e4;
+  var singleOrNull = kotlin_kotlin.$_$.s6;
+  var Collection = kotlin_kotlin.$_$.i4;
   //endregion
   //region block: pre-declaration
   SerializationNegotiationParameters.prototype = Object.create(SerializationParameters.prototype);
@@ -242,7 +242,7 @@
   KotlinxSerializationConverter$serializationBase$1.prototype.k2m = function (parameters, $cont) {
     if (!(parameters instanceof SerializationNegotiationParameters)) {
       // Inline function 'kotlin.error' call
-      var tmp0_error = 'parameters type is ' + getKClassFromExpression(parameters).pd() + ',' + (' but expected ' + getKClass(SerializationNegotiationParameters).pd());
+      var tmp0_error = 'parameters type is ' + getKClassFromExpression(parameters).rd() + ',' + (' but expected ' + getKClass(SerializationNegotiationParameters).rd());
       throw IllegalStateException_init_$Create$(toString(tmp0_error));
     }
     return serializeContent(this.h2m_1, parameters.t2k(), parameters.g2l(), parameters.t(), parameters.f2l_1, parameters.i2l());
@@ -373,7 +373,7 @@
       // Inline function 'kotlin.contracts.contract' call
       var tmp$ret$0;
       // Inline function 'io.ktor.serialization.kotlinx.serializerFromTypeInfo.<anonymous>' call
-      tmp$ret$0 = tmp0_safe_receiver.zd().m() ? null : serializerOrNull(module_0, tmp0_safe_receiver);
+      tmp$ret$0 = tmp0_safe_receiver.be().m() ? null : serializerOrNull(module_0, tmp0_safe_receiver);
       tmp$ret$1 = tmp$ret$0;
       tmp = tmp$ret$1;
     }
@@ -437,7 +437,7 @@
   function maybeNullable(_this__u8e3s4, typeInfo) {
     var tmp;
     var tmp0_safe_receiver = typeInfo.l1o_1;
-    if ((tmp0_safe_receiver == null ? null : tmp0_safe_receiver.ae()) === true) {
+    if ((tmp0_safe_receiver == null ? null : tmp0_safe_receiver.ce()) === true) {
       tmp = get_nullable(_this__u8e3s4);
     } else {
       tmp = _this__u8e3s4;
