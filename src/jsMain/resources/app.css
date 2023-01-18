@@ -2,7 +2,41 @@ body {
     background-color: lightblue;
 }
 
-td, th {
-    border: 1px solid #ddd;
+
+
+.form-button {
+    background-color: cadetblue;
+}
+.delete-button {
+    background-color: indianred;
+}
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     padding: 8px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+}
+
+.checkboxes {
+    vertical-align: top;
+}
+
+.form-table {
+
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    padding: 8px;
+
+}
+.form-table-header {
+   horiz-align: left;
+    padding-bottom: 8px;
 }

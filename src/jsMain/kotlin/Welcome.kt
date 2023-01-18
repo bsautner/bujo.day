@@ -1,22 +1,16 @@
-import csstype.AlignItems
-import csstype.Display
-import csstype.JustifyContent
-import csstype.px
-import emotion.react.css
+import csstype.ClassName
 import io.ktor.util.date.*
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
 import react.FC
 import react.Props
-import react.dom.html.InputType
 import react.dom.html.ReactHTML.div
 import react.dom.html.ReactHTML.h2
 import react.dom.html.ReactHTML.hr
-import react.dom.html.ReactHTML.input
 import react.dom.html.ReactHTML.label
 import react.dom.html.ReactHTML.table
 import react.dom.html.ReactHTML.td
-import react.dom.html.ReactHTML.time
+import react.dom.html.ReactHTML.th
 import react.dom.html.ReactHTML.tr
 import react.useEffectOnce
 import react.useState
@@ -29,11 +23,11 @@ external interface WelcomeProps : Props {
 private val mainScope = MainScope()
 
 
-
 val Welcome = FC<WelcomeProps> { _ ->
     var entryText by useState(WIP.text)
     var entryId by useState(WIP.id)
     var entryTimestamp by useState(WIP.timestamp)
+    var newLabelText by useState("")
 
     var entries by useState(emptyList<Event>())
     var types by useState(emptyList<EventType>())
@@ -51,126 +45,171 @@ val Welcome = FC<WelcomeProps> { _ ->
 
 
 
-    div {
-        css {
-            padding = 5.px
-            display = Display.flex
-            alignItems = AlignItems.center
-            justifyContent = JustifyContent.center
-        }
 
+    div {
 
 
         table {
-
-            types.forEach {
-
-                tr {
-                    td {
-                        selectableButtonComponent {
-                            text = it.text
-                            selected = it.selected
-                            onSubmit = {
-                                mainScope.launch {
-                                    it.selected = ! it.selected
-                                    println(it.selected)
-                                    if (it.selected) {
-                                        WIP.types.add(it.id)
-                                    } else {
-                                        WIP.types.remove(it.id)
-                                    }
-                                    types = getEventTypes()
-                                }
-                            }
-                        }
+            className = ClassName("form-table")
+            tr {
+                className = ClassName("form-table-header")
+                th {
+                    className = ClassName("form-table-header")
+                    label {
+                        +"Label"
                     }
                 }
+                th {
+                    className = ClassName("form-table-header")
+                    label {
+                        +"Entry"
+                    }
+                }
+
             }
-        }
-
-
-
-        inputComponent {
-            onChange = {
-                entryText = it
-            }
-            text = entryText
-            WIP.text = text
-        }
-
-
-    }
-    div {
-        css {
-            padding = 5.px
-            display = Display.flex
-            alignItems = AlignItems.end
-            justifyContent = JustifyContent.center
-        }
-
-        table {
             tr {
 
                 td {
+                    className = ClassName("checkboxes")
+                    table {
+                        tr {
+                            td {
+                                inputComponent {
 
-                    dateComponent {
-                        timestamp = entryTimestamp
+                                    text = newLabelText
+                                    rows = 1
+                                    cols = 20
+                                    onChange = {
+                                        newLabelText = it
+                                    }
+                                }
+                            }
+                            td {
+                                buttonComponent {
+                                    text = "+"
+                                    onSubmit = {
+                                        mainScope.launch {
+                                            println(newLabelText)
+                                            addType(newLabelText)
+                                            newLabelText = ""
+                                            types = getEventTypes()
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                        types.forEach {
+
+                            tr {
+                                td {
+                                    selectableButtonComponent {
+                                        text = it.text
+                                        selected = it.selected
+                                        onSubmit = {
+                                            mainScope.launch {
+                                                it.selected = !it.selected
+                                                println(it.selected)
+                                                if (it.selected) {
+                                                    WIP.types.add(it.id)
+                                                } else {
+                                                    WIP.types.remove(it.id)
+                                                }
+                                                types = getEventTypes()
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                td {
+                    inputComponent {
                         onChange = {
-                            WIP.timestamp = it
-                            entryTimestamp = it
+                            entryText = it
                         }
+                        text = entryText
+                        rows = 20
+                        cols = 50
+                        WIP.text = text
                     }
 
                 }
-
+            }
+            tr {
+                td {}
                 td {
-                    buttonComponent {
-                        text = "Save"
-                        onSubmit = {
+                    table {
+                        tr {
 
-                            mainScope.launch {
-                                val e = Event(entryId, WIP.timestamp, entryText, WIP.types)
-                                WIP.types.forEach {
-                                    println("Got Type $it")
-                                }
-                                if (entryId == 0L) {
-                                    postEntry(e)
-                                    entryText = ""
-                                } else {
-                                    putEntry(e)
-                                }
+                            td {
 
-                                entries = getEntries()
+                                dateComponent {
+                                    timestamp = entryTimestamp
+                                    onChange = {
+                                        WIP.timestamp = it
+                                        entryTimestamp = it
+                                    }
+                                }
 
                             }
 
+                            td {
+                                buttonComponent {
+                                    text = "Save"
 
-                        }
-                    }
-                }
-                td {
-                    buttonComponent {
-                        text = "New"
-                        onSubmit = {
+                                    onSubmit = {
 
-                            mainScope.launch {
-                                entryId = 0L
-                                entryText = ""
-                                entryTimestamp = getTimeMillis()
-                                WIP.reset()
-                                types = getEventTypes()
+                                        mainScope.launch {
+                                            val e = Event(entryId, WIP.timestamp, entryText, WIP.types)
+                                            WIP.types.forEach {
+                                                println("Got Type $it")
+                                            }
+                                            if (entryId == 0L) {
+                                                postEntry(e)
+                                                entryText = ""
+                                            } else {
+                                                putEntry(e)
+                                            }
 
+                                            entries = getEntries()
+
+                                        }
+
+
+                                    }
+                                }
                             }
+                            td {
+                                buttonComponent {
+                                    text = "New"
+                                    onSubmit = {
+
+                                        mainScope.launch {
+                                            entryId = 0L
+                                            entryText = ""
+                                            entryTimestamp = getTimeMillis()
+                                            WIP.reset()
+                                            types = getEventTypes()
+
+                                        }
 
 
+                                    }
+                                }
+                            }
                         }
                     }
                 }
             }
+
+
         }
 
 
     }
+
     hr {}
     div {
         h2 {
@@ -183,13 +222,14 @@ val Welcome = FC<WelcomeProps> { _ ->
     div {
 
         table {
+            this.className = ClassName("styled-table")
             entries.forEach { item ->
                 tr {
                     td {
                         deleteEntryButtonComponent {
                             id = item.id
                             onSubmit = {
-                                println("callback $it")
+
                                 mainScope.launch {
                                     deleteEntry(it)
                                     entries = getEntries()

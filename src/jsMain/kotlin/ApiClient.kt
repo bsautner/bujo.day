@@ -56,3 +56,10 @@ suspend fun getEventTypes() : List<EventType> {
 
 }
 
+suspend fun addType(type: String) {
+    jsonClient.post(EventType.path) {
+        contentType(ContentType.Application.Json)
+        setBody(type)
+    }
+}
+

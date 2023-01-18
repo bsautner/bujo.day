@@ -12,18 +12,16 @@
 }(this, function (_, kotlin_kotlin) {
   'use strict';
   //region block: imports
-  var toString = kotlin_kotlin.$_$.r9;
   var Unit_getInstance = kotlin_kotlin.$_$.g4;
   //endregion
   //region block: pre-declaration
   //endregion
-  function get_px(_this__u8e3s4) {
+  function ClassName(value) {
     var tmp$ret$1;
     // Inline function 'kotlin.js.unsafeCast' call
-    var tmp0_unsafeCast = toString(_this__u8e3s4) + 'px';
     var tmp$ret$0;
     // Inline function 'kotlin.js.asDynamic' call
-    tmp$ret$0 = tmp0_unsafeCast;
+    tmp$ret$0 = value;
     tmp$ret$1 = tmp$ret$0;
     return tmp$ret$1;
   }

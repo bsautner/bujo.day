@@ -135,6 +135,18 @@
     // Inline function 'kotlin.js.unsafeCast' call
     var tmp$ret$0;
     // Inline function 'kotlin.js.asDynamic' call
+    tmp$ret$0 = 'th';
+    tmp$ret$1 = tmp$ret$0;
+    tmp$ret$2 = tmp$ret$1;
+    return tmp$ret$2;
+  };
+  ReactHTML.prototype.l3z = function () {
+    var tmp$ret$2;
+    // Inline function 'react.IntrinsicType' call
+    var tmp$ret$1;
+    // Inline function 'kotlin.js.unsafeCast' call
+    var tmp$ret$0;
+    // Inline function 'kotlin.js.asDynamic' call
     tmp$ret$0 = 'tr';
     tmp$ret$1 = tmp$ret$0;
     tmp$ret$2 = tmp$ret$1;

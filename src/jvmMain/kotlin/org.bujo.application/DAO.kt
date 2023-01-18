@@ -172,4 +172,24 @@ object DAO {
 
     }
 
+    fun addType(type: String) {
+        val q = """
+            insert into table_event_type (name)
+            values (?);
+        """.trimIndent()
+        val stmt = db.prepareStatement(q,  Statement.RETURN_GENERATED_KEYS)
+        stmt.setString(1, type)
+
+        stmt.executeUpdate()
+
+
+        stmt.generatedKeys.use {
+            if (it.next()) {
+                val id = it.getLong(1)
+                println("type $type added with id: $id")
+
+            }
+        }
+    }
+
 }

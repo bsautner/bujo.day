@@ -1,4 +1,5 @@
 import csstype.AlignContent
+import csstype.ClassName
 import emotion.react.css
 import org.w3c.dom.HTMLButtonElement
 import org.w3c.dom.HTMLTextAreaElement
@@ -28,10 +29,9 @@ val deleteEntryButtonComponent = FC<DeleteButtonProps> { props ->
 
 
         button {
+            className = ClassName("delete-button")
             +"X"
-            css {
-                alignContent = AlignContent.end
-            }
+
             onClick = clickHandler
         }
 

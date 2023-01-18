@@ -8,6 +8,8 @@ import react.useState
 external interface InputProps : Props {
     var onChange: (String) -> Unit
     var text : String
+    var rows : Int
+    var cols : Int
 
 
 }
@@ -26,8 +28,8 @@ val inputComponent = FC<InputProps> { props ->
 
 
     textarea {
-        this.rows = 20
-        this.cols = 50
+        this.rows = props.rows
+        this.cols = props.cols
         this.value = props.text
         onChange = changeHandler
     }

@@ -104,6 +104,11 @@ fun Application.applicationModule() {
                 call.respond(DAO.getAllTypes())
 
             }
+            post {
+                val type = call.receive<String>()
+                DAO.addType(type)
+                call.respond(HttpStatusCode.OK)
+            }
         }
     }
 }
