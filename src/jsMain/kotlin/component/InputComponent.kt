@@ -1,3 +1,5 @@
+package component
+
 import org.w3c.dom.HTMLTextAreaElement
 import react.FC
 import react.Props

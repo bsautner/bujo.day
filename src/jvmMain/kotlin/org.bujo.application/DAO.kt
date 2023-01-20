@@ -4,8 +4,9 @@ import Event
 import EventType
 import java.sql.Connection
 import java.sql.DriverManager
+import java.sql.SQLException
+import java.sql.Statement
 import java.util.*
-import java.sql.*
 object DAO {
 
     private lateinit var db: Connection
@@ -22,6 +23,7 @@ object DAO {
         }
 
     }
+
 
 
 
@@ -43,21 +45,20 @@ object DAO {
 
     }
 
-    fun deleteEntry(id: Long) {
+    fun deleteEvent(id: Long) {
         val q = """
             delete from table_events where table_events_pk = $id
         """.trimIndent()
         with (db.createStatement()) {
             execute(q)
         }
-        updateTypes(id, emptyList())
+       updateTypes(id, emptyList())
     }
 
     fun getAllEntries() : List<Event> {
 
-        val q = """
-           select * from table_events order by timestamp desc;
-        """.trimIndent()
+        val q = "select * from table_events order by timestamp desc;"
+
         val l = mutableListOf<Event>()
          with(db.createStatement()) {
              val rs = executeQuery(q)
@@ -75,7 +76,7 @@ object DAO {
         return l
     }
 
-    fun updateEntry(event: Event) {
+    fun updateEvent(event: Event) {
         val q = """
             update table_events set text='${event.value}', timestamp=${event.timestamp} where table_events_pk = ${event.id}
         """.trimIndent()
@@ -85,32 +86,29 @@ object DAO {
         updateTypes(event.id, event.eventTypes)
 
     }
-    fun insertEntry(event: Event) {
-        val q = """
-            insert into table_events (text, timestamp)
-            values (?, ?);
-        """.trimIndent()
+    fun insertEvent(event: Event) : Long {
+        val q = "insert into table_events (text, timestamp) values (?, ?);"
+
         val stmt = db.prepareStatement(q,  Statement.RETURN_GENERATED_KEYS)
         stmt.setString(1, event.value)
         stmt.setLong(2, event.timestamp)
         stmt.executeUpdate()
-
-
         stmt.generatedKeys.use {
             if (it.next()) {
                 val id = it.getLong(1)
-                println("Entry added with id: $id")
                 updateTypes(id, event.eventTypes)
-
+                return id
+            }
+            else {
+                throw SQLException("Failed to insert event")
             }
         }
     }
 
     fun getAllTypes() : List<EventType> {
 
-        val q = """
-           select * from table_event_type order by name desc;
-        """.trimIndent()
+        val q = "select * from table_event_type order by name desc;"
+
         val l = mutableListOf<EventType>()
         with(db.createStatement()) {
             val rs = executeQuery(q)
@@ -128,15 +126,21 @@ object DAO {
         """.trimIndent()
         with(db.createStatement()) {
             val rs = executeQuery(q)
-            rs.next()
-            return EventType(rs.getLong(rs.findColumn("table_event_type_pk")), rs.getString(rs.findColumn("name")), false)
+            if (rs.next()) {
+                return EventType(
+                    rs.getLong(rs.findColumn("table_event_type_pk")),
+                    rs.getString(rs.findColumn("name")),
+                    false
+                )
+            } else {
+                throw SQLException("No Event Type with id: $typeId")
+            }
         }
     }
 
-    private fun getEventTypes(eventID: Long) : List<EventType> {
-        val q = """
-            select * from table_event_type_matrix where table_events_fk = $eventID
-        """.trimIndent()
+    fun getEventTypes(eventID: Long) : List<EventType> {
+        val q = "select * from table_event_type_matrix where table_events_fk = $eventID"
+
         val list = mutableListOf<EventType>()
         with(db.createStatement()) {
             val rs = executeQuery(q)
@@ -149,9 +153,8 @@ object DAO {
     }
 
     fun getEvent(id: Long): Event {
-        val q = """
-           select * from table_events where table_events_pk = $id;
-        """.trimIndent()
+        val q = " select * from table_events where table_events_pk = $id;"
+
 
         with(db.createStatement()) {
             val rs = executeQuery(q)
@@ -172,11 +175,9 @@ object DAO {
 
     }
 
-    fun addType(type: String) {
-        val q = """
-            insert into table_event_type (name)
-            values (?);
-        """.trimIndent()
+    fun insertType(type: String) : Long {
+        val q = "insert into table_event_type (name) values (?);"
+
         val stmt = db.prepareStatement(q,  Statement.RETURN_GENERATED_KEYS)
         stmt.setString(1, type)
 
@@ -185,28 +186,36 @@ object DAO {
 
         stmt.generatedKeys.use {
             if (it.next()) {
-                val id = it.getLong(1)
-                println("type $type added with id: $id")
+                return it.getLong(1)
 
+            }
+            else {
+                throw SQLException("Failed to create event type $type")
             }
         }
     }
 
     fun deleteTypes(types: List<Long>) {
         types.forEach {
-            val q = """
-                delete from table_event_type_matrix where table_event_type_fk = $it;
-            """.trimIndent()
-            with(db.createStatement()) {
-                execute(q)
-            }
+           deleteType(it)
+        }
+    }
 
-            val q2 = """
-                delete from table_event_type where table_event_type_pk = $it;
+    fun deleteType(id: Long) {
+        val q = "delete from table_event_type_matrix where table_event_type_fk = $id;"
+
+        with(db.createStatement()) {
+            execute(q)
+        }
+
+        val f = "SET FOREIGN_KEY_CHECKS=0;"
+        val q2 = """
+                
+                delete from table_event_type where table_event_type_pk = $id;
             """.trimIndent()
-            with(db.createStatement()) {
-                execute(q2)
-            }
+        with(db.createStatement()) {
+            execute(f)
+            execute(q2)
         }
     }
 

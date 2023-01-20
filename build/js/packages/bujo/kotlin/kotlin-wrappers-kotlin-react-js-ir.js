@@ -88,6 +88,10 @@
   function ChildrenBuilder() {
   }
   ChildrenBuilder.$metadata$ = interfaceMeta('ChildrenBuilder');
+  function createChildrenBuilder() {
+    init_properties_ChildrenBuilder_kt_7yrkko();
+    return new ChildrenBuilderImpl();
+  }
   function set_children(_this__u8e3s4, value) {
     init_properties_ChildrenBuilder_kt_7yrkko();
     var tmp$ret$0;
@@ -105,10 +109,6 @@
   function ChildrenBuilderImpl() {
   }
   ChildrenBuilderImpl.$metadata$ = classMeta('ChildrenBuilderImpl', [ChildrenBuilder]);
-  function createChildrenBuilder() {
-    init_properties_ChildrenBuilder_kt_7yrkko();
-    return new ChildrenBuilderImpl();
-  }
   var properties_initialized_ChildrenBuilder_kt_gby2z0;
   function init_properties_ChildrenBuilder_kt_7yrkko() {
     if (properties_initialized_ChildrenBuilder_kt_gby2z0) {

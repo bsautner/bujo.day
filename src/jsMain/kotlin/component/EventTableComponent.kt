@@ -1,12 +1,7 @@
 package component
 
-import Event
-import EventType
 import csstype.ClassName
-import kotlinx.coroutines.MainScope
-import kotlinx.coroutines.launch
 import react.FC
-import react.Props
 import react.dom.html.ReactHTML
 import react.dom.html.ReactHTML.h4
 import react.dom.html.ReactHTML.table
@@ -14,18 +9,8 @@ import react.dom.html.ReactHTML.tbody
 import react.dom.html.ReactHTML.td
 import kotlin.js.Date
 
-external interface EntryListComponentProps : Props {
 
-    var itemSelectedCallback: (Event) -> Unit
-    var entries: List<Event>
-    var types: List<EventType>
-    var onDelete: (Long) -> Unit
-
-}
-
-private val mainScope = MainScope()
-
-val entryListComponent = FC<EntryListComponentProps> { props ->
+val entryListComponent = FC<JournalProperties> { props ->
 
     h4 {
         +"Entries"
@@ -33,7 +18,7 @@ val entryListComponent = FC<EntryListComponentProps> { props ->
     table {
         this.className = ClassName("table table-hover table-bordered")
         tbody {
-            props.entries.forEach { item ->
+            props.events.forEach { item ->
                 ReactHTML.tr {
                     ReactHTML.td {
                         // className = ClassName("styled-td")
@@ -58,9 +43,7 @@ val entryListComponent = FC<EntryListComponentProps> { props ->
                             +item.value
                         }
                         onClick = {
-                            mainScope.launch {
-                                props.itemSelectedCallback.invoke(item)
-                            }
+                            props.onEventClick.invoke(item)
                         }
                     }
                     ReactHTML.td {

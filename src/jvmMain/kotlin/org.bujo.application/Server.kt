@@ -16,24 +16,80 @@ import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import kotlinx.html.*
-import java.time.format.DateTimeFormatter
 
 fun HTML.index() {
     head {
         title("BUJO!")
+        link(rel = "stylesheet", type = "text/css", href = "/static/bootstrap5/css/bootstrap.css")
         link(rel = "stylesheet", type = "text/css", href = "/static/app.css")
+
+//        link(rel = "stylesheet", type = "text/css", href = "/static/bootstrap/css/bootstrap-responsive.css")
+
+        link(rel = "stylesheet", type = "text/css", href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+//
+//        meta {
+//            name = "theme-color"
+//            content = "#712cf9"
+//        }
     }
     body {
         div {
             id = "root"
         }
+
         script(src = "/static/bujo.js") {}
+        script(src = "/static/bootstrap5/js/bootstrap.bundle.js") {}
+    }
+}
+
+fun HTML.login() {
+    head {
+        title("BUJO!")
+        link(rel = "stylesheet", type = "text/css", href = "/static/bootstrap5/css/bootstrap.css")
+         link(rel = "stylesheet", type = "text/css", href = "/static/signin.css")
+         link(rel = "stylesheet", type = "text/css", href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        meta {
+            name = "theme-color"
+            content = "#7952b3"
+        }
+    }
+    body(classes = "text-center") {
+
+        div {
+            id = "login"
+        }
+
+        script(src = "/static/bujo.js") {}
+        script(src = "/static/bootstrap5/js/bootstrap.bundle.js") {}
+    }
+}
+
+
+fun HTML.register() {
+    head {
+        title("BUJO!")
+        link(rel = "stylesheet", type = "text/css", href = "/static/bootstrap5/css/bootstrap.css")
+        link(rel = "stylesheet", type = "text/css", href = "/static/signin.css")
+        link(rel = "stylesheet", type = "text/css", href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        meta {
+            name = "theme-color"
+            content = "#7952b3"
+        }
+    }
+    body(classes = "text-center") {
+
+        div {
+            id = "register"
+        }
+
+        script(src = "/static/bujo.js") {}
+        script(src = "/static/bootstrap5/js/bootstrap.bundle.js") {}
     }
 }
 
 fun main() {
     println("Starting Up")
-    embeddedServer(Netty, port = 8084, module = Application::applicationModule).start(wait = true)
+    embeddedServer(Netty, port = 8080, module = Application::applicationModule).start(wait = true)
 }
 
 fun Application.applicationModule() {
@@ -53,9 +109,22 @@ fun Application.applicationModule() {
     routing {
         get("/") {
             call.respondHtml(HttpStatusCode.OK, HTML::index)
+
         }
         static("/static") {
             resources()
+        }
+
+        route("/login") {
+            get {
+                call.respondHtml(HttpStatusCode.OK, HTML::login)
+            }
+        }
+
+        route("/register") {
+            get {
+                call.respondHtml(HttpStatusCode.OK, HTML::register)
+            }
         }
 
         route("/events") {
@@ -77,7 +146,7 @@ fun Application.applicationModule() {
 
                 println("POST!")
                 val event = call.receive<Event>()
-                DAO.insertEntry(event)
+                DAO.insertEvent(event)
 
                 call.respond(HttpStatusCode.OK)
 
@@ -85,7 +154,7 @@ fun Application.applicationModule() {
             delete {
                 call.parameters["id"]?.let {
                     val id = it.toLong()
-                    DAO.deleteEntry(id)
+                    DAO.deleteEvent(id)
                     call.respond(HttpStatusCode.OK)
                 }
 
@@ -95,7 +164,7 @@ fun Application.applicationModule() {
 
                 val event = call.receive<Event>()
                 println(event.timestamp)
-                DAO.updateEntry(event)
+                DAO.updateEvent(event)
                 call.respond(HttpStatusCode.OK)
             }
         }
@@ -106,7 +175,7 @@ fun Application.applicationModule() {
             }
             post {
                 val type = call.receive<String>()
-                DAO.addType(type)
+                DAO.insertType(type)
                 call.respond(HttpStatusCode.OK)
             }
             delete {

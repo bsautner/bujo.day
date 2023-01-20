@@ -15,7 +15,7 @@
   var Unit_getInstance = kotlin_kotlin.$_$.g4;
   var objectMeta = kotlin_kotlin.$_$.n9;
   var classMeta = kotlin_kotlin.$_$.l8;
-  var toString = kotlin_kotlin.$_$.yc;
+  var toString = kotlin_kotlin.$_$.xc;
   //endregion
   //region block: pre-declaration
   None.prototype = Object.create(atomicfu$TraceBase.prototype);

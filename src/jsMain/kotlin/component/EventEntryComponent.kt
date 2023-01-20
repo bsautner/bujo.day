@@ -1,26 +1,11 @@
-import component.dateComponent
+package component
+
 import csstype.ClassName
-import kotlinx.coroutines.MainScope
-import kotlinx.coroutines.launch
 import react.FC
-import react.Props
-import react.dom.html.ReactHTML
 import react.dom.html.ReactHTML.div
 
-external interface EventEntryComponentProps : Props {
 
-    var callback: () -> Unit
-    var addEventCallback: () -> Unit
-    var timestampChangedCallback: (Long) -> Unit
-    var selectedEvent: Event
-    var onTextChanged: (String) -> Unit
-
-
-}
-
-private val mainScope = MainScope()
-
-val eventEntryComponent = FC<EventEntryComponentProps> { props ->
+val eventEntryComponent = FC<JournalProperties> { props ->
 
     div {
         className = ClassName("container")
@@ -29,71 +14,65 @@ val eventEntryComponent = FC<EventEntryComponentProps> { props ->
             div {
                 className = ClassName("row")
                 div {
-                    className = ClassName("col")
-                    ReactHTML.label {
-                        +"Entry"
-                    }
-                }
-                div {
-                    className = ClassName("col")
-                    dateComponent {
-                        timestamp = props.selectedEvent.timestamp
-                        onChange = {
-                            props.timestampChangedCallback.invoke(it)
-                        }
-                    }
-                }
-                div {
-                    className = ClassName("col")
-                    saveButtonComponent {
-                        //text = "Save"
+                    className = ClassName("input-group")
 
-                        onSubmit = {
-
-                            mainScope.launch {
-                                if (props.selectedEvent.value.isNotBlank()) {
-
-                                    if (props.selectedEvent.id == 0L) {
-                                        postEntry(props.selectedEvent)
-                                        // entryText = ""
-                                    } else {
-                                        putEntry(props.selectedEvent)
-                                    }
-
-                                    props.callback.invoke()
-                                }
+                    div {
+                        className = ClassName("col-auto")
+                        dateComponent {
+                            timestamp = props.selectedEvent.timestamp
+                            onTimestampChanged = {
+                                props.onTimestampChanged.invoke(it)
                             }
+                        }
+                    }
+
+                    div {
+                        className = ClassName("col-auto")
+                        saveButtonComponent {
+                            //text = "Save"
+
+                            onSubmit = {
 
 
+                                if (props.selectedEvent.value.isNotBlank()) {
+                                    props.onSaveEvent()
+
+                                }
+
+
+                            }
+                        }
+                    }
+
+                    div {
+                        className = ClassName("col-auto")
+                        newButton {
+
+                            onSubmit = {
+                                props.onNewEventClick.invoke()
+
+                            }
                         }
                     }
                 }
-                div {
-                    className = ClassName("col")
-                    addButtonComponent {
 
-                        onSubmit = {
-                            props.addEventCallback.invoke()
-
-                        }
+            }
+            div {
+                className = ClassName("row")
+                inputComponent {
+                    onChange = {
+                        props.onTextChanged.invoke(it)
                     }
+                    text = props.selectedEvent.value
+                    rows = 20
+                    cols = 50
+
                 }
             }
-        }
 
-        div {
-            className = ClassName("row")
-            inputComponent {
-                onChange = {
-                    props.onTextChanged.invoke(it)
-                }
-                text = props.selectedEvent.value
-                rows = 20
-                cols = 50
-
-            }
         }
 
 
     }
 }
+

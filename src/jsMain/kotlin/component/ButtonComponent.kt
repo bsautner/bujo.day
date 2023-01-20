@@ -1,3 +1,5 @@
+package component
+
 import csstype.ClassName
 import org.w3c.dom.HTMLElement
 import react.FC
@@ -21,7 +23,7 @@ external interface DeleteButtonProps : Props {
 
 }
 
-val addButtonComponent = FC<AddButtonProps> { props ->
+val newButton = FC<AddButtonProps> { props ->
 
     val clickHandler: MouseEventHandler<HTMLElement> = {
         props.onSubmit()

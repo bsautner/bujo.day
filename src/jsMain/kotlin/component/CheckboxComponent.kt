@@ -22,10 +22,6 @@ val eventTypeCheckboxComponent = FC<SelectButtonProps> { props ->
         props.onSubmit()
     }
 
-//    button {
-//        +props.text
-//        onClick = clickHandler
-//    }
     ReactHTML.div {
         className = ClassName("form-check")
         input {
@@ -34,8 +30,6 @@ val eventTypeCheckboxComponent = FC<SelectButtonProps> { props ->
             id = props.text
             onChange = clickHandler
             checked = props.selected
-
-
         }
 
         label {

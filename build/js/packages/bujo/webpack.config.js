@@ -78,6 +78,13 @@ config.module.rules.push({
         errors: false
     })
 })(config);
+
+// webpack.js
+if (config.devServer) {
+    config.devtool = 'eval-cheap-source-map';
+}
+
+
 // save evaluated config file
 ;(function(config) {
     const util = require('util');

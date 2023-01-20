@@ -1,33 +1,13 @@
 package component
 
-import Event
-import EventType
-import component.eventEntryComponent
-import component.eventTypeComponent
 import csstype.ClassName
 import react.FC
-import react.Props
 import react.dom.html.ReactHTML.div
 
-external interface JournalFormProps : Props {
 
-    var types: List<EventType>
-    var onTypeAdded: () -> Unit
-    var eventAddedCallback: () -> Unit
-    var selectedEvent: Event
-    var addEventCallback: () -> Unit
-    var timestampChangedCallback: (Long) -> Unit
-    var onTextChanged: (String) -> Unit
-    var onCheckChange: (Long, Boolean) -> Unit
-    var onTypesDeleted: () -> Unit
-    var onDelete: (Long) -> Unit
-
-}
-
-
-val journalForm = FC<JournalFormProps> { props ->
+val journalForm = FC<JournalProperties> { props ->
     div {
-        className = ClassName("container text-left")
+        className = ClassName("container text-left div-padded")
         div {
             className = ClassName("row")
 
@@ -46,10 +26,10 @@ val journalForm = FC<JournalFormProps> { props ->
                 className = ClassName("col-10")
 
                 eventEntryComponent {
-                    callback = props.eventAddedCallback
+                    onSaveEvent = props.onSaveEvent
                     selectedEvent = props.selectedEvent
-                    addEventCallback = props.addEventCallback
-                    timestampChangedCallback = props.timestampChangedCallback
+                    onNewEventClick = props.onNewEventClick
+                    onTimestampChanged = props.onTimestampChanged
                     onTextChanged = props.onTextChanged
 
 

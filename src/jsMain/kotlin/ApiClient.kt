@@ -11,14 +11,14 @@ val jsonClient = HttpClient {
     }
 }
 
-suspend fun postEntry(event: Event) {
+suspend fun postEvent(event: Event) {
     jsonClient.post(Event.path) {
         contentType(ContentType.Application.Json)
         setBody(event)
     }
 }
 
-suspend fun putEntry(event: Event) {
+suspend fun putEvent(event: Event) {
 
     jsonClient.put(Event.path) {
         contentType(ContentType.Application.Json)
@@ -26,7 +26,7 @@ suspend fun putEntry(event: Event) {
     }
 }
 
-suspend fun getEntries() : List<Event> {
+suspend fun getEntries(): List<Event> {
     return jsonClient.get("/events").body()
 }
 
@@ -36,21 +36,19 @@ suspend fun deleteEntry(id: Long) {
     }
 }
 
-suspend fun loadEvent(id: Long) : Event {
-    val event =  jsonClient.get(Event.path) {
+suspend fun loadEvent(id: Long): Event {
+    val event = jsonClient.get(Event.path) {
         parameter("id", id)
     }.body<Event>()
-    WIP.id = event.id
-    WIP.types.clear()
-    WIP.types.addAll(event.eventTypes)
+
     return event
 }
 
-suspend fun getEventTypes() : List<EventType> {
-    val response : List<EventType> =  jsonClient.get(EventType.path).body()
+suspend fun getEventTypes(selectedEvent: Event): List<EventType> {
+    val response: List<EventType> = jsonClient.get(EventType.path).body()
     val list = mutableListOf<EventType>()
     response.forEach {
-        list.add(EventType(it.id, it.text, WIP.types.contains(it.id)))
+        list.add(EventType(it.id, it.text, selectedEvent.eventTypes.contains(it.id)))
     }
     return list
 
@@ -63,7 +61,7 @@ suspend fun addType(type: String) {
     }
 }
 
-suspend fun deleteTypes(list : List<Long>) {
+suspend fun deleteTypes(list: List<Long>) {
     jsonClient.delete(EventType.path) {
         contentType(ContentType.Application.Json)
         setBody(list)

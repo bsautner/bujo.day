@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpack
-
 val kotlinVersion = "1.8"
 val serializationVersion = "1.4.0"
 val ktorVersion = "2.1.1"
@@ -19,7 +17,6 @@ group = "org.bujo"
 version = "1.0-SNAPSHOT"
 
 repositories {
-    jcenter()
     mavenCentral()
     maven("https://maven.pkg.jetbrains.space/public/p/kotlinx-html/maven")
 }
@@ -40,7 +37,9 @@ kotlin {
         binaries.executable()
         browser {
             binaries.executable()
-
+            runTask {
+                sourceMaps = false
+            }
             commonWebpackConfig {
 
                 cssSupport {
@@ -112,8 +111,12 @@ dependencies {
     implementation("org.junit.jupiter:junit-jupiter:5.8.1")
     // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2")
-
+// https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-test
+    testImplementation("org.jetbrains.kotlin:kotlin-test:1.8.0")
+    testImplementation("junit:junit:4.12")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:5.8.2")
+    implementation(kotlin("test"))
+    implementation(kotlin("test-junit"))
 }
 application {
     mainClass.set("org.bujo.application.ServerKt")

@@ -23,8 +23,8 @@
   var classMeta = kotlin_kotlin.$_$.l8;
   var CopyOnWriteHashMap = kotlin_io_ktor_ktor_utils.$_$.f;
   var equals = kotlin_kotlin.$_$.n8;
-  var THROW_CCE = kotlin_kotlin.$_$.bc;
-  var addSuppressed = kotlin_kotlin.$_$.kc;
+  var THROW_CCE = kotlin_kotlin.$_$.ac;
+  var addSuppressed = kotlin_kotlin.$_$.jc;
   var Unit_getInstance = kotlin_kotlin.$_$.g4;
   //endregion
   //region block: pre-declaration
