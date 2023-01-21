@@ -2,6 +2,7 @@ package org.bujo.application
 
 import Event
 import EventType
+import User
 import java.sql.Connection
 import java.sql.DriverManager
 import java.sql.SQLException
@@ -55,9 +56,9 @@ object DAO {
        updateTypes(id, emptyList())
     }
 
-    fun getAllEntries() : List<Event> {
+    fun getAllEntries(guid: String) : List<Event> {
 
-        val q = "select * from table_events order by timestamp desc;"
+        val q = "select table_events_pk, timestamp, text from table_events where user_guid = '$guid' order by timestamp desc;"
 
         val l = mutableListOf<Event>()
          with(db.createStatement()) {
@@ -70,7 +71,7 @@ object DAO {
                  types.forEach {
                      typeIds.add(it.id)
                  }
-                 l.add(Event(id, ts,  rs.getString(3), typeIds))
+                 l.add(Event(id, ts,  rs.getString(rs.findColumn("text")), typeIds))
              }
          }
         return l
@@ -86,12 +87,13 @@ object DAO {
         updateTypes(event.id, event.eventTypes)
 
     }
-    fun insertEvent(event: Event) : Long {
-        val q = "insert into table_events (text, timestamp) values (?, ?);"
+    fun insertEvent(guid: String, event: Event) : Long {
+        val q = "insert into table_events (user_guid, text, timestamp) values (?, ?, ?);"
 
         val stmt = db.prepareStatement(q,  Statement.RETURN_GENERATED_KEYS)
-        stmt.setString(1, event.value)
-        stmt.setLong(2, event.timestamp)
+        stmt.setString(1, guid)
+        stmt.setString(2, event.value)
+        stmt.setLong(3, event.timestamp)
         stmt.executeUpdate()
         stmt.generatedKeys.use {
             if (it.next()) {
@@ -105,16 +107,16 @@ object DAO {
         }
     }
 
-    fun getAllTypes() : List<EventType> {
+    fun getAllTypes(guid: String) : List<EventType> {
 
-        val q = "select * from table_event_type order by name desc;"
+        val q = "select * from table_event_type where user_guid = '$guid' order by value desc;"
 
         val l = mutableListOf<EventType>()
         with(db.createStatement()) {
             val rs = executeQuery(q)
             while (rs.next()) {
 
-                l.add(EventType(rs.getLong(rs.findColumn("table_event_type_pk")), rs.getString(rs.findColumn("name")), false))
+                l.add(EventType(rs.getLong(rs.findColumn("table_event_type_pk")), rs.getString(rs.findColumn("value")), false))
             }
         }
         return l
@@ -129,7 +131,7 @@ object DAO {
             if (rs.next()) {
                 return EventType(
                     rs.getLong(rs.findColumn("table_event_type_pk")),
-                    rs.getString(rs.findColumn("name")),
+                    rs.getString(rs.findColumn("value")),
                     false
                 )
             } else {
@@ -175,11 +177,12 @@ object DAO {
 
     }
 
-    fun insertType(type: String) : Long {
-        val q = "insert into table_event_type (name) values (?);"
+    fun insertType(guid: String, type : String) : Long {
+        val q = "insert into table_event_type (user_guid, value) values (?, ?);"
 
         val stmt = db.prepareStatement(q,  Statement.RETURN_GENERATED_KEYS)
-        stmt.setString(1, type)
+        stmt.setString(1, guid)
+        stmt.setString(2, type)
 
         stmt.executeUpdate()
 
@@ -217,6 +220,34 @@ object DAO {
             execute(f)
             execute(q2)
         }
+    }
+
+    fun insertUser(user: User) : String {
+        val guid = UUID.randomUUID().toString()
+        val q = "insert into table_users (email, pass, guid) values (?, ?, ?)"
+        val stmt = db.prepareStatement(q,  Statement.RETURN_GENERATED_KEYS)
+        stmt.setString(1, user.email)
+        stmt.setString(2, user.password)
+        stmt.setString(3, guid)
+
+        stmt.executeUpdate()
+        return guid
+
+    }
+
+    fun getUserSession(email: String, password: String) : String {
+        val q = "select guid from table_users where (email = ? AND pass=?)"
+        val stmt = db.prepareStatement(q,  Statement.RETURN_GENERATED_KEYS)
+        stmt.setString(1, email)
+        stmt.setString(2, password)
+        val rs = stmt.executeQuery()
+        if (rs.next()) {
+            return rs.getString(rs.findColumn("guid"))
+        } else {
+            throw SecurityException("User Not Found")
+        }
+
+
     }
 
 }

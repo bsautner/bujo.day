@@ -19,25 +19,25 @@
   'use strict';
   //region block: imports
   var imul = Math.imul;
-  var interfaceMeta = kotlin_kotlin.$_$.u8;
-  var ensureNotNull = kotlin_kotlin.$_$.nc;
+  var interfaceMeta = kotlin_kotlin.$_$.v8;
+  var ensureNotNull = kotlin_kotlin.$_$.oc;
   var Unit_getInstance = kotlin_kotlin.$_$.g4;
-  var toString = kotlin_kotlin.$_$.r9;
+  var toString = kotlin_kotlin.$_$.s9;
   var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.z1;
-  var toLong = kotlin_kotlin.$_$.p9;
+  var toLong = kotlin_kotlin.$_$.q9;
   var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.d2;
-  var CoroutineImpl = kotlin_kotlin.$_$.x7;
-  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.i7;
-  var classMeta = kotlin_kotlin.$_$.l8;
-  var Long = kotlin_kotlin.$_$.wb;
+  var CoroutineImpl = kotlin_kotlin.$_$.y7;
+  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.j7;
+  var classMeta = kotlin_kotlin.$_$.m8;
+  var Long = kotlin_kotlin.$_$.xb;
   var atomic$ref$1 = kotlin_org_jetbrains_kotlinx_atomicfu.$_$.c;
   var atomic$long$1 = kotlin_org_jetbrains_kotlinx_atomicfu.$_$.b;
   var atomic$int$1 = kotlin_org_jetbrains_kotlinx_atomicfu.$_$.d;
-  var THROW_CCE = kotlin_kotlin.$_$.ac;
+  var THROW_CCE = kotlin_kotlin.$_$.bc;
   var CancellationException_init_$Create$ = kotlin_kotlin.$_$.k1;
-  var CancellationException = kotlin_kotlin.$_$.h7;
+  var CancellationException = kotlin_kotlin.$_$.i7;
   var CancellationException_init_$Init$ = kotlin_kotlin.$_$.j1;
-  var captureStack = kotlin_kotlin.$_$.f8;
+  var captureStack = kotlin_kotlin.$_$.g8;
   var Job = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.h1;
   var EmptyCoroutineContext_getInstance = kotlin_kotlin.$_$.p3;
   var CoroutineScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.e1;
@@ -45,56 +45,56 @@
   var invokeOnCompletion$default = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.f;
   var Key_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.n;
   var launch$default = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.k;
-  var isInterface = kotlin_kotlin.$_$.d9;
+  var isInterface = kotlin_kotlin.$_$.e9;
   var Key_getInstance_0 = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.r;
   var Dispatchers_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.p;
-  var equals = kotlin_kotlin.$_$.n8;
-  var SuspendFunction1 = kotlin_kotlin.$_$.y7;
-  var toByte = kotlin_kotlin.$_$.o9;
-  var toShort = kotlin_kotlin.$_$.q9;
+  var equals = kotlin_kotlin.$_$.o8;
+  var SuspendFunction1 = kotlin_kotlin.$_$.z7;
+  var toByte = kotlin_kotlin.$_$.p9;
+  var toShort = kotlin_kotlin.$_$.r9;
   var StringBuilder_init_$Create$ = kotlin_kotlin.$_$.n1;
   var IntCompanionObject_getInstance = kotlin_kotlin.$_$.u3;
-  var charSequenceLength = kotlin_kotlin.$_$.j8;
-  var objectMeta = kotlin_kotlin.$_$.n9;
-  var Exception = kotlin_kotlin.$_$.tb;
+  var charSequenceLength = kotlin_kotlin.$_$.k8;
+  var objectMeta = kotlin_kotlin.$_$.o9;
+  var Exception = kotlin_kotlin.$_$.ub;
   var Exception_init_$Init$ = kotlin_kotlin.$_$.t1;
-  var numberToChar = kotlin_kotlin.$_$.k9;
-  var coerceAtLeast = kotlin_kotlin.$_$.t9;
-  var coerceAtMost = kotlin_kotlin.$_$.v9;
+  var numberToChar = kotlin_kotlin.$_$.l9;
+  var coerceAtLeast = kotlin_kotlin.$_$.u9;
+  var coerceAtMost = kotlin_kotlin.$_$.w9;
   var Companion_getInstance = kotlin_kotlin.$_$.a4;
   var Char__toInt_impl_vasixd = kotlin_kotlin.$_$.w2;
-  var Appendable = kotlin_kotlin.$_$.fa;
-  var encodeToByteArray = kotlin_kotlin.$_$.ia;
+  var Appendable = kotlin_kotlin.$_$.ga;
+  var encodeToByteArray = kotlin_kotlin.$_$.ja;
   var _UShort___get_data__impl__g0245 = kotlin_kotlin.$_$.m3;
   var UnsupportedOperationException_init_$Create$ = kotlin_kotlin.$_$.o2;
   var _UShort___init__impl__jigrne = kotlin_kotlin.$_$.l3;
-  var Char = kotlin_kotlin.$_$.mb;
+  var Char = kotlin_kotlin.$_$.nb;
   var Companion_getInstance_0 = kotlin_kotlin.$_$.f4;
-  var charSequenceGet = kotlin_kotlin.$_$.i8;
-  var isLowSurrogate = kotlin_kotlin.$_$.na;
-  var isHighSurrogate = kotlin_kotlin.$_$.ma;
+  var charSequenceGet = kotlin_kotlin.$_$.j8;
+  var isLowSurrogate = kotlin_kotlin.$_$.oa;
+  var isHighSurrogate = kotlin_kotlin.$_$.na;
   var Job$default = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.g;
-  var coerceAtMost_0 = kotlin_kotlin.$_$.u9;
-  var hashCode = kotlin_kotlin.$_$.t8;
-  var lazy = kotlin_kotlin.$_$.tc;
-  var KProperty1 = kotlin_kotlin.$_$.da;
-  var getPropertyCallableRef = kotlin_kotlin.$_$.r8;
+  var coerceAtMost_0 = kotlin_kotlin.$_$.v9;
+  var hashCode = kotlin_kotlin.$_$.u8;
+  var lazy = kotlin_kotlin.$_$.uc;
+  var KProperty1 = kotlin_kotlin.$_$.ea;
+  var getPropertyCallableRef = kotlin_kotlin.$_$.s8;
   var IndexOutOfBoundsException_init_$Create$ = kotlin_kotlin.$_$.h2;
   var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.q2;
   var replace$default = kotlin_kotlin.$_$.q;
   var getKClassFromExpression = kotlin_kotlin.$_$.d;
-  var get_js = kotlin_kotlin.$_$.i9;
-  var getStringHashCode = kotlin_kotlin.$_$.s8;
-  var extendThrowable = kotlin_kotlin.$_$.o8;
-  var charSequenceSubSequence = kotlin_kotlin.$_$.k8;
+  var get_js = kotlin_kotlin.$_$.j9;
+  var getStringHashCode = kotlin_kotlin.$_$.t8;
+  var extendThrowable = kotlin_kotlin.$_$.p8;
+  var charSequenceSubSequence = kotlin_kotlin.$_$.l8;
   var IndexOutOfBoundsException_init_$Create$_0 = kotlin_kotlin.$_$.g2;
   var Exception_init_$Init$_0 = kotlin_kotlin.$_$.u1;
-  var isCharSequence = kotlin_kotlin.$_$.z8;
-  var trim = kotlin_kotlin.$_$.ib;
-  var decodeToString = kotlin_kotlin.$_$.ha;
-  var setOf = kotlin_kotlin.$_$.r6;
-  var fillArrayVal = kotlin_kotlin.$_$.p8;
-  var isObject = kotlin_kotlin.$_$.f9;
+  var isCharSequence = kotlin_kotlin.$_$.a9;
+  var trim = kotlin_kotlin.$_$.jb;
+  var decodeToString = kotlin_kotlin.$_$.ia;
+  var setOf = kotlin_kotlin.$_$.s6;
+  var fillArrayVal = kotlin_kotlin.$_$.q8;
+  var isObject = kotlin_kotlin.$_$.g9;
   //endregion
   //region block: pre-declaration
   function readRemaining$default(limit, $cont, $mask0, $handler) {
@@ -131,7 +131,7 @@
   InsufficientSpaceException.prototype = Object.create(Exception.prototype);
   InsufficientSpaceException.prototype.constructor = InsufficientSpaceException;
   function close() {
-    this.sm();
+    this.tm();
   }
   DefaultBufferPool.prototype = Object.create(DefaultPool.prototype);
   DefaultBufferPool.prototype.constructor = DefaultBufferPool;
@@ -180,43 +180,43 @@
   }
   function ByteChannelSequentialBase_init_$Init$(initial, autoFlush, pool, $mask0, $marker, $this) {
     if (!(($mask0 & 4) === 0))
-      pool = Companion_getInstance_4().m12_1;
+      pool = Companion_getInstance_4().n12_1;
     ByteChannelSequentialBase.call($this, initial, autoFlush, pool);
     return $this;
   }
   function _get_isCancelled__nhbn6y($this) {
-    var tmp0_safe_receiver = $this.x12_1.wi_1;
-    return !((tmp0_safe_receiver == null ? null : tmp0_safe_receiver.f13_1) == null);
+    var tmp0_safe_receiver = $this.y12_1.xi_1;
+    return !((tmp0_safe_receiver == null ? null : tmp0_safe_receiver.g13_1) == null);
   }
   function flushImpl($this) {
-    if ($this.y12_1.nq()) {
-      $this.c13_1.h13();
+    if ($this.z12_1.oq()) {
+      $this.d13_1.i13();
       return false;
     }
     flushWrittenBytes($this);
-    $this.c13_1.h13();
+    $this.d13_1.i13();
     return true;
   }
   function flushWrittenBytes($this) {
     var tmp$ret$1;
     // Inline function 'kotlinx.atomicfu.locks.synchronized' call
-    var tmp0_synchronized = $this.d13_1;
+    var tmp0_synchronized = $this.e13_1;
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.ByteChannelSequentialBase.flushWrittenBytes.<anonymous>' call
-    var size = $this.y12_1.g();
-    var buffer = ensureNotNull($this.y12_1.y13());
-    $this.e13_1.z13(buffer);
-    tmp$ret$0 = $this.v12_1.atomicfu$addAndGet(size);
+    var size = $this.z12_1.g();
+    var buffer = ensureNotNull($this.z12_1.z13());
+    $this.f13_1.a14(buffer);
+    tmp$ret$0 = $this.w12_1.atomicfu$addAndGet(size);
     tmp$ret$1 = tmp$ret$0;
   }
   function ensureNotClosed($this) {
-    if ($this.b14()) {
-      var tmp0_elvis_lhs = $this.a14();
+    if ($this.c14()) {
+      var tmp0_elvis_lhs = $this.b14();
       throw tmp0_elvis_lhs == null ? new ClosedWriteChannelException('Channel ' + $this + ' is already closed') : tmp0_elvis_lhs;
     }
   }
   function ensureNotFailed($this) {
-    var tmp0_safe_receiver = $this.a14();
+    var tmp0_safe_receiver = $this.b14();
     if (tmp0_safe_receiver == null)
       null;
     else {
@@ -227,22 +227,22 @@
     }
   }
   function ensureNotFailed_0($this, closeable) {
-    var tmp0_safe_receiver = $this.a14();
+    var tmp0_safe_receiver = $this.b14();
     if (tmp0_safe_receiver == null)
       null;
     else {
       var tmp$ret$0;
       // Inline function 'kotlin.let' call
       // Inline function 'kotlin.contracts.contract' call
-      closeable.op();
+      closeable.pp();
       throw tmp0_safe_receiver;
     }
   }
   function readRemainingSuspend($this, builder, limit, $cont) {
     var tmp = new $readRemainingSuspendCOROUTINE$27($this, builder, limit, $cont);
-    tmp.qh_1 = Unit_getInstance();
-    tmp.rh_1 = null;
-    return tmp.xh();
+    tmp.rh_1 = Unit_getInstance();
+    tmp.sh_1 = null;
+    return tmp.yh();
   }
   function addBytesRead($this, count) {
     // Inline function 'kotlin.require' call
@@ -256,29 +256,29 @@
       throw IllegalArgumentException_init_$Create$(toString(message));
     }
     // Inline function 'kotlinx.atomicfu.AtomicInt.minusAssign' call
-    var tmp1_minusAssign = $this.w12_1;
+    var tmp1_minusAssign = $this.x12_1;
     tmp1_minusAssign.atomicfu$getAndAdd(-count | 0);
-    $this.t12_1.atomicfu$addAndGet$long(toLong(count));
+    $this.u12_1.atomicfu$addAndGet$long(toLong(count));
     // Inline function 'kotlinx.atomicfu.AtomicInt.minusAssign' call
-    var tmp2_minusAssign = $this.v12_1;
+    var tmp2_minusAssign = $this.w12_1;
     tmp2_minusAssign.atomicfu$getAndAdd(-count | 0);
     // Inline function 'kotlin.check' call
-    var tmp3_check = $this.w12_1.xi_1 >= 0;
+    var tmp3_check = $this.x12_1.yi_1 >= 0;
     // Inline function 'kotlin.contracts.contract' call
     if (!tmp3_check) {
       var tmp$ret$1;
       // Inline function 'io.ktor.utils.io.ByteChannelSequentialBase.addBytesRead.<anonymous>' call
-      tmp$ret$1 = 'Readable bytes count is negative: ' + $this.q14() + ', ' + count + ' in ' + $this;
+      tmp$ret$1 = 'Readable bytes count is negative: ' + $this.r14() + ', ' + count + ' in ' + $this;
       var message_0 = tmp$ret$1;
       throw IllegalStateException_init_$Create$(toString(message_0));
     }
     // Inline function 'kotlin.check' call
-    var tmp4_check = $this.q14() >= 0;
+    var tmp4_check = $this.r14() >= 0;
     // Inline function 'kotlin.contracts.contract' call
     if (!tmp4_check) {
       var tmp$ret$2;
       // Inline function 'io.ktor.utils.io.ByteChannelSequentialBase.addBytesRead.<anonymous>' call
-      tmp$ret$2 = 'Readable bytes count is negative: ' + $this.q14() + ', ' + count + ' in ' + $this;
+      tmp$ret$2 = 'Readable bytes count is negative: ' + $this.r14() + ', ' + count + ' in ' + $this;
       var message_1 = tmp$ret$2;
       throw IllegalStateException_init_$Create$(toString(message_1));
     }
@@ -295,81 +295,81 @@
       throw IllegalArgumentException_init_$Create$(toString(message));
     }
     // Inline function 'kotlinx.atomicfu.AtomicInt.plusAssign' call
-    var tmp1_plusAssign = $this.w12_1;
+    var tmp1_plusAssign = $this.x12_1;
     tmp1_plusAssign.atomicfu$getAndAdd(count);
-    $this.u12_1.atomicfu$addAndGet$long(toLong(count));
+    $this.v12_1.atomicfu$addAndGet$long(toLong(count));
     // Inline function 'kotlin.check' call
-    var tmp2_check = $this.w12_1.xi_1 >= 0;
+    var tmp2_check = $this.x12_1.yi_1 >= 0;
     // Inline function 'kotlin.contracts.contract' call
     if (!tmp2_check) {
       var tmp$ret$1;
       // Inline function 'io.ktor.utils.io.ByteChannelSequentialBase.addBytesWritten.<anonymous>' call
-      tmp$ret$1 = 'Readable bytes count is negative: ' + $this.w12_1.xi_1 + ', ' + count + ' in ' + $this;
+      tmp$ret$1 = 'Readable bytes count is negative: ' + $this.x12_1.yi_1 + ', ' + count + ' in ' + $this;
       var message_0 = tmp$ret$1;
       throw IllegalStateException_init_$Create$(toString(message_0));
     }
   }
   function ByteChannelSequentialBase$awaitAtLeastNBytesAvailableForWrite$lambda(this$0, $count) {
     return function () {
-      return this$0.r14() < $count ? !this$0.b14() : false;
+      return this$0.s14() < $count ? !this$0.c14() : false;
     };
   }
   function ByteChannelSequentialBase$awaitAtLeastNBytesAvailableForRead$lambda(this$0, $count) {
     return function () {
-      return this$0.q14() < $count ? !this$0.s14() : false;
+      return this$0.r14() < $count ? !this$0.t14() : false;
     };
   }
   function $awaitAtLeastNBytesAvailableForWriteCOROUTINE$0(_this__u8e3s4, count, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.b15_1 = _this__u8e3s4;
-    this.c15_1 = count;
+    this.c15_1 = _this__u8e3s4;
+    this.d15_1 = count;
   }
-  $awaitAtLeastNBytesAvailableForWriteCOROUTINE$0.prototype.xh = function () {
-    var suspendResult = this.qh_1;
+  $awaitAtLeastNBytesAvailableForWriteCOROUTINE$0.prototype.yh = function () {
+    var suspendResult = this.rh_1;
     $sm: do
       try {
-        var tmp = this.oh_1;
+        var tmp = this.ph_1;
         switch (tmp) {
           case 0:
-            this.ph_1 = 4;
-            this.oh_1 = 1;
+            this.qh_1 = 4;
+            this.ph_1 = 1;
             continue $sm;
           case 1:
-            if (!(this.b15_1.r14() < this.c15_1 ? !this.b15_1.b14() : false)) {
-              this.oh_1 = 5;
+            if (!(this.c15_1.s14() < this.d15_1 ? !this.c15_1.c14() : false)) {
+              this.ph_1 = 5;
               continue $sm;
             }
 
-            if (!flushImpl(this.b15_1)) {
-              this.oh_1 = 2;
-              suspendResult = this.b15_1.c13_1.d15(ByteChannelSequentialBase$awaitAtLeastNBytesAvailableForWrite$lambda(this.b15_1, this.c15_1), this);
+            if (!flushImpl(this.c15_1)) {
+              this.ph_1 = 2;
+              suspendResult = this.c15_1.d13_1.e15(ByteChannelSequentialBase$awaitAtLeastNBytesAvailableForWrite$lambda(this.c15_1, this.d15_1), this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
               continue $sm;
             } else {
-              this.oh_1 = 3;
+              this.ph_1 = 3;
               continue $sm;
             }
 
             break;
           case 2:
-            this.oh_1 = 3;
+            this.ph_1 = 3;
             continue $sm;
           case 3:
-            this.oh_1 = 1;
+            this.ph_1 = 1;
             continue $sm;
           case 4:
-            throw this.rh_1;
+            throw this.sh_1;
           case 5:
             return Unit_getInstance();
         }
       } catch ($p) {
-        if (this.ph_1 === 4) {
+        if (this.qh_1 === 4) {
           throw $p;
         } else {
-          this.oh_1 = this.ph_1;
-          this.rh_1 = $p;
+          this.ph_1 = this.qh_1;
+          this.sh_1 = $p;
         }
       }
      while (true);
@@ -377,46 +377,46 @@
   $awaitAtLeastNBytesAvailableForWriteCOROUTINE$0.$metadata$ = classMeta('$awaitAtLeastNBytesAvailableForWriteCOROUTINE$0', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
   function $awaitAtLeastNBytesAvailableForReadCOROUTINE$1(_this__u8e3s4, count, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.m15_1 = _this__u8e3s4;
-    this.n15_1 = count;
+    this.n15_1 = _this__u8e3s4;
+    this.o15_1 = count;
   }
-  $awaitAtLeastNBytesAvailableForReadCOROUTINE$1.prototype.xh = function () {
-    var suspendResult = this.qh_1;
+  $awaitAtLeastNBytesAvailableForReadCOROUTINE$1.prototype.yh = function () {
+    var suspendResult = this.rh_1;
     $sm: do
       try {
-        var tmp = this.oh_1;
+        var tmp = this.ph_1;
         switch (tmp) {
           case 0:
-            this.ph_1 = 3;
-            this.oh_1 = 1;
+            this.qh_1 = 3;
+            this.ph_1 = 1;
             continue $sm;
           case 1:
-            if (!(this.m15_1.q14() < this.n15_1 ? !this.m15_1.s14() : false)) {
-              this.oh_1 = 4;
+            if (!(this.n15_1.r14() < this.o15_1 ? !this.n15_1.t14() : false)) {
+              this.ph_1 = 4;
               continue $sm;
             }
 
-            this.oh_1 = 2;
-            suspendResult = this.m15_1.c13_1.d15(ByteChannelSequentialBase$awaitAtLeastNBytesAvailableForRead$lambda(this.m15_1, this.n15_1), this);
+            this.ph_1 = 2;
+            suspendResult = this.n15_1.d13_1.e15(ByteChannelSequentialBase$awaitAtLeastNBytesAvailableForRead$lambda(this.n15_1, this.o15_1), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 2:
-            this.oh_1 = 1;
+            this.ph_1 = 1;
             continue $sm;
           case 3:
-            throw this.rh_1;
+            throw this.sh_1;
           case 4:
             return Unit_getInstance();
         }
       } catch ($p) {
-        if (this.ph_1 === 3) {
+        if (this.qh_1 === 3) {
           throw $p;
         } else {
-          this.oh_1 = this.ph_1;
-          this.rh_1 = $p;
+          this.ph_1 = this.qh_1;
+          this.sh_1 = $p;
         }
       }
      while (true);
@@ -424,38 +424,38 @@
   $awaitAtLeastNBytesAvailableForReadCOROUTINE$1.$metadata$ = classMeta('$awaitAtLeastNBytesAvailableForReadCOROUTINE$1', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
   function $writeFullyCOROUTINE$9(_this__u8e3s4, src, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.w15_1 = _this__u8e3s4;
-    this.x15_1 = src;
+    this.x15_1 = _this__u8e3s4;
+    this.y15_1 = src;
   }
-  $writeFullyCOROUTINE$9.prototype.xh = function () {
-    var suspendResult = this.qh_1;
+  $writeFullyCOROUTINE$9.prototype.yh = function () {
+    var suspendResult = this.rh_1;
     $sm: do
       try {
-        var tmp = this.oh_1;
+        var tmp = this.ph_1;
         switch (tmp) {
           case 0:
-            this.ph_1 = 2;
-            this.oh_1 = 1;
-            suspendResult = this.w15_1.y15(1, this);
+            this.qh_1 = 2;
+            this.ph_1 = 1;
+            suspendResult = this.x15_1.z15(1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            var count = this.x15_1.b16_1 - this.x15_1.a16_1 | 0;
-            writeFully$default(this.w15_1.y12_1, this.x15_1, 0, 2, null);
-            this.w15_1.f16(count);
+            var count = this.y15_1.c16_1 - this.y15_1.b16_1 | 0;
+            writeFully$default(this.x15_1.z12_1, this.y15_1, 0, 2, null);
+            this.x15_1.g16(count);
             return Unit_getInstance();
           case 2:
-            throw this.rh_1;
+            throw this.sh_1;
         }
       } catch ($p) {
-        if (this.ph_1 === 2) {
+        if (this.qh_1 === 2) {
           throw $p;
         } else {
-          this.oh_1 = this.ph_1;
-          this.rh_1 = $p;
+          this.ph_1 = this.qh_1;
+          this.sh_1 = $p;
         }
       }
      while (true);
@@ -463,56 +463,56 @@
   $writeFullyCOROUTINE$9.$metadata$ = classMeta('$writeFullyCOROUTINE$9', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
   function $writeFullyCOROUTINE$10(_this__u8e3s4, src, offset, length, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.o16_1 = _this__u8e3s4;
-    this.p16_1 = src;
-    this.q16_1 = offset;
-    this.r16_1 = length;
+    this.p16_1 = _this__u8e3s4;
+    this.q16_1 = src;
+    this.r16_1 = offset;
+    this.s16_1 = length;
   }
-  $writeFullyCOROUTINE$10.prototype.xh = function () {
-    var suspendResult = this.qh_1;
+  $writeFullyCOROUTINE$10.prototype.yh = function () {
+    var suspendResult = this.rh_1;
     $sm: do
       try {
-        var tmp = this.oh_1;
+        var tmp = this.ph_1;
         switch (tmp) {
           case 0:
-            this.ph_1 = 4;
-            this.s16_1 = this.q16_1;
-            this.t16_1 = this.q16_1 + this.r16_1 | 0;
-            this.oh_1 = 1;
+            this.qh_1 = 4;
+            this.t16_1 = this.r16_1;
+            this.u16_1 = this.r16_1 + this.s16_1 | 0;
+            this.ph_1 = 1;
             continue $sm;
           case 1:
-            if (!(this.s16_1 < this.t16_1)) {
-              this.oh_1 = 3;
+            if (!(this.t16_1 < this.u16_1)) {
+              this.ph_1 = 3;
               continue $sm;
             }
 
-            this.oh_1 = 2;
-            suspendResult = this.o16_1.y15(1, this);
+            this.ph_1 = 2;
+            suspendResult = this.p16_1.z15(1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 2:
-            var tmp0_min = this.o16_1.r14();
-            var tmp1_min = this.t16_1 - this.s16_1 | 0;
+            var tmp0_min = this.p16_1.s14();
+            var tmp1_min = this.u16_1 - this.t16_1 | 0;
             var bytesCount = Math.min(tmp0_min, tmp1_min);
-            writeFully_3(this.o16_1.y12_1, this.p16_1, this.s16_1, bytesCount);
-            this.s16_1 = this.s16_1 + bytesCount | 0;
-            this.o16_1.f16(bytesCount);
-            this.oh_1 = 1;
+            writeFully_3(this.p16_1.z12_1, this.q16_1, this.t16_1, bytesCount);
+            this.t16_1 = this.t16_1 + bytesCount | 0;
+            this.p16_1.g16(bytesCount);
+            this.ph_1 = 1;
             continue $sm;
           case 3:
             return Unit_getInstance();
           case 4:
-            throw this.rh_1;
+            throw this.sh_1;
         }
       } catch ($p) {
-        if (this.ph_1 === 4) {
+        if (this.qh_1 === 4) {
           throw $p;
         } else {
-          this.oh_1 = this.ph_1;
-          this.rh_1 = $p;
+          this.ph_1 = this.qh_1;
+          this.sh_1 = $p;
         }
       }
      while (true);
@@ -520,39 +520,39 @@
   $writeFullyCOROUTINE$10.$metadata$ = classMeta('$writeFullyCOROUTINE$10', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
   function $readRemainingCOROUTINE$26(_this__u8e3s4, limit, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.c17_1 = _this__u8e3s4;
-    this.d17_1 = limit;
+    this.d17_1 = _this__u8e3s4;
+    this.e17_1 = limit;
   }
-  $readRemainingCOROUTINE$26.prototype.xh = function () {
-    var suspendResult = this.qh_1;
+  $readRemainingCOROUTINE$26.prototype.yh = function () {
+    var suspendResult = this.rh_1;
     $sm: do
       try {
-        var tmp = this.oh_1;
+        var tmp = this.ph_1;
         switch (tmp) {
           case 0:
-            this.ph_1 = 3;
-            ensureNotFailed(this.c17_1);
+            this.qh_1 = 3;
+            ensureNotFailed(this.d17_1);
             var tmp_0 = this;
-            tmp_0.e17_1 = BytePacketBuilder_init_$Create$(null, 1, null);
+            tmp_0.f17_1 = BytePacketBuilder_init_$Create$(null, 1, null);
             var tmp_1 = this;
             var tmp_2 = this;
-            tmp_2.f17_1 = this.c17_1.z12_1.r17();
-            tmp_1.g17_1 = this.d17_1.b1(this.f17_1) <= 0 ? this.d17_1 : this.f17_1;
-            this.e17_1.s17(this.c17_1.z12_1, this.g17_1);
-            this.c17_1.t17(this.g17_1.o6());
+            tmp_2.g17_1 = this.d17_1.a13_1.s17();
+            tmp_1.h17_1 = this.e17_1.b1(this.g17_1) <= 0 ? this.e17_1 : this.g17_1;
+            this.f17_1.t17(this.d17_1.a13_1, this.h17_1);
+            this.d17_1.u17(this.h17_1.p6());
             var tmp_3 = this;
             var tmp_4 = this;
-            tmp_4.h17_1 = this.e17_1.g();
-            tmp_3.i17_1 = this.d17_1.b6(toLong(this.h17_1));
-            if (this.i17_1.equals(new Long(0, 0)) ? true : this.c17_1.s14()) {
+            tmp_4.i17_1 = this.f17_1.g();
+            tmp_3.j17_1 = this.e17_1.c6(toLong(this.i17_1));
+            if (this.j17_1.equals(new Long(0, 0)) ? true : this.d17_1.t14()) {
               var tmp_5 = this;
-              ensureNotFailed_0(this.c17_1, this.e17_1);
-              tmp_5.j17_1 = this.e17_1.u17();
-              this.oh_1 = 2;
+              ensureNotFailed_0(this.d17_1, this.f17_1);
+              tmp_5.k17_1 = this.f17_1.t2();
+              this.ph_1 = 2;
               continue $sm;
             } else {
-              this.oh_1 = 1;
-              suspendResult = readRemainingSuspend(this.c17_1, this.e17_1, this.d17_1, this);
+              this.ph_1 = 1;
+              suspendResult = readRemainingSuspend(this.d17_1, this.f17_1, this.e17_1, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
@@ -561,20 +561,20 @@
 
             break;
           case 1:
-            this.j17_1 = suspendResult;
-            this.oh_1 = 2;
+            this.k17_1 = suspendResult;
+            this.ph_1 = 2;
             continue $sm;
           case 2:
-            return this.j17_1;
+            return this.k17_1;
           case 3:
-            throw this.rh_1;
+            throw this.sh_1;
         }
       } catch ($p) {
-        if (this.ph_1 === 3) {
+        if (this.qh_1 === 3) {
           throw $p;
         } else {
-          this.oh_1 = this.ph_1;
-          this.rh_1 = $p;
+          this.ph_1 = this.qh_1;
+          this.sh_1 = $p;
         }
       }
      while (true);
@@ -582,48 +582,48 @@
   $readRemainingCOROUTINE$26.$metadata$ = classMeta('$readRemainingCOROUTINE$26', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
   function $readRemainingSuspendCOROUTINE$27(_this__u8e3s4, builder, limit, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.k14_1 = _this__u8e3s4;
-    this.l14_1 = builder;
-    this.m14_1 = limit;
+    this.l14_1 = _this__u8e3s4;
+    this.m14_1 = builder;
+    this.n14_1 = limit;
   }
-  $readRemainingSuspendCOROUTINE$27.prototype.xh = function () {
-    var suspendResult = this.qh_1;
+  $readRemainingSuspendCOROUTINE$27.prototype.yh = function () {
+    var suspendResult = this.rh_1;
     $sm: do
       try {
-        var tmp = this.oh_1;
+        var tmp = this.ph_1;
         switch (tmp) {
           case 0:
-            this.ph_1 = 5;
-            this.oh_1 = 1;
+            this.qh_1 = 5;
+            this.ph_1 = 1;
             continue $sm;
           case 1:
-            if (!(toLong(this.l14_1.g()).b1(this.m14_1) < 0)) {
-              this.oh_1 = 4;
+            if (!(toLong(this.m14_1.g()).b1(this.n14_1) < 0)) {
+              this.ph_1 = 4;
               continue $sm;
             }
 
             var tmp_0 = this;
             var tmp_1 = this;
-            var tmp0_minus = this.l14_1.g();
-            tmp_1.n14_1 = this.m14_1.b6(toLong(tmp0_minus));
+            var tmp0_minus = this.m14_1.g();
+            tmp_1.o14_1 = this.n14_1.c6(toLong(tmp0_minus));
             var tmp_2 = this;
-            tmp_2.o14_1 = this.k14_1.z12_1.r17();
-            tmp_0.p14_1 = this.n14_1.b1(this.o14_1) <= 0 ? this.n14_1 : this.o14_1;
-            this.l14_1.s17(this.k14_1.z12_1, this.p14_1);
-            this.k14_1.t17(this.p14_1.o6());
-            ensureNotFailed_0(this.k14_1, this.l14_1);
-            if (this.k14_1.s14() ? true : this.l14_1.g() === this.m14_1.o6()) {
-              this.oh_1 = 4;
+            tmp_2.p14_1 = this.l14_1.a13_1.s17();
+            tmp_0.q14_1 = this.o14_1.b1(this.p14_1) <= 0 ? this.o14_1 : this.p14_1;
+            this.m14_1.t17(this.l14_1.a13_1, this.q14_1);
+            this.l14_1.u17(this.q14_1.p6());
+            ensureNotFailed_0(this.l14_1, this.m14_1);
+            if (this.l14_1.t14() ? true : this.m14_1.g() === this.n14_1.p6()) {
+              this.ph_1 = 4;
               continue $sm;
             } else {
-              this.oh_1 = 2;
+              this.ph_1 = 2;
               continue $sm;
             }
 
             break;
           case 2:
-            this.oh_1 = 3;
-            suspendResult = this.k14_1.v17(1, this);
+            this.ph_1 = 3;
+            suspendResult = this.l14_1.v17(1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -631,20 +631,20 @@
             continue $sm;
           case 3:
             ;
-            this.oh_1 = 1;
+            this.ph_1 = 1;
             continue $sm;
           case 4:
-            ensureNotFailed_0(this.k14_1, this.l14_1);
-            return this.l14_1.u17();
+            ensureNotFailed_0(this.l14_1, this.m14_1);
+            return this.m14_1.t2();
           case 5:
-            throw this.rh_1;
+            throw this.sh_1;
         }
       } catch ($p) {
-        if (this.ph_1 === 5) {
+        if (this.qh_1 === 5) {
           throw $p;
         } else {
-          this.oh_1 = this.ph_1;
-          this.rh_1 = $p;
+          this.ph_1 = this.qh_1;
+          this.sh_1 = $p;
         }
       }
      while (true);
@@ -655,15 +655,15 @@
     this.e18_1 = _this__u8e3s4;
     this.f18_1 = dst;
   }
-  $readAvailableCOROUTINE$30.prototype.xh = function () {
-    var suspendResult = this.qh_1;
+  $readAvailableCOROUTINE$30.prototype.yh = function () {
+    var suspendResult = this.rh_1;
     $sm: do
       try {
-        var tmp = this.oh_1;
+        var tmp = this.ph_1;
         switch (tmp) {
           case 0:
-            this.ph_1 = 3;
-            var tmp0_safe_receiver = this.e18_1.a14();
+            this.qh_1 = 3;
+            var tmp0_safe_receiver = this.e18_1.b14();
             if (tmp0_safe_receiver == null)
               null;
             else {
@@ -671,47 +671,47 @@
             }
 
             ;
-            if (this.e18_1.b14() ? this.e18_1.q14() === 0 : false)
+            if (this.e18_1.c14() ? this.e18_1.r14() === 0 : false)
               return -1;
-            if ((this.f18_1.d16_1 - this.f18_1.b16_1 | 0) === 0)
+            if ((this.f18_1.e16_1 - this.f18_1.c16_1 | 0) === 0)
               return 0;
-            if (this.e18_1.q14() === 0) {
-              this.oh_1 = 1;
+            if (this.e18_1.r14() === 0) {
+              this.ph_1 = 1;
               suspendResult = this.e18_1.v17(1, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
               continue $sm;
             } else {
-              this.oh_1 = 2;
+              this.ph_1 = 2;
               continue $sm;
             }
 
             break;
           case 1:
             ;
-            this.oh_1 = 2;
+            this.ph_1 = 2;
             continue $sm;
           case 2:
-            if (!this.e18_1.z12_1.h18()) {
+            if (!this.e18_1.a13_1.h18()) {
               this.e18_1.g18();
             }
 
-            var tmp0_minOf = toLong(this.f18_1.d16_1 - this.f18_1.b16_1 | 0);
-            var tmp1_minOf = this.e18_1.z12_1.r17();
-            var size = (tmp0_minOf.b1(tmp1_minOf) <= 0 ? tmp0_minOf : tmp1_minOf).o6();
-            readFully_3(this.e18_1.z12_1, this.f18_1, size);
-            this.e18_1.t17(size);
+            var tmp0_minOf = toLong(this.f18_1.e16_1 - this.f18_1.c16_1 | 0);
+            var tmp1_minOf = this.e18_1.a13_1.s17();
+            var size = (tmp0_minOf.b1(tmp1_minOf) <= 0 ? tmp0_minOf : tmp1_minOf).p6();
+            readFully_3(this.e18_1.a13_1, this.f18_1, size);
+            this.e18_1.u17(size);
             return size;
           case 3:
-            throw this.rh_1;
+            throw this.sh_1;
         }
       } catch ($p) {
-        if (this.ph_1 === 3) {
+        if (this.qh_1 === 3) {
           throw $p;
         } else {
-          this.oh_1 = this.ph_1;
-          this.rh_1 = $p;
+          this.ph_1 = this.qh_1;
+          this.sh_1 = $p;
         }
       }
      while (true);
@@ -724,15 +724,15 @@
     this.s18_1 = offset;
     this.t18_1 = length;
   }
-  $readAvailableCOROUTINE$33.prototype.xh = function () {
-    var suspendResult = this.qh_1;
+  $readAvailableCOROUTINE$33.prototype.yh = function () {
+    var suspendResult = this.rh_1;
     $sm: do
       try {
-        var tmp = this.oh_1;
+        var tmp = this.ph_1;
         switch (tmp) {
           case 0:
-            this.ph_1 = 3;
-            var tmp0_safe_receiver = this.q18_1.a14();
+            this.qh_1 = 3;
+            var tmp0_safe_receiver = this.q18_1.b14();
             if (tmp0_safe_receiver == null)
               null;
             else {
@@ -740,47 +740,47 @@
             }
 
             ;
-            if (this.q18_1.b14() ? this.q18_1.q14() === 0 : false)
+            if (this.q18_1.c14() ? this.q18_1.r14() === 0 : false)
               return -1;
             if (this.t18_1 === 0)
               return 0;
-            if (this.q18_1.q14() === 0) {
-              this.oh_1 = 1;
+            if (this.q18_1.r14() === 0) {
+              this.ph_1 = 1;
               suspendResult = this.q18_1.v17(1, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
               continue $sm;
             } else {
-              this.oh_1 = 2;
+              this.ph_1 = 2;
               continue $sm;
             }
 
             break;
           case 1:
             ;
-            this.oh_1 = 2;
+            this.ph_1 = 2;
             continue $sm;
           case 2:
-            if (!this.q18_1.z12_1.h18()) {
+            if (!this.q18_1.a13_1.h18()) {
               this.q18_1.g18();
             }
 
             var tmp0_minOf = toLong(this.t18_1);
-            var tmp1_minOf = this.q18_1.z12_1.r17();
-            var size = (tmp0_minOf.b1(tmp1_minOf) <= 0 ? tmp0_minOf : tmp1_minOf).o6();
-            readFully_2(this.q18_1.z12_1, this.r18_1, this.s18_1, size);
-            this.q18_1.t17(size);
+            var tmp1_minOf = this.q18_1.a13_1.s17();
+            var size = (tmp0_minOf.b1(tmp1_minOf) <= 0 ? tmp0_minOf : tmp1_minOf).p6();
+            readFully_2(this.q18_1.a13_1, this.r18_1, this.s18_1, size);
+            this.q18_1.u17(size);
             return size;
           case 3:
-            throw this.rh_1;
+            throw this.sh_1;
         }
       } catch ($p) {
-        if (this.ph_1 === 3) {
+        if (this.qh_1 === 3) {
           throw $p;
         } else {
-          this.oh_1 = this.ph_1;
-          this.rh_1 = $p;
+          this.ph_1 = this.qh_1;
+          this.sh_1 = $p;
         }
       }
      while (true);
@@ -790,23 +790,23 @@
     CoroutineImpl.call(this, resultContinuation);
     this.c19_1 = _this__u8e3s4;
   }
-  $awaitInternalAtLeast1COROUTINE$38.prototype.xh = function () {
-    var suspendResult = this.qh_1;
+  $awaitInternalAtLeast1COROUTINE$38.prototype.yh = function () {
+    var suspendResult = this.rh_1;
     $sm: do
       try {
-        var tmp = this.oh_1;
+        var tmp = this.ph_1;
         switch (tmp) {
           case 0:
-            this.ph_1 = 2;
+            this.qh_1 = 2;
             var tmp_0 = this;
-            tmp_0.e19_1 = this.c19_1.z12_1;
+            tmp_0.e19_1 = this.c19_1.a13_1;
             if (!this.e19_1.f19()) {
               var tmp_1 = this;
               tmp_1.d19_1 = true;
-              this.oh_1 = 3;
+              this.ph_1 = 3;
               continue $sm;
             } else {
-              this.oh_1 = 1;
+              this.ph_1 = 1;
               suspendResult = this.c19_1.v17(1, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
@@ -817,19 +817,19 @@
             break;
           case 1:
             this.d19_1 = suspendResult;
-            this.oh_1 = 3;
+            this.ph_1 = 3;
             continue $sm;
           case 2:
-            throw this.rh_1;
+            throw this.sh_1;
           case 3:
             return this.d19_1;
         }
       } catch ($p) {
-        if (this.ph_1 === 2) {
+        if (this.qh_1 === 2) {
           throw $p;
         } else {
-          this.oh_1 = this.ph_1;
-          this.rh_1 = $p;
+          this.ph_1 = this.qh_1;
+          this.sh_1 = $p;
         }
       }
      while (true);
@@ -840,14 +840,14 @@
     this.o19_1 = _this__u8e3s4;
     this.p19_1 = atLeast;
   }
-  $awaitSuspendCOROUTINE$39.prototype.xh = function () {
-    var suspendResult = this.qh_1;
+  $awaitSuspendCOROUTINE$39.prototype.yh = function () {
+    var suspendResult = this.rh_1;
     $sm: do
       try {
-        var tmp = this.oh_1;
+        var tmp = this.ph_1;
         switch (tmp) {
           case 0:
-            this.ph_1 = 2;
+            this.qh_1 = 2;
             var tmp_0 = this;
             tmp_0.q19_1 = this.p19_1 >= 0;
             if (!this.q19_1) {
@@ -855,7 +855,7 @@
               throw IllegalArgumentException_init_$Create$(toString(message));
             }
 
-            this.oh_1 = 1;
+            this.ph_1 = 1;
             suspendResult = this.o19_1.r19(this.p19_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
@@ -864,7 +864,7 @@
             continue $sm;
           case 1:
             this.o19_1.g18();
-            var tmp0_safe_receiver = this.o19_1.a14();
+            var tmp0_safe_receiver = this.o19_1.b14();
             if (tmp0_safe_receiver == null)
               null;
             else {
@@ -872,196 +872,196 @@
             }
 
             ;
-            return !this.o19_1.s14() ? this.o19_1.q14() >= this.p19_1 : false;
+            return !this.o19_1.t14() ? this.o19_1.r14() >= this.p19_1 : false;
           case 2:
-            throw this.rh_1;
+            throw this.sh_1;
         }
       } catch ($p) {
-        if (this.ph_1 === 2) {
+        if (this.qh_1 === 2) {
           throw $p;
         } else {
-          this.oh_1 = this.ph_1;
-          this.rh_1 = $p;
+          this.ph_1 = this.qh_1;
+          this.sh_1 = $p;
         }
       }
      while (true);
   };
   $awaitSuspendCOROUTINE$39.$metadata$ = classMeta('$awaitSuspendCOROUTINE$39', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
   function ByteChannelSequentialBase(initial, autoFlush, pool) {
-    this.r12_1 = autoFlush;
-    this.s12_1 = atomic$ref$1(Companion_getInstance_4().o12_1);
-    this.t12_1 = atomic$long$1(new Long(0, 0));
+    this.s12_1 = autoFlush;
+    this.t12_1 = atomic$ref$1(Companion_getInstance_4().p12_1);
     this.u12_1 = atomic$long$1(new Long(0, 0));
-    this.v12_1 = atomic$int$1(0);
+    this.v12_1 = atomic$long$1(new Long(0, 0));
     this.w12_1 = atomic$int$1(0);
-    this.x12_1 = atomic$ref$1(null);
-    this.y12_1 = new BytePacketBuilder(pool);
-    this.z12_1 = ByteReadPacket_init_$Create$(initial, pool);
-    this.a13_1 = atomic$int$1(0);
-    this.b13_1 = atomic$ref$1(Companion_getInstance_4().o12_1);
-    this.c13_1 = new AwaitingSlot();
-    this.d13_1 = new Object();
+    this.x12_1 = atomic$int$1(0);
+    this.y12_1 = atomic$ref$1(null);
+    this.z12_1 = new BytePacketBuilder(pool);
+    this.a13_1 = ByteReadPacket_init_$Create$(initial, pool);
+    this.b13_1 = atomic$int$1(0);
+    this.c13_1 = atomic$ref$1(Companion_getInstance_4().p12_1);
+    this.d13_1 = new AwaitingSlot();
+    this.e13_1 = new Object();
     var tmp = this;
-    tmp.e13_1 = BytePacketBuilder_init_$Create$(null, 1, null);
-    var count = remainingAll(initial).o6();
-    this.f16(count);
-    this.v12_1.atomicfu$addAndGet(count);
+    tmp.f13_1 = BytePacketBuilder_init_$Create$(null, 1, null);
+    var count = remainingAll(initial).p6();
+    this.g16(count);
+    this.w12_1.atomicfu$addAndGet(count);
   }
   ByteChannelSequentialBase.prototype.s19 = function () {
-    return this.r12_1;
+    return this.s12_1;
   };
-  ByteChannelSequentialBase.prototype.b14 = function () {
-    return !(this.x12_1.wi_1 == null);
+  ByteChannelSequentialBase.prototype.c14 = function () {
+    return !(this.y12_1.xi_1 == null);
   };
   ByteChannelSequentialBase.prototype.t19 = function () {
-    return this.y12_1;
-  };
-  ByteChannelSequentialBase.prototype.u19 = function () {
     return this.z12_1;
   };
-  ByteChannelSequentialBase.prototype.q14 = function () {
-    return this.v12_1.xi_1;
+  ByteChannelSequentialBase.prototype.u19 = function () {
+    return this.a13_1;
   };
   ByteChannelSequentialBase.prototype.r14 = function () {
+    return this.w12_1.yi_1;
+  };
+  ByteChannelSequentialBase.prototype.s14 = function () {
     var tmp$ret$0;
     // Inline function 'kotlin.comparisons.maxOf' call
-    var tmp0_maxOf = 4088 - this.w12_1.xi_1 | 0;
+    var tmp0_maxOf = 4088 - this.x12_1.yi_1 | 0;
     tmp$ret$0 = Math.max(0, tmp0_maxOf);
     return tmp$ret$0;
   };
-  ByteChannelSequentialBase.prototype.s14 = function () {
-    return _get_isCancelled__nhbn6y(this) ? true : this.b14() ? this.w12_1.xi_1 === 0 : false;
+  ByteChannelSequentialBase.prototype.t14 = function () {
+    return _get_isCancelled__nhbn6y(this) ? true : this.c14() ? this.x12_1.yi_1 === 0 : false;
   };
-  ByteChannelSequentialBase.prototype.a14 = function () {
-    var tmp0_safe_receiver = this.x12_1.wi_1;
-    return tmp0_safe_receiver == null ? null : tmp0_safe_receiver.f13_1;
+  ByteChannelSequentialBase.prototype.b14 = function () {
+    var tmp0_safe_receiver = this.y12_1.xi_1;
+    return tmp0_safe_receiver == null ? null : tmp0_safe_receiver.g13_1;
   };
-  ByteChannelSequentialBase.prototype.y15 = function (count, $cont) {
+  ByteChannelSequentialBase.prototype.z15 = function (count, $cont) {
     var tmp = new $awaitAtLeastNBytesAvailableForWriteCOROUTINE$0(this, count, $cont);
-    tmp.qh_1 = Unit_getInstance();
-    tmp.rh_1 = null;
-    return tmp.xh();
+    tmp.rh_1 = Unit_getInstance();
+    tmp.sh_1 = null;
+    return tmp.yh();
   };
   ByteChannelSequentialBase.prototype.r19 = function (count, $cont) {
     var tmp = new $awaitAtLeastNBytesAvailableForReadCOROUTINE$1(this, count, $cont);
-    tmp.qh_1 = Unit_getInstance();
-    tmp.rh_1 = null;
-    return tmp.xh();
+    tmp.rh_1 = Unit_getInstance();
+    tmp.sh_1 = null;
+    return tmp.yh();
   };
-  ByteChannelSequentialBase.prototype.nd = function () {
+  ByteChannelSequentialBase.prototype.od = function () {
     flushImpl(this);
   };
   ByteChannelSequentialBase.prototype.g18 = function () {
     var tmp$ret$1;
     // Inline function 'kotlinx.atomicfu.locks.synchronized' call
-    var tmp0_synchronized = this.d13_1;
+    var tmp0_synchronized = this.e13_1;
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.ByteChannelSequentialBase.prepareFlushedBytes.<anonymous>' call
-    tmp$ret$0 = unsafeAppend(this.z12_1, this.e13_1);
+    tmp$ret$0 = unsafeAppend(this.a13_1, this.f13_1);
     tmp$ret$1 = tmp$ret$0;
   };
   ByteChannelSequentialBase.prototype.v19 = function (src, $cont) {
     var tmp = new $writeFullyCOROUTINE$9(this, src, $cont);
-    tmp.qh_1 = Unit_getInstance();
-    tmp.rh_1 = null;
-    return tmp.xh();
+    tmp.rh_1 = Unit_getInstance();
+    tmp.sh_1 = null;
+    return tmp.yh();
   };
   ByteChannelSequentialBase.prototype.w19 = function (src, offset, length, $cont) {
     var tmp = new $writeFullyCOROUTINE$10(this, src, offset, length, $cont);
-    tmp.qh_1 = Unit_getInstance();
-    tmp.rh_1 = null;
-    return tmp.xh();
+    tmp.rh_1 = Unit_getInstance();
+    tmp.sh_1 = null;
+    return tmp.yh();
   };
-  ByteChannelSequentialBase.prototype.t17 = function (count) {
+  ByteChannelSequentialBase.prototype.u17 = function (count) {
     addBytesRead(this, count);
-    this.c13_1.h13();
+    this.d13_1.i13();
   };
   ByteChannelSequentialBase.prototype.x19 = function (limit, $cont) {
     var tmp = new $readRemainingCOROUTINE$26(this, limit, $cont);
-    tmp.qh_1 = Unit_getInstance();
-    tmp.rh_1 = null;
-    return tmp.xh();
+    tmp.rh_1 = Unit_getInstance();
+    tmp.sh_1 = null;
+    return tmp.yh();
   };
   ByteChannelSequentialBase.prototype.z19 = function (dst, $cont) {
     return this.a1a(dst instanceof Buffer ? dst : THROW_CCE(), $cont);
   };
   ByteChannelSequentialBase.prototype.a1a = function (dst, $cont) {
     var tmp = new $readAvailableCOROUTINE$30(this, dst, $cont);
-    tmp.qh_1 = Unit_getInstance();
-    tmp.rh_1 = null;
-    return tmp.xh();
+    tmp.rh_1 = Unit_getInstance();
+    tmp.sh_1 = null;
+    return tmp.yh();
   };
   ByteChannelSequentialBase.prototype.b1a = function (dst, offset, length, $cont) {
     var tmp = new $readAvailableCOROUTINE$33(this, dst, offset, length, $cont);
-    tmp.qh_1 = Unit_getInstance();
-    tmp.rh_1 = null;
-    return tmp.xh();
+    tmp.rh_1 = Unit_getInstance();
+    tmp.sh_1 = null;
+    return tmp.yh();
   };
   ByteChannelSequentialBase.prototype.c1a = function ($cont) {
     var tmp = new $awaitInternalAtLeast1COROUTINE$38(this, $cont);
-    tmp.qh_1 = Unit_getInstance();
-    tmp.rh_1 = null;
-    return tmp.xh();
+    tmp.rh_1 = Unit_getInstance();
+    tmp.sh_1 = null;
+    return tmp.yh();
   };
   ByteChannelSequentialBase.prototype.v17 = function (atLeast, $cont) {
     var tmp = new $awaitSuspendCOROUTINE$39(this, atLeast, $cont);
-    tmp.qh_1 = Unit_getInstance();
-    tmp.rh_1 = null;
-    return tmp.xh();
+    tmp.rh_1 = Unit_getInstance();
+    tmp.sh_1 = null;
+    return tmp.yh();
   };
-  ByteChannelSequentialBase.prototype.mn = function (cause) {
-    if (!(this.a14() == null) ? true : this.b14()) {
+  ByteChannelSequentialBase.prototype.nn = function (cause) {
+    if (!(this.b14() == null) ? true : this.c14()) {
       return false;
     }
     var tmp0_elvis_lhs = cause;
-    return this.uw(tmp0_elvis_lhs == null ? CancellationException_init_$Create$('Channel cancelled') : tmp0_elvis_lhs);
+    return this.vw(tmp0_elvis_lhs == null ? CancellationException_init_$Create$('Channel cancelled') : tmp0_elvis_lhs);
   };
-  ByteChannelSequentialBase.prototype.uw = function (cause) {
+  ByteChannelSequentialBase.prototype.vw = function (cause) {
     var closeElement = cause == null ? get_CLOSED_SUCCESS() : new CloseElement(cause);
-    if (!this.x12_1.atomicfu$compareAndSet(null, closeElement))
+    if (!this.y12_1.atomicfu$compareAndSet(null, closeElement))
       return false;
     if (!(cause == null)) {
-      this.z12_1.op();
-      this.y12_1.op();
-      this.e13_1.op();
+      this.a13_1.pp();
+      this.z12_1.pp();
+      this.f13_1.pp();
     } else {
-      this.nd();
+      this.od();
     }
-    this.c13_1.d1a(cause);
+    this.d13_1.d1a(cause);
     return true;
   };
   ByteChannelSequentialBase.prototype.e1a = function (dst, limit) {
-    var size = this.z12_1.r17();
+    var size = this.a13_1.s17();
     var tmp;
     if (size.b1(limit) <= 0) {
-      dst.y12_1.f1a(this.z12_1);
-      dst.f16(size.o6());
-      this.t17(size.o6());
+      dst.z12_1.f1a(this.a13_1);
+      dst.g16(size.p6());
+      this.u17(size.p6());
       tmp = size;
     } else {
       tmp = new Long(0, 0);
     }
     return tmp;
   };
-  ByteChannelSequentialBase.prototype.f16 = function (count) {
+  ByteChannelSequentialBase.prototype.g16 = function (count) {
     addBytesWritten(this, count);
-    if (this.b14()) {
-      this.y12_1.op();
+    if (this.c14()) {
+      this.z12_1.pp();
       ensureNotClosed(this);
     }
-    if (this.s19() ? true : this.r14() === 0) {
-      this.nd();
+    if (this.s19() ? true : this.s14() === 0) {
+      this.od();
     }
   };
   ByteChannelSequentialBase.$metadata$ = classMeta('ByteChannelSequentialBase', [ByteChannel, ByteReadChannel_1, ByteWriteChannel, SuspendableReadSession, HasReadSession, HasWriteSession]);
   function cancel(_this__u8e3s4) {
-    return _this__u8e3s4.mn(null);
+    return _this__u8e3s4.nn(null);
   }
   function readAvailable(_this__u8e3s4, dst, $cont) {
     return _this__u8e3s4.b1a(dst, 0, dst.length, $cont);
   }
   function close_0(_this__u8e3s4) {
-    return _this__u8e3s4.uw(null);
+    return _this__u8e3s4.vw(null);
   }
   function ClosedWriteChannelException(message) {
     CancellationException_init_$Init$(message, this);
@@ -1077,7 +1077,7 @@
   }
   var CLOSED_SUCCESS;
   function CloseElement(cause) {
-    this.f13_1 = cause;
+    this.g13_1 = cause;
   }
   CloseElement.$metadata$ = classMeta('CloseElement');
   var properties_initialized_CloseElement_kt_clkism;
@@ -1108,53 +1108,53 @@
     this.g1a_1 = delegate;
     this.h1a_1 = channel;
   }
-  ChannelJob.prototype.nv = function () {
+  ChannelJob.prototype.ov = function () {
     return this.h1a_1;
   };
-  ChannelJob.prototype.oj = function () {
-    return this.g1a_1.oj();
+  ChannelJob.prototype.pj = function () {
+    return this.g1a_1.pj();
   };
   ChannelJob.prototype.s = function () {
     return this.g1a_1.s();
   };
-  ChannelJob.prototype.bl = function (child) {
-    return this.g1a_1.bl(child);
+  ChannelJob.prototype.cl = function (child) {
+    return this.g1a_1.cl(child);
   };
-  ChannelJob.prototype.tk = function (cause) {
-    this.g1a_1.tk(cause);
+  ChannelJob.prototype.uk = function (cause) {
+    this.g1a_1.uk(cause);
   };
-  ChannelJob.prototype.e4 = function (initial, operation) {
-    return this.g1a_1.e4(initial, operation);
+  ChannelJob.prototype.f4 = function (initial, operation) {
+    return this.g1a_1.f4(initial, operation);
   };
-  ChannelJob.prototype.y3 = function (key) {
-    return this.g1a_1.y3(key);
+  ChannelJob.prototype.z3 = function (key) {
+    return this.g1a_1.z3(key);
   };
-  ChannelJob.prototype.lk = function () {
-    return this.g1a_1.lk();
+  ChannelJob.prototype.mk = function () {
+    return this.g1a_1.mk();
   };
-  ChannelJob.prototype.pk = function (onCancelling, invokeImmediately, handler) {
-    return this.g1a_1.pk(onCancelling, invokeImmediately, handler);
+  ChannelJob.prototype.qk = function (onCancelling, invokeImmediately, handler) {
+    return this.g1a_1.qk(onCancelling, invokeImmediately, handler);
   };
-  ChannelJob.prototype.ok = function (handler) {
-    return this.g1a_1.ok(handler);
+  ChannelJob.prototype.pk = function (handler) {
+    return this.g1a_1.pk(handler);
   };
-  ChannelJob.prototype.d4 = function (key) {
-    return this.g1a_1.d4(key);
+  ChannelJob.prototype.e4 = function (key) {
+    return this.g1a_1.e4(key);
   };
-  ChannelJob.prototype.f4 = function (context) {
-    return this.g1a_1.f4(context);
+  ChannelJob.prototype.g4 = function (context) {
+    return this.g1a_1.g4(context);
   };
-  ChannelJob.prototype.jk = function () {
-    return this.g1a_1.jk();
+  ChannelJob.prototype.kk = function () {
+    return this.g1a_1.kk();
   };
   ChannelJob.prototype.toString = function () {
     return 'ChannelJob[' + this.g1a_1 + ']';
   };
   ChannelJob.$metadata$ = classMeta('ChannelJob', [ReaderJob, WriterJob, Job]);
   function launchChannel(_this__u8e3s4, context, channel, attachJob, block) {
-    var dispatcher = _this__u8e3s4.nj().y3(Key_getInstance());
+    var dispatcher = _this__u8e3s4.oj().z3(Key_getInstance());
     var job = launch$default(_this__u8e3s4, context, null, launchChannel$slambda_0(attachJob, channel, block, dispatcher, null), 2, null);
-    job.ok(launchChannel$lambda(channel));
+    job.pk(launchChannel$lambda(channel));
     return new ChannelJob(job, channel);
   }
   function ReaderJob() {
@@ -1164,11 +1164,11 @@
     this.i1a_1 = channel;
     this.j1a_1 = delegate;
   }
-  ChannelScope.prototype.nv = function () {
+  ChannelScope.prototype.ov = function () {
     return this.i1a_1;
   };
-  ChannelScope.prototype.nj = function () {
-    return this.j1a_1.nj();
+  ChannelScope.prototype.oj = function () {
+    return this.j1a_1.oj();
   };
   ChannelScope.$metadata$ = classMeta('ChannelScope', [ReaderScope, WriterScope, CoroutineScope]);
   function ReaderScope() {
@@ -1183,30 +1183,30 @@
   }
   launchChannel$slambda.prototype.y1a = function ($this$launch, $cont) {
     var tmp = this.z1a($this$launch, $cont);
-    tmp.qh_1 = Unit_getInstance();
-    tmp.rh_1 = null;
-    return tmp.xh();
+    tmp.rh_1 = Unit_getInstance();
+    tmp.sh_1 = null;
+    return tmp.yh();
   };
-  launchChannel$slambda.prototype.yh = function (p1, $cont) {
+  launchChannel$slambda.prototype.zh = function (p1, $cont) {
     return this.y1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
   };
-  launchChannel$slambda.prototype.xh = function () {
-    var suspendResult = this.qh_1;
+  launchChannel$slambda.prototype.yh = function () {
+    var suspendResult = this.rh_1;
     $sm: do
       try {
-        var tmp = this.oh_1;
+        var tmp = this.ph_1;
         switch (tmp) {
           case 0:
-            this.ph_1 = 3;
+            this.qh_1 = 3;
             if (this.s1a_1) {
-              this.t1a_1.l12(ensureNotNull(this.w1a_1.nj().y3(Key_getInstance_0())));
+              this.t1a_1.m12(ensureNotNull(this.w1a_1.oj().z3(Key_getInstance_0())));
             }
 
             var tmp_0 = this;
             var tmp_1 = new ChannelScope(this.w1a_1, this.t1a_1);
             tmp_0.x1a_1 = isInterface(tmp_1, CoroutineScope) ? tmp_1 : THROW_CCE();
-            this.ph_1 = 2;
-            this.oh_1 = 1;
+            this.qh_1 = 2;
+            this.ph_1 = 1;
             suspendResult = this.u1a_1(this.x1a_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
@@ -1214,37 +1214,37 @@
 
             continue $sm;
           case 1:
-            this.ph_1 = 3;
-            this.oh_1 = 4;
+            this.qh_1 = 3;
+            this.ph_1 = 4;
             continue $sm;
           case 2:
-            this.ph_1 = 3;
-            var tmp_2 = this.rh_1;
+            this.qh_1 = 3;
+            var tmp_2 = this.sh_1;
             if (tmp_2 instanceof Error) {
-              var cause = this.rh_1;
-              if (!equals(this.v1a_1, Dispatchers_getInstance().vp_1) ? !(this.v1a_1 == null) : false) {
+              var cause = this.sh_1;
+              if (!equals(this.v1a_1, Dispatchers_getInstance().wp_1) ? !(this.v1a_1 == null) : false) {
                 throw cause;
               }
-              this.t1a_1.mn(cause);
-              this.oh_1 = 4;
+              this.t1a_1.nn(cause);
+              this.ph_1 = 4;
               continue $sm;
             } else {
-              throw this.rh_1;
+              throw this.sh_1;
             }
 
             break;
           case 3:
-            throw this.rh_1;
+            throw this.sh_1;
           case 4:
-            this.ph_1 = 3;
+            this.qh_1 = 3;
             return Unit_getInstance();
         }
       } catch ($p) {
-        if (this.ph_1 === 3) {
+        if (this.qh_1 === 3) {
           throw $p;
         } else {
-          this.oh_1 = this.ph_1;
-          this.rh_1 = $p;
+          this.ph_1 = this.qh_1;
+          this.sh_1 = $p;
         }
       }
      while (true);
@@ -1265,7 +1265,7 @@
   }
   function launchChannel$lambda($channel) {
     return function (cause) {
-      $channel.uw(cause);
+      $channel.vw(cause);
       return Unit_getInstance();
     };
   }
@@ -1345,7 +1345,7 @@
     var tmp0_minOf = toLong(max);
     var tmp1_minOf = sizeEstimate(input);
     tmp$ret$0 = tmp0_minOf.b1(tmp1_minOf) <= 0 ? tmp0_minOf : tmp1_minOf;
-    var tmp2_buildString = tmp$ret$0.o6();
+    var tmp2_buildString = tmp$ret$0.p6();
     // Inline function 'kotlin.contracts.contract' call
     var tmp$ret$1;
     // Inline function 'kotlin.apply' call
@@ -1366,14 +1366,14 @@
     var start = fromIndex;
     if (start >= toIndex)
       return get_EmptyByteArray();
-    var single = Companion_getInstance_4().m12_1.e1b();
+    var single = Companion_getInstance_4().n12_1.e1b();
     try {
       var rc = encodeImpl(_this__u8e3s4, input, start, toIndex, single);
       start = start + rc | 0;
       if (start === toIndex) {
         var tmp$ret$0;
         // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-        tmp$ret$0 = single.b16_1 - single.a16_1 | 0;
+        tmp$ret$0 = single.c16_1 - single.b16_1 | 0;
         var result = new Int8Array(tmp$ret$0);
         // Inline function 'io.ktor.utils.io.core.readFully' call
         var tmp0_readFully = result.length - 0 | 0;
@@ -1389,11 +1389,11 @@
           // Inline function 'io.ktor.utils.io.charsets.encodeToByteArrayImpl1.<anonymous>' call
           builder.q1b(single.p1b());
           encodeToImpl(_this__u8e3s4, builder, input, start, toIndex);
-          tmp$ret$1 = builder.u17();
+          tmp$ret$1 = builder.t2();
           break $l$block;
         } catch ($p) {
           if ($p instanceof Error) {
-            builder.op();
+            builder.pp();
             throw $p;
           } else {
             throw $p;
@@ -1403,18 +1403,18 @@
       var tmp = tmp$ret$1;
       return readBytes$default(tmp, 0, 1, null);
     }finally {
-      single.r1b(Companion_getInstance_4().m12_1);
+      single.r1b(Companion_getInstance_4().n12_1);
     }
   }
   function sizeEstimate(_this__u8e3s4) {
     var tmp0_subject = _this__u8e3s4;
     var tmp;
     if (tmp0_subject instanceof ByteReadPacket) {
-      tmp = _this__u8e3s4.r17();
+      tmp = _this__u8e3s4.s17();
     } else {
       var tmp$ret$0;
       // Inline function 'kotlin.comparisons.maxOf' call
-      var tmp0_maxOf = _this__u8e3s4.r17();
+      var tmp0_maxOf = _this__u8e3s4.s17();
       tmp$ret$0 = tmp0_maxOf.b1(new Long(16, 0)) >= 0 ? tmp0_maxOf : new Long(16, 0);
       tmp = tmp$ret$0;
     }
@@ -1435,7 +1435,7 @@
         var tmp0__anonymous__q1qw7t = tail;
         var tmp$ret$0;
         // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-        tmp$ret$0 = tmp0__anonymous__q1qw7t.d16_1 - tmp0__anonymous__q1qw7t.b16_1 | 0;
+        tmp$ret$0 = tmp0__anonymous__q1qw7t.e16_1 - tmp0__anonymous__q1qw7t.c16_1 | 0;
         var before = tmp$ret$0;
         var rc = encodeImpl(_this__u8e3s4, input, start, toIndex, tmp0__anonymous__q1qw7t);
         // Inline function 'kotlin.check' call
@@ -1454,7 +1454,7 @@
         var tmp = bytesWritten;
         var tmp$ret$2;
         // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-        tmp$ret$2 = tmp0__anonymous__q1qw7t.d16_1 - tmp0__anonymous__q1qw7t.b16_1 | 0;
+        tmp$ret$2 = tmp0__anonymous__q1qw7t.e16_1 - tmp0__anonymous__q1qw7t.c16_1 | 0;
         bytesWritten = tmp + (before - tmp$ret$2 | 0) | 0;
         tmp$ret$3 = start >= toIndex ? 0 : rc === 0 ? 8 : 1;
         size = tmp$ret$3;
@@ -1480,7 +1480,7 @@
         var tmp0__anonymous__q1qw7t = tail;
         var tmp$ret$0;
         // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-        tmp$ret$0 = tmp0__anonymous__q1qw7t.d16_1 - tmp0__anonymous__q1qw7t.b16_1 | 0;
+        tmp$ret$0 = tmp0__anonymous__q1qw7t.e16_1 - tmp0__anonymous__q1qw7t.c16_1 | 0;
         var before = tmp$ret$0;
         if (encodeComplete(_this__u8e3s4, tmp0__anonymous__q1qw7t)) {
           size = 0;
@@ -1491,7 +1491,7 @@
         var tmp = bytesWritten;
         var tmp$ret$1;
         // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-        tmp$ret$1 = tmp0__anonymous__q1qw7t.d16_1 - tmp0__anonymous__q1qw7t.b16_1 | 0;
+        tmp$ret$1 = tmp0__anonymous__q1qw7t.e16_1 - tmp0__anonymous__q1qw7t.c16_1 | 0;
         bytesWritten = tmp + (before - tmp$ret$1 | 0) | 0;
         tmp$ret$2 = size > 0;
         if (!tmp$ret$2)
@@ -1512,11 +1512,11 @@
       try {
         // Inline function 'io.ktor.utils.io.charsets.encode.<anonymous>' call
         encodeToImpl(_this__u8e3s4, builder, input, fromIndex, toIndex);
-        tmp$ret$0 = builder.u17();
+        tmp$ret$0 = builder.t2();
         break $l$block;
       } catch ($p) {
         if ($p instanceof Error) {
-          builder.op();
+          builder.pp();
           throw $p;
         } else {
           throw $p;
@@ -1540,7 +1540,7 @@
     return this.t1b_1;
   };
   Companion.prototype.v1b = function () {
-    return Companion_getInstance_4().o12_1;
+    return Companion_getInstance_4().p12_1;
   };
   Companion.$metadata$ = objectMeta('Companion');
   var Companion_instance;
@@ -1551,110 +1551,110 @@
   }
   function Buffer(memory) {
     Companion_getInstance_1();
-    this.z15_1 = memory;
-    this.a16_1 = 0;
+    this.a16_1 = memory;
     this.b16_1 = 0;
     this.c16_1 = 0;
+    this.d16_1 = 0;
     var tmp = this;
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.bits.Memory.size32' call
-    var tmp0__get_size32__ezg0pb = this.z15_1;
+    var tmp0__get_size32__ezg0pb = this.a16_1;
     tmp$ret$0 = tmp0__get_size32__ezg0pb.a1b_1.byteLength;
-    tmp.d16_1 = tmp$ret$0;
+    tmp.e16_1 = tmp$ret$0;
     var tmp_0 = this;
     var tmp$ret$1;
     // Inline function 'io.ktor.utils.io.bits.Memory.size32' call
-    var tmp0__get_size32__ezg0pb_0 = this.z15_1;
+    var tmp0__get_size32__ezg0pb_0 = this.a16_1;
     tmp$ret$1 = tmp0__get_size32__ezg0pb_0.a1b_1.byteLength;
-    tmp_0.e16_1 = tmp$ret$1;
+    tmp_0.f16_1 = tmp$ret$1;
   }
   Buffer.prototype.w1b = function () {
-    return this.z15_1;
-  };
-  Buffer.prototype.x1b = function () {
     return this.a16_1;
   };
-  Buffer.prototype.y1b = function () {
+  Buffer.prototype.x1b = function () {
     return this.b16_1;
   };
+  Buffer.prototype.y1b = function () {
+    return this.c16_1;
+  };
   Buffer.prototype.z1b = function () {
-    return this.d16_1;
-  };
-  Buffer.prototype.a1c = function () {
-    return this.e16_1 - this.d16_1 | 0;
-  };
-  Buffer.prototype.b1c = function () {
     return this.e16_1;
   };
+  Buffer.prototype.a1c = function () {
+    return this.f16_1 - this.e16_1 | 0;
+  };
+  Buffer.prototype.b1c = function () {
+    return this.f16_1;
+  };
   Buffer.prototype.c1c = function () {
-    return this.b16_1 - this.a16_1 | 0;
+    return this.c16_1 - this.b16_1 | 0;
   };
   Buffer.prototype.d1c = function () {
-    return this.d16_1 - this.b16_1 | 0;
+    return this.e16_1 - this.c16_1 | 0;
   };
   Buffer.prototype.e1c = function (count) {
     if (count === 0)
       return Unit_getInstance();
-    var newReadPosition = this.a16_1 + count | 0;
-    if (count < 0 ? true : newReadPosition > this.b16_1) {
+    var newReadPosition = this.b16_1 + count | 0;
+    if (count < 0 ? true : newReadPosition > this.c16_1) {
       var tmp$ret$1;
       // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-      tmp$ret$1 = this.b16_1 - this.a16_1 | 0;
+      tmp$ret$1 = this.c16_1 - this.b16_1 | 0;
       discardFailed(count, tmp$ret$1);
     }
-    this.a16_1 = newReadPosition;
+    this.b16_1 = newReadPosition;
   };
   Buffer.prototype.f1c = function (count) {
-    var newWritePosition = this.b16_1 + count | 0;
-    if (count < 0 ? true : newWritePosition > this.d16_1) {
+    var newWritePosition = this.c16_1 + count | 0;
+    if (count < 0 ? true : newWritePosition > this.e16_1) {
       var tmp$ret$0;
       // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-      tmp$ret$0 = this.d16_1 - this.b16_1 | 0;
+      tmp$ret$0 = this.e16_1 - this.c16_1 | 0;
       commitWrittenFailed(count, tmp$ret$0);
     }
-    this.b16_1 = newWritePosition;
+    this.c16_1 = newWritePosition;
   };
   Buffer.prototype.g1c = function (position) {
-    var limit = this.d16_1;
-    if (position < this.b16_1) {
-      var tmp = position - this.b16_1 | 0;
+    var limit = this.e16_1;
+    if (position < this.c16_1) {
+      var tmp = position - this.c16_1 | 0;
       var tmp$ret$0;
       // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-      tmp$ret$0 = this.d16_1 - this.b16_1 | 0;
+      tmp$ret$0 = this.e16_1 - this.c16_1 | 0;
       commitWrittenFailed(tmp, tmp$ret$0);
     }
     if (position >= limit) {
       if (position === limit) {
-        this.b16_1 = position;
+        this.c16_1 = position;
         return false;
       }
-      var tmp_0 = position - this.b16_1 | 0;
+      var tmp_0 = position - this.c16_1 | 0;
       var tmp$ret$1;
       // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-      tmp$ret$1 = this.d16_1 - this.b16_1 | 0;
+      tmp$ret$1 = this.e16_1 - this.c16_1 | 0;
       commitWrittenFailed(tmp_0, tmp$ret$1);
     }
-    this.b16_1 = position;
+    this.c16_1 = position;
     return true;
   };
   Buffer.prototype.h1c = function (position) {
-    if (position < 0 ? true : position > this.b16_1) {
-      var tmp = position - this.a16_1 | 0;
+    if (position < 0 ? true : position > this.c16_1) {
+      var tmp = position - this.b16_1 | 0;
       var tmp$ret$0;
       // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-      tmp$ret$0 = this.b16_1 - this.a16_1 | 0;
+      tmp$ret$0 = this.c16_1 - this.b16_1 | 0;
       discardFailed(tmp, tmp$ret$0);
     }
-    if (!(this.a16_1 === position)) {
-      this.a16_1 = position;
+    if (!(this.b16_1 === position)) {
+      this.b16_1 = position;
     }
   };
   Buffer.prototype.i1c = function (count) {
-    var newReadPosition = this.a16_1 - count | 0;
-    if (newReadPosition < this.c16_1) {
-      rewindFailed(count, this.a16_1 - this.c16_1 | 0);
+    var newReadPosition = this.b16_1 - count | 0;
+    if (newReadPosition < this.d16_1) {
+      rewindFailed(count, this.b16_1 - this.d16_1 | 0);
     }
-    this.a16_1 = newReadPosition;
+    this.b16_1 = newReadPosition;
   };
   Buffer.prototype.j1c = function (startGap) {
     // Inline function 'kotlin.require' call
@@ -1667,17 +1667,17 @@
       var message = tmp$ret$0;
       throw IllegalArgumentException_init_$Create$(toString(message));
     }
-    if (this.a16_1 >= startGap) {
-      this.c16_1 = startGap;
+    if (this.b16_1 >= startGap) {
+      this.d16_1 = startGap;
       return Unit_getInstance();
     }
-    if (this.a16_1 === this.b16_1) {
-      if (startGap > this.d16_1) {
+    if (this.b16_1 === this.c16_1) {
+      if (startGap > this.e16_1) {
         startGapReservationFailedDueToLimit(this, startGap);
       }
-      this.b16_1 = startGap;
-      this.a16_1 = startGap;
       this.c16_1 = startGap;
+      this.b16_1 = startGap;
+      this.d16_1 = startGap;
       return Unit_getInstance();
     }
     startGapReservationFailed(this, startGap);
@@ -1693,46 +1693,46 @@
       var message = tmp$ret$0;
       throw IllegalArgumentException_init_$Create$(toString(message));
     }
-    var newLimit = this.e16_1 - endGap | 0;
-    if (newLimit >= this.b16_1) {
-      this.d16_1 = newLimit;
+    var newLimit = this.f16_1 - endGap | 0;
+    if (newLimit >= this.c16_1) {
+      this.e16_1 = newLimit;
       return Unit_getInstance();
     }
     if (newLimit < 0) {
       endGapReservationFailedDueToCapacity(this, endGap);
     }
-    if (newLimit < this.c16_1) {
+    if (newLimit < this.d16_1) {
       endGapReservationFailedDueToStartGap(this, endGap);
     }
-    if (this.a16_1 === this.b16_1) {
-      this.d16_1 = newLimit;
-      this.a16_1 = newLimit;
+    if (this.b16_1 === this.c16_1) {
+      this.e16_1 = newLimit;
       this.b16_1 = newLimit;
+      this.c16_1 = newLimit;
       return Unit_getInstance();
     }
     endGapReservationFailedDueToContent(this, endGap);
   };
   Buffer.prototype.l1c = function () {
-    this.c16_1 = 0;
-    this.a16_1 = 0;
-    var capacity = this.e16_1;
-    this.b16_1 = capacity;
+    this.d16_1 = 0;
+    this.b16_1 = 0;
+    var capacity = this.f16_1;
+    this.c16_1 = capacity;
   };
   Buffer.prototype.m1c = function () {
-    this.n1c(this.e16_1 - this.c16_1 | 0);
+    this.n1c(this.f16_1 - this.d16_1 | 0);
   };
   Buffer.prototype.n1c = function (limit) {
-    var startGap = this.c16_1;
-    this.a16_1 = startGap;
+    var startGap = this.d16_1;
     this.b16_1 = startGap;
-    this.d16_1 = limit;
+    this.c16_1 = startGap;
+    this.e16_1 = limit;
   };
   Buffer.prototype.o1c = function () {
     this.p1c(0);
     this.q1c();
   };
   Buffer.prototype.q1c = function () {
-    this.d16_1 = this.e16_1;
+    this.e16_1 = this.f16_1;
   };
   Buffer.prototype.p1c = function (newReadPosition) {
     // Inline function 'kotlin.require' call
@@ -1746,35 +1746,35 @@
       throw IllegalArgumentException_init_$Create$(toString(message));
     }
     // Inline function 'kotlin.require' call
-    var tmp1_require = newReadPosition <= this.a16_1;
+    var tmp1_require = newReadPosition <= this.b16_1;
     // Inline function 'kotlin.contracts.contract' call
     if (!tmp1_require) {
       var tmp$ret$1;
       // Inline function 'io.ktor.utils.io.core.Buffer.releaseStartGap.<anonymous>' call
-      tmp$ret$1 = "newReadPosition shouldn't be ahead of the read position: " + newReadPosition + ' > ' + this.a16_1;
+      tmp$ret$1 = "newReadPosition shouldn't be ahead of the read position: " + newReadPosition + ' > ' + this.b16_1;
       var message_0 = tmp$ret$1;
       throw IllegalArgumentException_init_$Create$(toString(message_0));
     }
-    this.a16_1 = newReadPosition;
-    if (this.c16_1 > newReadPosition) {
-      this.c16_1 = newReadPosition;
+    this.b16_1 = newReadPosition;
+    if (this.d16_1 > newReadPosition) {
+      this.d16_1 = newReadPosition;
     }
   };
   Buffer.prototype.r1c = function (copy) {
+    copy.e16_1 = this.e16_1;
     copy.d16_1 = this.d16_1;
-    copy.c16_1 = this.c16_1;
-    copy.a16_1 = this.a16_1;
     copy.b16_1 = this.b16_1;
+    copy.c16_1 = this.c16_1;
   };
   Buffer.prototype.s1c = function () {
-    var readPosition = this.a16_1;
-    if (readPosition === this.b16_1) {
+    var readPosition = this.b16_1;
+    if (readPosition === this.c16_1) {
       throw new EOFException('No readable bytes available.');
     }
-    this.a16_1 = readPosition + 1 | 0;
+    this.b16_1 = readPosition + 1 | 0;
     var tmp$ret$1;
     // Inline function 'io.ktor.utils.io.bits.get' call
-    var tmp0_get = this.z15_1;
+    var tmp0_get = this.a16_1;
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.bits.Memory.loadAt' call
     tmp$ret$0 = tmp0_get.a1b_1.getInt8(readPosition);
@@ -1782,16 +1782,16 @@
     return tmp$ret$1;
   };
   Buffer.prototype.t1c = function (value) {
-    var writePosition = this.b16_1;
-    if (writePosition === this.d16_1) {
+    var writePosition = this.c16_1;
+    if (writePosition === this.e16_1) {
       throw new InsufficientSpaceException('No free space in the buffer to write a byte');
     }
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.bits.set' call
-    var tmp0_set = this.z15_1;
+    var tmp0_set = this.a16_1;
     tmp0_set.a1b_1.setInt8(writePosition, value);
     tmp$ret$0 = Unit_getInstance();
-    this.b16_1 = writePosition + 1 | 0;
+    this.c16_1 = writePosition + 1 | 0;
   };
   Buffer.prototype.u1c = function () {
     this.o1c();
@@ -1800,17 +1800,17 @@
   Buffer.prototype.toString = function () {
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-    tmp$ret$0 = this.b16_1 - this.a16_1 | 0;
+    tmp$ret$0 = this.c16_1 - this.b16_1 | 0;
     var tmp = tmp$ret$0;
     var tmp$ret$1;
     // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-    tmp$ret$1 = this.d16_1 - this.b16_1 | 0;
+    tmp$ret$1 = this.e16_1 - this.c16_1 | 0;
     var tmp_0 = tmp$ret$1;
-    var tmp_1 = this.c16_1;
+    var tmp_1 = this.d16_1;
     var tmp$ret$2;
     // Inline function 'io.ktor.utils.io.core.Buffer.endGap' call
-    tmp$ret$2 = this.e16_1 - this.d16_1 | 0;
-    return 'Buffer(' + tmp + ' used, ' + tmp_0 + ' free, ' + (tmp_1 + tmp$ret$2 | 0) + ' reserved of ' + this.e16_1 + ')';
+    tmp$ret$2 = this.f16_1 - this.e16_1 | 0;
+    return 'Buffer(' + tmp + ' used, ' + tmp_0 + ' free, ' + (tmp_1 + tmp$ret$2 | 0) + ' reserved of ' + this.f16_1 + ')';
   };
   Buffer.$metadata$ = classMeta('Buffer');
   function discardFailed(count, readRemaining) {
@@ -1823,33 +1823,33 @@
     throw IllegalArgumentException_init_$Create$('Unable to rewind ' + count + ' bytes: only ' + rewindRemaining + ' could be rewinded');
   }
   function startGapReservationFailedDueToLimit(_this__u8e3s4, startGap) {
-    if (startGap > _this__u8e3s4.e16_1) {
-      throw IllegalArgumentException_init_$Create$('Start gap ' + startGap + ' is bigger than the capacity ' + _this__u8e3s4.e16_1);
+    if (startGap > _this__u8e3s4.f16_1) {
+      throw IllegalArgumentException_init_$Create$('Start gap ' + startGap + ' is bigger than the capacity ' + _this__u8e3s4.f16_1);
     }
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.Buffer.endGap' call
-    tmp$ret$0 = _this__u8e3s4.e16_1 - _this__u8e3s4.d16_1 | 0;
+    tmp$ret$0 = _this__u8e3s4.f16_1 - _this__u8e3s4.e16_1 | 0;
     throw IllegalStateException_init_$Create$('Unable to reserve ' + startGap + ' start gap: there are already ' + tmp$ret$0 + ' bytes reserved in the end');
   }
   function startGapReservationFailed(_this__u8e3s4, startGap) {
     var tmp = 'Unable to reserve ' + startGap + ' start gap: ';
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-    tmp$ret$0 = _this__u8e3s4.b16_1 - _this__u8e3s4.a16_1 | 0;
-    throw IllegalStateException_init_$Create$(tmp + ('there are already ' + tmp$ret$0 + ' content bytes starting at offset ' + _this__u8e3s4.a16_1));
+    tmp$ret$0 = _this__u8e3s4.c16_1 - _this__u8e3s4.b16_1 | 0;
+    throw IllegalStateException_init_$Create$(tmp + ('there are already ' + tmp$ret$0 + ' content bytes starting at offset ' + _this__u8e3s4.b16_1));
   }
   function endGapReservationFailedDueToCapacity(_this__u8e3s4, endGap) {
-    throw IllegalArgumentException_init_$Create$('End gap ' + endGap + ' is too big: capacity is ' + _this__u8e3s4.e16_1);
+    throw IllegalArgumentException_init_$Create$('End gap ' + endGap + ' is too big: capacity is ' + _this__u8e3s4.f16_1);
   }
   function endGapReservationFailedDueToStartGap(_this__u8e3s4, endGap) {
-    throw IllegalArgumentException_init_$Create$('End gap ' + endGap + ' is too big: there are already ' + _this__u8e3s4.c16_1 + ' bytes reserved in the beginning');
+    throw IllegalArgumentException_init_$Create$('End gap ' + endGap + ' is too big: there are already ' + _this__u8e3s4.d16_1 + ' bytes reserved in the beginning');
   }
   function endGapReservationFailedDueToContent(_this__u8e3s4, endGap) {
     var tmp = 'Unable to reserve end gap ' + endGap + ':';
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-    tmp$ret$0 = _this__u8e3s4.b16_1 - _this__u8e3s4.a16_1 | 0;
-    throw IllegalArgumentException_init_$Create$(tmp + (' there are already ' + tmp$ret$0 + ' content bytes at offset ' + _this__u8e3s4.a16_1));
+    tmp$ret$0 = _this__u8e3s4.c16_1 - _this__u8e3s4.b16_1 | 0;
+    throw IllegalArgumentException_init_$Create$(tmp + (' there are already ' + tmp$ret$0 + ' content bytes at offset ' + _this__u8e3s4.b16_1));
   }
   function InsufficientSpaceException_init_$Init$(name, size, availableSpace, $this) {
     InsufficientSpaceException.call($this, 'Not enough free space to write ' + name + ' of ' + size + ' bytes, available ' + availableSpace + ' bytes.');
@@ -1866,20 +1866,20 @@
   }
   InsufficientSpaceException.$metadata$ = classMeta('InsufficientSpaceException', undefined, undefined, undefined, undefined, Exception.prototype);
   function restoreStartGap(_this__u8e3s4, size) {
-    _this__u8e3s4.p1c(_this__u8e3s4.a16_1 - size | 0);
+    _this__u8e3s4.p1c(_this__u8e3s4.b16_1 - size | 0);
   }
   function canRead(_this__u8e3s4) {
-    return _this__u8e3s4.b16_1 > _this__u8e3s4.a16_1;
+    return _this__u8e3s4.c16_1 > _this__u8e3s4.b16_1;
   }
   function write(_this__u8e3s4, block) {
     // Inline function 'kotlin.contracts.contract' call
-    var rc = block(_this__u8e3s4.z15_1, _this__u8e3s4.b16_1, _this__u8e3s4.d16_1);
+    var rc = block(_this__u8e3s4.a16_1, _this__u8e3s4.c16_1, _this__u8e3s4.e16_1);
     _this__u8e3s4.f1c(rc);
     return rc;
   }
   function read(_this__u8e3s4, block) {
     // Inline function 'kotlin.contracts.contract' call
-    var rc = block(_this__u8e3s4.z15_1, _this__u8e3s4.a16_1, _this__u8e3s4.b16_1);
+    var rc = block(_this__u8e3s4.a16_1, _this__u8e3s4.b16_1, _this__u8e3s4.c16_1);
     _this__u8e3s4.e1c(rc);
     return rc;
   }
@@ -1888,13 +1888,13 @@
     // Inline function 'kotlin.comparisons.minOf' call
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-    tmp$ret$0 = other.b16_1 - other.a16_1 | 0;
+    tmp$ret$0 = other.c16_1 - other.b16_1 | 0;
     var tmp0_minOf = tmp$ret$0;
     tmp$ret$1 = Math.min(tmp0_minOf, maxSize);
     var size = tmp$ret$1;
     var tmp$ret$2;
     // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-    tmp$ret$2 = _this__u8e3s4.d16_1 - _this__u8e3s4.b16_1 | 0;
+    tmp$ret$2 = _this__u8e3s4.e16_1 - _this__u8e3s4.c16_1 | 0;
     if (tmp$ret$2 <= size) {
       writeBufferAppendUnreserve(_this__u8e3s4, size);
     }
@@ -1903,17 +1903,17 @@
     // Inline function 'kotlin.contracts.contract' call
     var tmp$ret$5;
     // Inline function 'io.ktor.utils.io.core.writeBufferAppend.<anonymous>' call
-    var tmp1__anonymous__uwfjfc = _this__u8e3s4.z15_1;
-    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.b16_1;
-    var tmp3__anonymous__ufb84q = _this__u8e3s4.d16_1;
+    var tmp1__anonymous__uwfjfc = _this__u8e3s4.a16_1;
+    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.c16_1;
+    var tmp3__anonymous__ufb84q = _this__u8e3s4.e16_1;
     var tmp$ret$4;
     // Inline function 'io.ktor.utils.io.core.read' call
     // Inline function 'kotlin.contracts.contract' call
     var tmp$ret$3;
     // Inline function 'io.ktor.utils.io.core.writeBufferAppend.<anonymous>.<anonymous>' call
-    var tmp0__anonymous__q1qw7t = other.z15_1;
-    var tmp1__anonymous__uwfjfc_0 = other.a16_1;
-    var tmp2__anonymous__z9zvc9_0 = other.b16_1;
+    var tmp0__anonymous__q1qw7t = other.a16_1;
+    var tmp1__anonymous__uwfjfc_0 = other.b16_1;
+    var tmp2__anonymous__z9zvc9_0 = other.c16_1;
     tmp0__anonymous__q1qw7t.d1b(tmp1__anonymous__uwfjfc, tmp1__anonymous__uwfjfc_0, size, tmp2__anonymous__z9zvc9);
     tmp$ret$3 = size;
     var rc = tmp$ret$3;
@@ -1928,16 +1928,16 @@
   function writeBufferAppendUnreserve(_this__u8e3s4, writeSize) {
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-    tmp$ret$0 = _this__u8e3s4.d16_1 - _this__u8e3s4.b16_1 | 0;
+    tmp$ret$0 = _this__u8e3s4.e16_1 - _this__u8e3s4.c16_1 | 0;
     var tmp = tmp$ret$0;
     var tmp$ret$1;
     // Inline function 'io.ktor.utils.io.core.Buffer.endGap' call
-    tmp$ret$1 = _this__u8e3s4.e16_1 - _this__u8e3s4.d16_1 | 0;
+    tmp$ret$1 = _this__u8e3s4.f16_1 - _this__u8e3s4.e16_1 | 0;
     if ((tmp + tmp$ret$1 | 0) < writeSize) {
       throw IllegalArgumentException_init_$Create$("Can't append buffer: not enough free space at the end");
     }
-    var newWritePosition = _this__u8e3s4.b16_1 + writeSize | 0;
-    var overrunSize = newWritePosition - _this__u8e3s4.d16_1 | 0;
+    var newWritePosition = _this__u8e3s4.c16_1 + writeSize | 0;
+    var overrunSize = newWritePosition - _this__u8e3s4.e16_1 | 0;
     if (overrunSize > 0) {
       _this__u8e3s4.q1c();
     }
@@ -1945,14 +1945,14 @@
   function writeBufferPrepend(_this__u8e3s4, other) {
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-    tmp$ret$0 = other.b16_1 - other.a16_1 | 0;
+    tmp$ret$0 = other.c16_1 - other.b16_1 | 0;
     var size = tmp$ret$0;
-    var readPosition = _this__u8e3s4.a16_1;
+    var readPosition = _this__u8e3s4.b16_1;
     if (readPosition < size) {
       throw IllegalArgumentException_init_$Create$('Not enough space in the beginning to prepend bytes');
     }
     var newReadPosition = readPosition - size | 0;
-    other.z15_1.d1b(_this__u8e3s4.z15_1, other.a16_1, size, newReadPosition);
+    other.a16_1.d1b(_this__u8e3s4.a16_1, other.b16_1, size, newReadPosition);
     other.e1c(size);
     _this__u8e3s4.p1c(newReadPosition);
     return size;
@@ -1984,7 +1984,7 @@
     return new ChunkBuffer(this.z1c_1.b1b(this.y1c_1), null, this);
   };
   DefaultBufferPool.prototype.b1d = function (instance) {
-    this.z1c_1.c1b(instance.z15_1);
+    this.z1c_1.c1b(instance.a16_1);
     DefaultPool.prototype.f1d.call(this, instance);
     instance.g1d();
   };
@@ -1996,7 +1996,7 @@
     // Inline function 'kotlin.check' call
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.bits.Memory.size' call
-    var tmp0__get_size__8hfv5c = instance.z15_1;
+    var tmp0__get_size__8hfv5c = instance.a16_1;
     tmp$ret$0 = toLong(tmp0__get_size__8hfv5c.a1b_1.byteLength);
     var tmp1_check = tmp$ret$0.equals(toLong(this.y1c_1));
     // Inline function 'kotlin.contracts.contract' call
@@ -2005,14 +2005,14 @@
       // Inline function 'io.ktor.utils.io.core.DefaultBufferPool.validateInstance.<anonymous>' call
       var tmp$ret$1;
       // Inline function 'io.ktor.utils.io.bits.Memory.size' call
-      var tmp0__get_size__8hfv5c_0 = instance.z15_1;
+      var tmp0__get_size__8hfv5c_0 = instance.a16_1;
       tmp$ret$1 = toLong(tmp0__get_size__8hfv5c_0.a1b_1.byteLength);
       tmp$ret$2 = 'Buffer size mismatch. Expected: ' + this.y1c_1 + ', actual: ' + toString(tmp$ret$1);
       var message = tmp$ret$2;
       throw IllegalStateException_init_$Create$(toString(message));
     }
     // Inline function 'kotlin.check' call
-    var tmp2_check = !(instance === Companion_getInstance_4().o12_1);
+    var tmp2_check = !(instance === Companion_getInstance_4().p12_1);
     // Inline function 'kotlin.contracts.contract' call
     if (!tmp2_check) {
       var tmp$ret$3;
@@ -2100,9 +2100,9 @@
     // Inline function 'kotlin.contracts.contract' call
     var tmp$ret$2;
     // Inline function 'io.ktor.utils.io.core.writeExact.<anonymous>' call
-    var tmp0__anonymous__q1qw7t = _this__u8e3s4.z15_1;
-    var tmp1__anonymous__uwfjfc = _this__u8e3s4.b16_1;
-    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.d16_1;
+    var tmp0__anonymous__q1qw7t = _this__u8e3s4.a16_1;
+    var tmp1__anonymous__uwfjfc = _this__u8e3s4.c16_1;
+    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.e16_1;
     var writeRemaining = tmp2__anonymous__z9zvc9 - tmp1__anonymous__uwfjfc | 0;
     if (writeRemaining < length) {
       throw InsufficientSpaceException_init_$Create$('byte array', length, writeRemaining);
@@ -2138,7 +2138,7 @@
     // Inline function 'kotlin.require' call
     var tmp$ret$1;
     // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-    tmp$ret$1 = src.b16_1 - src.a16_1 | 0;
+    tmp$ret$1 = src.c16_1 - src.b16_1 | 0;
     var tmp1_require = length <= tmp$ret$1;
     // Inline function 'kotlin.contracts.contract' call
     if (!tmp1_require) {
@@ -2146,7 +2146,7 @@
       // Inline function 'io.ktor.utils.io.core.writeFully.<anonymous>' call
       var tmp$ret$2;
       // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-      tmp$ret$2 = src.b16_1 - src.a16_1 | 0;
+      tmp$ret$2 = src.c16_1 - src.b16_1 | 0;
       tmp$ret$3 = "length shouldn't be greater than the source read remaining: " + length + ' > ' + tmp$ret$2;
       var message_0 = tmp$ret$3;
       throw IllegalArgumentException_init_$Create$(toString(message_0));
@@ -2154,7 +2154,7 @@
     // Inline function 'kotlin.require' call
     var tmp$ret$4;
     // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-    tmp$ret$4 = _this__u8e3s4.d16_1 - _this__u8e3s4.b16_1 | 0;
+    tmp$ret$4 = _this__u8e3s4.e16_1 - _this__u8e3s4.c16_1 | 0;
     var tmp2_require = length <= tmp$ret$4;
     // Inline function 'kotlin.contracts.contract' call
     if (!tmp2_require) {
@@ -2162,7 +2162,7 @@
       // Inline function 'io.ktor.utils.io.core.writeFully.<anonymous>' call
       var tmp$ret$5;
       // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-      tmp$ret$5 = _this__u8e3s4.d16_1 - _this__u8e3s4.b16_1 | 0;
+      tmp$ret$5 = _this__u8e3s4.e16_1 - _this__u8e3s4.c16_1 | 0;
       tmp$ret$6 = "length shouldn't be greater than the destination write remaining space: " + length + ' > ' + tmp$ret$5;
       var message_1 = tmp$ret$6;
       throw IllegalArgumentException_init_$Create$(toString(message_1));
@@ -2174,15 +2174,15 @@
     // Inline function 'kotlin.contracts.contract' call
     var tmp$ret$7;
     // Inline function 'io.ktor.utils.io.core.writeExact.<anonymous>' call
-    var tmp3__anonymous__ufb84q = _this__u8e3s4.z15_1;
-    var tmp4__anonymous__pkmkx7 = _this__u8e3s4.b16_1;
-    var tmp5__anonymous__kpxxpo = _this__u8e3s4.d16_1;
+    var tmp3__anonymous__ufb84q = _this__u8e3s4.a16_1;
+    var tmp4__anonymous__pkmkx7 = _this__u8e3s4.c16_1;
+    var tmp5__anonymous__kpxxpo = _this__u8e3s4.e16_1;
     var writeRemaining = tmp5__anonymous__kpxxpo - tmp4__anonymous__pkmkx7 | 0;
     if (writeRemaining < length) {
       throw InsufficientSpaceException_init_$Create$('buffer readable content', length, writeRemaining);
     }
     // Inline function 'io.ktor.utils.io.core.writeFully.<anonymous>' call
-    src.z15_1.d1b(tmp3__anonymous__ufb84q, src.a16_1, length, tmp4__anonymous__pkmkx7);
+    src.a16_1.d1b(tmp3__anonymous__ufb84q, src.b16_1, length, tmp4__anonymous__pkmkx7);
     src.e1c(length);
     tmp$ret$7 = length;
     var rc = tmp$ret$7;
@@ -2199,9 +2199,9 @@
     // Inline function 'kotlin.contracts.contract' call
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.writeExact.<anonymous>' call
-    var tmp0__anonymous__q1qw7t = _this__u8e3s4.z15_1;
-    var tmp1__anonymous__uwfjfc = _this__u8e3s4.b16_1;
-    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.d16_1;
+    var tmp0__anonymous__q1qw7t = _this__u8e3s4.a16_1;
+    var tmp1__anonymous__uwfjfc = _this__u8e3s4.c16_1;
+    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.e16_1;
     var writeRemaining = tmp2__anonymous__z9zvc9 - tmp1__anonymous__uwfjfc | 0;
     if (writeRemaining < size) {
       throw InsufficientSpaceException_init_$Create$(name, size, writeRemaining);
@@ -2222,9 +2222,9 @@
     // Inline function 'kotlin.contracts.contract' call
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.readExact.<anonymous>' call
-    var tmp0__anonymous__q1qw7t = _this__u8e3s4.z15_1;
-    var tmp1__anonymous__uwfjfc = _this__u8e3s4.a16_1;
-    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.b16_1;
+    var tmp0__anonymous__q1qw7t = _this__u8e3s4.a16_1;
+    var tmp1__anonymous__uwfjfc = _this__u8e3s4.b16_1;
+    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.c16_1;
     if ((tmp2__anonymous__z9zvc9 - tmp1__anonymous__uwfjfc | 0) < length) {
       throw new EOFException('Not enough bytes to read a byte array of size ' + length + '.');
     }
@@ -2244,9 +2244,9 @@
     // Inline function 'kotlin.contracts.contract' call
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.readExact.<anonymous>' call
-    var tmp0__anonymous__q1qw7t = _this__u8e3s4.z15_1;
-    var tmp1__anonymous__uwfjfc = _this__u8e3s4.a16_1;
-    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.b16_1;
+    var tmp0__anonymous__q1qw7t = _this__u8e3s4.a16_1;
+    var tmp1__anonymous__uwfjfc = _this__u8e3s4.b16_1;
+    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.c16_1;
     if ((tmp2__anonymous__z9zvc9 - tmp1__anonymous__uwfjfc | 0) < size) {
       throw new EOFException('Not enough bytes to read a ' + name + ' of size ' + size + '.');
     }
@@ -2273,7 +2273,7 @@
     // Inline function 'kotlin.require' call
     var tmp$ret$2;
     // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-    tmp$ret$2 = dst.d16_1 - dst.b16_1 | 0;
+    tmp$ret$2 = dst.e16_1 - dst.c16_1 | 0;
     var tmp1_require = length <= tmp$ret$2;
     // Inline function 'kotlin.contracts.contract' call
     // Inline function 'kotlin.require' call
@@ -2294,13 +2294,13 @@
     // Inline function 'kotlin.contracts.contract' call
     var tmp$ret$4;
     // Inline function 'io.ktor.utils.io.core.readExact.<anonymous>' call
-    var tmp0__anonymous__q1qw7t = _this__u8e3s4.z15_1;
-    var tmp1__anonymous__uwfjfc = _this__u8e3s4.a16_1;
-    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.b16_1;
+    var tmp0__anonymous__q1qw7t = _this__u8e3s4.a16_1;
+    var tmp1__anonymous__uwfjfc = _this__u8e3s4.b16_1;
+    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.c16_1;
     if ((tmp2__anonymous__z9zvc9 - tmp1__anonymous__uwfjfc | 0) < length) {
       throw new EOFException('Not enough bytes to read a buffer content of size ' + length + '.');
     }
-    tmp0__anonymous__q1qw7t.d1b(dst.z15_1, tmp1__anonymous__uwfjfc, length, dst.b16_1);
+    tmp0__anonymous__q1qw7t.d1b(dst.a16_1, tmp1__anonymous__uwfjfc, length, dst.c16_1);
     dst.f1c(length);
     value = Unit_getInstance();
     tmp$ret$4 = length;
@@ -2317,9 +2317,9 @@
     // Inline function 'kotlin.contracts.contract' call
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.writeExact.<anonymous>' call
-    var tmp0__anonymous__q1qw7t = _this__u8e3s4.z15_1;
-    var tmp1__anonymous__uwfjfc = _this__u8e3s4.b16_1;
-    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.d16_1;
+    var tmp0__anonymous__q1qw7t = _this__u8e3s4.a16_1;
+    var tmp1__anonymous__uwfjfc = _this__u8e3s4.c16_1;
+    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.e16_1;
     var writeRemaining = tmp2__anonymous__z9zvc9 - tmp1__anonymous__uwfjfc | 0;
     if (writeRemaining < 2) {
       throw InsufficientSpaceException_init_$Create$('short integer', 2, writeRemaining);
@@ -2343,9 +2343,9 @@
     // Inline function 'kotlin.contracts.contract' call
     var tmp$ret$2;
     // Inline function 'io.ktor.utils.io.core.readExact.<anonymous>' call
-    var tmp0__anonymous__q1qw7t = _this__u8e3s4.z15_1;
-    var tmp1__anonymous__uwfjfc = _this__u8e3s4.a16_1;
-    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.b16_1;
+    var tmp0__anonymous__q1qw7t = _this__u8e3s4.a16_1;
+    var tmp1__anonymous__uwfjfc = _this__u8e3s4.b16_1;
+    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.c16_1;
     if ((tmp2__anonymous__z9zvc9 - tmp1__anonymous__uwfjfc | 0) < 2) {
       throw new EOFException('Not enough bytes to read a short integer of size 2.');
     }
@@ -2366,7 +2366,7 @@
   function coerceAtMostMaxIntOrFail(_this__u8e3s4, message) {
     if (_this__u8e3s4.b1(toLong(IntCompanionObject_getInstance().w_1)) > 0)
       throw IllegalArgumentException_init_$Create$(message);
-    return _this__u8e3s4.o6();
+    return _this__u8e3s4.p6();
   }
   function remainingAll(_this__u8e3s4) {
     return remainingAll_0(_this__u8e3s4, new Long(0, 0));
@@ -2406,8 +2406,8 @@
       $l$0: do {
         var tmp$ret$0;
         // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-        tmp$ret$0 = $this.b16_1 - $this.a16_1 | 0;
-        var rem = toLong(tmp$ret$0).a6(n_0);
+        tmp$ret$0 = $this.c16_1 - $this.b16_1 | 0;
+        var rem = toLong(tmp$ret$0).b6(n_0);
         var tmp0_elvis_lhs = $this.k1d();
         var tmp;
         if (tmp0_elvis_lhs == null) {
@@ -2447,10 +2447,10 @@
     var builder = BytePacketBuilder_init_$Create$(null, 1, null);
     try {
       block(builder);
-      return builder.u17();
+      return builder.t2();
     } catch ($p) {
       if ($p instanceof Error) {
-        builder.op();
+        builder.pp();
         throw $p;
       } else {
         throw $p;
@@ -2459,7 +2459,7 @@
   }
   function BytePacketBuilder_init_$Init$(pool, $mask0, $marker, $this) {
     if (!(($mask0 & 1) === 0))
-      pool = Companion_getInstance_4().m12_1;
+      pool = Companion_getInstance_4().n12_1;
     BytePacketBuilder.call($this, pool);
     return $this;
   }
@@ -2472,29 +2472,29 @@
   BytePacketBuilder.prototype.g = function () {
     return this.q1d();
   };
-  BytePacketBuilder.prototype.nq = function () {
+  BytePacketBuilder.prototype.oq = function () {
     return this.q1d() === 0;
   };
   BytePacketBuilder.prototype.r1d = function () {
   };
   BytePacketBuilder.prototype.s1d = function (source, offset, length) {
   };
-  BytePacketBuilder.prototype.w5 = function (value) {
-    var tmp = Output.prototype.w5.call(this, value);
+  BytePacketBuilder.prototype.x5 = function (value) {
+    var tmp = Output.prototype.x5.call(this, value);
     return tmp instanceof BytePacketBuilder ? tmp : THROW_CCE();
   };
   BytePacketBuilder.prototype.c = function (value) {
     var tmp = Output.prototype.c.call(this, value);
     return tmp instanceof BytePacketBuilder ? tmp : THROW_CCE();
   };
-  BytePacketBuilder.prototype.uf = function (value, startIndex, endIndex) {
-    var tmp = Output.prototype.uf.call(this, value, startIndex, endIndex);
+  BytePacketBuilder.prototype.vf = function (value, startIndex, endIndex) {
+    var tmp = Output.prototype.vf.call(this, value, startIndex, endIndex);
     return tmp instanceof BytePacketBuilder ? tmp : THROW_CCE();
   };
-  BytePacketBuilder.prototype.u17 = function () {
+  BytePacketBuilder.prototype.t2 = function () {
     var size = this.g();
-    var head = this.y13();
-    return head == null ? Companion_getInstance_2().t1d_1 : new ByteReadPacket(head, toLong(size), this.q13_1);
+    var head = this.z13();
+    return head == null ? Companion_getInstance_2().t1d_1 : new ByteReadPacket(head, toLong(size), this.r13_1);
   };
   BytePacketBuilder.prototype.toString = function () {
     return 'BytePacketBuilder(' + this.g() + ' bytes written)';
@@ -2509,7 +2509,7 @@
   }
   function Companion_0() {
     Companion_instance_0 = this;
-    this.t1d_1 = new ByteReadPacket(Companion_getInstance_4().o12_1, new Long(0, 0), Companion_getInstance_4().n12_1);
+    this.t1d_1 = new ByteReadPacket(Companion_getInstance_4().p12_1, new Long(0, 0), Companion_getInstance_4().o12_1);
   }
   Companion_0.$metadata$ = objectMeta('Companion');
   var Companion_instance_0;
@@ -2532,14 +2532,14 @@
   ByteReadPacket.prototype.k1e = function () {
   };
   ByteReadPacket.prototype.toString = function () {
-    return 'ByteReadPacket(' + toString(this.r17()) + ' bytes remaining)';
+    return 'ByteReadPacket(' + toString(this.s17()) + ' bytes remaining)';
   };
   ByteReadPacket.$metadata$ = classMeta('ByteReadPacket', undefined, undefined, undefined, undefined, Input.prototype);
   function _set__head__b4pap2($this, newHead) {
-    $this.l17_1 = newHead;
-    $this.m17_1 = newHead.z15_1;
+    $this.m17_1 = newHead;
     $this.n17_1 = newHead.a16_1;
     $this.o17_1 = newHead.b16_1;
+    $this.p17_1 = newHead.c16_1;
   }
   function readASCII($this, out, min, max) {
     if (max === 0 ? min === 0 : false)
@@ -2581,9 +2581,9 @@
             // Inline function 'kotlin.contracts.contract' call
             var tmp$ret$5;
             // Inline function 'io.ktor.utils.io.core.internal.decodeASCII.<anonymous>' call
-            var tmp0__anonymous__q1qw7t_0 = tmp0__anonymous__q1qw7t.z15_1;
-            var tmp1__anonymous__uwfjfc = tmp0__anonymous__q1qw7t.a16_1;
-            var tmp2__anonymous__z9zvc9 = tmp0__anonymous__q1qw7t.b16_1;
+            var tmp0__anonymous__q1qw7t_0 = tmp0__anonymous__q1qw7t.a16_1;
+            var tmp1__anonymous__uwfjfc = tmp0__anonymous__q1qw7t.b16_1;
+            var tmp2__anonymous__z9zvc9 = tmp0__anonymous__q1qw7t.c16_1;
             var inductionVariable = tmp1__anonymous__uwfjfc;
             if (inductionVariable < tmp2__anonymous__z9zvc9)
               do {
@@ -2607,7 +2607,7 @@
                   if (copied === max) {
                     tmp_1 = false;
                   } else {
-                    out.w5(tmp3__anonymous__ufb84q);
+                    out.x5(tmp3__anonymous__ufb84q);
                     var tmp0 = copied;
                     copied = tmp0 + 1 | 0;
                     tmp_1 = true;
@@ -2699,7 +2699,7 @@
           var tmp$ret$1;
           // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
           var tmp0__get_readRemaining__u3cy9h = current;
-          tmp$ret$1 = tmp0__get_readRemaining__u3cy9h.b16_1 - tmp0__get_readRemaining__u3cy9h.a16_1 | 0;
+          tmp$ret$1 = tmp0__get_readRemaining__u3cy9h.c16_1 - tmp0__get_readRemaining__u3cy9h.b16_1 | 0;
           var before = tmp$ret$1;
           var after;
           if (before >= size) {
@@ -2718,9 +2718,9 @@
                 // Inline function 'kotlin.contracts.contract' call
                 var tmp$ret$9;
                 // Inline function 'io.ktor.utils.io.core.internal.decodeUTF8.<anonymous>' call
-                var tmp0__anonymous__q1qw7t = tmp3__anonymous__ufb84q.z15_1;
-                var tmp1__anonymous__uwfjfc = tmp3__anonymous__ufb84q.a16_1;
-                var tmp2__anonymous__z9zvc9 = tmp3__anonymous__ufb84q.b16_1;
+                var tmp0__anonymous__q1qw7t = tmp3__anonymous__ufb84q.a16_1;
+                var tmp1__anonymous__uwfjfc = tmp3__anonymous__ufb84q.b16_1;
+                var tmp2__anonymous__z9zvc9 = tmp3__anonymous__ufb84q.c16_1;
                 var inductionVariable = tmp1__anonymous__uwfjfc;
                 if (inductionVariable < tmp2__anonymous__z9zvc9)
                   do {
@@ -2744,7 +2744,7 @@
                       if (copied === max) {
                         tmp_0 = false;
                       } else {
-                        out.w5(tmp3__anonymous__ufb84q_0);
+                        out.x5(tmp3__anonymous__ufb84q_0);
                         var tmp0 = copied;
                         copied = tmp0 + 1 | 0;
                         tmp_0 = true;
@@ -2794,7 +2794,7 @@
                           if (copied === max) {
                             tmp_1 = false;
                           } else {
-                            out.w5(tmp4__anonymous__pkmkx7);
+                            out.x5(tmp4__anonymous__pkmkx7);
                             var tmp0_0 = copied;
                             copied = tmp0_0 + 1 | 0;
                             tmp_1 = true;
@@ -2816,7 +2816,7 @@
                           if (copied === max) {
                             tmp_3 = false;
                           } else {
-                            out.w5(tmp5__anonymous__kpxxpo);
+                            out.x5(tmp5__anonymous__kpxxpo);
                             var tmp0_1 = copied;
                             copied = tmp0_1 + 1 | 0;
                             tmp_3 = true;
@@ -2832,7 +2832,7 @@
                             if (copied === max) {
                               tmp_4 = false;
                             } else {
-                              out.w5(tmp6__anonymous__fv9ai5);
+                              out.x5(tmp6__anonymous__fv9ai5);
                               var tmp0_2 = copied;
                               copied = tmp0_2 + 1 | 0;
                               tmp_4 = true;
@@ -2864,7 +2864,7 @@
               var tmp$ret$12;
               // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
               var tmp1__get_readRemaining__qliyus = current;
-              tmp$ret$12 = tmp1__get_readRemaining__qliyus.b16_1 - tmp1__get_readRemaining__qliyus.a16_1 | 0;
+              tmp$ret$12 = tmp1__get_readRemaining__qliyus.c16_1 - tmp1__get_readRemaining__qliyus.b16_1 | 0;
               after = tmp$ret$12;
             }
           } else {
@@ -2882,7 +2882,7 @@
               var tmp$ret$13;
               // Inline function 'io.ktor.utils.io.core.Buffer.endGap' call
               var tmp2__get_endGap__m31424 = current;
-              tmp$ret$13 = tmp2__get_endGap__m31424.e16_1 - tmp2__get_endGap__m31424.d16_1 | 0;
+              tmp$ret$13 = tmp2__get_endGap__m31424.f16_1 - tmp2__get_endGap__m31424.e16_1 | 0;
               var tmp_7 = tmp$ret$13;
               Companion_getInstance_1();
               tmp_6 = tmp_7 < 8;
@@ -2937,22 +2937,22 @@
         // Inline function 'kotlin.comparisons.minOf' call
         var tmp$ret$0;
         // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-        tmp$ret$0 = current.b16_1 - current.a16_1 | 0;
+        tmp$ret$0 = current.c16_1 - current.b16_1 | 0;
         var tmp0_minOf = toLong(tmp$ret$0);
         tmp$ret$1 = tmp0_minOf.b1(n_0) <= 0 ? tmp0_minOf : n_0;
-        var size = tmp$ret$1.o6();
+        var size = tmp$ret$1.p6();
         current.e1c(size);
         var tmp1_this = $this_0;
-        tmp1_this.n17_1 = tmp1_this.n17_1 + size | 0;
+        tmp1_this.o17_1 = tmp1_this.o17_1 + size | 0;
         afterRead($this_0, current);
         var tmp0 = $this_0;
         var tmp$ret$2;
         // Inline function 'kotlin.Long.minus' call
-        tmp$ret$2 = n_0.b6(toLong(size));
+        tmp$ret$2 = n_0.c6(toLong(size));
         var tmp1 = tmp$ret$2;
         var tmp$ret$3;
         // Inline function 'kotlin.Long.plus' call
-        tmp$ret$3 = skipped_0.a6(toLong(size));
+        tmp$ret$3 = skipped_0.b6(toLong(size));
         var tmp2 = tmp$ret$3;
         $this_0 = tmp0;
         n_0 = tmp1;
@@ -2982,54 +2982,54 @@
       // Inline function 'kotlin.comparisons.minOf' call
       var tmp$ret$0;
       // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-      tmp$ret$0 = current.b16_1 - current.a16_1 | 0;
+      tmp$ret$0 = current.c16_1 - current.b16_1 | 0;
       var tmp0_minOf = tmp$ret$0;
       var tmp1_minOf = currentCount;
       tmp$ret$1 = Math.min(tmp0_minOf, tmp1_minOf);
       var size = tmp$ret$1;
       current.e1c(size);
       var tmp1_this = $this;
-      tmp1_this.n17_1 = tmp1_this.n17_1 + size | 0;
+      tmp1_this.o17_1 = tmp1_this.o17_1 + size | 0;
       afterRead($this, current);
       currentCount = currentCount - size | 0;
       currentSkipped = currentSkipped + size | 0;
     }
   }
   function fixGapAfterReadFallback($this, current) {
-    if ($this.q17_1 ? current.k1d() == null : false) {
-      $this.n17_1 = current.a16_1;
+    if ($this.r17_1 ? current.k1d() == null : false) {
       $this.o17_1 = current.b16_1;
+      $this.p17_1 = current.c16_1;
       $this.m1e(new Long(0, 0));
       return Unit_getInstance();
     }
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-    tmp$ret$0 = current.b16_1 - current.a16_1 | 0;
+    tmp$ret$0 = current.c16_1 - current.b16_1 | 0;
     var size = tmp$ret$0;
     var tmp$ret$2;
     // Inline function 'kotlin.comparisons.minOf' call
     Companion_getInstance_1();
     var tmp$ret$1;
     // Inline function 'io.ktor.utils.io.core.Buffer.endGap' call
-    tmp$ret$1 = current.e16_1 - current.d16_1 | 0;
+    tmp$ret$1 = current.f16_1 - current.e16_1 | 0;
     var tmp0_minOf = 8 - tmp$ret$1 | 0;
     tmp$ret$2 = Math.min(size, tmp0_minOf);
     var overrun = tmp$ret$2;
     if (size > overrun) {
       fixGapAfterReadFallbackUnreserved($this, current, size, overrun);
     } else {
-      var new_0 = $this.k17_1.e1b();
+      var new_0 = $this.l17_1.e1b();
       Companion_getInstance_1();
       new_0.k1c(8);
       new_0.b1f(current.p1d());
       writeBufferAppend(new_0, current, size);
       _set__head__b4pap2($this, new_0);
     }
-    current.r1b($this.k17_1);
+    current.r1b($this.l17_1);
   }
   function fixGapAfterReadFallbackUnreserved($this, current, size, overrun) {
-    var chunk1 = $this.k17_1.e1b();
-    var chunk2 = $this.k17_1.e1b();
+    var chunk1 = $this.l17_1.e1b();
+    var chunk2 = $this.l17_1.e1b();
     Companion_getInstance_1();
     chunk1.k1c(8);
     Companion_getInstance_1();
@@ -3051,7 +3051,7 @@
           return doFill($this_0);
         }
         var next = current_0.p1d();
-        current_0.r1b($this_0.k17_1);
+        current_0.r1b($this_0.l17_1);
         var tmp;
         if (next == null) {
           _set__head__b4pap2($this_0, empty_0);
@@ -3066,18 +3066,18 @@
         } else {
           var tmp$ret$0;
           // Inline function 'io.ktor.utils.io.core.canRead' call
-          tmp$ret$0 = next.b16_1 > next.a16_1;
+          tmp$ret$0 = next.c16_1 > next.b16_1;
           if (tmp$ret$0) {
             _set__head__b4pap2($this_0, next);
             var tmp0_this = $this_0;
             var tmp$ret$2;
             // Inline function 'kotlin.Long.minus' call
-            var tmp0_minus = tmp0_this.p17_1;
+            var tmp0_minus = tmp0_this.q17_1;
             var tmp$ret$1;
             // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-            tmp$ret$1 = next.b16_1 - next.a16_1 | 0;
+            tmp$ret$1 = next.c16_1 - next.b16_1 | 0;
             var tmp1_minus = tmp$ret$1;
-            tmp$ret$2 = tmp0_minus.b6(toLong(tmp1_minus));
+            tmp$ret$2 = tmp0_minus.c6(toLong(tmp1_minus));
             tmp0_this.m1e(tmp$ret$2);
             tmp = next;
           } else {
@@ -3097,22 +3097,22 @@
      while (true);
   }
   function doFill($this) {
-    if ($this.q17_1)
+    if ($this.r17_1)
       return null;
     var chunk = $this.i1e();
     if (chunk == null) {
-      $this.q17_1 = true;
+      $this.r17_1 = true;
       return null;
     }
     appendView($this, chunk);
     return chunk;
   }
   function appendView($this, chunk) {
-    var tail = findTail($this.l17_1);
-    if (tail === Companion_getInstance_4().o12_1) {
+    var tail = findTail($this.m17_1);
+    if (tail === Companion_getInstance_4().p12_1) {
       _set__head__b4pap2($this, chunk);
       // Inline function 'kotlin.require' call
-      var tmp0_require = $this.p17_1.equals(new Long(0, 0));
+      var tmp0_require = $this.q17_1.equals(new Long(0, 0));
       // Inline function 'kotlin.contracts.contract' call
       if (!tmp0_require) {
         throw IllegalStateException_init_$Create$('It should be no tail remaining bytes if current tail is EmptyBuffer');
@@ -3123,7 +3123,7 @@
     } else {
       tail.b1f(chunk);
       var tmp2_this = $this;
-      tmp2_this.m1e(tmp2_this.p17_1.a6(remainingAll(chunk)));
+      tmp2_this.m1e(tmp2_this.q17_1.b6(remainingAll(chunk)));
     }
   }
   function prepareReadLoop($this, minSize, head) {
@@ -3134,7 +3134,7 @@
       $l$0: do {
         var tmp$ret$0;
         // Inline function 'io.ktor.utils.io.core.Input.headRemaining' call
-        tmp$ret$0 = $this_0.o17_1 - $this_0.n17_1 | 0;
+        tmp$ret$0 = $this_0.p17_1 - $this_0.o17_1 | 0;
         var headSize = tmp$ret$0;
         if (headSize >= minSize_0)
           return head_0;
@@ -3148,7 +3148,7 @@
         }
         var next = tmp;
         if (headSize === 0) {
-          if (!(head_0 === Companion_getInstance_4().o12_1)) {
+          if (!(head_0 === Companion_getInstance_4().p12_1)) {
             $this_0.a1f(head_0);
           }
           var tmp0 = $this_0;
@@ -3161,27 +3161,27 @@
         } else {
           var desiredExtraBytes = minSize_0 - headSize | 0;
           var copied = writeBufferAppend(head_0, next, desiredExtraBytes);
-          $this_0.o17_1 = head_0.b16_1;
+          $this_0.p17_1 = head_0.c16_1;
           var tmp2_this = $this_0;
           var tmp$ret$1;
           // Inline function 'kotlin.Long.minus' call
-          var tmp0_minus = tmp2_this.p17_1;
-          tmp$ret$1 = tmp0_minus.b6(toLong(copied));
+          var tmp0_minus = tmp2_this.q17_1;
+          tmp$ret$1 = tmp0_minus.c6(toLong(copied));
           tmp2_this.m1e(tmp$ret$1);
           var tmp$ret$2;
           // Inline function 'io.ktor.utils.io.core.canRead' call
-          tmp$ret$2 = next.b16_1 > next.a16_1;
+          tmp$ret$2 = next.c16_1 > next.b16_1;
           if (!tmp$ret$2) {
             head_0.b1f(null);
             head_0.b1f(next.p1d());
-            next.r1b($this_0.k17_1);
+            next.r1b($this_0.l17_1);
           } else {
             next.j1c(copied);
           }
         }
         var tmp$ret$3;
         // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-        tmp$ret$3 = head_0.b16_1 - head_0.a16_1 | 0;
+        tmp$ret$3 = head_0.c16_1 - head_0.b16_1 | 0;
         if (tmp$ret$3 >= minSize_0)
           return head_0;
         var tmp_0 = minSize_0;
@@ -3208,7 +3208,7 @@
   function afterRead($this, head) {
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-    tmp$ret$0 = head.b16_1 - head.a16_1 | 0;
+    tmp$ret$0 = head.c16_1 - head.b16_1 | 0;
     if (tmp$ret$0 === 0) {
       $this.a1f(head);
     }
@@ -3225,32 +3225,32 @@
   }
   function Input(head, remaining, pool) {
     Companion_getInstance_3();
-    this.k17_1 = pool;
-    this.l17_1 = head;
-    this.m17_1 = head.z15_1;
+    this.l17_1 = pool;
+    this.m17_1 = head;
     this.n17_1 = head.a16_1;
     this.o17_1 = head.b16_1;
+    this.p17_1 = head.c16_1;
     var tmp = this;
     var tmp$ret$0;
     // Inline function 'kotlin.Long.minus' call
-    var tmp0_minus = this.o17_1 - this.n17_1 | 0;
-    tmp$ret$0 = remaining.b6(toLong(tmp0_minus));
-    tmp.p17_1 = tmp$ret$0;
-    this.q17_1 = false;
+    var tmp0_minus = this.p17_1 - this.o17_1 | 0;
+    tmp$ret$0 = remaining.c6(toLong(tmp0_minus));
+    tmp.q17_1 = tmp$ret$0;
+    this.r17_1 = false;
   }
   Input.prototype.f19 = function () {
     var tmp;
     var tmp_0;
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.Input.headRemaining' call
-    tmp$ret$0 = this.o17_1 - this.n17_1 | 0;
+    tmp$ret$0 = this.p17_1 - this.o17_1 | 0;
     if (tmp$ret$0 === 0) {
-      tmp_0 = this.p17_1.equals(new Long(0, 0));
+      tmp_0 = this.q17_1.equals(new Long(0, 0));
     } else {
       tmp_0 = false;
     }
     if (tmp_0) {
-      tmp = this.q17_1 ? true : doFill(this) == null;
+      tmp = this.r17_1 ? true : doFill(this) == null;
     } else {
       tmp = false;
     }
@@ -3259,15 +3259,15 @@
   Input.prototype.u1d = function () {
     var tmp$ret$0;
     // Inline function 'kotlin.also' call
-    var tmp0_also = this.l17_1;
+    var tmp0_also = this.m17_1;
     // Inline function 'kotlin.contracts.contract' call
     // Inline function 'io.ktor.utils.io.core.Input.<get-head>.<anonymous>' call
-    tmp0_also.h1c(this.n17_1);
+    tmp0_also.h1c(this.o17_1);
     tmp$ret$0 = tmp0_also;
     return tmp$ret$0;
   };
   Input.prototype.l1e = function () {
-    return this.n17_1;
+    return this.o17_1;
   };
   Input.prototype.m1e = function (newValue) {
     // Inline function 'kotlin.require' call
@@ -3280,39 +3280,39 @@
       var message = tmp$ret$0;
       throw IllegalArgumentException_init_$Create$(toString(message));
     }
-    this.p17_1 = newValue;
+    this.q17_1 = newValue;
   };
   Input.prototype.n1e = function () {
-    return this.o17_1 - this.n17_1 | 0;
+    return this.p17_1 - this.o17_1 | 0;
   };
-  Input.prototype.r17 = function () {
+  Input.prototype.s17 = function () {
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.Input.headRemaining' call
-    tmp$ret$0 = this.o17_1 - this.n17_1 | 0;
-    return toLong(tmp$ret$0).a6(this.p17_1);
+    tmp$ret$0 = this.p17_1 - this.o17_1 | 0;
+    return toLong(tmp$ret$0).b6(this.q17_1);
   };
   Input.prototype.h18 = function () {
-    return !(this.n17_1 === this.o17_1) ? true : !this.p17_1.equals(new Long(0, 0));
+    return !(this.o17_1 === this.p17_1) ? true : !this.q17_1.equals(new Long(0, 0));
   };
-  Input.prototype.op = function () {
+  Input.prototype.pp = function () {
     var head = this.u1d();
-    var empty = Companion_getInstance_4().o12_1;
+    var empty = Companion_getInstance_4().p12_1;
     if (!(head === empty)) {
       _set__head__b4pap2(this, empty);
       this.m1e(new Long(0, 0));
-      releaseAll(head, this.k17_1);
+      releaseAll(head, this.l17_1);
     }
   };
-  Input.prototype.t10 = function () {
-    this.op();
-    if (!this.q17_1) {
-      this.q17_1 = true;
+  Input.prototype.u10 = function () {
+    this.pp();
+    if (!this.r17_1) {
+      this.r17_1 = true;
     }
     this.k1e();
   };
-  Input.prototype.y13 = function () {
+  Input.prototype.z13 = function () {
     var head = this.u1d();
-    var empty = Companion_getInstance_4().o12_1;
+    var empty = Companion_getInstance_4().p12_1;
     if (head === empty)
       return null;
     _set__head__b4pap2(this, empty);
@@ -3322,7 +3322,7 @@
   Input.prototype.o1e = function () {
     var head = this.u1d();
     var next = head.k1d();
-    var empty = Companion_getInstance_4().o12_1;
+    var empty = Companion_getInstance_4().p12_1;
     if (head === empty)
       return null;
     if (next == null) {
@@ -3333,42 +3333,42 @@
       var tmp0_this = this;
       var tmp$ret$1;
       // Inline function 'kotlin.Long.minus' call
-      var tmp0_minus = tmp0_this.p17_1;
+      var tmp0_minus = tmp0_this.q17_1;
       var tmp$ret$0;
       // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-      tmp$ret$0 = next.b16_1 - next.a16_1 | 0;
+      tmp$ret$0 = next.c16_1 - next.b16_1 | 0;
       var tmp1_minus = tmp$ret$0;
-      tmp$ret$1 = tmp0_minus.b6(toLong(tmp1_minus));
+      tmp$ret$1 = tmp0_minus.c6(toLong(tmp1_minus));
       tmp0_this.m1e(tmp$ret$1);
     }
     head.b1f(null);
     return head;
   };
   Input.prototype.p1e = function (chain) {
-    if (chain === Companion_getInstance_4().o12_1)
+    if (chain === Companion_getInstance_4().p12_1)
       return Unit_getInstance();
     var size = remainingAll(chain);
-    if (this.l17_1 === Companion_getInstance_4().o12_1) {
+    if (this.m17_1 === Companion_getInstance_4().p12_1) {
       _set__head__b4pap2(this, chain);
       var tmp$ret$1;
       // Inline function 'kotlin.Long.minus' call
       var tmp$ret$0;
       // Inline function 'io.ktor.utils.io.core.Input.headRemaining' call
-      tmp$ret$0 = this.o17_1 - this.n17_1 | 0;
+      tmp$ret$0 = this.p17_1 - this.o17_1 | 0;
       var tmp0_minus = tmp$ret$0;
-      tmp$ret$1 = size.b6(toLong(tmp0_minus));
+      tmp$ret$1 = size.c6(toLong(tmp0_minus));
       this.m1e(tmp$ret$1);
     } else {
-      findTail(this.l17_1).b1f(chain);
+      findTail(this.m17_1).b1f(chain);
       var tmp0_this = this;
-      tmp0_this.m1e(tmp0_this.p17_1.a6(size));
+      tmp0_this.m1e(tmp0_this.q17_1.b6(size));
     }
   };
   Input.prototype.q1e = function (chain) {
     var tail = findTail(this.u1d());
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-    tmp$ret$0 = chain.b16_1 - chain.a16_1 | 0;
+    tmp$ret$0 = chain.c16_1 - chain.b16_1 | 0;
     var size = tmp$ret$0;
     var tmp;
     if (size === 0) {
@@ -3376,20 +3376,20 @@
     } else {
       var tmp$ret$1;
       // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-      tmp$ret$1 = tail.d16_1 - tail.b16_1 | 0;
+      tmp$ret$1 = tail.e16_1 - tail.c16_1 | 0;
       tmp = tmp$ret$1 < size;
     }
     if (tmp)
       return false;
     writeBufferAppend(tail, chain, size);
     if (this.u1d() === tail) {
-      this.o17_1 = tail.b16_1;
+      this.p17_1 = tail.c16_1;
     } else {
       var tmp0_this = this;
       var tmp$ret$2;
       // Inline function 'kotlin.Long.plus' call
-      var tmp0_plus = tmp0_this.p17_1;
-      tmp$ret$2 = tmp0_plus.a6(toLong(size));
+      var tmp0_plus = tmp0_this.q17_1;
+      tmp$ret$2 = tmp0_plus.b6(toLong(size));
       tmp0_this.m1e(tmp$ret$2);
     }
     return true;
@@ -3419,9 +3419,9 @@
   Input.prototype.t1e = function (min, max) {
     if (min === 0 ? max === 0 ? true : this.f19() : false)
       return '';
-    var remaining = this.r17();
+    var remaining = this.s17();
     if (remaining.b1(new Long(0, 0)) > 0 ? toLong(max).b1(remaining) >= 0 : false) {
-      var tmp = remaining.o6();
+      var tmp = remaining.p6();
       return readTextExactBytes$default(this, tmp, null, 2, null);
     }
     var tmp$ret$1;
@@ -3452,7 +3452,7 @@
     return this.x1e(current);
   };
   Input.prototype.x1e = function (current) {
-    return ensureNext(this, current, Companion_getInstance_4().o12_1);
+    return ensureNext(this, current, Companion_getInstance_4().p12_1);
   };
   Input.prototype.y1e = function (current) {
     var tmp0_elvis_lhs = current.k1d();
@@ -3465,63 +3465,63 @@
     var next = tmp;
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-    tmp$ret$0 = current.b16_1 - current.a16_1 | 0;
+    tmp$ret$0 = current.c16_1 - current.b16_1 | 0;
     var remaining = tmp$ret$0;
     var tmp$ret$2;
     // Inline function 'kotlin.comparisons.minOf' call
     Companion_getInstance_1();
     var tmp$ret$1;
     // Inline function 'io.ktor.utils.io.core.Buffer.endGap' call
-    tmp$ret$1 = current.e16_1 - current.d16_1 | 0;
+    tmp$ret$1 = current.f16_1 - current.e16_1 | 0;
     var tmp0_minOf = 8 - tmp$ret$1 | 0;
     tmp$ret$2 = Math.min(remaining, tmp0_minOf);
     var overrunSize = tmp$ret$2;
-    if (next.c16_1 < overrunSize) {
+    if (next.d16_1 < overrunSize) {
       return fixGapAfterReadFallback(this, current);
     }
     restoreStartGap(next, overrunSize);
     if (remaining > overrunSize) {
       current.q1c();
-      this.o17_1 = current.b16_1;
+      this.p17_1 = current.c16_1;
       var tmp1_this = this;
       var tmp$ret$3;
       // Inline function 'kotlin.Long.plus' call
-      var tmp1_plus = tmp1_this.p17_1;
-      tmp$ret$3 = tmp1_plus.a6(toLong(overrunSize));
+      var tmp1_plus = tmp1_this.q17_1;
+      tmp$ret$3 = tmp1_plus.b6(toLong(overrunSize));
       tmp1_this.m1e(tmp$ret$3);
     } else {
       _set__head__b4pap2(this, next);
       var tmp2_this = this;
       var tmp$ret$5;
       // Inline function 'kotlin.Long.minus' call
-      var tmp2_minus = tmp2_this.p17_1;
+      var tmp2_minus = tmp2_this.q17_1;
       var tmp$ret$4;
       // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-      tmp$ret$4 = next.b16_1 - next.a16_1 | 0;
+      tmp$ret$4 = next.c16_1 - next.b16_1 | 0;
       var tmp3_minus = tmp$ret$4 - overrunSize | 0;
-      tmp$ret$5 = tmp2_minus.b6(toLong(tmp3_minus));
+      tmp$ret$5 = tmp2_minus.c6(toLong(tmp3_minus));
       tmp2_this.m1e(tmp$ret$5);
       current.p1d();
-      current.r1b(this.k17_1);
+      current.r1b(this.l17_1);
     }
   };
   Input.prototype.i1e = function () {
-    var buffer = this.k17_1.e1b();
+    var buffer = this.l17_1.e1b();
     try {
       Companion_getInstance_1();
       buffer.k1c(8);
-      var tmp = buffer.b16_1;
+      var tmp = buffer.c16_1;
       var tmp$ret$0;
       // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-      tmp$ret$0 = buffer.d16_1 - buffer.b16_1 | 0;
-      var copied = this.j1e(buffer.z15_1, tmp, tmp$ret$0);
+      tmp$ret$0 = buffer.e16_1 - buffer.c16_1 | 0;
+      var copied = this.j1e(buffer.a16_1, tmp, tmp$ret$0);
       if (copied === 0) {
-        this.q17_1 = true;
+        this.r17_1 = true;
         var tmp$ret$1;
         // Inline function 'io.ktor.utils.io.core.canRead' call
-        tmp$ret$1 = buffer.b16_1 > buffer.a16_1;
+        tmp$ret$1 = buffer.c16_1 > buffer.b16_1;
         if (!tmp$ret$1) {
-          buffer.r1b(this.k17_1);
+          buffer.r1b(this.l17_1);
           return null;
         }
       }
@@ -3529,7 +3529,7 @@
       return buffer;
     } catch ($p) {
       if ($p instanceof Error) {
-        buffer.r1b(this.k17_1);
+        buffer.r1b(this.l17_1);
         throw $p;
       } else {
         throw $p;
@@ -3537,31 +3537,31 @@
     }
   };
   Input.prototype.a1e = function () {
-    if (!this.q17_1) {
-      this.q17_1 = true;
+    if (!this.r17_1) {
+      this.r17_1 = true;
     }
   };
   Input.prototype.z1e = function (minSize) {
     var head = this.u1d();
-    if ((this.o17_1 - this.n17_1 | 0) >= minSize)
+    if ((this.p17_1 - this.o17_1 | 0) >= minSize)
       return head;
     return prepareReadLoop(this, minSize, head);
   };
   Input.prototype.a1f = function (head) {
     var tmp0_elvis_lhs = head.p1d();
-    var next = tmp0_elvis_lhs == null ? Companion_getInstance_4().o12_1 : tmp0_elvis_lhs;
+    var next = tmp0_elvis_lhs == null ? Companion_getInstance_4().p12_1 : tmp0_elvis_lhs;
     _set__head__b4pap2(this, next);
     var tmp1_this = this;
     var tmp$ret$1;
     // Inline function 'kotlin.Long.minus' call
-    var tmp0_minus = tmp1_this.p17_1;
+    var tmp0_minus = tmp1_this.q17_1;
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-    tmp$ret$0 = next.b16_1 - next.a16_1 | 0;
+    tmp$ret$0 = next.c16_1 - next.b16_1 | 0;
     var tmp1_minus = tmp$ret$0;
-    tmp$ret$1 = tmp0_minus.b6(toLong(tmp1_minus));
+    tmp$ret$1 = tmp0_minus.c6(toLong(tmp1_minus));
     tmp1_this.m1e(tmp$ret$1);
-    head.r1b(this.k17_1);
+    head.r1b(this.l17_1);
     return next;
   };
   Input.$metadata$ = classMeta('Input', [Closeable]);
@@ -3615,7 +3615,7 @@
         var tmp$ret$0;
         // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
         var tmp0__get_readRemaining__u3cy9h = current;
-        tmp$ret$0 = tmp0__get_readRemaining__u3cy9h.b16_1 - tmp0__get_readRemaining__u3cy9h.a16_1 | 0;
+        tmp$ret$0 = tmp0__get_readRemaining__u3cy9h.c16_1 - tmp0__get_readRemaining__u3cy9h.b16_1 | 0;
         var before = tmp$ret$0;
         var after;
         if (before >= size) {
@@ -3625,7 +3625,7 @@
             var tmp$ret$1;
             // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
             var tmp1__get_readRemaining__qliyus = current;
-            tmp$ret$1 = tmp1__get_readRemaining__qliyus.b16_1 - tmp1__get_readRemaining__qliyus.a16_1 | 0;
+            tmp$ret$1 = tmp1__get_readRemaining__qliyus.c16_1 - tmp1__get_readRemaining__qliyus.b16_1 | 0;
             after = tmp$ret$1;
           }
         } else {
@@ -3643,7 +3643,7 @@
             var tmp$ret$2;
             // Inline function 'io.ktor.utils.io.core.Buffer.endGap' call
             var tmp2__get_endGap__m31424 = current;
-            tmp$ret$2 = tmp2__get_endGap__m31424.e16_1 - tmp2__get_endGap__m31424.d16_1 | 0;
+            tmp$ret$2 = tmp2__get_endGap__m31424.f16_1 - tmp2__get_endGap__m31424.e16_1 | 0;
             var tmp_2 = tmp$ret$2;
             Companion_getInstance_1();
             tmp_1 = tmp_2 < 8;
@@ -3706,7 +3706,7 @@
           var tmp0_minOf = remaining;
           var tmp$ret$1;
           // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-          tmp$ret$1 = tmp0__anonymous__q1qw7t.b16_1 - tmp0__anonymous__q1qw7t.a16_1 | 0;
+          tmp$ret$1 = tmp0__anonymous__q1qw7t.c16_1 - tmp0__anonymous__q1qw7t.b16_1 | 0;
           var tmp1_minOf = tmp$ret$1;
           tmp$ret$2 = Math.min(tmp0_minOf, tmp1_minOf);
           var count = tmp$ret$2;
@@ -3773,7 +3773,7 @@
           var tmp0_minOf = remaining;
           var tmp$ret$2;
           // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-          tmp$ret$2 = tmp0__anonymous__q1qw7t.b16_1 - tmp0__anonymous__q1qw7t.a16_1 | 0;
+          tmp$ret$2 = tmp0__anonymous__q1qw7t.c16_1 - tmp0__anonymous__q1qw7t.b16_1 | 0;
           var tmp1_minOf = tmp$ret$2;
           tmp$ret$3 = Math.min(tmp0_minOf, tmp1_minOf);
           var count = tmp$ret$3;
@@ -3842,7 +3842,7 @@
           var tmp0_minOf = remaining;
           var tmp$ret$1;
           // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-          tmp$ret$1 = tmp0__anonymous__q1qw7t.b16_1 - tmp0__anonymous__q1qw7t.a16_1 | 0;
+          tmp$ret$1 = tmp0__anonymous__q1qw7t.c16_1 - tmp0__anonymous__q1qw7t.b16_1 | 0;
           var tmp1_minOf = tmp$ret$1;
           tmp$ret$2 = Math.min(tmp0_minOf, tmp1_minOf);
           var count = tmp$ret$2;
@@ -3880,13 +3880,13 @@
       // Inline function 'io.ktor.utils.io.core.readPrimitive' call
       var tmp$ret$0;
       // Inline function 'io.ktor.utils.io.core.Input.headRemaining' call
-      tmp$ret$0 = _this__u8e3s4.o17_1 - _this__u8e3s4.n17_1 | 0;
+      tmp$ret$0 = _this__u8e3s4.p17_1 - _this__u8e3s4.o17_1 | 0;
       if (tmp$ret$0 > 2) {
-        var index = _this__u8e3s4.n17_1;
-        _this__u8e3s4.n17_1 = index + 2 | 0;
+        var index = _this__u8e3s4.o17_1;
+        _this__u8e3s4.o17_1 = index + 2 | 0;
         var tmp$ret$2;
         // Inline function 'io.ktor.utils.io.core.readShort.<anonymous>' call
-        var tmp0__anonymous__q1qw7t = _this__u8e3s4.m17_1;
+        var tmp0__anonymous__q1qw7t = _this__u8e3s4.n17_1;
         var tmp$ret$1;
         // Inline function 'io.ktor.utils.io.bits.loadShortAt' call
         tmp$ret$1 = tmp0__anonymous__q1qw7t.a1b_1.getInt16(index, false);
@@ -3904,11 +3904,11 @@
   function readPrimitive(_this__u8e3s4, size, main, fallback) {
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.Input.headRemaining' call
-    tmp$ret$0 = _this__u8e3s4.o17_1 - _this__u8e3s4.n17_1 | 0;
+    tmp$ret$0 = _this__u8e3s4.p17_1 - _this__u8e3s4.o17_1 | 0;
     if (tmp$ret$0 > size) {
-      var index = _this__u8e3s4.n17_1;
-      _this__u8e3s4.n17_1 = index + size | 0;
-      return main(_this__u8e3s4.m17_1, index);
+      var index = _this__u8e3s4.o17_1;
+      _this__u8e3s4.o17_1 = index + size | 0;
+      return main(_this__u8e3s4.n17_1, index);
     }
     return fallback();
   }
@@ -3945,7 +3945,7 @@
     return value;
   }
   function flushChain($this) {
-    var tmp0_elvis_lhs = $this.y13();
+    var tmp0_elvis_lhs = $this.z13();
     var tmp;
     if (tmp0_elvis_lhs == null) {
       return Unit_getInstance();
@@ -3960,11 +3960,11 @@
       $l$loop: do {
         // Inline function 'io.ktor.utils.io.core.Output.flushChain.<anonymous>' call
         var tmp0__anonymous__q1qw7t = current;
-        var tmp_0 = tmp0__anonymous__q1qw7t.a16_1;
+        var tmp_0 = tmp0__anonymous__q1qw7t.b16_1;
         var tmp$ret$0;
         // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-        tmp$ret$0 = tmp0__anonymous__q1qw7t.b16_1 - tmp0__anonymous__q1qw7t.a16_1 | 0;
-        $this.s1d(tmp0__anonymous__q1qw7t.z15_1, tmp_0, tmp$ret$0);
+        tmp$ret$0 = tmp0__anonymous__q1qw7t.c16_1 - tmp0__anonymous__q1qw7t.b16_1 | 0;
+        $this.s1d(tmp0__anonymous__q1qw7t.a16_1, tmp_0, tmp$ret$0);
         var tmp0_elvis_lhs_0 = current.k1d();
         var tmp_1;
         if (tmp0_elvis_lhs_0 == null) {
@@ -3976,41 +3976,41 @@
       }
        while (true);
     }finally {
-      releaseAll(oldTail, $this.q13_1);
+      releaseAll(oldTail, $this.r13_1);
     }
   }
   function appendNewChunk($this) {
-    var new_0 = $this.q13_1.e1b();
+    var new_0 = $this.r13_1.e1b();
     Companion_getInstance_1();
     new_0.k1c(8);
     $this.q1b(new_0);
     return new_0;
   }
   function appendChainImpl($this, head, newTail, chainedSizeDelta) {
-    var _tail = $this.s13_1;
+    var _tail = $this.t13_1;
     if (_tail == null) {
-      $this.r13_1 = head;
-      $this.x13_1 = 0;
+      $this.s13_1 = head;
+      $this.y13_1 = 0;
     } else {
       _tail.b1f(head);
-      var tailPosition = $this.u13_1;
+      var tailPosition = $this.v13_1;
       _tail.g1c(tailPosition);
       var tmp0_this = $this;
-      tmp0_this.x13_1 = tmp0_this.x13_1 + (tailPosition - $this.w13_1 | 0) | 0;
+      tmp0_this.y13_1 = tmp0_this.y13_1 + (tailPosition - $this.x13_1 | 0) | 0;
     }
-    $this.s13_1 = newTail;
+    $this.t13_1 = newTail;
     var tmp1_this = $this;
-    tmp1_this.x13_1 = tmp1_this.x13_1 + chainedSizeDelta | 0;
-    $this.t13_1 = newTail.z15_1;
-    $this.u13_1 = newTail.b16_1;
-    $this.w13_1 = newTail.a16_1;
-    $this.v13_1 = newTail.d16_1;
+    tmp1_this.y13_1 = tmp1_this.y13_1 + chainedSizeDelta | 0;
+    $this.u13_1 = newTail.a16_1;
+    $this.v13_1 = newTail.c16_1;
+    $this.x13_1 = newTail.b16_1;
+    $this.w13_1 = newTail.e16_1;
   }
   function writeByteFallback($this, v) {
     appendNewChunk($this).t1c(v);
     var tmp0_this = $this;
-    var tmp1 = tmp0_this.u13_1;
-    tmp0_this.u13_1 = tmp1 + 1 | 0;
+    var tmp1 = tmp0_this.v13_1;
+    tmp0_this.v13_1 = tmp1 + 1 | 0;
   }
   function appendCharFallback($this, c) {
     var tmp$ret$13;
@@ -4022,8 +4022,8 @@
         // Inline function 'io.ktor.utils.io.core.Output.appendCharFallback.<anonymous>' call
         var tmp$ret$10;
         // Inline function 'io.ktor.utils.io.core.internal.putUtf8Char' call
-        var tmp16_putUtf8Char = buffer.z15_1;
-        var tmp17_putUtf8Char = buffer.b16_1;
+        var tmp16_putUtf8Char = buffer.a16_1;
+        var tmp17_putUtf8Char = buffer.c16_1;
         var tmp$ret$0;
         // Inline function 'kotlin.code' call
         tmp$ret$0 = Char__toInt_impl_vasixd(c);
@@ -4118,14 +4118,14 @@
     }
   }
   function writePacketMerging($this, tail, foreignStolen, pool) {
-    tail.g1c($this.u13_1);
+    tail.g1c($this.v13_1);
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-    tmp$ret$0 = tail.b16_1 - tail.a16_1 | 0;
+    tmp$ret$0 = tail.c16_1 - tail.b16_1 | 0;
     var lastSize = tmp$ret$0;
     var tmp$ret$1;
     // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-    tmp$ret$1 = foreignStolen.b16_1 - foreignStolen.a16_1 | 0;
+    tmp$ret$1 = foreignStolen.c16_1 - foreignStolen.b16_1 | 0;
     var nextSize = tmp$ret$1;
     var maxCopySize = get_PACKET_MAX_COPY_SIZE();
     var tmp;
@@ -4133,11 +4133,11 @@
     if (nextSize < maxCopySize) {
       var tmp$ret$2;
       // Inline function 'io.ktor.utils.io.core.Buffer.endGap' call
-      tmp$ret$2 = tail.e16_1 - tail.d16_1 | 0;
+      tmp$ret$2 = tail.f16_1 - tail.e16_1 | 0;
       var tmp_1 = tmp$ret$2;
       var tmp$ret$3;
       // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-      tmp$ret$3 = tail.d16_1 - tail.b16_1 | 0;
+      tmp$ret$3 = tail.e16_1 - tail.c16_1 | 0;
       tmp_0 = nextSize <= (tmp_1 + tmp$ret$3 | 0);
     } else {
       tmp_0 = false;
@@ -4149,7 +4149,7 @@
     }
     var appendSize = tmp;
     var tmp_2;
-    if ((lastSize < maxCopySize ? lastSize <= foreignStolen.c16_1 : false) ? isExclusivelyOwned(foreignStolen) : false) {
+    if ((lastSize < maxCopySize ? lastSize <= foreignStolen.d16_1 : false) ? isExclusivelyOwned(foreignStolen) : false) {
       tmp_2 = lastSize;
     } else {
       tmp_2 = -1;
@@ -4160,11 +4160,11 @@
     } else if (prependSize === -1 ? true : appendSize <= prependSize) {
       var tmp$ret$4;
       // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-      tmp$ret$4 = tail.d16_1 - tail.b16_1 | 0;
+      tmp$ret$4 = tail.e16_1 - tail.c16_1 | 0;
       var tmp_3 = tmp$ret$4;
       var tmp$ret$5;
       // Inline function 'io.ktor.utils.io.core.Buffer.endGap' call
-      tmp$ret$5 = tail.e16_1 - tail.d16_1 | 0;
+      tmp$ret$5 = tail.f16_1 - tail.e16_1 | 0;
       writeBufferAppend(tail, foreignStolen, tmp_3 + tmp$ret$5 | 0);
       $this.s1b();
       var tmp0_safe_receiver = foreignStolen.p1d();
@@ -4186,7 +4186,7 @@
   }
   function writePacketSlowPrepend($this, foreignStolen, tail) {
     writeBufferPrepend(foreignStolen, tail);
-    var tmp0_elvis_lhs = $this.r13_1;
+    var tmp0_elvis_lhs = $this.s13_1;
     var tmp;
     if (tmp0_elvis_lhs == null) {
       throw IllegalStateException_init_$Create$("head should't be null since it is already handled in the fast-path");
@@ -4195,7 +4195,7 @@
     }
     var _head = tmp;
     if (_head === tail) {
-      $this.r13_1 = foreignStolen;
+      $this.s13_1 = foreignStolen;
     } else {
       var pre = _head;
       $l$loop: while (true) {
@@ -4206,34 +4206,34 @@
       }
       pre.b1f(foreignStolen);
     }
-    tail.r1b($this.q13_1);
-    $this.s13_1 = findTail(foreignStolen);
+    tail.r1b($this.r13_1);
+    $this.t13_1 = findTail(foreignStolen);
   }
   function Output(pool) {
-    this.q13_1 = pool;
-    this.r13_1 = null;
+    this.r13_1 = pool;
     this.s13_1 = null;
-    this.t13_1 = Companion_getInstance_6().c1f_1;
-    this.u13_1 = 0;
+    this.t13_1 = null;
+    this.u13_1 = Companion_getInstance_6().c1f_1;
     this.v13_1 = 0;
     this.w13_1 = 0;
     this.x13_1 = 0;
+    this.y13_1 = 0;
   }
   Output.prototype.q1d = function () {
-    return this.x13_1 + (this.u13_1 - this.w13_1 | 0) | 0;
+    return this.y13_1 + (this.v13_1 - this.x13_1 | 0) | 0;
   };
   Output.prototype.u1d = function () {
-    var tmp0_elvis_lhs = this.r13_1;
-    return tmp0_elvis_lhs == null ? Companion_getInstance_4().o12_1 : tmp0_elvis_lhs;
+    var tmp0_elvis_lhs = this.s13_1;
+    return tmp0_elvis_lhs == null ? Companion_getInstance_4().p12_1 : tmp0_elvis_lhs;
   };
   Output.prototype.v1d = function () {
-    return this.v13_1 - this.u13_1 | 0;
+    return this.w13_1 - this.v13_1 | 0;
   };
-  Output.prototype.nd = function () {
+  Output.prototype.od = function () {
     flushChain(this);
   };
-  Output.prototype.y13 = function () {
-    var tmp0_elvis_lhs = this.r13_1;
+  Output.prototype.z13 = function () {
+    var tmp0_elvis_lhs = this.s13_1;
     var tmp;
     if (tmp0_elvis_lhs == null) {
       return null;
@@ -4241,18 +4241,18 @@
       tmp = tmp0_elvis_lhs;
     }
     var head = tmp;
-    var tmp1_safe_receiver = this.s13_1;
+    var tmp1_safe_receiver = this.t13_1;
     if (tmp1_safe_receiver == null)
       null;
     else
-      tmp1_safe_receiver.g1c(this.u13_1);
-    this.r13_1 = null;
+      tmp1_safe_receiver.g1c(this.v13_1);
     this.s13_1 = null;
-    this.u13_1 = 0;
+    this.t13_1 = null;
     this.v13_1 = 0;
     this.w13_1 = 0;
     this.x13_1 = 0;
-    this.t13_1 = Companion_getInstance_6().c1f_1;
+    this.y13_1 = 0;
+    this.u13_1 = Companion_getInstance_6().c1f_1;
     return head;
   };
   Output.prototype.q1b = function (buffer) {
@@ -4277,43 +4277,43 @@
     var tmp0_minus = remainingAll(head);
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-    tmp$ret$0 = tail.b16_1 - tail.a16_1 | 0;
+    tmp$ret$0 = tail.c16_1 - tail.b16_1 | 0;
     var tmp1_minus = tmp$ret$0;
-    tmp$ret$1 = tmp0_minus.b6(toLong(tmp1_minus));
+    tmp$ret$1 = tmp0_minus.c6(toLong(tmp1_minus));
     var tmp2_toIntOrFail = tmp$ret$1;
     if (tmp2_toIntOrFail.b1(toLong(IntCompanionObject_getInstance().w_1)) >= 0) {
       failLongToIntConversion(tmp2_toIntOrFail, 'total size increase');
     }
-    tmp$ret$2 = tmp2_toIntOrFail.o6();
+    tmp$ret$2 = tmp2_toIntOrFail.p6();
     var chainedSizeDelta = tmp$ret$2;
     appendChainImpl(this, head, tail, chainedSizeDelta);
   };
   Output.prototype.t1c = function (v) {
-    var index = this.u13_1;
-    if (index < this.v13_1) {
-      this.u13_1 = index + 1 | 0;
+    var index = this.v13_1;
+    if (index < this.w13_1) {
+      this.v13_1 = index + 1 | 0;
       var tmp$ret$0;
       // Inline function 'io.ktor.utils.io.bits.set' call
-      var tmp0_set = this.t13_1;
+      var tmp0_set = this.u13_1;
       tmp0_set.a1b_1.setInt8(index, v);
       tmp$ret$0 = Unit_getInstance();
       return Unit_getInstance();
     }
     return writeByteFallback(this, v);
   };
-  Output.prototype.t10 = function () {
+  Output.prototype.u10 = function () {
     try {
-      this.nd();
+      this.od();
     }finally {
       this.r1d();
     }
   };
-  Output.prototype.w5 = function (value) {
-    var tailPosition = this.u13_1;
-    if ((this.v13_1 - tailPosition | 0) >= 3) {
+  Output.prototype.x5 = function (value) {
+    var tailPosition = this.v13_1;
+    if ((this.w13_1 - tailPosition | 0) >= 3) {
       var tmp$ret$10;
       // Inline function 'io.ktor.utils.io.core.internal.putUtf8Char' call
-      var tmp16_putUtf8Char = this.t13_1;
+      var tmp16_putUtf8Char = this.u13_1;
       var tmp$ret$0;
       // Inline function 'kotlin.code' call
       tmp$ret$0 = Char__toInt_impl_vasixd(value);
@@ -4387,7 +4387,7 @@
       }
       tmp$ret$10 = tmp;
       var size = tmp$ret$10;
-      this.u13_1 = tailPosition + size | 0;
+      this.v13_1 = tailPosition + size | 0;
       return this;
     }
     appendCharFallback(this, value);
@@ -4395,49 +4395,49 @@
   };
   Output.prototype.c = function (value) {
     if (value == null) {
-      this.uf('null', 0, 4);
+      this.vf('null', 0, 4);
     } else {
-      this.uf(value, 0, charSequenceLength(value));
+      this.vf(value, 0, charSequenceLength(value));
     }
     return this;
   };
-  Output.prototype.uf = function (value, startIndex, endIndex) {
+  Output.prototype.vf = function (value, startIndex, endIndex) {
     if (value == null) {
-      return this.uf('null', startIndex, endIndex);
+      return this.vf('null', startIndex, endIndex);
     }
     writeText(this, value, startIndex, endIndex, Charsets_getInstance().d1f_1);
     return this;
   };
   Output.prototype.f1a = function (packet) {
-    var foreignStolen = packet.y13();
+    var foreignStolen = packet.z13();
     if (foreignStolen == null) {
-      packet.op();
+      packet.pp();
       return Unit_getInstance();
     }
-    var tail = this.s13_1;
+    var tail = this.t13_1;
     if (tail == null) {
       this.w1d(foreignStolen);
       return Unit_getInstance();
     }
-    writePacketMerging(this, tail, foreignStolen, packet.k17_1);
+    writePacketMerging(this, tail, foreignStolen, packet.l17_1);
   };
-  Output.prototype.z13 = function (chunkBuffer) {
-    var _tail = this.s13_1;
+  Output.prototype.a14 = function (chunkBuffer) {
+    var _tail = this.t13_1;
     if (_tail == null) {
       this.w1d(chunkBuffer);
       return Unit_getInstance();
     }
-    writePacketMerging(this, _tail, chunkBuffer, this.q13_1);
+    writePacketMerging(this, _tail, chunkBuffer, this.r13_1);
   };
-  Output.prototype.s17 = function (p, n) {
+  Output.prototype.t17 = function (p, n) {
     var remaining = n;
     $l$loop: while (remaining.b1(new Long(0, 0)) > 0) {
       var tmp$ret$0;
       // Inline function 'io.ktor.utils.io.core.Input.headRemaining' call
-      tmp$ret$0 = p.o17_1 - p.n17_1 | 0;
+      tmp$ret$0 = p.p17_1 - p.o17_1 | 0;
       var headRemaining = toLong(tmp$ret$0);
       if (headRemaining.b1(remaining) <= 0) {
-        remaining = remaining.b6(headRemaining);
+        remaining = remaining.c6(headRemaining);
         var tmp0_elvis_lhs = p.o1e();
         var tmp;
         if (tmp0_elvis_lhs == null) {
@@ -4457,55 +4457,55 @@
           tmp_0 = tmp0_elvis_lhs_0;
         }
         var buffer = tmp_0;
-        var positionBefore = buffer.a16_1;
+        var positionBefore = buffer.b16_1;
         try {
           // Inline function 'io.ktor.utils.io.core.Output.writePacket.<anonymous>' call
-          writeFully_2(this, buffer, remaining.o6());
+          writeFully_2(this, buffer, remaining.p6());
         }finally {
-          var positionAfter = buffer.a16_1;
+          var positionAfter = buffer.b16_1;
           if (positionAfter < positionBefore) {
             throw IllegalStateException_init_$Create$("Buffer's position shouldn't be rewinded");
           }
-          if (positionAfter === buffer.b16_1) {
+          if (positionAfter === buffer.c16_1) {
             p.x1e(buffer);
           } else {
-            p.n17_1 = positionAfter;
+            p.o17_1 = positionAfter;
           }
         }
         break $l$loop;
       }
     }
   };
-  Output.prototype.op = function () {
-    this.t10();
+  Output.prototype.pp = function () {
+    this.u10();
   };
   Output.prototype.x1d = function (n) {
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.Output.tailRemaining' call
-    tmp$ret$0 = this.v13_1 - this.u13_1 | 0;
+    tmp$ret$0 = this.w13_1 - this.v13_1 | 0;
     if (tmp$ret$0 >= n) {
-      var tmp0_safe_receiver = this.s13_1;
+      var tmp0_safe_receiver = this.t13_1;
       if (tmp0_safe_receiver == null)
         null;
       else {
         var tmp$ret$1;
         // Inline function 'kotlin.let' call
         // Inline function 'kotlin.contracts.contract' call
-        tmp0_safe_receiver.g1c(this.u13_1);
+        tmp0_safe_receiver.g1c(this.v13_1);
         return tmp0_safe_receiver;
       }
     }
     return appendNewChunk(this);
   };
   Output.prototype.s1b = function () {
-    var tmp0_safe_receiver = this.s13_1;
+    var tmp0_safe_receiver = this.t13_1;
     if (tmp0_safe_receiver == null)
       null;
     else {
       var tmp$ret$0;
       // Inline function 'kotlin.let' call
       // Inline function 'kotlin.contracts.contract' call
-      this.u13_1 = tmp0_safe_receiver.b16_1;
+      this.v13_1 = tmp0_safe_receiver.c16_1;
       tmp$ret$0 = Unit_getInstance();
     }
   };
@@ -4530,7 +4530,7 @@
   };
   Output.prototype.z1d = function () {
     var head = this.u1d();
-    if (!(head === Companion_getInstance_4().o12_1)) {
+    if (!(head === Companion_getInstance_4().p12_1)) {
       // Inline function 'kotlin.check' call
       var tmp0_check = head.k1d() == null;
       // Inline function 'kotlin.contracts.contract' call
@@ -4546,9 +4546,9 @@
       head.m1c();
       Companion_getInstance_1();
       head.k1c(8);
-      this.u13_1 = head.b16_1;
-      this.w13_1 = this.u13_1;
-      this.v13_1 = head.d16_1;
+      this.v13_1 = head.c16_1;
+      this.x13_1 = this.v13_1;
+      this.w13_1 = head.e16_1;
     }
   };
   Output.$metadata$ = classMeta('Output', [Appendable, Closeable]);
@@ -4594,7 +4594,7 @@
         var tmp0_minOf = remaining;
         var tmp$ret$1;
         // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-        tmp$ret$1 = tmp0__anonymous__q1qw7t.d16_1 - tmp0__anonymous__q1qw7t.b16_1 | 0;
+        tmp$ret$1 = tmp0__anonymous__q1qw7t.e16_1 - tmp0__anonymous__q1qw7t.c16_1 | 0;
         var tmp1_minOf = tmp$ret$1;
         tmp$ret$2 = Math.min(tmp0_minOf, tmp1_minOf);
         var size = tmp$ret$2;
@@ -4617,7 +4617,7 @@
       var tmp$ret$0;
       var tmp$ret$0_0;
       // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-      tmp$ret$0 = src.b16_1 - src.a16_1 | 0;
+      tmp$ret$0 = src.c16_1 - src.b16_1 | 0;
       tmp$ret$0_0 = Unit_getInstance();
       length = tmp$ret$0;
     }
@@ -4639,7 +4639,7 @@
         var tmp0_minOf = remaining;
         var tmp$ret$0;
         // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-        tmp$ret$0 = tmp0__anonymous__q1qw7t.d16_1 - tmp0__anonymous__q1qw7t.b16_1 | 0;
+        tmp$ret$0 = tmp0__anonymous__q1qw7t.e16_1 - tmp0__anonymous__q1qw7t.c16_1 | 0;
         var tmp1_minOf = tmp$ret$0;
         tmp$ret$1 = Math.min(tmp0_minOf, tmp1_minOf);
         var size = tmp$ret$1;
@@ -4679,7 +4679,7 @@
         var tmp0_minOf = remaining;
         var tmp$ret$0;
         // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-        tmp$ret$0 = tmp0__anonymous__q1qw7t.d16_1 - tmp0__anonymous__q1qw7t.b16_1 | 0;
+        tmp$ret$0 = tmp0__anonymous__q1qw7t.e16_1 - tmp0__anonymous__q1qw7t.c16_1 | 0;
         var tmp1_minOf = tmp$ret$0;
         tmp$ret$1 = Math.min(tmp0_minOf, tmp1_minOf);
         var size = tmp$ret$1;
@@ -4699,11 +4699,11 @@
     var tmp$ret$0;
     $l$block: {
       // Inline function 'io.ktor.utils.io.core.writePrimitiveTemplate' call
-      var index = _this__u8e3s4.u13_1;
-      if ((_this__u8e3s4.v13_1 - index | 0) > 2) {
-        _this__u8e3s4.u13_1 = index + 2 | 0;
+      var index = _this__u8e3s4.v13_1;
+      if ((_this__u8e3s4.w13_1 - index | 0) > 2) {
+        _this__u8e3s4.v13_1 = index + 2 | 0;
         // Inline function 'io.ktor.utils.io.core.writeShort.<anonymous>' call
-        var tmp0__anonymous__q1qw7t = _this__u8e3s4.t13_1;
+        var tmp0__anonymous__q1qw7t = _this__u8e3s4.u13_1;
         // Inline function 'io.ktor.utils.io.bits.storeShortAt' call
         tmp0__anonymous__q1qw7t.a1b_1.setInt16(index, value, false);
         tmp$ret$0 = true;
@@ -4716,10 +4716,10 @@
     }
   }
   function writePrimitiveTemplate(_this__u8e3s4, componentSize, block) {
-    var index = _this__u8e3s4.u13_1;
-    if ((_this__u8e3s4.v13_1 - index | 0) > componentSize) {
-      _this__u8e3s4.u13_1 = index + componentSize | 0;
-      block(_this__u8e3s4.t13_1, index);
+    var index = _this__u8e3s4.v13_1;
+    if ((_this__u8e3s4.w13_1 - index | 0) > componentSize) {
+      _this__u8e3s4.v13_1 = index + componentSize | 0;
+      block(_this__u8e3s4.u13_1, index);
       return true;
     }
     return false;
@@ -4759,18 +4759,18 @@
       tmp = tmp0_elvis_lhs;
     }
     var buffer = tmp;
-    var positionBefore = buffer.a16_1;
+    var positionBefore = buffer.b16_1;
     try {
       block(buffer);
     }finally {
-      var positionAfter = buffer.a16_1;
+      var positionAfter = buffer.b16_1;
       if (positionAfter < positionBefore) {
         throw IllegalStateException_init_$Create$("Buffer's position shouldn't be rewinded");
       }
-      if (positionAfter === buffer.b16_1) {
+      if (positionAfter === buffer.c16_1) {
         _this__u8e3s4.x1e(buffer);
       } else {
-        _this__u8e3s4.n17_1 = positionAfter;
+        _this__u8e3s4.o17_1 = positionAfter;
       }
     }
   }
@@ -4810,10 +4810,10 @@
       var tmp$ret$0;
       var tmp$ret$0_0;
       // Inline function 'io.ktor.utils.io.core.coerceAtMostMaxIntOrFail' call
-      var tmp0_coerceAtMostMaxIntOrFail = _this__u8e3s4.r17();
+      var tmp0_coerceAtMostMaxIntOrFail = _this__u8e3s4.s17();
       if (tmp0_coerceAtMostMaxIntOrFail.b1(toLong(IntCompanionObject_getInstance().w_1)) > 0)
         throw IllegalArgumentException_init_$Create$('Unable to convert to a ByteArray: packet is too big');
-      tmp$ret$0 = tmp0_coerceAtMostMaxIntOrFail.o6();
+      tmp$ret$0 = tmp0_coerceAtMostMaxIntOrFail.p6();
       tmp$ret$0_0 = Unit_getInstance();
       n = tmp$ret$0;
     }
@@ -4855,9 +4855,9 @@
         var tmp$ret$3;
         // Inline function 'io.ktor.utils.io.core.writeTextUtf8.<anonymous>' call
         var tmp0__anonymous__q1qw7t = tail;
-        var memory = tmp0__anonymous__q1qw7t.z15_1;
-        var dstOffset = tmp0__anonymous__q1qw7t.b16_1;
-        var dstLimit = tmp0__anonymous__q1qw7t.d16_1;
+        var memory = tmp0__anonymous__q1qw7t.a16_1;
+        var dstOffset = tmp0__anonymous__q1qw7t.c16_1;
+        var dstLimit = tmp0__anonymous__q1qw7t.e16_1;
         var tmp0_container = encodeUTF8(memory, text, index, toIndex, dstOffset, dstLimit);
         var characters = EncodeResult__component1_impl_36tlhi(tmp0_container);
         var bytes = EncodeResult__component2_impl_3nv7vp(tmp0_container);
@@ -4910,18 +4910,18 @@
   ChunkBuffer$Companion$Pool$1.prototype.o1d = function (instance) {
     return this.i1f(instance instanceof ChunkBuffer ? instance : THROW_CCE());
   };
-  ChunkBuffer$Companion$Pool$1.prototype.sm = function () {
-    get_DefaultChunkedBufferPool().sm();
+  ChunkBuffer$Companion$Pool$1.prototype.tm = function () {
+    get_DefaultChunkedBufferPool().tm();
   };
   ChunkBuffer$Companion$Pool$1.$metadata$ = classMeta(undefined, [ObjectPool]);
   function ChunkBuffer$Companion$EmptyPool$1() {
   }
   ChunkBuffer$Companion$EmptyPool$1.prototype.e1b = function () {
-    return Companion_getInstance_4().o12_1;
+    return Companion_getInstance_4().p12_1;
   };
   ChunkBuffer$Companion$EmptyPool$1.prototype.i1f = function (instance) {
     // Inline function 'kotlin.require' call
-    var tmp0_require = instance === Companion_getInstance_4().o12_1;
+    var tmp0_require = instance === Companion_getInstance_4().p12_1;
     // Inline function 'kotlin.contracts.contract' call
     if (!tmp0_require) {
       var tmp$ret$0;
@@ -4934,7 +4934,7 @@
   ChunkBuffer$Companion$EmptyPool$1.prototype.o1d = function (instance) {
     return this.i1f(instance instanceof ChunkBuffer ? instance : THROW_CCE());
   };
-  ChunkBuffer$Companion$EmptyPool$1.prototype.sm = function () {
+  ChunkBuffer$Companion$EmptyPool$1.prototype.tm = function () {
   };
   ChunkBuffer$Companion$EmptyPool$1.$metadata$ = classMeta(undefined, [ObjectPool]);
   function ChunkBuffer$Companion$NoPool$1() {
@@ -4944,7 +4944,7 @@
     return new ChunkBuffer(DefaultAllocator_getInstance().b1b(get_DEFAULT_BUFFER_SIZE()), null, this);
   };
   ChunkBuffer$Companion$NoPool$1.prototype.i1f = function (instance) {
-    DefaultAllocator_getInstance().c1b(instance.z15_1);
+    DefaultAllocator_getInstance().c1b(instance.a16_1);
   };
   ChunkBuffer$Companion$NoPool$1.prototype.o1d = function (instance) {
     return this.i1f(instance instanceof ChunkBuffer ? instance : THROW_CCE());
@@ -4970,14 +4970,14 @@
   function Companion_2() {
     Companion_instance_2 = this;
     var tmp = this;
-    tmp.m12_1 = new ChunkBuffer$Companion$Pool$1();
+    tmp.n12_1 = new ChunkBuffer$Companion$Pool$1();
     var tmp_0 = this;
-    tmp_0.n12_1 = new ChunkBuffer$Companion$EmptyPool$1();
-    this.o12_1 = new ChunkBuffer(Companion_getInstance_6().c1f_1, null, this.n12_1);
+    tmp_0.o12_1 = new ChunkBuffer$Companion$EmptyPool$1();
+    this.p12_1 = new ChunkBuffer(Companion_getInstance_6().c1f_1, null, this.o12_1);
     var tmp_1 = this;
-    tmp_1.p12_1 = new ChunkBuffer$Companion$NoPool$1();
+    tmp_1.q12_1 = new ChunkBuffer$Companion$NoPool$1();
     var tmp_2 = this;
-    tmp_2.q12_1 = new ChunkBuffer$Companion$NoPoolManuallyManaged$1();
+    tmp_2.r12_1 = new ChunkBuffer$Companion$NoPoolManuallyManaged$1();
   }
   Companion_2.$metadata$ = objectMeta('Companion');
   var Companion_instance_2;
@@ -5015,10 +5015,10 @@
     }
   };
   ChunkBuffer.prototype.k1d = function () {
-    return this.m1b_1.wi_1;
+    return this.m1b_1.xi_1;
   };
   ChunkBuffer.prototype.j1d = function () {
-    return this.n1b_1.xi_1;
+    return this.n1b_1.yi_1;
   };
   ChunkBuffer.prototype.p1d = function () {
     return this.m1b_1.atomicfu$getAndSet(null);
@@ -5034,7 +5034,7 @@
     tmp0_let.k1f();
     var tmp$ret$0;
     // Inline function 'kotlin.also' call
-    var tmp0_also = new ChunkBuffer(this.z15_1, tmp0_let, this.l1b_1);
+    var tmp0_also = new ChunkBuffer(this.a16_1, tmp0_let, this.l1b_1);
     // Inline function 'kotlin.contracts.contract' call
     // Inline function 'io.ktor.utils.io.core.internal.ChunkBuffer.duplicate.<anonymous>.<anonymous>' call
     this.r1c(tmp0_also);
@@ -5069,7 +5069,7 @@
       // Inline function 'kotlinx.atomicfu.update' call
       var tmp0_update = this.n1b_1;
       while (true) {
-        var cur = tmp0_update.xi_1;
+        var cur = tmp0_update.yi_1;
         var tmp$ret$0;
         // Inline function 'io.ktor.utils.io.core.internal.ChunkBuffer.acquire.<anonymous>' call
         if (cur <= 0)
@@ -5089,7 +5089,7 @@
       // Inline function 'kotlinx.atomicfu.update' call
       var tmp0_update = this.n1b_1;
       while (true) {
-        var cur = tmp0_update.xi_1;
+        var cur = tmp0_update.yi_1;
         var tmp$ret$0;
         // Inline function 'io.ktor.utils.io.core.internal.ChunkBuffer.unpark.<anonymous>' call
         if (cur < 0) {
@@ -5113,7 +5113,7 @@
       // Inline function 'kotlinx.atomicfu.updateAndGet' call
       var tmp0_updateAndGet = this.n1b_1;
       while (true) {
-        var cur = tmp0_updateAndGet.xi_1;
+        var cur = tmp0_updateAndGet.yi_1;
         var tmp$ret$0;
         // Inline function 'io.ktor.utils.io.core.internal.ChunkBuffer.release.<anonymous>' call
         if (cur <= 0)
@@ -5140,7 +5140,7 @@
       throw IllegalArgumentException_init_$Create$(toString(message));
     }
     Buffer.prototype.u1c.call(this);
-    this.m1b_1.wi_1 = null;
+    this.m1b_1.xi_1 = null;
   };
   ChunkBuffer.$metadata$ = classMeta('ChunkBuffer', undefined, undefined, undefined, undefined, Buffer.prototype);
   function isExclusivelyOwned(_this__u8e3s4) {
@@ -5195,7 +5195,7 @@
     if (_this__u8e3s4.b1(toLong(IntCompanionObject_getInstance().w_1)) >= 0) {
       failLongToIntConversion(_this__u8e3s4, name);
     }
-    return _this__u8e3s4.o6();
+    return _this__u8e3s4.p6();
   }
   function failLongToIntConversion(value, name) {
     throw IllegalArgumentException_init_$Create$('Long value ' + toString(value) + ' of ' + name + " doesn't fit into 32-bit integer");
@@ -5206,9 +5206,9 @@
     // Inline function 'kotlin.contracts.contract' call
     var tmp$ret$2;
     // Inline function 'io.ktor.utils.io.core.internal.decodeASCII.<anonymous>' call
-    var tmp0__anonymous__q1qw7t = _this__u8e3s4.z15_1;
-    var tmp1__anonymous__uwfjfc = _this__u8e3s4.a16_1;
-    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.b16_1;
+    var tmp0__anonymous__q1qw7t = _this__u8e3s4.a16_1;
+    var tmp1__anonymous__uwfjfc = _this__u8e3s4.b16_1;
+    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.c16_1;
     var inductionVariable = tmp1__anonymous__uwfjfc;
     if (inductionVariable < tmp2__anonymous__z9zvc9)
       do {
@@ -5247,9 +5247,9 @@
     // Inline function 'kotlin.contracts.contract' call
     var tmp$ret$2;
     // Inline function 'io.ktor.utils.io.core.internal.decodeUTF8.<anonymous>' call
-    var tmp0__anonymous__q1qw7t = _this__u8e3s4.z15_1;
-    var tmp1__anonymous__uwfjfc = _this__u8e3s4.a16_1;
-    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.b16_1;
+    var tmp0__anonymous__q1qw7t = _this__u8e3s4.a16_1;
+    var tmp1__anonymous__uwfjfc = _this__u8e3s4.b16_1;
+    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.c16_1;
     var inductionVariable = tmp1__anonymous__uwfjfc;
     if (inductionVariable < tmp2__anonymous__z9zvc9)
       do {
@@ -5761,19 +5761,19 @@
     else {
       var tmp$ret$0;
       // Inline function 'io.ktor.utils.io.core.canRead' call
-      tmp$ret$0 = current.b16_1 > current.a16_1;
+      tmp$ret$0 = current.c16_1 > current.b16_1;
       if (!tmp$ret$0) {
         _this__u8e3s4.x1e(current);
       } else {
         var tmp$ret$1;
         // Inline function 'io.ktor.utils.io.core.Buffer.endGap' call
-        tmp$ret$1 = current.e16_1 - current.d16_1 | 0;
+        tmp$ret$1 = current.f16_1 - current.e16_1 | 0;
         var tmp = tmp$ret$1;
         Companion_getInstance_1();
         if (tmp < 8) {
           _this__u8e3s4.y1e(current);
         } else {
-          _this__u8e3s4.n17_1 = current.a16_1;
+          _this__u8e3s4.o17_1 = current.b16_1;
         }
       }
     }
@@ -5792,7 +5792,7 @@
   function unsafeAppend(_this__u8e3s4, builder) {
     init_properties_Unsafe_kt_ayh6vg();
     var builderSize = builder.g();
-    var tmp0_elvis_lhs = builder.y13();
+    var tmp0_elvis_lhs = builder.z13();
     var tmp;
     if (tmp0_elvis_lhs == null) {
       return 0;
@@ -5824,24 +5824,24 @@
   }
   function trySuspend($this, sleepCondition, $cont) {
     var tmp = new $trySuspendCOROUTINE$53($this, sleepCondition, $cont);
-    tmp.qh_1 = Unit_getInstance();
-    tmp.rh_1 = null;
-    return tmp.xh();
+    tmp.rh_1 = Unit_getInstance();
+    tmp.sh_1 = null;
+    return tmp.yh();
   }
   function $sleepCOROUTINE$52(_this__u8e3s4, sleepCondition, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
     this.g1g_1 = _this__u8e3s4;
     this.h1g_1 = sleepCondition;
   }
-  $sleepCOROUTINE$52.prototype.xh = function () {
-    var suspendResult = this.qh_1;
+  $sleepCOROUTINE$52.prototype.yh = function () {
+    var suspendResult = this.rh_1;
     $sm: do
       try {
-        var tmp = this.oh_1;
+        var tmp = this.ph_1;
         switch (tmp) {
           case 0:
-            this.ph_1 = 3;
-            this.oh_1 = 1;
+            this.qh_1 = 3;
+            this.ph_1 = 1;
             suspendResult = trySuspend(this.g1g_1, this.h1g_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
@@ -5852,23 +5852,23 @@
             if (suspendResult) {
               return Unit_getInstance();
             } else {
-              this.oh_1 = 2;
+              this.ph_1 = 2;
               continue $sm;
             }
 
             break;
           case 2:
-            this.g1g_1.h13();
+            this.g1g_1.i13();
             return Unit_getInstance();
           case 3:
-            throw this.rh_1;
+            throw this.sh_1;
         }
       } catch ($p) {
-        if (this.ph_1 === 3) {
+        if (this.qh_1 === 3) {
           throw $p;
         } else {
-          this.oh_1 = this.ph_1;
-          this.rh_1 = $p;
+          this.ph_1 = this.qh_1;
+          this.sh_1 = $p;
         }
       }
      while (true);
@@ -5879,68 +5879,68 @@
     this.u1f_1 = _this__u8e3s4;
     this.v1f_1 = sleepCondition;
   }
-  $trySuspendCOROUTINE$53.prototype.xh = function () {
-    var suspendResult = this.qh_1;
+  $trySuspendCOROUTINE$53.prototype.yh = function () {
+    var suspendResult = this.rh_1;
     $sm: do
       try {
-        var tmp = this.oh_1;
+        var tmp = this.ph_1;
         switch (tmp) {
           case 0:
-            this.ph_1 = 3;
+            this.qh_1 = 3;
             this.w1f_1 = false;
             var tmp_0 = this;
             tmp_0.x1f_1 = Job$default(null, 1, null);
-            if (this.u1f_1.g13_1.atomicfu$compareAndSet(null, this.x1f_1) ? this.v1f_1() : false) {
+            if (this.u1f_1.h13_1.atomicfu$compareAndSet(null, this.x1f_1) ? this.v1f_1() : false) {
               this.w1f_1 = true;
-              this.oh_1 = 1;
-              suspendResult = this.x1f_1.ip(this);
+              this.ph_1 = 1;
+              suspendResult = this.x1f_1.jp(this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
               continue $sm;
             } else {
-              this.oh_1 = 2;
+              this.ph_1 = 2;
               continue $sm;
             }
 
             break;
           case 1:
-            this.oh_1 = 2;
+            this.ph_1 = 2;
             continue $sm;
           case 2:
             return this.w1f_1;
           case 3:
-            throw this.rh_1;
+            throw this.sh_1;
         }
       } catch ($p) {
-        if (this.ph_1 === 3) {
+        if (this.qh_1 === 3) {
           throw $p;
         } else {
-          this.oh_1 = this.ph_1;
-          this.rh_1 = $p;
+          this.ph_1 = this.qh_1;
+          this.sh_1 = $p;
         }
       }
      while (true);
   };
   $trySuspendCOROUTINE$53.$metadata$ = classMeta('$trySuspendCOROUTINE$53', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
   function AwaitingSlot() {
-    this.g13_1 = atomic$ref$1(null);
+    this.h13_1 = atomic$ref$1(null);
   }
-  AwaitingSlot.prototype.d15 = function (sleepCondition, $cont) {
+  AwaitingSlot.prototype.e15 = function (sleepCondition, $cont) {
     var tmp = new $sleepCOROUTINE$52(this, sleepCondition, $cont);
-    tmp.qh_1 = Unit_getInstance();
-    tmp.rh_1 = null;
-    return tmp.xh();
+    tmp.rh_1 = Unit_getInstance();
+    tmp.sh_1 = null;
+    return tmp.yh();
   };
-  AwaitingSlot.prototype.h13 = function () {
-    var tmp0_safe_receiver = this.g13_1.atomicfu$getAndSet(null);
+  AwaitingSlot.prototype.i13 = function () {
+    var tmp0_safe_receiver = this.h13_1.atomicfu$getAndSet(null);
     if (tmp0_safe_receiver == null)
       null;
     else
-      tmp0_safe_receiver.hp();
+      tmp0_safe_receiver.ip();
   };
   AwaitingSlot.prototype.d1a = function (cause) {
-    var tmp0_elvis_lhs = this.g13_1.atomicfu$getAndSet(null);
+    var tmp0_elvis_lhs = this.h13_1.atomicfu$getAndSet(null);
     var tmp;
     if (tmp0_elvis_lhs == null) {
       return Unit_getInstance();
@@ -5949,23 +5949,23 @@
     }
     var continuation = tmp;
     if (!(cause == null)) {
-      continuation.uo(cause);
+      continuation.vo(cause);
     } else {
-      continuation.hp();
+      continuation.ip();
     }
   };
   AwaitingSlot.$metadata$ = classMeta('AwaitingSlot');
   function copyToSequentialImpl(_this__u8e3s4, dst, limit, $cont) {
     var tmp = new $copyToSequentialImplCOROUTINE$54(_this__u8e3s4, dst, limit, $cont);
-    tmp.qh_1 = Unit_getInstance();
-    tmp.rh_1 = null;
-    return tmp.xh();
+    tmp.rh_1 = Unit_getInstance();
+    tmp.sh_1 = null;
+    return tmp.yh();
   }
   function copyToTail(_this__u8e3s4, dst, limit, $cont) {
     var tmp = new $copyToTailCOROUTINE$55(_this__u8e3s4, dst, limit, $cont);
-    tmp.qh_1 = Unit_getInstance();
-    tmp.rh_1 = null;
-    return tmp.xh();
+    tmp.rh_1 = Unit_getInstance();
+    tmp.sh_1 = null;
+    return tmp.yh();
   }
   function $copyToSequentialImplCOROUTINE$54(_this__u8e3s4, dst, limit, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
@@ -5973,14 +5973,14 @@
     this.r1g_1 = dst;
     this.s1g_1 = limit;
   }
-  $copyToSequentialImplCOROUTINE$54.prototype.xh = function () {
-    var suspendResult = this.qh_1;
+  $copyToSequentialImplCOROUTINE$54.prototype.yh = function () {
+    var suspendResult = this.rh_1;
     $sm: do
       try {
-        var tmp = this.oh_1;
+        var tmp = this.ph_1;
         switch (tmp) {
           case 0:
-            this.ph_1 = 10;
+            this.qh_1 = 10;
             var tmp_0 = this;
             tmp_0.t1g_1 = !(this.q1g_1 === this.r1g_1);
             if (!this.t1g_1) {
@@ -5988,21 +5988,21 @@
               throw IllegalArgumentException_init_$Create$(toString(message));
             }
 
-            if (!(this.q1g_1.a14() == null)) {
-              this.r1g_1.uw(this.q1g_1.a14());
+            if (!(this.q1g_1.b14() == null)) {
+              this.r1g_1.vw(this.q1g_1.b14());
               return new Long(0, 0);
             }
 
             this.u1g_1 = this.s1g_1;
-            this.oh_1 = 1;
+            this.ph_1 = 1;
             continue $sm;
           case 1:
             if (!(this.u1g_1.b1(new Long(0, 0)) > 0)) {
-              this.oh_1 = 9;
+              this.ph_1 = 9;
               continue $sm;
             }
 
-            this.oh_1 = 2;
+            this.ph_1 = 2;
             suspendResult = this.q1g_1.c1a(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
@@ -6012,10 +6012,10 @@
           case 2:
             this.v1g_1 = suspendResult;
             if (!this.v1g_1) {
-              this.oh_1 = 9;
+              this.ph_1 = 9;
               continue $sm;
             } else {
-              this.oh_1 = 3;
+              this.ph_1 = 3;
               continue $sm;
             }
 
@@ -6023,69 +6023,69 @@
           case 3:
             this.w1g_1 = this.q1g_1.e1a(this.r1g_1, this.u1g_1);
             if (this.w1g_1.equals(new Long(0, 0))) {
-              this.oh_1 = 6;
+              this.ph_1 = 6;
               suspendResult = copyToTail(this.q1g_1, this.r1g_1, this.u1g_1, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
               continue $sm;
             } else {
-              if (this.r1g_1.r14() === 0) {
-                this.oh_1 = 4;
-                suspendResult = this.r1g_1.y15(1, this);
+              if (this.r1g_1.s14() === 0) {
+                this.ph_1 = 4;
+                suspendResult = this.r1g_1.z15(1, this);
                 if (suspendResult === get_COROUTINE_SUSPENDED()) {
                   return suspendResult;
                 }
                 continue $sm;
               } else {
-                this.oh_1 = 5;
+                this.ph_1 = 5;
                 continue $sm;
               }
             }
 
             break;
           case 4:
-            this.oh_1 = 5;
+            this.ph_1 = 5;
             continue $sm;
           case 5:
             this.x1g_1 = this.w1g_1;
-            this.oh_1 = 8;
+            this.ph_1 = 8;
             continue $sm;
           case 6:
             var tail = suspendResult;
             if (tail.equals(new Long(0, 0))) {
-              this.oh_1 = 9;
+              this.ph_1 = 9;
               continue $sm;
             } else {
-              this.oh_1 = 7;
+              this.ph_1 = 7;
               continue $sm;
             }
 
             break;
           case 7:
             this.x1g_1 = tail;
-            this.oh_1 = 8;
+            this.ph_1 = 8;
             continue $sm;
           case 8:
             var copied = this.x1g_1;
-            this.u1g_1 = this.u1g_1.b6(copied);
+            this.u1g_1 = this.u1g_1.c6(copied);
             if (copied.b1(new Long(0, 0)) > 0) {
-              this.r1g_1.nd();
+              this.r1g_1.od();
             }
 
-            this.oh_1 = 1;
+            this.ph_1 = 1;
             continue $sm;
           case 9:
-            return this.s1g_1.b6(this.u1g_1);
+            return this.s1g_1.c6(this.u1g_1);
           case 10:
-            throw this.rh_1;
+            throw this.sh_1;
         }
       } catch ($p) {
-        if (this.ph_1 === 10) {
+        if (this.qh_1 === 10) {
           throw $p;
         } else {
-          this.oh_1 = this.ph_1;
-          this.rh_1 = $p;
+          this.ph_1 = this.qh_1;
+          this.sh_1 = $p;
         }
       }
      while (true);
@@ -6097,24 +6097,24 @@
     this.h1h_1 = dst;
     this.i1h_1 = limit;
   }
-  $copyToTailCOROUTINE$55.prototype.xh = function () {
-    var suspendResult = this.qh_1;
+  $copyToTailCOROUTINE$55.prototype.yh = function () {
+    var suspendResult = this.rh_1;
     $sm: do
       try {
-        var tmp = this.oh_1;
+        var tmp = this.ph_1;
         switch (tmp) {
           case 0:
-            this.ph_1 = 9;
-            this.j1h_1 = Companion_getInstance_4().m12_1.e1b();
-            this.oh_1 = 1;
+            this.qh_1 = 9;
+            this.j1h_1 = Companion_getInstance_4().n12_1.e1b();
+            this.ph_1 = 1;
             continue $sm;
           case 1:
-            this.oh_1 = 2;
+            this.ph_1 = 2;
             continue $sm;
           case 2:
-            this.ph_1 = 8;
-            this.j1h_1.n1c(coerceAtMost_0(this.i1h_1, toLong(this.j1h_1.e16_1)).o6());
-            this.oh_1 = 3;
+            this.qh_1 = 8;
+            this.j1h_1.n1c(coerceAtMost_0(this.i1h_1, toLong(this.j1h_1.f16_1)).p6());
+            this.ph_1 = 3;
             suspendResult = this.g1h_1.z19(this.j1h_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
@@ -6124,19 +6124,19 @@
           case 3:
             this.l1h_1 = suspendResult;
             if (this.l1h_1 === -1) {
-              this.j1h_1.r1b(Companion_getInstance_4().m12_1);
+              this.j1h_1.r1b(Companion_getInstance_4().n12_1);
               this.k1h_1 = new Long(0, 0);
-              this.ph_1 = 9;
-              this.oh_1 = 6;
+              this.qh_1 = 9;
+              this.ph_1 = 6;
               continue $sm;
             } else {
-              this.oh_1 = 4;
+              this.ph_1 = 4;
               continue $sm;
             }
 
             break;
           case 4:
-            this.oh_1 = 5;
+            this.ph_1 = 5;
             suspendResult = this.h1h_1.v19(this.j1h_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
@@ -6145,34 +6145,34 @@
             continue $sm;
           case 5:
             this.k1h_1 = toLong(this.l1h_1);
-            this.ph_1 = 9;
-            this.oh_1 = 6;
+            this.qh_1 = 9;
+            this.ph_1 = 6;
             var tmp_0 = this;
             continue $sm;
           case 6:
             var tmp_1 = this.k1h_1;
-            this.j1h_1.r1b(Companion_getInstance_4().m12_1);
+            this.j1h_1.r1b(Companion_getInstance_4().n12_1);
             ;
             return tmp_1;
           case 7:
-            this.j1h_1.r1b(Companion_getInstance_4().m12_1);
+            this.j1h_1.r1b(Companion_getInstance_4().n12_1);
             ;
             return Unit_getInstance();
           case 8:
-            this.ph_1 = 9;
-            var t = this.rh_1;
-            this.j1h_1.r1b(Companion_getInstance_4().m12_1);
+            this.qh_1 = 9;
+            var t = this.sh_1;
+            this.j1h_1.r1b(Companion_getInstance_4().n12_1);
             ;
             throw t;
           case 9:
-            throw this.rh_1;
+            throw this.sh_1;
         }
       } catch ($p) {
-        if (this.ph_1 === 9) {
+        if (this.qh_1 === 9) {
           throw $p;
         } else {
-          this.oh_1 = this.ph_1;
-          this.rh_1 = $p;
+          this.ph_1 = this.qh_1;
+          this.sh_1 = $p;
         }
       }
      while (true);
@@ -6205,11 +6205,11 @@
   }
   NoPoolImpl.prototype.o1d = function (instance) {
   };
-  NoPoolImpl.prototype.sm = function () {
+  NoPoolImpl.prototype.tm = function () {
   };
   NoPoolImpl.$metadata$ = classMeta('NoPoolImpl', [ObjectPool]);
   function ByteChannel_0(autoFlush) {
-    return new ByteChannelJS(Companion_getInstance_4().o12_1, autoFlush);
+    return new ByteChannelJS(Companion_getInstance_4().p12_1, autoFlush);
   }
   function copyTo(_this__u8e3s4, dst, limit, $cont) {
     var tmp = _this__u8e3s4 instanceof ByteChannelSequentialBase ? _this__u8e3s4 : THROW_CCE();
@@ -6221,7 +6221,7 @@
     tmp$ret$0 = content.length === 0;
     if (tmp$ret$0)
       return Companion_getInstance_5().v1b();
-    var head = Companion_getInstance_4().m12_1.e1b();
+    var head = Companion_getInstance_4().n12_1.e1b();
     var tail = head;
     var start = offset;
     var end = start + length | 0;
@@ -6233,7 +6233,7 @@
       var tmp$ret$1;
       // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
       var tmp0__get_writeRemaining__z8qq3e = tail;
-      tmp$ret$1 = tmp0__get_writeRemaining__z8qq3e.d16_1 - tmp0__get_writeRemaining__z8qq3e.b16_1 | 0;
+      tmp$ret$1 = tmp0__get_writeRemaining__z8qq3e.e16_1 - tmp0__get_writeRemaining__z8qq3e.c16_1 | 0;
       var tmp2_minOf = tmp$ret$1;
       tmp$ret$2 = Math.min(tmp1_minOf, tmp2_minOf);
       var size = tmp$ret$2;
@@ -6242,7 +6242,7 @@
       if (start === end)
         break $l$loop;
       var current = tail;
-      tail = Companion_getInstance_4().m12_1.e1b();
+      tail = Companion_getInstance_4().n12_1.e1b();
       current.b1f(tail);
     }
     var tmp$ret$3;
@@ -6259,7 +6259,7 @@
       this$0.e1i_1 = null;
       var tmp;
       if (!(cause == null)) {
-        this$0.mn(unwrapCancellationException(cause));
+        this$0.nn(unwrapCancellationException(cause));
         tmp = Unit_getInstance();
       }
       return Unit_getInstance();
@@ -6269,15 +6269,15 @@
     ByteChannelSequentialBase_init_$Init$(initial, autoFlush, null, 4, null, this);
     this.e1i_1 = null;
   }
-  ByteChannelJS.prototype.l12 = function (job) {
+  ByteChannelJS.prototype.m12 = function (job) {
     var tmp0_safe_receiver = this.e1i_1;
     if (tmp0_safe_receiver == null)
       null;
     else {
-      tmp0_safe_receiver.uk(null, 1, null);
+      tmp0_safe_receiver.vk(null, 1, null);
     }
     this.e1i_1 = job;
-    job.qk(true, false, ByteChannelJS$attachJob$lambda(this), 2, null);
+    job.rk(true, false, ByteChannelJS$attachJob$lambda(this), 2, null);
   };
   ByteChannelJS.prototype.toString = function () {
     return 'ByteChannel[' + this.e1i_1 + ', ' + hashCode(this) + ']';
@@ -6286,10 +6286,10 @@
   function ByteReadChannel$Companion$Empty$delegate$lambda() {
     var tmp$ret$0;
     // Inline function 'kotlin.apply' call
-    var tmp0_apply = new ByteChannelJS(Companion_getInstance_4().o12_1, false);
+    var tmp0_apply = new ByteChannelJS(Companion_getInstance_4().p12_1, false);
     // Inline function 'kotlin.contracts.contract' call
     // Inline function 'io.ktor.utils.io.Companion.Empty$delegate.<anonymous>.<anonymous>' call
-    tmp0_apply.uw(null);
+    tmp0_apply.vw(null);
     tmp$ret$0 = tmp0_apply;
     return tmp$ret$0;
   }
@@ -6737,7 +6737,7 @@
           var tmp$ret$1;
           // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
           var tmp0__get_readRemaining__u3cy9h = current;
-          tmp$ret$1 = tmp0__get_readRemaining__u3cy9h.b16_1 - tmp0__get_readRemaining__u3cy9h.a16_1 | 0;
+          tmp$ret$1 = tmp0__get_readRemaining__u3cy9h.c16_1 - tmp0__get_readRemaining__u3cy9h.b16_1 | 0;
           var before = tmp$ret$1;
           var after;
           if (before >= size) {
@@ -6749,7 +6749,7 @@
                 var rem = max - charactersCopied | 0;
                 var tmp$ret$2;
                 // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-                tmp$ret$2 = tmp0__anonymous__q1qw7t.b16_1 - tmp0__anonymous__q1qw7t.a16_1 | 0;
+                tmp$ret$2 = tmp0__anonymous__q1qw7t.c16_1 - tmp0__anonymous__q1qw7t.b16_1 | 0;
                 var bufferSize = tmp$ret$2;
                 if (rem < bufferSize) {
                   tmp$ret$3 = 0;
@@ -6763,9 +6763,9 @@
                 // Inline function 'kotlin.contracts.contract' call
                 var tmp$ret$9;
                 // Inline function 'io.ktor.utils.io.core.readDirectInt8Array.<anonymous>' call
-                var tmp0__anonymous__q1qw7t_0 = tmp0__anonymous__q1qw7t.z15_1;
-                var tmp1__anonymous__uwfjfc = tmp0__anonymous__q1qw7t.a16_1;
-                var tmp2__anonymous__z9zvc9 = tmp0__anonymous__q1qw7t.b16_1;
+                var tmp0__anonymous__q1qw7t_0 = tmp0__anonymous__q1qw7t.a16_1;
+                var tmp1__anonymous__uwfjfc = tmp0__anonymous__q1qw7t.b16_1;
+                var tmp2__anonymous__z9zvc9 = tmp0__anonymous__q1qw7t.c16_1;
                 var tmp$ret$8;
                 // Inline function 'io.ktor.utils.io.charsets.decode.<anonymous>.<anonymous>' call
                 var tmp3__anonymous__ufb84q = new Int8Array(tmp0__anonymous__q1qw7t_0.a1b_1.buffer, tmp0__anonymous__q1qw7t_0.a1b_1.byteOffset + tmp1__anonymous__uwfjfc | 0, tmp2__anonymous__z9zvc9 - tmp1__anonymous__uwfjfc | 0);
@@ -6845,7 +6845,7 @@
               var tmp$ret$13;
               // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
               var tmp1__get_readRemaining__qliyus = current;
-              tmp$ret$13 = tmp1__get_readRemaining__qliyus.b16_1 - tmp1__get_readRemaining__qliyus.a16_1 | 0;
+              tmp$ret$13 = tmp1__get_readRemaining__qliyus.c16_1 - tmp1__get_readRemaining__qliyus.b16_1 | 0;
               after = tmp$ret$13;
             }
           } else {
@@ -6863,7 +6863,7 @@
               var tmp$ret$14;
               // Inline function 'io.ktor.utils.io.core.Buffer.endGap' call
               var tmp2__get_endGap__m31424 = current;
-              tmp$ret$14 = tmp2__get_endGap__m31424.e16_1 - tmp2__get_endGap__m31424.d16_1 | 0;
+              tmp$ret$14 = tmp2__get_endGap__m31424.f16_1 - tmp2__get_endGap__m31424.e16_1 | 0;
               var tmp_5 = tmp$ret$14;
               Companion_getInstance_1();
               tmp_4 = tmp_5 < 8;
@@ -6914,7 +6914,7 @@
             var tmp$ret$16;
             // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
             var tmp0__get_readRemaining__u3cy9h_0 = current_0;
-            tmp$ret$16 = tmp0__get_readRemaining__u3cy9h_0.b16_1 - tmp0__get_readRemaining__u3cy9h_0.a16_1 | 0;
+            tmp$ret$16 = tmp0__get_readRemaining__u3cy9h_0.c16_1 - tmp0__get_readRemaining__u3cy9h_0.b16_1 | 0;
             var before_0 = tmp$ret$16;
             var after_0;
             if (before_0 >= size_1) {
@@ -6930,9 +6930,9 @@
                 // Inline function 'kotlin.contracts.contract' call
                 var tmp$ret$18;
                 // Inline function 'io.ktor.utils.io.core.readDirectInt8Array.<anonymous>' call
-                var tmp0__anonymous__q1qw7t_1 = tmp1__anonymous__uwfjfc_0.z15_1;
-                var tmp1__anonymous__uwfjfc_1 = tmp1__anonymous__uwfjfc_0.a16_1;
-                var tmp2__anonymous__z9zvc9_0 = tmp1__anonymous__uwfjfc_0.b16_1;
+                var tmp0__anonymous__q1qw7t_1 = tmp1__anonymous__uwfjfc_0.a16_1;
+                var tmp1__anonymous__uwfjfc_1 = tmp1__anonymous__uwfjfc_0.b16_1;
+                var tmp2__anonymous__z9zvc9_0 = tmp1__anonymous__uwfjfc_0.c16_1;
                 var tmp$ret$17;
                 // Inline function 'io.ktor.utils.io.charsets.decode.<anonymous>.<anonymous>' call
                 var tmp3__anonymous__ufb84q_0 = new Int8Array(tmp0__anonymous__q1qw7t_1.a1b_1.buffer, tmp0__anonymous__q1qw7t_1.a1b_1.byteOffset + tmp1__anonymous__uwfjfc_1 | 0, tmp2__anonymous__z9zvc9_0 - tmp1__anonymous__uwfjfc_1 | 0);
@@ -6960,7 +6960,7 @@
                 var tmp$ret$22;
                 // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
                 var tmp1__get_readRemaining__qliyus_0 = current_0;
-                tmp$ret$22 = tmp1__get_readRemaining__qliyus_0.b16_1 - tmp1__get_readRemaining__qliyus_0.a16_1 | 0;
+                tmp$ret$22 = tmp1__get_readRemaining__qliyus_0.c16_1 - tmp1__get_readRemaining__qliyus_0.b16_1 | 0;
                 after_0 = tmp$ret$22;
               }
             } else {
@@ -6978,7 +6978,7 @@
                 var tmp$ret$23;
                 // Inline function 'io.ktor.utils.io.core.Buffer.endGap' call
                 var tmp2__get_endGap__m31424_0 = current_0;
-                tmp$ret$23 = tmp2__get_endGap__m31424_0.e16_1 - tmp2__get_endGap__m31424_0.d16_1 | 0;
+                tmp$ret$23 = tmp2__get_endGap__m31424_0.f16_1 - tmp2__get_endGap__m31424_0.e16_1 | 0;
                 var tmp_10 = tmp$ret$23;
                 Companion_getInstance_1();
                 tmp_9 = tmp_10 < 8;
@@ -7041,7 +7041,7 @@
     var start = fromIndex;
     var tmp$ret$2;
     // Inline function 'io.ktor.utils.io.core.Buffer.writeRemaining' call
-    tmp$ret$2 = dst.d16_1 - dst.b16_1 | 0;
+    tmp$ret$2 = dst.e16_1 - dst.c16_1 | 0;
     var dstRemaining = tmp$ret$2;
     $l$loop: while (start < toIndex ? dstRemaining > 0 : false) {
       var tmp$ret$3;
@@ -7073,18 +7073,18 @@
       return '';
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.Input.headRemaining' call
-    tmp$ret$0 = input.o17_1 - input.n17_1 | 0;
+    tmp$ret$0 = input.p17_1 - input.o17_1 | 0;
     if (tmp$ret$0 >= inputLength) {
       var decoder = Decoder_0(get_charset(_this__u8e3s4).f1f_1, true);
       var head = input.u1d();
-      var view = input.m17_1.a1b_1;
+      var view = input.n17_1.a1b_1;
       var tmp$ret$2;
       $l$block: {
         // Inline function 'io.ktor.utils.io.js.decodeWrap' call
         try {
           var tmp$ret$1;
           // Inline function 'io.ktor.utils.io.charsets.decodeExactBytes.<anonymous>' call
-          var subView = (head.a16_1 === 0 ? inputLength === view.byteLength : false) ? view : new DataView(view.buffer, view.byteOffset + head.a16_1 | 0, inputLength);
+          var subView = (head.b16_1 === 0 ? inputLength === view.byteLength : false) ? view : new DataView(view.buffer, view.byteOffset + head.b16_1 | 0, inputLength);
           tmp$ret$1 = decoder.z1i(subView);
           tmp$ret$2 = tmp$ret$1;
           break $l$block;
@@ -7138,7 +7138,7 @@
               var tmp$ret$1;
               // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
               var tmp0__get_readRemaining__u3cy9h = current;
-              tmp$ret$1 = tmp0__get_readRemaining__u3cy9h.b16_1 - tmp0__get_readRemaining__u3cy9h.a16_1 | 0;
+              tmp$ret$1 = tmp0__get_readRemaining__u3cy9h.c16_1 - tmp0__get_readRemaining__u3cy9h.b16_1 | 0;
               var before = tmp$ret$1;
               var after;
               if (before >= size) {
@@ -7148,7 +7148,7 @@
                   var tmp0__anonymous__q1qw7t = current;
                   var tmp$ret$2;
                   // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-                  tmp$ret$2 = tmp0__anonymous__q1qw7t.b16_1 - tmp0__anonymous__q1qw7t.a16_1 | 0;
+                  tmp$ret$2 = tmp0__anonymous__q1qw7t.c16_1 - tmp0__anonymous__q1qw7t.b16_1 | 0;
                   var chunkSize = tmp$ret$2;
                   var tmp$ret$3;
                   // Inline function 'kotlin.comparisons.minOf' call
@@ -7156,11 +7156,11 @@
                   tmp$ret$3 = Math.min(chunkSize, tmp0_minOf);
                   var size_0 = tmp$ret$3;
                   var tmp_0;
-                  if (tmp0__anonymous__q1qw7t.a16_1 === 0 ? tmp0__anonymous__q1qw7t.z15_1.a1b_1.byteLength === size_0 : false) {
+                  if (tmp0__anonymous__q1qw7t.b16_1 === 0 ? tmp0__anonymous__q1qw7t.a16_1.a1b_1.byteLength === size_0 : false) {
                     var tmp$ret$4;
                     $l$block_0: {
                       // Inline function 'io.ktor.utils.io.js.decodeStream' call
-                      var tmp1_decodeStream = tmp0__anonymous__q1qw7t.z15_1.a1b_1;
+                      var tmp1_decodeStream = tmp0__anonymous__q1qw7t.a16_1.a1b_1;
                       var tmp$ret$5;
                       // Inline function 'io.ktor.utils.io.js.decodeWrap' call
                       try {
@@ -7180,7 +7180,7 @@
                     var tmp$ret$6;
                     $l$block_1: {
                       // Inline function 'io.ktor.utils.io.js.decodeStream' call
-                      var tmp2_decodeStream = new Int8Array(tmp0__anonymous__q1qw7t.z15_1.a1b_1.buffer, tmp0__anonymous__q1qw7t.z15_1.a1b_1.byteOffset + tmp0__anonymous__q1qw7t.a16_1 | 0, size_0);
+                      var tmp2_decodeStream = new Int8Array(tmp0__anonymous__q1qw7t.a16_1.a1b_1.buffer, tmp0__anonymous__q1qw7t.a16_1.a1b_1.byteOffset + tmp0__anonymous__q1qw7t.b16_1 | 0, size_0);
                       var tmp$ret$7;
                       // Inline function 'io.ktor.utils.io.js.decodeWrap' call
                       try {
@@ -7198,7 +7198,7 @@
                     tmp_0 = tmp$ret$6;
                   }
                   var text = tmp_0;
-                  sb.x6(text);
+                  sb.y6(text);
                   tmp0__anonymous__q1qw7t.e1c(size_0);
                   inputRemaining = inputRemaining - size_0 | 0;
                   tmp$ret$8 = inputRemaining > 0 ? 6 : 0;
@@ -7207,7 +7207,7 @@
                   var tmp$ret$9;
                   // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
                   var tmp1__get_readRemaining__qliyus = current;
-                  tmp$ret$9 = tmp1__get_readRemaining__qliyus.b16_1 - tmp1__get_readRemaining__qliyus.a16_1 | 0;
+                  tmp$ret$9 = tmp1__get_readRemaining__qliyus.c16_1 - tmp1__get_readRemaining__qliyus.b16_1 | 0;
                   after = tmp$ret$9;
                 }
               } else {
@@ -7225,7 +7225,7 @@
                   var tmp$ret$10;
                   // Inline function 'io.ktor.utils.io.core.Buffer.endGap' call
                   var tmp2__get_endGap__m31424 = current;
-                  tmp$ret$10 = tmp2__get_endGap__m31424.e16_1 - tmp2__get_endGap__m31424.d16_1 | 0;
+                  tmp$ret$10 = tmp2__get_endGap__m31424.f16_1 - tmp2__get_endGap__m31424.e16_1 | 0;
                   var tmp_3 = tmp$ret$10;
                   Companion_getInstance_1();
                   tmp_2 = tmp_3 < 8;
@@ -7276,7 +7276,7 @@
                 var tmp1__anonymous__uwfjfc = current_0;
                 var tmp$ret$12;
                 // Inline function 'io.ktor.utils.io.core.Buffer.readRemaining' call
-                tmp$ret$12 = tmp1__anonymous__uwfjfc.b16_1 - tmp1__anonymous__uwfjfc.a16_1 | 0;
+                tmp$ret$12 = tmp1__anonymous__uwfjfc.c16_1 - tmp1__anonymous__uwfjfc.b16_1 | 0;
                 var chunkSize_0 = tmp$ret$12;
                 var tmp$ret$13;
                 // Inline function 'kotlin.comparisons.minOf' call
@@ -7284,13 +7284,13 @@
                 tmp$ret$13 = Math.min(chunkSize_0, tmp0_minOf_0);
                 var size_1 = tmp$ret$13;
                 var tmp_6;
-                if (tmp1__anonymous__uwfjfc.a16_1 === 0 ? tmp1__anonymous__uwfjfc.z15_1.a1b_1.byteLength === size_1 : false) {
-                  tmp_6 = decoder.z1i(tmp1__anonymous__uwfjfc.z15_1.a1b_1);
+                if (tmp1__anonymous__uwfjfc.b16_1 === 0 ? tmp1__anonymous__uwfjfc.a16_1.a1b_1.byteLength === size_1 : false) {
+                  tmp_6 = decoder.z1i(tmp1__anonymous__uwfjfc.a16_1.a1b_1);
                 } else {
                   var tmp$ret$14;
                   $l$block_3: {
                     // Inline function 'io.ktor.utils.io.js.decodeStream' call
-                    var tmp1_decodeStream_0 = new Int8Array(tmp1__anonymous__uwfjfc.z15_1.a1b_1.buffer, tmp1__anonymous__uwfjfc.z15_1.a1b_1.byteOffset + tmp1__anonymous__uwfjfc.a16_1 | 0, size_1);
+                    var tmp1_decodeStream_0 = new Int8Array(tmp1__anonymous__uwfjfc.a16_1.a1b_1.buffer, tmp1__anonymous__uwfjfc.a16_1.a1b_1.byteOffset + tmp1__anonymous__uwfjfc.b16_1 | 0, size_1);
                     var tmp$ret$15;
                     // Inline function 'io.ktor.utils.io.js.decodeWrap' call
                     try {
@@ -7308,7 +7308,7 @@
                   tmp_6 = tmp$ret$14;
                 }
                 var text_0 = tmp_6;
-                sb.x6(text_0);
+                sb.y6(text_0);
                 tmp1__anonymous__uwfjfc.e1c(size_1);
                 inputRemaining = inputRemaining - size_1 | 0;
                 tmp$ret$16 = true;
@@ -7335,7 +7335,7 @@
             }
           }
         }
-        tmp$ret$17 = sb.x6(decoder.w1i());
+        tmp$ret$17 = sb.y6(decoder.w1i());
         tmp$ret$18 = tmp$ret$17;
         break $l$block_4;
       } catch ($p) {
@@ -7457,9 +7457,9 @@
     // Inline function 'kotlin.contracts.contract' call
     var tmp$ret$3;
     // Inline function 'io.ktor.utils.io.core.writeDirect.<anonymous>' call
-    var tmp0__anonymous__q1qw7t = dst.z15_1;
-    var tmp1__anonymous__uwfjfc = dst.b16_1;
-    var tmp2__anonymous__z9zvc9 = dst.d16_1;
+    var tmp0__anonymous__q1qw7t = dst.a16_1;
+    var tmp1__anonymous__uwfjfc = dst.c16_1;
+    var tmp2__anonymous__z9zvc9 = dst.e16_1;
     var tmp$ret$2;
     // Inline function 'io.ktor.utils.io.charsets.encodeISO88591.<anonymous>' call
     var tmp3__anonymous__ufb84q = tmp0__anonymous__q1qw7t.j1i(tmp1__anonymous__uwfjfc, tmp2__anonymous__z9zvc9 - tmp1__anonymous__uwfjfc | 0).a1b_1;
@@ -7507,9 +7507,9 @@
     // Inline function 'kotlin.contracts.contract' call
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.readDirectInt8Array.<anonymous>' call
-    var tmp0__anonymous__q1qw7t = _this__u8e3s4.z15_1;
-    var tmp1__anonymous__uwfjfc = _this__u8e3s4.a16_1;
-    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.b16_1;
+    var tmp0__anonymous__q1qw7t = _this__u8e3s4.a16_1;
+    var tmp1__anonymous__uwfjfc = _this__u8e3s4.b16_1;
+    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.c16_1;
     tmp$ret$0 = block(new Int8Array(tmp0__anonymous__q1qw7t.a1b_1.buffer, tmp0__anonymous__q1qw7t.a1b_1.byteOffset + tmp1__anonymous__uwfjfc | 0, tmp2__anonymous__z9zvc9 - tmp1__anonymous__uwfjfc | 0));
     var rc = tmp$ret$0;
     _this__u8e3s4.e1c(rc);
@@ -7522,9 +7522,9 @@
     // Inline function 'kotlin.contracts.contract' call
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.writeFully.<anonymous>' call
-    var tmp0__anonymous__q1qw7t = _this__u8e3s4.z15_1;
-    var tmp1__anonymous__uwfjfc = _this__u8e3s4.b16_1;
-    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.d16_1;
+    var tmp0__anonymous__q1qw7t = _this__u8e3s4.a16_1;
+    var tmp1__anonymous__uwfjfc = _this__u8e3s4.c16_1;
+    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.e16_1;
     if ((tmp2__anonymous__z9zvc9 - tmp1__anonymous__uwfjfc | 0) < length) {
       throw new InsufficientSpaceException('Not enough free space to write ' + length + ' bytes');
     }
@@ -7548,9 +7548,9 @@
     // Inline function 'kotlin.contracts.contract' call
     var tmp$ret$0;
     // Inline function 'io.ktor.utils.io.core.writeDirect.<anonymous>' call
-    var tmp0__anonymous__q1qw7t = _this__u8e3s4.z15_1;
-    var tmp1__anonymous__uwfjfc = _this__u8e3s4.b16_1;
-    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.d16_1;
+    var tmp0__anonymous__q1qw7t = _this__u8e3s4.a16_1;
+    var tmp1__anonymous__uwfjfc = _this__u8e3s4.c16_1;
+    var tmp2__anonymous__z9zvc9 = _this__u8e3s4.e16_1;
     tmp$ret$0 = block(tmp0__anonymous__q1qw7t.j1i(tmp1__anonymous__uwfjfc, tmp2__anonymous__z9zvc9 - tmp1__anonymous__uwfjfc | 0).a1b_1);
     var rc = tmp$ret$0;
     _this__u8e3s4.f1c(rc);
@@ -7575,9 +7575,9 @@
     var bufferOffset = i8.byteOffset + offset | 0;
     var buffer = i8.buffer.slice(bufferOffset, bufferOffset + length | 0);
     var tmp = Companion_getInstance_6();
-    var view = new ChunkBuffer(of$default(tmp, buffer, 0, 0, 6, null), null, Companion_getInstance_4().p12_1);
+    var view = new ChunkBuffer(of$default(tmp, buffer, 0, 0, 6, null), null, Companion_getInstance_4().q12_1);
     view.l1c();
-    var packet = ByteReadPacket_init_$Create$(view, Companion_getInstance_4().q12_1);
+    var packet = ByteReadPacket_init_$Create$(view, Companion_getInstance_4().r12_1);
     return decode(charset.h1f(), packet, IntCompanionObject_getInstance().w_1);
   }
   function String$default(bytes, offset, length, charset, $mask0, $handler) {
@@ -7790,11 +7790,11 @@
             builder.t1c(toByte(point & 255));
           }
            while (inductionVariable < last);
-        tmp$ret$3 = builder.u17();
+        tmp$ret$3 = builder.t2();
         break $l$block;
       } catch ($p) {
         if ($p instanceof Error) {
-          builder.op();
+          builder.pp();
           throw $p;
         } else {
           throw $p;
@@ -7900,7 +7900,7 @@
       this.d1d_1[tmp1] = instance;
     }
   };
-  DefaultPool.prototype.sm = function () {
+  DefaultPool.prototype.tm = function () {
     var inductionVariable = 0;
     var last = this.e1d_1;
     if (inductionVariable < last)
@@ -7918,16 +7918,16 @@
   DefaultPool.$metadata$ = classMeta('DefaultPool', [ObjectPool]);
   //region block: post-declaration
   ByteChannelSequentialBase.prototype.y19 = readRemaining$default;
-  ChannelJob.prototype.uk = cancel$default;
-  ChannelJob.prototype.qk = invokeOnCompletion$default;
-  DefaultPool.prototype.t10 = close;
-  DefaultBufferPool.prototype.t10 = close;
-  ChunkBuffer$Companion$Pool$1.prototype.t10 = close;
-  ChunkBuffer$Companion$EmptyPool$1.prototype.t10 = close;
-  NoPoolImpl.prototype.t10 = close;
-  ChunkBuffer$Companion$NoPool$1.prototype.t10 = close;
-  ChunkBuffer$Companion$NoPoolManuallyManaged$1.prototype.t10 = close;
-  ByteArrayPool$1.prototype.t10 = close;
+  ChannelJob.prototype.vk = cancel$default;
+  ChannelJob.prototype.rk = invokeOnCompletion$default;
+  DefaultPool.prototype.u10 = close;
+  DefaultBufferPool.prototype.u10 = close;
+  ChunkBuffer$Companion$Pool$1.prototype.u10 = close;
+  ChunkBuffer$Companion$EmptyPool$1.prototype.u10 = close;
+  NoPoolImpl.prototype.u10 = close;
+  ChunkBuffer$Companion$NoPool$1.prototype.u10 = close;
+  ChunkBuffer$Companion$NoPoolManuallyManaged$1.prototype.u10 = close;
+  ByteArrayPool$1.prototype.u10 = close;
   ByteChannelJS.prototype.y19 = readRemaining$default;
   //endregion
   //region block: init

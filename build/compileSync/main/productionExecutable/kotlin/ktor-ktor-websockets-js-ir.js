@@ -19,25 +19,25 @@
   'use strict';
   //region block: imports
   var imul = Math.imul;
-  var mapCapacity = kotlin_kotlin.$_$.h6;
-  var coerceAtLeast = kotlin_kotlin.$_$.t9;
+  var mapCapacity = kotlin_kotlin.$_$.i6;
+  var coerceAtLeast = kotlin_kotlin.$_$.u9;
   var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.e1;
   var Unit_getInstance = kotlin_kotlin.$_$.g4;
-  var objectMeta = kotlin_kotlin.$_$.n9;
-  var Enum = kotlin_kotlin.$_$.rb;
-  var classMeta = kotlin_kotlin.$_$.l8;
-  var toString = kotlin_kotlin.$_$.r9;
-  var getStringHashCode = kotlin_kotlin.$_$.s8;
-  var THROW_CCE = kotlin_kotlin.$_$.ac;
-  var interfaceMeta = kotlin_kotlin.$_$.u8;
+  var objectMeta = kotlin_kotlin.$_$.o9;
+  var Enum = kotlin_kotlin.$_$.sb;
+  var classMeta = kotlin_kotlin.$_$.m8;
+  var toString = kotlin_kotlin.$_$.s9;
+  var getStringHashCode = kotlin_kotlin.$_$.t8;
+  var THROW_CCE = kotlin_kotlin.$_$.bc;
+  var interfaceMeta = kotlin_kotlin.$_$.v8;
   var DisposableHandle = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.f1;
-  var get_lastIndex = kotlin_kotlin.$_$.c6;
-  var compareTo = kotlin_kotlin.$_$.m8;
-  var ensureNotNull = kotlin_kotlin.$_$.nc;
-  var fillArrayVal = kotlin_kotlin.$_$.p8;
+  var get_lastIndex = kotlin_kotlin.$_$.d6;
+  var compareTo = kotlin_kotlin.$_$.n8;
+  var ensureNotNull = kotlin_kotlin.$_$.oc;
+  var fillArrayVal = kotlin_kotlin.$_$.q8;
   var CoroutineScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.e1;
   var Charsets_getInstance = kotlin_io_ktor_ktor_io.$_$.o;
-  var encodeToByteArray = kotlin_kotlin.$_$.ia;
+  var encodeToByteArray = kotlin_kotlin.$_$.ja;
   var encodeToByteArray_0 = kotlin_io_ktor_ktor_io.$_$.r;
   var BytePacketBuilder_init_$Create$ = kotlin_io_ktor_ktor_io.$_$.l;
   var writeShort = kotlin_io_ktor_ktor_io.$_$.d1;
@@ -86,16 +86,16 @@
       inductionVariable = inductionVariable + 1 | 0;
       var tmp$ret$0;
       // Inline function 'io.ktor.websocket.Companion.byCodeMap.<anonymous>' call
-      tmp$ret$0 = element.a21_1;
+      tmp$ret$0 = element.l21_1;
       tmp0_associateByTo.a(tmp$ret$0, element);
     }
     tmp$ret$1 = tmp0_associateByTo;
     tmp$ret$2 = tmp$ret$1;
-    tmp.b21_1 = tmp$ret$2;
-    this.c21_1 = Codes_INTERNAL_ERROR_getInstance();
+    tmp.m21_1 = tmp$ret$2;
+    this.n21_1 = Codes_INTERNAL_ERROR_getInstance();
   }
-  Companion.prototype.d21 = function (code) {
-    return this.b21_1.i2(code);
+  Companion.prototype.o21 = function (code) {
+    return this.m21_1.i2(code);
   };
   Companion.$metadata$ = objectMeta('Companion');
   var Companion_instance;
@@ -129,10 +129,10 @@
   }
   function Codes(name, ordinal, code) {
     Enum.call(this, name, ordinal);
-    this.a21_1 = code;
+    this.l21_1 = code;
   }
-  Codes.prototype.e21 = function () {
-    return this.a21_1;
+  Codes.prototype.p21 = function () {
+    return this.l21_1;
   };
   Codes.$metadata$ = classMeta('Codes', undefined, undefined, undefined, undefined, Enum.prototype);
   function Codes_NORMAL_getInstance() {
@@ -184,25 +184,25 @@
     return Codes_TRY_AGAIN_LATER_instance;
   }
   function CloseReason(code, message) {
-    this.f21_1 = code;
-    this.g21_1 = message;
+    this.q21_1 = code;
+    this.r21_1 = message;
   }
-  CloseReason.prototype.e21 = function () {
-    return this.f21_1;
+  CloseReason.prototype.p21 = function () {
+    return this.q21_1;
   };
   CloseReason.prototype.j1 = function () {
-    return this.g21_1;
+    return this.r21_1;
   };
-  CloseReason.prototype.h21 = function () {
-    return Companion_getInstance().d21(this.f21_1);
+  CloseReason.prototype.s21 = function () {
+    return Companion_getInstance().o21(this.q21_1);
   };
   CloseReason.prototype.toString = function () {
-    var tmp0_elvis_lhs = this.h21();
-    return 'CloseReason(reason=' + toString(tmp0_elvis_lhs == null ? this.f21_1 : tmp0_elvis_lhs) + ', message=' + this.g21_1 + ')';
+    var tmp0_elvis_lhs = this.s21();
+    return 'CloseReason(reason=' + toString(tmp0_elvis_lhs == null ? this.q21_1 : tmp0_elvis_lhs) + ', message=' + this.r21_1 + ')';
   };
   CloseReason.prototype.hashCode = function () {
-    var result = this.f21_1;
-    result = imul(result, 31) + getStringHashCode(this.g21_1) | 0;
+    var result = this.q21_1;
+    result = imul(result, 31) + getStringHashCode(this.r21_1) | 0;
     return result;
   };
   CloseReason.prototype.equals = function (other) {
@@ -211,9 +211,9 @@
     if (!(other instanceof CloseReason))
       return false;
     var tmp0_other_with_cast = other instanceof CloseReason ? other : THROW_CCE();
-    if (!(this.f21_1 === tmp0_other_with_cast.f21_1))
+    if (!(this.q21_1 === tmp0_other_with_cast.q21_1))
       return false;
-    if (!(this.g21_1 === tmp0_other_with_cast.g21_1))
+    if (!(this.r21_1 === tmp0_other_with_cast.r21_1))
       return false;
     return true;
   };
@@ -224,7 +224,7 @@
   function NonDisposableHandle() {
     NonDisposableHandle_instance = this;
   }
-  NonDisposableHandle.prototype.sm = function () {
+  NonDisposableHandle.prototype.tm = function () {
   };
   NonDisposableHandle.prototype.toString = function () {
     return 'NonDisposableHandle';
@@ -264,7 +264,7 @@
       var tmp$ret$2;
       // Inline function 'io.ktor.websocket.Companion.maxOpcode.<anonymous>' call
       var tmp1__anonymous__uwfjfc = maxElem;
-      tmp$ret$2 = tmp1__anonymous__uwfjfc.l21_1;
+      tmp$ret$2 = tmp1__anonymous__uwfjfc.w21_1;
       var maxValue = tmp$ret$2;
       var inductionVariable = 1;
       if (inductionVariable <= lastIndex)
@@ -274,7 +274,7 @@
           var e = tmp0_maxByOrNull[i];
           var tmp$ret$3;
           // Inline function 'io.ktor.websocket.Companion.maxOpcode.<anonymous>' call
-          tmp$ret$3 = e.l21_1;
+          tmp$ret$3 = e.w21_1;
           var v = tmp$ret$3;
           if (compareTo(maxValue, v) < 0) {
             maxElem = e;
@@ -284,10 +284,10 @@
          while (!(i === lastIndex));
       tmp$ret$1 = maxElem;
     }
-    tmp.m21_1 = ensureNotNull(tmp$ret$1).l21_1;
+    tmp.x21_1 = ensureNotNull(tmp$ret$1).w21_1;
     var tmp_0 = this;
     var tmp_1 = 0;
-    var tmp_2 = this.m21_1 + 1 | 0;
+    var tmp_2 = this.x21_1 + 1 | 0;
     var tmp$ret$4;
     // Inline function 'kotlin.arrayOfNulls' call
     tmp$ret$4 = fillArrayVal(Array(tmp_2), null);
@@ -310,7 +310,7 @@
           inductionVariable_0 = inductionVariable_0 + 1 | 0;
           var tmp$ret$5;
           // Inline function 'io.ktor.websocket.Companion.byOpcodeArray.<anonymous>' call
-          tmp$ret$5 = element.l21_1 === tmp_4;
+          tmp$ret$5 = element.w21_1 === tmp_4;
           if (tmp$ret$5) {
             if (found) {
               tmp$ret$6 = null;
@@ -330,7 +330,7 @@
       tmp_3[tmp_4] = tmp$ret$7;
       tmp_1 = tmp_1 + 1 | 0;
     }
-    tmp_0.n21_1 = tmp_3;
+    tmp_0.y21_1 = tmp_3;
   }
   Companion_0.$metadata$ = objectMeta('Companion');
   var Companion_instance_0;
@@ -357,11 +357,11 @@
   }
   function FrameType(name, ordinal, controlFrame, opcode) {
     Enum.call(this, name, ordinal);
-    this.k21_1 = controlFrame;
-    this.l21_1 = opcode;
+    this.v21_1 = controlFrame;
+    this.w21_1 = opcode;
   }
-  FrameType.prototype.o21 = function () {
-    return this.l21_1;
+  FrameType.prototype.z21 = function () {
+    return this.w21_1;
   };
   FrameType.$metadata$ = classMeta('FrameType', undefined, undefined, undefined, undefined, Enum.prototype);
   function FrameType_TEXT_getInstance() {
@@ -423,13 +423,13 @@
       var builder = BytePacketBuilder_init_$Create$(null, 1, null);
       try {
         // Inline function 'io.ktor.websocket.Close.<init>.<anonymous>' call
-        writeShort(builder, reason.f21_1);
-        writeText$default(builder, reason.g21_1, 0, 0, null, 14, null);
-        tmp$ret$0 = builder.u17();
+        writeShort(builder, reason.q21_1);
+        writeText$default(builder, reason.r21_1, 0, 0, null, 14, null);
+        tmp$ret$0 = builder.t2();
         break $l$block;
       } catch ($p) {
         if ($p instanceof Error) {
-          builder.op();
+          builder.pp();
           throw $p;
         } else {
           throw $p;
@@ -460,7 +460,7 @@
   Close.$metadata$ = classMeta('Close', undefined, undefined, undefined, undefined, Frame.prototype);
   function Companion_1() {
     Companion_instance_1 = this;
-    this.p21_1 = new Int8Array(0);
+    this.a22_1 = new Int8Array(0);
   }
   Companion_1.$metadata$ = objectMeta('Companion');
   var Companion_instance_1;
@@ -471,16 +471,16 @@
   }
   function Frame(fin, frameType, data, disposableHandle, rsv1, rsv2, rsv3) {
     Companion_getInstance_1();
-    this.q21_1 = fin;
-    this.r21_1 = frameType;
-    this.s21_1 = data;
-    this.t21_1 = disposableHandle;
-    this.u21_1 = rsv1;
-    this.v21_1 = rsv2;
-    this.w21_1 = rsv3;
+    this.b22_1 = fin;
+    this.c22_1 = frameType;
+    this.d22_1 = data;
+    this.e22_1 = disposableHandle;
+    this.f22_1 = rsv1;
+    this.g22_1 = rsv2;
+    this.h22_1 = rsv3;
   }
   Frame.prototype.toString = function () {
-    return 'Frame ' + this.r21_1 + ' (fin=' + this.q21_1 + ', buffer len = ' + this.s21_1.length + ')';
+    return 'Frame ' + this.c22_1 + ' (fin=' + this.b22_1 + ', buffer len = ' + this.d22_1.length + ')';
   };
   Frame.$metadata$ = classMeta('Frame');
   //region block: exports

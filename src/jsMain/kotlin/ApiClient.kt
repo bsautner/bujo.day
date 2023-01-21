@@ -1,14 +1,25 @@
 import io.ktor.client.*
 import io.ktor.client.call.*
+import io.ktor.client.plugins.*
 import io.ktor.client.plugins.contentnegotiation.*
 import io.ktor.client.request.*
 import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
+import kotlinx.browser.sessionStorage
+import org.w3c.dom.get
 
 val jsonClient = HttpClient {
     install(ContentNegotiation) {
         json()
     }
+    val session = sessionStorage.get(User.SESSION_KEY)
+    session?.let {
+        this.defaultRequest {
+            headers[User.SESSION_KEY] = it
+        }
+    }
+
+
 }
 
 suspend fun postEvent(event: Event) {
@@ -68,3 +79,16 @@ suspend fun deleteTypes(list: List<Long>) {
     }
 }
 
+suspend fun addUser(email: String, password: String) : String  {
+    return jsonClient.post(User.path) {
+        contentType(ContentType.Application.Json)
+        setBody(User(email, password))
+    }.body()
+}
+
+suspend fun getUserSession(email: String, password: String) : String {
+    return jsonClient.get(User.path) {
+        headers["email"] = email
+        headers["password"] = password
+    }.body()
+}

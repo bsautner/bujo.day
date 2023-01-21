@@ -24,25 +24,25 @@
 }(this, function (_, kotlin_kotlin, kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core, kotlin_io_ktor_ktor_http, kotlin_io_ktor_ktor_io, kotlin_io_ktor_ktor_serialization) {
   'use strict';
   //region block: imports
-  var classMeta = kotlin_kotlin.$_$.l8;
-  var CoroutineImpl = kotlin_kotlin.$_$.x7;
-  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.i7;
+  var classMeta = kotlin_kotlin.$_$.m8;
+  var CoroutineImpl = kotlin_kotlin.$_$.y7;
+  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.j7;
   var SerializationException = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.k2;
   var Unit_getInstance = kotlin_kotlin.$_$.g4;
-  var throwUninitializedPropertyAccessException = kotlin_kotlin.$_$.wc;
-  var toString = kotlin_kotlin.$_$.r9;
+  var throwUninitializedPropertyAccessException = kotlin_kotlin.$_$.xc;
+  var toString = kotlin_kotlin.$_$.s9;
   var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.d2;
-  var THROW_CCE = kotlin_kotlin.$_$.ac;
+  var THROW_CCE = kotlin_kotlin.$_$.bc;
   var KSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.h2;
-  var isInterface = kotlin_kotlin.$_$.d9;
-  var ByteArrayContent_init_$Create$ = kotlin_io_ktor_ktor_http.$_$.a;
+  var isInterface = kotlin_kotlin.$_$.e9;
+  var ByteArrayContent_init_$Create$ = kotlin_io_ktor_ktor_http.$_$.b;
   var BinaryFormat = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.f2;
-  var withCharsetIfNeeded = kotlin_io_ktor_ktor_http.$_$.k1;
-  var TextContent_init_$Create$ = kotlin_io_ktor_ktor_http.$_$.b;
+  var withCharsetIfNeeded = kotlin_io_ktor_ktor_http.$_$.o1;
+  var TextContent_init_$Create$ = kotlin_io_ktor_ktor_http.$_$.c;
   var StringFormat = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.l2;
   var getKClassFromExpression = kotlin_kotlin.$_$.d;
   var getKClass = kotlin_kotlin.$_$.e;
-  var Long = kotlin_kotlin.$_$.wb;
+  var Long = kotlin_kotlin.$_$.xb;
   var discard = kotlin_io_ktor_ktor_io.$_$.b1;
   var readBytes$default = kotlin_io_ktor_ktor_io.$_$.g;
   var readText$default = kotlin_io_ktor_ktor_io.$_$.h;
@@ -55,19 +55,19 @@
   var Map = kotlin_kotlin.$_$.r4;
   var SetSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.r;
   var Set = kotlin_kotlin.$_$.x4;
-  var firstOrNull = kotlin_kotlin.$_$.v5;
+  var firstOrNull = kotlin_kotlin.$_$.w5;
   var StringCompanionObject_getInstance = kotlin_kotlin.$_$.w3;
   var serializer_0 = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.t;
   var ListSerializer = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.p;
-  var isArray = kotlin_kotlin.$_$.v8;
+  var isArray = kotlin_kotlin.$_$.w8;
   var List = kotlin_kotlin.$_$.p4;
   var get_nullable = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.$_$.s;
-  var filterNotNull = kotlin_kotlin.$_$.t5;
-  var collectionSizeOrDefault = kotlin_kotlin.$_$.b5;
+  var filterNotNull = kotlin_kotlin.$_$.u5;
+  var collectionSizeOrDefault = kotlin_kotlin.$_$.c5;
   var ArrayList_init_$Create$ = kotlin_kotlin.$_$.v;
   var HashSet_init_$Create$ = kotlin_kotlin.$_$.c1;
   var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.w;
-  var singleOrNull = kotlin_kotlin.$_$.s6;
+  var singleOrNull = kotlin_kotlin.$_$.t6;
   var Collection = kotlin_kotlin.$_$.i4;
   //endregion
   //region block: pre-declaration
@@ -82,79 +82,79 @@
   //endregion
   function SerializationNegotiationParameters(format, value, typeInfo, charset, contentType) {
     SerializationParameters.call(this, format, value, typeInfo, charset);
-    this.b2l_1 = format;
-    this.c2l_1 = value;
-    this.d2l_1 = typeInfo;
-    this.e2l_1 = charset;
-    this.f2l_1 = contentType;
+    this.m2l_1 = format;
+    this.n2l_1 = value;
+    this.o2l_1 = typeInfo;
+    this.p2l_1 = charset;
+    this.q2l_1 = contentType;
   }
-  SerializationNegotiationParameters.prototype.g2l = function () {
-    return this.b2l_1;
+  SerializationNegotiationParameters.prototype.r2l = function () {
+    return this.m2l_1;
   };
   SerializationNegotiationParameters.prototype.t = function () {
-    return this.c2l_1;
+    return this.n2l_1;
   };
-  SerializationNegotiationParameters.prototype.h2l = function () {
-    return this.d2l_1;
+  SerializationNegotiationParameters.prototype.s2l = function () {
+    return this.o2l_1;
   };
-  SerializationNegotiationParameters.prototype.i2l = function () {
-    return this.e2l_1;
+  SerializationNegotiationParameters.prototype.t2l = function () {
+    return this.p2l_1;
   };
   SerializationNegotiationParameters.$metadata$ = classMeta('SerializationNegotiationParameters', undefined, undefined, undefined, undefined, SerializationParameters.prototype);
   function $serializeCOROUTINE$0(_this__u8e3s4, parameters, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.w2l_1 = _this__u8e3s4;
-    this.x2l_1 = parameters;
+    this.h2m_1 = _this__u8e3s4;
+    this.i2m_1 = parameters;
   }
-  $serializeCOROUTINE$0.prototype.xh = function () {
-    var suspendResult = this.qh_1;
+  $serializeCOROUTINE$0.prototype.yh = function () {
+    var suspendResult = this.rh_1;
     $sm: do
       try {
-        var tmp = this.oh_1;
+        var tmp = this.ph_1;
         switch (tmp) {
           case 0:
-            this.ph_1 = 5;
-            this.ph_1 = 2;
+            this.qh_1 = 5;
+            this.qh_1 = 2;
             var tmp_0 = this;
-            tmp_0.z2l_1 = serializerFromTypeInfo(this.x2l_1.h2l(), this.w2l_1.d2m_1.b25());
-            this.x2l_1.n2l_1 = this.z2l_1;
-            this.oh_1 = 1;
-            suspendResult = this.w2l_1.e2m(this.x2l_1, this);
+            tmp_0.k2m_1 = serializerFromTypeInfo(this.i2m_1.s2l(), this.h2m_1.o2m_1.m25());
+            this.i2m_1.y2l_1 = this.k2m_1;
+            this.ph_1 = 1;
+            suspendResult = this.h2m_1.p2m(this.i2m_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.y2l_1 = suspendResult;
-            this.ph_1 = 5;
-            this.oh_1 = 3;
+            this.j2m_1 = suspendResult;
+            this.qh_1 = 5;
+            this.ph_1 = 3;
             continue $sm;
           case 2:
-            this.ph_1 = 5;
-            var tmp_1 = this.rh_1;
+            this.qh_1 = 5;
+            var tmp_1 = this.sh_1;
             if (tmp_1 instanceof SerializationException) {
-              this.a2m_1 = this.rh_1;
+              this.l2m_1 = this.sh_1;
               var tmp_2 = this;
-              tmp_2.y2l_1 = null;
-              this.oh_1 = 3;
+              tmp_2.j2m_1 = null;
+              this.ph_1 = 3;
               continue $sm;
             } else {
-              throw this.rh_1;
+              throw this.sh_1;
             }
 
             break;
           case 3:
-            this.ph_1 = 5;
-            this.b2m_1 = this.y2l_1;
-            if (!(this.b2m_1 == null)) {
-              return this.b2m_1;
+            this.qh_1 = 5;
+            this.m2m_1 = this.j2m_1;
+            if (!(this.m2m_1 == null)) {
+              return this.m2m_1;
             }
 
-            this.c2m_1 = guessSerializer(this.x2l_1.t(), this.w2l_1.d2m_1.b25());
-            this.x2l_1.n2l_1 = this.c2m_1;
-            this.oh_1 = 4;
-            suspendResult = this.w2l_1.e2m(this.x2l_1, this);
+            this.n2m_1 = guessSerializer(this.i2m_1.t(), this.h2m_1.o2m_1.m25());
+            this.i2m_1.y2l_1 = this.n2m_1;
+            this.ph_1 = 4;
+            suspendResult = this.h2m_1.p2m(this.i2m_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -163,49 +163,49 @@
           case 4:
             return suspendResult;
           case 5:
-            throw this.rh_1;
+            throw this.sh_1;
         }
       } catch ($p) {
-        if (this.ph_1 === 5) {
+        if (this.qh_1 === 5) {
           throw $p;
         } else {
-          this.oh_1 = this.ph_1;
-          this.rh_1 = $p;
+          this.ph_1 = this.qh_1;
+          this.sh_1 = $p;
         }
       }
      while (true);
   };
   $serializeCOROUTINE$0.$metadata$ = classMeta('$serializeCOROUTINE$0', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
   function KotlinxSerializationBase(format) {
-    this.d2m_1 = format;
+    this.o2m_1 = format;
   }
-  KotlinxSerializationBase.prototype.f2m = function (parameters, $cont) {
+  KotlinxSerializationBase.prototype.q2m = function (parameters, $cont) {
     var tmp = new $serializeCOROUTINE$0(this, parameters, $cont);
-    tmp.qh_1 = Unit_getInstance();
-    tmp.rh_1 = null;
-    return tmp.xh();
+    tmp.rh_1 = Unit_getInstance();
+    tmp.sh_1 = null;
+    return tmp.yh();
   };
   KotlinxSerializationBase.$metadata$ = classMeta('KotlinxSerializationBase');
   function SerializationParameters(format, value, typeInfo, charset) {
-    this.j2l_1 = format;
-    this.k2l_1 = value;
-    this.l2l_1 = typeInfo;
-    this.m2l_1 = charset;
+    this.u2l_1 = format;
+    this.v2l_1 = value;
+    this.w2l_1 = typeInfo;
+    this.x2l_1 = charset;
   }
-  SerializationParameters.prototype.g2l = function () {
-    return this.j2l_1;
+  SerializationParameters.prototype.r2l = function () {
+    return this.u2l_1;
   };
   SerializationParameters.prototype.t = function () {
-    return this.k2l_1;
+    return this.v2l_1;
   };
-  SerializationParameters.prototype.h2l = function () {
-    return this.l2l_1;
+  SerializationParameters.prototype.s2l = function () {
+    return this.w2l_1;
   };
-  SerializationParameters.prototype.i2l = function () {
-    return this.m2l_1;
+  SerializationParameters.prototype.t2l = function () {
+    return this.x2l_1;
   };
-  SerializationParameters.prototype.t2k = function () {
-    var tmp = this.n2l_1;
+  SerializationParameters.prototype.e2l = function () {
+    var tmp = this.y2l_1;
     if (!(tmp == null))
       return tmp;
     else {
@@ -215,18 +215,18 @@
   SerializationParameters.$metadata$ = classMeta('SerializationParameters');
   function serialization(_this__u8e3s4, contentType, format) {
     var tmp = new KotlinxSerializationConverter(format);
-    _this__u8e3s4.y21(contentType, tmp, null, 4, null);
+    _this__u8e3s4.j22(contentType, tmp, null, 4, null);
   }
   function serializeContent($this, serializer, format, value, contentType, charset) {
     var tmp0_subject = format;
     var tmp;
     if (isInterface(tmp0_subject, StringFormat)) {
-      var content = format.z24(isInterface(serializer, KSerializer) ? serializer : THROW_CCE(), value);
+      var content = format.k25(isInterface(serializer, KSerializer) ? serializer : THROW_CCE(), value);
       var tmp_0 = withCharsetIfNeeded(contentType, charset);
       tmp = TextContent_init_$Create$(content, tmp_0, null, 4, null);
     } else {
       if (isInterface(tmp0_subject, BinaryFormat)) {
-        var content_0 = format.c25(isInterface(serializer, KSerializer) ? serializer : THROW_CCE(), value);
+        var content_0 = format.n25(isInterface(serializer, KSerializer) ? serializer : THROW_CCE(), value);
         tmp = ByteArrayContent_init_$Create$(content_0, contentType, null, 4, null);
       } else {
         var tmp0_error = 'Unsupported format ' + format;
@@ -236,39 +236,39 @@
     return tmp;
   }
   function KotlinxSerializationConverter$serializationBase$1(this$0) {
-    this.h2m_1 = this$0;
-    KotlinxSerializationBase.call(this, this$0.i2m_1);
+    this.s2m_1 = this$0;
+    KotlinxSerializationBase.call(this, this$0.t2m_1);
   }
-  KotlinxSerializationConverter$serializationBase$1.prototype.k2m = function (parameters, $cont) {
+  KotlinxSerializationConverter$serializationBase$1.prototype.v2m = function (parameters, $cont) {
     if (!(parameters instanceof SerializationNegotiationParameters)) {
       // Inline function 'kotlin.error' call
-      var tmp0_error = 'parameters type is ' + getKClassFromExpression(parameters).rd() + ',' + (' but expected ' + getKClass(SerializationNegotiationParameters).rd());
+      var tmp0_error = 'parameters type is ' + getKClassFromExpression(parameters).sd() + ',' + (' but expected ' + getKClass(SerializationNegotiationParameters).sd());
       throw IllegalStateException_init_$Create$(toString(tmp0_error));
     }
-    return serializeContent(this.h2m_1, parameters.t2k(), parameters.g2l(), parameters.t(), parameters.f2l_1, parameters.i2l());
+    return serializeContent(this.s2m_1, parameters.e2l(), parameters.r2l(), parameters.t(), parameters.q2l_1, parameters.t2l());
   };
-  KotlinxSerializationConverter$serializationBase$1.prototype.e2m = function (parameters, $cont) {
-    return this.k2m(parameters, $cont);
+  KotlinxSerializationConverter$serializationBase$1.prototype.p2m = function (parameters, $cont) {
+    return this.v2m(parameters, $cont);
   };
   KotlinxSerializationConverter$serializationBase$1.$metadata$ = classMeta(undefined, undefined, undefined, undefined, undefined, KotlinxSerializationBase.prototype);
   function $deserializeCOROUTINE$1(_this__u8e3s4, charset, typeInfo, content, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.t2m_1 = _this__u8e3s4;
-    this.u2m_1 = charset;
-    this.v2m_1 = typeInfo;
-    this.w2m_1 = content;
+    this.e2n_1 = _this__u8e3s4;
+    this.f2n_1 = charset;
+    this.g2n_1 = typeInfo;
+    this.h2n_1 = content;
   }
-  $deserializeCOROUTINE$1.prototype.xh = function () {
-    var suspendResult = this.qh_1;
+  $deserializeCOROUTINE$1.prototype.yh = function () {
+    var suspendResult = this.rh_1;
     $sm: do
       try {
-        var tmp = this.oh_1;
+        var tmp = this.ph_1;
         switch (tmp) {
           case 0:
-            this.ph_1 = 4;
-            this.x2m_1 = serializerFromTypeInfo(this.v2m_1, this.t2m_1.i2m_1.b25());
-            this.oh_1 = 1;
-            suspendResult = this.w2m_1.y19(new Long(0, 0), this, 1, null);
+            this.qh_1 = 4;
+            this.i2n_1 = serializerFromTypeInfo(this.g2n_1, this.e2n_1.t2m_1.m25());
+            this.ph_1 = 1;
+            suspendResult = this.h2n_1.y19(new Long(0, 0), this, 1, null);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -276,59 +276,59 @@
             continue $sm;
           case 1:
             var contentPacket = suspendResult;
-            this.ph_1 = 2;
-            var tmp0_subject = this.t2m_1.i2m_1;
+            this.qh_1 = 2;
+            var tmp0_subject = this.e2n_1.t2m_1;
             var tmp_0;
             if (isInterface(tmp0_subject, StringFormat)) {
-              tmp_0 = this.t2m_1.i2m_1.a25(this.x2m_1, readText$default(contentPacket, this.u2m_1, 0, 2, null));
+              tmp_0 = this.e2n_1.t2m_1.l25(this.i2n_1, readText$default(contentPacket, this.f2n_1, 0, 2, null));
             } else {
               if (isInterface(tmp0_subject, BinaryFormat)) {
-                tmp_0 = this.t2m_1.i2m_1.d25(this.x2m_1, readBytes$default(contentPacket, 0, 1, null));
+                tmp_0 = this.e2n_1.t2m_1.o25(this.i2n_1, readBytes$default(contentPacket, 0, 1, null));
               } else {
                 discard(contentPacket);
-                var tmp0_error = 'Unsupported format ' + this.t2m_1.i2m_1;
+                var tmp0_error = 'Unsupported format ' + this.e2n_1.t2m_1;
                 throw IllegalStateException_init_$Create$(toString(tmp0_error));
               }
             }
 
             return tmp_0;
           case 2:
-            this.ph_1 = 4;
-            var tmp_1 = this.rh_1;
+            this.qh_1 = 4;
+            var tmp_1 = this.sh_1;
             if (tmp_1 instanceof Error) {
-              var cause = this.rh_1;
+              var cause = this.sh_1;
               throw new JsonConvertException('Illegal input', cause);
             } else {
-              throw this.rh_1;
+              throw this.sh_1;
             }
 
             break;
           case 3:
-            this.ph_1 = 4;
+            this.qh_1 = 4;
             return Unit_getInstance();
           case 4:
-            throw this.rh_1;
+            throw this.sh_1;
         }
       } catch ($p) {
-        if (this.ph_1 === 4) {
+        if (this.qh_1 === 4) {
           throw $p;
         } else {
-          this.oh_1 = this.ph_1;
-          this.rh_1 = $p;
+          this.ph_1 = this.qh_1;
+          this.sh_1 = $p;
         }
       }
      while (true);
   };
   $deserializeCOROUTINE$1.$metadata$ = classMeta('$deserializeCOROUTINE$1', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
   function KotlinxSerializationConverter(format) {
-    this.i2m_1 = format;
+    this.t2m_1 = format;
     // Inline function 'kotlin.require' call
     var tmp;
-    var tmp_0 = this.i2m_1;
+    var tmp_0 = this.t2m_1;
     if (isInterface(tmp_0, BinaryFormat)) {
       tmp = true;
     } else {
-      var tmp_1 = this.i2m_1;
+      var tmp_1 = this.t2m_1;
       tmp = isInterface(tmp_1, StringFormat);
     }
     var tmp0_require = tmp;
@@ -336,34 +336,34 @@
     if (!tmp0_require) {
       var tmp$ret$0;
       // Inline function 'io.ktor.serialization.kotlinx.KotlinxSerializationConverter.<anonymous>' call
-      tmp$ret$0 = 'Only binary and string formats are supported, ' + ('' + this.i2m_1 + ' is not supported.');
+      tmp$ret$0 = 'Only binary and string formats are supported, ' + ('' + this.t2m_1 + ' is not supported.');
       var message = tmp$ret$0;
       throw IllegalArgumentException_init_$Create$(toString(message));
     }
     var tmp_2 = this;
-    tmp_2.j2m_1 = new KotlinxSerializationConverter$serializationBase$1(this);
+    tmp_2.u2m_1 = new KotlinxSerializationConverter$serializationBase$1(this);
   }
-  KotlinxSerializationConverter.prototype.y2m = function (contentType, charset, typeInfo, value, $cont) {
-    return this.z2m(contentType, charset, typeInfo, value, $cont);
+  KotlinxSerializationConverter.prototype.j2n = function (contentType, charset, typeInfo, value, $cont) {
+    return this.k2n(contentType, charset, typeInfo, value, $cont);
   };
-  KotlinxSerializationConverter.prototype.z21 = function (contentType, charset, typeInfo, value, $cont) {
-    return this.y2m(contentType, charset, typeInfo, value, $cont);
+  KotlinxSerializationConverter.prototype.k22 = function (contentType, charset, typeInfo, value, $cont) {
+    return this.j2n(contentType, charset, typeInfo, value, $cont);
   };
-  KotlinxSerializationConverter.prototype.z2m = function (contentType, charset, typeInfo, value, $cont) {
-    return this.j2m_1.f2m(new SerializationNegotiationParameters(this.i2m_1, value, typeInfo, charset, contentType), $cont);
+  KotlinxSerializationConverter.prototype.k2n = function (contentType, charset, typeInfo, value, $cont) {
+    return this.u2m_1.q2m(new SerializationNegotiationParameters(this.t2m_1, value, typeInfo, charset, contentType), $cont);
   };
-  KotlinxSerializationConverter.prototype.a22 = function (contentType, charset, typeInfo, value, $cont) {
-    return this.z2m(contentType, charset, typeInfo, value, $cont);
+  KotlinxSerializationConverter.prototype.l22 = function (contentType, charset, typeInfo, value, $cont) {
+    return this.k2n(contentType, charset, typeInfo, value, $cont);
   };
-  KotlinxSerializationConverter.prototype.b22 = function (charset, typeInfo, content, $cont) {
+  KotlinxSerializationConverter.prototype.m22 = function (charset, typeInfo, content, $cont) {
     var tmp = new $deserializeCOROUTINE$1(this, charset, typeInfo, content, $cont);
-    tmp.qh_1 = Unit_getInstance();
-    tmp.rh_1 = null;
-    return tmp.xh();
+    tmp.rh_1 = Unit_getInstance();
+    tmp.sh_1 = null;
+    return tmp.yh();
   };
   KotlinxSerializationConverter.$metadata$ = classMeta('KotlinxSerializationConverter', [ContentConverter]);
   function serializerFromTypeInfo(typeInfo, module_0) {
-    var tmp0_safe_receiver = typeInfo.l1o_1;
+    var tmp0_safe_receiver = typeInfo.o1o_1;
     var tmp;
     if (tmp0_safe_receiver == null) {
       tmp = null;
@@ -373,20 +373,20 @@
       // Inline function 'kotlin.contracts.contract' call
       var tmp$ret$0;
       // Inline function 'io.ktor.serialization.kotlinx.serializerFromTypeInfo.<anonymous>' call
-      tmp$ret$0 = tmp0_safe_receiver.be().m() ? null : serializerOrNull(module_0, tmp0_safe_receiver);
+      tmp$ret$0 = tmp0_safe_receiver.ce().m() ? null : serializerOrNull(module_0, tmp0_safe_receiver);
       tmp$ret$1 = tmp$ret$0;
       tmp = tmp$ret$1;
     }
     var tmp2_elvis_lhs = tmp;
     var tmp_0;
     if (tmp2_elvis_lhs == null) {
-      var tmp1_safe_receiver = module_0.f25(typeInfo.j1o_1, null, 2, null);
+      var tmp1_safe_receiver = module_0.q25(typeInfo.m1o_1, null, 2, null);
       tmp_0 = tmp1_safe_receiver == null ? null : maybeNullable(tmp1_safe_receiver, typeInfo);
     } else {
       tmp_0 = tmp2_elvis_lhs;
     }
     var tmp3_elvis_lhs = tmp_0;
-    return tmp3_elvis_lhs == null ? maybeNullable(serializer(typeInfo.j1o_1), typeInfo) : tmp3_elvis_lhs;
+    return tmp3_elvis_lhs == null ? maybeNullable(serializer(typeInfo.m1o_1), typeInfo) : tmp3_elvis_lhs;
   }
   function guessSerializer(value, module_0) {
     var tmp0_subject = value;
@@ -424,7 +424,7 @@
               tmp = MapSerializer(keySerializer, valueSerializer);
             } else {
               var tmp_1 = getKClassFromExpression(value);
-              var tmp3_elvis_lhs = module_0.f25(tmp_1, null, 2, null);
+              var tmp3_elvis_lhs = module_0.q25(tmp_1, null, 2, null);
               tmp = tmp3_elvis_lhs == null ? serializer(getKClassFromExpression(value)) : tmp3_elvis_lhs;
             }
           }
@@ -436,8 +436,8 @@
   }
   function maybeNullable(_this__u8e3s4, typeInfo) {
     var tmp;
-    var tmp0_safe_receiver = typeInfo.l1o_1;
-    if ((tmp0_safe_receiver == null ? null : tmp0_safe_receiver.ce()) === true) {
+    var tmp0_safe_receiver = typeInfo.o1o_1;
+    if ((tmp0_safe_receiver == null ? null : tmp0_safe_receiver.de()) === true) {
       tmp = get_nullable(_this__u8e3s4);
     } else {
       tmp = _this__u8e3s4;
@@ -471,7 +471,7 @@
       var e = tmp0_iterator_0.f();
       var tmp$ret$3;
       // Inline function 'io.ktor.serialization.kotlinx.elementSerializer.<anonymous>' call
-      tmp$ret$3 = e.h24().o25();
+      tmp$ret$3 = e.s24().z25();
       var key = tmp$ret$3;
       if (set.b(key)) {
         list.b(e);
@@ -491,7 +491,7 @@
         var item_0 = tmp0_iterator_1.f();
         var tmp$ret$5;
         // Inline function 'io.ktor.serialization.kotlinx.elementSerializer.<anonymous>' call
-        tmp$ret$5 = item_0.h24().o25();
+        tmp$ret$5 = item_0.s24().z25();
         tmp0_mapTo_0.b(tmp$ret$5);
       }
       tmp$ret$6 = tmp0_mapTo_0;
@@ -501,7 +501,7 @@
     }
     var tmp0_elvis_lhs = singleOrNull(serializers);
     var selected = tmp0_elvis_lhs == null ? serializer_0(StringCompanionObject_getInstance()) : tmp0_elvis_lhs;
-    if (selected.h24().h25()) {
+    if (selected.s24().s25()) {
       return selected;
     }
     if (isInterface(selected, KSerializer))

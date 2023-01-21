@@ -12,19 +12,21 @@ import kotlin.test.assertNotNull
 
 internal class DAOTest {
 
+    val guid = "ABCD"
+
     @Test
     fun `test cascading deletes work `() {
 
         val newType = UUID.randomUUID().toString()
-        val id = DAO.insertType(newType)
-        val types = DAO.getAllTypes()
+        val id = DAO.insertType(guid, newType)
+        val types = DAO.getAllTypes(guid)
         val t = types.find {
             it.id == id
         }
         assertNotNull(t)
         assertEquals(t.text, newType)
 
-        val eventId = DAO.insertEvent(Event(0, currentTimeMillis(), UUID.randomUUID().toString(), listOf(id)))
+        val eventId = DAO.insertEvent(guid, Event(0, currentTimeMillis(), UUID.randomUUID().toString(), listOf(id)))
         val event = DAO.getEvent(eventId)
         assertTrue(event.eventTypes.contains(id))
         DAO.deleteType(id)
@@ -48,10 +50,10 @@ internal class DAOTest {
 
     @Test
     fun `test deleting an event deletes related types`() {
-        val types = DAO.getAllTypes()
+        val types = DAO.getAllTypes(guid)
         val list  =  types.map { it.id  }
 
-        val eventId = DAO.insertEvent(Event(0, currentTimeMillis(), UUID.randomUUID().toString(), list))
+        val eventId = DAO.insertEvent(guid, Event(0, currentTimeMillis(), UUID.randomUUID().toString(), list))
 
         val event = DAO.getEvent(eventId)
         assertEquals(types.size, event.eventTypes.size)

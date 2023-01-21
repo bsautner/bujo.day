@@ -22,7 +22,7 @@
   'use strict';
   //region block: imports
   var serialization = kotlin_io_ktor_ktor_serialization_kotlinx.$_$.a;
-  var Application_getInstance = kotlin_io_ktor_ktor_http.$_$.f;
+  var Application_getInstance = kotlin_io_ktor_ktor_http.$_$.g;
   var Unit_getInstance = kotlin_kotlin.$_$.g4;
   var Json$default = kotlin_org_jetbrains_kotlinx_kotlinx_serialization_json.$_$.a;
   //endregion
@@ -41,17 +41,17 @@
     if (!(($mask0 & 1) === 0))
       json_0 = get_DefaultJson();
     if (!(($mask0 & 2) === 0))
-      contentType = Application_getInstance().j1p_1;
+      contentType = Application_getInstance().m1p_1;
     return json(_this__u8e3s4, json_0, contentType);
   }
   function DefaultJson$lambda($this$Json) {
     init_properties_JsonSupport_kt_xg0arx();
-    $this$Json.s2n_1 = true;
-    $this$Json.v2n_1 = true;
-    $this$Json.c2o_1 = true;
-    $this$Json.w2n_1 = true;
-    $this$Json.x2n_1 = false;
-    $this$Json.a2o_1 = false;
+    $this$Json.d2o_1 = true;
+    $this$Json.g2o_1 = true;
+    $this$Json.n2o_1 = true;
+    $this$Json.h2o_1 = true;
+    $this$Json.i2o_1 = false;
+    $this$Json.l2o_1 = false;
     return Unit_getInstance();
   }
   var properties_initialized_JsonSupport_kt_9cgd93;

@@ -19,9 +19,9 @@
   var isValidElement = $module$react.isValidElement;
   var Fragment = $module$react.Fragment;
   var Unit_getInstance = kotlin_kotlin.$_$.g4;
-  var interfaceMeta = kotlin_kotlin.$_$.u8;
-  var classMeta = kotlin_kotlin.$_$.l8;
-  var single = kotlin_kotlin.$_$.t6;
+  var interfaceMeta = kotlin_kotlin.$_$.v8;
+  var classMeta = kotlin_kotlin.$_$.m8;
+  var single = kotlin_kotlin.$_$.u6;
   //endregion
   //region block: pre-declaration
   function child(element) {
@@ -62,7 +62,7 @@
     }
   }
   function unaryPlus(_this__u8e3s4) {
-    this.x3y(_this__u8e3s4);
+    this.a40(_this__u8e3s4);
   }
   function unaryPlus_0(_this__u8e3s4) {
     var tmp$ret$2;
@@ -74,10 +74,10 @@
     tmp$ret$0 = _this__u8e3s4;
     tmp$ret$1 = tmp$ret$0;
     tmp$ret$2 = tmp$ret$1;
-    this.y3y(tmp$ret$2);
+    this.b40(tmp$ret$2);
   }
   function invoke(_this__u8e3s4, block) {
-    this.y3y(create(_this__u8e3s4, block));
+    this.b40(create(_this__u8e3s4, block));
   }
   //endregion
   function get_CHILDREN() {
@@ -221,10 +221,10 @@
     return createElement.apply(null, [Fragment, void 1].concat([].slice.call(children.slice())));
   }
   //region block: post-declaration
-  ChildrenBuilderImpl.prototype.y3y = unaryPlus;
-  ChildrenBuilderImpl.prototype.z3y = unaryPlus_0;
-  ChildrenBuilderImpl.prototype.x3y = child;
-  ChildrenBuilderImpl.prototype.a3z = invoke;
+  ChildrenBuilderImpl.prototype.b40 = unaryPlus;
+  ChildrenBuilderImpl.prototype.c40 = unaryPlus_0;
+  ChildrenBuilderImpl.prototype.a40 = child;
+  ChildrenBuilderImpl.prototype.d40 = invoke;
   //endregion
   //region block: exports
   _.$_$ = _.$_$ || {};

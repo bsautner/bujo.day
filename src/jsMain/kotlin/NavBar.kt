@@ -1,4 +1,5 @@
 import csstype.ClassName
+import kotlinx.browser.sessionStorage
 import kotlinx.browser.window
 import react.FC
 import react.Props
@@ -24,6 +25,7 @@ val navbar = FC<NavProps> {
                     className = ClassName("navbar-text ms-auto")
                     +"logout"
                     onClick = {
+                        sessionStorage.clear()
                         window.location.href = "http://0.0.0.0:8080/login"
                     }
                 }

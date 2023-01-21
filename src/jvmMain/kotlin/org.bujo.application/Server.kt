@@ -2,6 +2,7 @@ package org.bujo.application
 
 import Event
 import EventType
+import User
 import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
@@ -110,9 +111,31 @@ fun Application.applicationModule() {
         get("/") {
             call.respondHtml(HttpStatusCode.OK, HTML::index)
 
+
         }
         static("/static") {
             resources()
+        }
+
+        route(User.path) {
+            post {
+                val user = call.receive<User>()
+                println("adding user ${user.email}")
+                val guid = DAO.insertUser(user)
+                println(guid)
+                call.respond(HttpStatusCode.OK, guid)
+            }
+            get {
+                val email = call.request.headers.get("email")
+                val password = call.request.headers.get("password")
+                println("logging in with $email $password")
+                val guid = password?.let { it1 -> email?.let { it2 -> DAO.getUserSession(it2, it1) } }
+                if (guid != null) {
+                    call.respond(HttpStatusCode.OK, guid)
+                } else {
+                    call.respond(HttpStatusCode.BadRequest)
+                }
+            }
         }
 
         route("/login") {
@@ -129,7 +152,12 @@ fun Application.applicationModule() {
 
         route("/events") {
             get {
-                call.respond(DAO.getAllEntries())
+                val guid = call.request.headers[User.SESSION_KEY]
+                println("Session Detected $guid")
+                guid?.let {
+                    call.respond(DAO.getAllEntries(it))
+                }
+
             }
         }
 
@@ -146,9 +174,13 @@ fun Application.applicationModule() {
 
                 println("POST!")
                 val event = call.receive<Event>()
-                DAO.insertEvent(event)
+                val guid = call.request.headers[User.SESSION_KEY]
+                guid?.let {
+                    DAO.insertEvent(it, event)
 
-                call.respond(HttpStatusCode.OK)
+                    call.respond(HttpStatusCode.OK)
+                }
+
 
             }
             delete {
@@ -170,13 +202,21 @@ fun Application.applicationModule() {
         }
         route(EventType.path) {
             get {
-                call.respond(DAO.getAllTypes())
+                val guid = call.request.headers[User.SESSION_KEY]
+                guid?.let {
+                    call.respond(DAO.getAllTypes(it))
+                }
+
 
             }
             post {
                 val type = call.receive<String>()
-                DAO.insertType(type)
-                call.respond(HttpStatusCode.OK)
+                val guid = call.request.headers[User.SESSION_KEY]
+                guid?.let {
+                    DAO.insertType(guid, type)
+                    call.respond(HttpStatusCode.OK)
+                }
+
             }
             delete {
                 val types = call.receive<List<Long>>()
