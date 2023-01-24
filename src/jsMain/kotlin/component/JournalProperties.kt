@@ -17,5 +17,7 @@ external interface JournalProperties : Props {
     var onDelete: (Long) -> Unit
     var events: List<Event>
     var onEventClick: (Event) -> Unit
+    var onFilterEvents: (Long, Long) -> Unit
+    var onExportEvents: (Long, Long) -> Unit
 
 }

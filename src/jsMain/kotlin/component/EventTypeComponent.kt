@@ -11,7 +11,7 @@ import react.useState
 
 
 val eventTypeComponent = FC<JournalProperties> { props ->
-    var newLabelText by useState("")
+    var newEventTypeText by useState("")
 
 
     div {
@@ -26,10 +26,10 @@ val eventTypeComponent = FC<JournalProperties> { props ->
 
                         onSubmit = {
 
-                                if (newLabelText.isNotEmpty()) {
+                                if (newEventTypeText.isNotEmpty()) {
 
-                                    props.onTypeAdded.invoke(newLabelText)
-                                    newLabelText = ""
+                                    props.onTypeAdded.invoke(newEventTypeText)
+                                    newEventTypeText = ""
 
                                 }
 
@@ -55,11 +55,11 @@ val eventTypeComponent = FC<JournalProperties> { props ->
 
                         inputComponent {
 
-                            text = newLabelText
+                            text = newEventTypeText
                             rows = 1
                             cols = 20
                             onChange = {
-                                newLabelText = it
+                                newEventTypeText = it
                             }
 
                         }

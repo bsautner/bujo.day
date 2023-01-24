@@ -12,7 +12,7 @@ val jsonClient = HttpClient {
     install(ContentNegotiation) {
         json()
     }
-    val session = sessionStorage.get(User.SESSION_KEY)
+    val session = sessionStorage[User.SESSION_KEY]
     session?.let {
         this.defaultRequest {
             headers[User.SESSION_KEY] = it
@@ -40,6 +40,14 @@ suspend fun putEvent(event: Event) {
 suspend fun getEntries(): List<Event> {
     return jsonClient.get("/events").body()
 }
+
+suspend fun getFilteredEntries(st: Long, et: Long): List<Event> {
+    return jsonClient.get("/events") {
+        parameter(Const.ST, st)
+        parameter(Const.ET, et)
+    }.body()
+}
+
 
 suspend fun deleteEntry(id: Long) {
     jsonClient.delete(Event.path) {

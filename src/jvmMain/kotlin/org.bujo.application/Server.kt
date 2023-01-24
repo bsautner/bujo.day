@@ -1,5 +1,6 @@
 package org.bujo.application
 
+import Const
 import Event
 import EventType
 import User
@@ -155,7 +156,14 @@ fun Application.applicationModule() {
                 val guid = call.request.headers[User.SESSION_KEY]
                 println("Session Detected $guid")
                 guid?.let {
-                    call.respond(DAO.getAllEntries(it))
+                    if (call.parameters.contains(Const.ST) && call.parameters.contains(Const.ET)) {
+                        call.respond(DAO.getFilteredEntries(it, call.parameters[Const.ST]!!.toLong(), call.parameters[Const.ET]!!.toLong()))
+
+                    } else {
+
+                        call.respond(DAO.getAllEntries(it))
+
+                    }
                 }
 
             }
@@ -222,6 +230,29 @@ fun Application.applicationModule() {
                 val types = call.receive<List<Long>>()
                 DAO.deleteTypes(types)
                 call.respond(HttpStatusCode.OK)
+            }
+        }
+        route("/export") {
+            get {
+                val guid = call.parameters[User.SESSION_KEY]
+                println("Session Detected $guid")
+                guid?.let {
+                    if (call.parameters.contains(Const.ST) && call.parameters.contains(Const.ET)) {
+                        call.response.headers.append("Content-Type","text/x-markdown")
+                        val sb = java.lang.StringBuilder()
+                        sb.append(":Y: Yesterday:\n")
+                        val y = DAO.getFilteredEntries(it, call.parameters[Const.ST]!!.toLong(), call.parameters[Const.ET]!!.toLong())
+                        y.forEach {event ->
+                            sb.append("* ${event.value}\n")
+
+                        }
+                        call.respond(sb.toString())
+
+                    } else {
+
+                      call.respond(HttpStatusCode.NotFound)
+                    }
+                }
             }
         }
     }

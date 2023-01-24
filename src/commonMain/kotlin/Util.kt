@@ -1,3 +1,4 @@
+import io.ktor.util.date.*
 import kotlinx.datetime.*
 
 /**
@@ -20,6 +21,11 @@ class Util {
 
     }
 
+    fun getYesterday(): Long {
+        val instantNow = Instant.fromEpochMilliseconds(getTimeMillis())
+        return instantNow.toEpochMilliseconds() - MS_IN_DAY
+    }
+
 
     private fun appendZero(s: Int) : String {
         return if (s.toString().length == 1) {
@@ -27,5 +33,9 @@ class Util {
         } else {
             "$s"
         }
+    }
+
+    companion object {
+        const val MS_IN_DAY = 86400000
     }
 }

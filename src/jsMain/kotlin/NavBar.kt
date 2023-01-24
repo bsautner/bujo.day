@@ -10,7 +10,7 @@ external interface NavProps : Props
 
 val navbar = FC<NavProps> {
     nav {
-        className = ClassName("navbar navbar-expand-lg bg-body-tertiary")
+        className = ClassName("navbar navbar-expand-lg navbar-dark bg-primary")
         ReactHTML.div {
             className = ClassName("container-fluid")
             ReactHTML.a {

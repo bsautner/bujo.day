@@ -1,13 +1,20 @@
 body {
-    background-color: #e7eaf6;
+    /*background-color: #e7eaf6;*/
     /*padding-top: 60px;*/
     /*padding-bottom: 40px;*/
+}
+
+.nav {
+    background-color: #1446A0;
 }
 
 .div-padded {
     padding-top: 10px;
 }
-
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
 /*.icon {*/
 /*    position: relative;*/
 /*    !* Adjust these values accordingly *!*/
@@ -22,17 +29,27 @@ body {
 }
 .styled-table {
     border-collapse: collapse;
-    margin: 25px 0;
+    margin-top: 5px;
     font-size: 0.9em;
     font-family: sans-serif;
     min-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    padding: 8px;
+    padding: 18px;
     border: 1px solid #ddd;
     vertical-align: top;
-    max-width: 820px;
+    /*max-width: 820px;*/
 }
 
+.table-datepicker {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+}
+
+.td-datepicker {
+    padding: 2px;
+}
 .styled-td {
     padding: 10px;
     vertical-align: top;

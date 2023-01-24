@@ -7,7 +7,7 @@ import react.dom.html.ReactHTML.div
 
 val journalForm = FC<JournalProperties> { props ->
     div {
-        className = ClassName("container text-left div-padded")
+        className = ClassName("container text-left")
         div {
             className = ClassName("row")
 
@@ -31,6 +31,8 @@ val journalForm = FC<JournalProperties> { props ->
                     onNewEventClick = props.onNewEventClick
                     onTimestampChanged = props.onTimestampChanged
                     onTextChanged = props.onTextChanged
+                    onFilterEvents = props.onFilterEvents
+                    onExportEvents = props.onExportEvents
 
 
                 }
@@ -38,4 +40,6 @@ val journalForm = FC<JournalProperties> { props ->
 
         }
     }
+
+
 }

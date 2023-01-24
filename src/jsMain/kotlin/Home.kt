@@ -1,6 +1,7 @@
 
 import component.entryListComponent
 import component.journalForm
+import csstype.ClassName
 import io.ktor.util.date.*
 import kotlinx.browser.sessionStorage
 import kotlinx.browser.window
@@ -9,6 +10,7 @@ import kotlinx.coroutines.launch
 import org.w3c.dom.get
 import react.FC
 import react.Props
+import react.dom.html.ReactHTML.div
 import react.useEffectOnce
 import react.useState
 
@@ -34,96 +36,133 @@ val home = FC<HomeProps> {
         navbar {
 
         }
-        journalForm {
-            types = eventTypes
-            selectedEvent = event
-            onTypeAdded = {
-                mainScope.launch {
-                    addType(it)
-                    eventTypes = getEventTypes(event)
-                }
+        div {
+            className = ClassName("container div-padded")
 
-            }
+            div {
+                className = ClassName("row")
+                div {
+                    className = ClassName("col")
 
-            onTypesDeleted = {
-                mainScope.launch {
-                    deleteTypes(event.eventTypes)
-                    val e = Event(event.id, event.timestamp, event.value, emptyList())
-                    event = e
-                    mainScope.launch {
-                        eventTypes = getEventTypes(e)
+                    journalForm {
+                        types = eventTypes
+                        selectedEvent = event
+                        onTypeAdded = {
+                            mainScope.launch {
+                                addType(it)
+                                eventTypes = getEventTypes(event)
+                            }
+
+                        }
+
+                        onTypesDeleted = {
+                            mainScope.launch {
+                                deleteTypes(event.eventTypes)
+                                val e = Event(event.id, event.timestamp, event.value, emptyList())
+                                event = e
+                                mainScope.launch {
+                                    eventTypes = getEventTypes(e)
+                                }
+                            }
+                        }
+
+                        onCheckChange = { id, checked ->
+                            println("on check changed $id $checked")
+                            val list = mutableListOf<Long>()
+                            list.addAll(event.eventTypes)
+                            if (checked) {
+                                list.add(id)
+                            } else {
+                                list.remove(id)
+                            }
+                            val e = Event(event.id, event.timestamp, event.value, list)
+                            event = e
+                            mainScope.launch {
+                                eventTypes = getEventTypes(e)
+                            }
+                        }
+
+                        onTextChanged = {
+                            event = Event(event.id, event.timestamp, it, event.eventTypes)
+                        }
+
+                        onTimestampChanged = {
+                            event = Event(event.id, it, event.value, event.eventTypes)
+
+                        }
+
+                        onSaveEvent = {
+                            mainScope.launch {
+                                if (selectedEvent.id == 0L) {
+                                    postEvent(selectedEvent)
+                                    // entryText = ""
+                                } else {
+                                    putEvent(selectedEvent)
+                                }
+                                eventEntries = getEntries()
+                                eventTypes = getEventTypes(event)
+                                val e = Event(0, getTimeMillis(), "", emptyList())
+                                event = e
+                                eventTypes = getEventTypes(e)
+                            }
+                        }
+                        onNewEventClick = {
+
+                            mainScope.launch {
+                                val e = Event(0, getTimeMillis(), "", emptyList())
+                                event = e
+                                eventTypes = getEventTypes(e)
+
+                            }
+
+                        }
+
                     }
                 }
             }
 
-            onCheckChange = { id, checked ->
-                println("on check changed $id $checked")
-                val list = mutableListOf<Long>()
-                list.addAll(event.eventTypes)
-                if (checked) {
-                    list.add(id)
-                } else {
-                    list.remove(id)
-                }
-                val e = Event(event.id, event.timestamp, event.value, list)
-                event = e
-                mainScope.launch {
-                    eventTypes = getEventTypes(e)
-                }
-            }
+            div {
+                className = ClassName("row")
+                div {
+                    className = ClassName("col")
 
-            onTextChanged = {
-                event = Event(event.id, event.timestamp, it, event.eventTypes)
-            }
+                    entryListComponent {
+                        onDelete = {
+                            mainScope.launch {
+                                deleteEntry(it)
+                                eventEntries = getEntries()
+                            }
+                        }
+                        types = eventTypes
+                        events = eventEntries
+                        onEventClick = {
+                            mainScope.launch {
+                                event = it
+                                eventTypes = getEventTypes(it)
+                            }
 
-            onTimestampChanged = {
-                event = Event(event.id, it, event.value, event.eventTypes)
+                        }
+                        onFilterEvents = { st, et ->
+                            mainScope.launch {
+                                eventEntries = getFilteredEntries(st, et)
+                            }
 
-            }
+                        }
 
-            onSaveEvent = {
-                mainScope.launch {
-                    if (selectedEvent.id == 0L) {
-                        postEvent(selectedEvent)
-                        // entryText = ""
-                    } else {
-                        putEvent(selectedEvent)
+                        onExportEvents = { st, et ->
+                            val session = sessionStorage[User.SESSION_KEY]
+                            session?.let {
+                                window.open("/export?${User.SESSION_KEY}=$session&${Const.ST}=$st&${Const.ET}=$et")
+                            }
+
+                        }
                     }
-                    eventEntries = getEntries()
-                    eventTypes = getEventTypes(event)
-                    val e = Event(0, getTimeMillis(), "", emptyList())
-                    event = e
-                    eventTypes = getEventTypes(e)
-                }
-            }
-            onNewEventClick = {
-
-                mainScope.launch {
-                    val e = Event(0, getTimeMillis(), "", emptyList())
-                    event = e
-                    eventTypes = getEventTypes(e)
-
-                }
-
-            }
-
-        }
-        entryListComponent {
-            onDelete = {
-                mainScope.launch {
-                    deleteEntry(it)
-                    eventEntries = getEntries()
-                }
-            }
-            types = eventTypes
-            events = eventEntries
-            onEventClick = {
-                mainScope.launch {
-                    event = it
-                    eventTypes = getEventTypes(it)
                 }
             }
         }
+
+
 
     }
 }
+

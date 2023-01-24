@@ -1,8 +1,8 @@
 (function (root, factory) {
   if (typeof define === 'function' && define.amd)
-    define(['exports', 'react-dom/client', 'react', './kotlin-kotlin-stdlib-js-ir.js', './kotlinx-serialization-kotlinx-serialization-core-js-ir.js', './Kotlin-DateTime-library-kotlinx-datetime-js-ir.js', './ktor-ktor-client-content-negotiation-js-ir.js', './ktor-ktor-client-core-js-ir.js', './ktor-ktor-serialization-kotlinx-json-js-ir.js', './ktor-ktor-http-js-ir.js', './ktor-ktor-utils-js-ir.js', './kotlin-wrappers-kotlin-react-js-ir.js', './kotlin-wrappers-kotlin-react-core-js-ir.js', './kotlinx.coroutines-kotlinx-coroutines-core-js-ir.js', './kotlin-wrappers-kotlin-react-dom-js-ir.js'], factory);
+    define(['exports', 'react-dom/client', 'react', './kotlin-kotlin-stdlib-js-ir.js', './kotlinx-serialization-kotlinx-serialization-core-js-ir.js', './Kotlin-DateTime-library-kotlinx-datetime-js-ir.js', './ktor-ktor-utils-js-ir.js', './ktor-ktor-client-content-negotiation-js-ir.js', './ktor-ktor-client-core-js-ir.js', './ktor-ktor-serialization-kotlinx-json-js-ir.js', './ktor-ktor-http-js-ir.js', './kotlin-wrappers-kotlin-react-js-ir.js', './kotlin-wrappers-kotlin-react-core-js-ir.js', './kotlin-wrappers-kotlin-react-dom-js-ir.js', './kotlinx.coroutines-kotlinx-coroutines-core-js-ir.js'], factory);
   else if (typeof exports === 'object')
-    factory(module.exports, require('react-dom/client'), require('react'), require('./kotlin-kotlin-stdlib-js-ir.js'), require('./kotlinx-serialization-kotlinx-serialization-core-js-ir.js'), require('./Kotlin-DateTime-library-kotlinx-datetime-js-ir.js'), require('./ktor-ktor-client-content-negotiation-js-ir.js'), require('./ktor-ktor-client-core-js-ir.js'), require('./ktor-ktor-serialization-kotlinx-json-js-ir.js'), require('./ktor-ktor-http-js-ir.js'), require('./ktor-ktor-utils-js-ir.js'), require('./kotlin-wrappers-kotlin-react-js-ir.js'), require('./kotlin-wrappers-kotlin-react-core-js-ir.js'), require('./kotlinx.coroutines-kotlinx-coroutines-core-js-ir.js'), require('./kotlin-wrappers-kotlin-react-dom-js-ir.js'));
+    factory(module.exports, require('react-dom/client'), require('react'), require('./kotlin-kotlin-stdlib-js-ir.js'), require('./kotlinx-serialization-kotlinx-serialization-core-js-ir.js'), require('./Kotlin-DateTime-library-kotlinx-datetime-js-ir.js'), require('./ktor-ktor-utils-js-ir.js'), require('./ktor-ktor-client-content-negotiation-js-ir.js'), require('./ktor-ktor-client-core-js-ir.js'), require('./ktor-ktor-serialization-kotlinx-json-js-ir.js'), require('./ktor-ktor-http-js-ir.js'), require('./kotlin-wrappers-kotlin-react-js-ir.js'), require('./kotlin-wrappers-kotlin-react-core-js-ir.js'), require('./kotlin-wrappers-kotlin-react-dom-js-ir.js'), require('./kotlinx.coroutines-kotlinx-coroutines-core-js-ir.js'));
   else {
     if (typeof this['react-dom/client'] === 'undefined') {
       throw new Error("Error loading module 'bujo'. Its dependency 'react-dom/client' was not found. Please, check whether 'react-dom/client' is loaded prior to 'bujo'.");
@@ -19,6 +19,9 @@
     if (typeof this['Kotlin-DateTime-library-kotlinx-datetime-js-ir'] === 'undefined') {
       throw new Error("Error loading module 'bujo'. Its dependency 'Kotlin-DateTime-library-kotlinx-datetime-js-ir' was not found. Please, check whether 'Kotlin-DateTime-library-kotlinx-datetime-js-ir' is loaded prior to 'bujo'.");
     }
+    if (typeof this['ktor-ktor-utils-js-ir'] === 'undefined') {
+      throw new Error("Error loading module 'bujo'. Its dependency 'ktor-ktor-utils-js-ir' was not found. Please, check whether 'ktor-ktor-utils-js-ir' is loaded prior to 'bujo'.");
+    }
     if (typeof this['ktor-ktor-client-content-negotiation-js-ir'] === 'undefined') {
       throw new Error("Error loading module 'bujo'. Its dependency 'ktor-ktor-client-content-negotiation-js-ir' was not found. Please, check whether 'ktor-ktor-client-content-negotiation-js-ir' is loaded prior to 'bujo'.");
     }
@@ -31,24 +34,21 @@
     if (typeof this['ktor-ktor-http-js-ir'] === 'undefined') {
       throw new Error("Error loading module 'bujo'. Its dependency 'ktor-ktor-http-js-ir' was not found. Please, check whether 'ktor-ktor-http-js-ir' is loaded prior to 'bujo'.");
     }
-    if (typeof this['ktor-ktor-utils-js-ir'] === 'undefined') {
-      throw new Error("Error loading module 'bujo'. Its dependency 'ktor-ktor-utils-js-ir' was not found. Please, check whether 'ktor-ktor-utils-js-ir' is loaded prior to 'bujo'.");
-    }
     if (typeof this['kotlin-wrappers-kotlin-react-js-ir'] === 'undefined') {
       throw new Error("Error loading module 'bujo'. Its dependency 'kotlin-wrappers-kotlin-react-js-ir' was not found. Please, check whether 'kotlin-wrappers-kotlin-react-js-ir' is loaded prior to 'bujo'.");
     }
     if (typeof this['kotlin-wrappers-kotlin-react-core-js-ir'] === 'undefined') {
       throw new Error("Error loading module 'bujo'. Its dependency 'kotlin-wrappers-kotlin-react-core-js-ir' was not found. Please, check whether 'kotlin-wrappers-kotlin-react-core-js-ir' is loaded prior to 'bujo'.");
     }
-    if (typeof this['kotlinx.coroutines-kotlinx-coroutines-core-js-ir'] === 'undefined') {
-      throw new Error("Error loading module 'bujo'. Its dependency 'kotlinx.coroutines-kotlinx-coroutines-core-js-ir' was not found. Please, check whether 'kotlinx.coroutines-kotlinx-coroutines-core-js-ir' is loaded prior to 'bujo'.");
-    }
     if (typeof this['kotlin-wrappers-kotlin-react-dom-js-ir'] === 'undefined') {
       throw new Error("Error loading module 'bujo'. Its dependency 'kotlin-wrappers-kotlin-react-dom-js-ir' was not found. Please, check whether 'kotlin-wrappers-kotlin-react-dom-js-ir' is loaded prior to 'bujo'.");
     }
-    root.bujo = factory(typeof bujo === 'undefined' ? {} : bujo, this['react-dom/client'], react, this['kotlin-kotlin-stdlib-js-ir'], this['kotlinx-serialization-kotlinx-serialization-core-js-ir'], this['Kotlin-DateTime-library-kotlinx-datetime-js-ir'], this['ktor-ktor-client-content-negotiation-js-ir'], this['ktor-ktor-client-core-js-ir'], this['ktor-ktor-serialization-kotlinx-json-js-ir'], this['ktor-ktor-http-js-ir'], this['ktor-ktor-utils-js-ir'], this['kotlin-wrappers-kotlin-react-js-ir'], this['kotlin-wrappers-kotlin-react-core-js-ir'], this['kotlinx.coroutines-kotlinx-coroutines-core-js-ir'], this['kotlin-wrappers-kotlin-react-dom-js-ir']);
+    if (typeof this['kotlinx.coroutines-kotlinx-coroutines-core-js-ir'] === 'undefined') {
+      throw new Error("Error loading module 'bujo'. Its dependency 'kotlinx.coroutines-kotlinx-coroutines-core-js-ir' was not found. Please, check whether 'kotlinx.coroutines-kotlinx-coroutines-core-js-ir' is loaded prior to 'bujo'.");
+    }
+    root.bujo = factory(typeof bujo === 'undefined' ? {} : bujo, this['react-dom/client'], react, this['kotlin-kotlin-stdlib-js-ir'], this['kotlinx-serialization-kotlinx-serialization-core-js-ir'], this['Kotlin-DateTime-library-kotlinx-datetime-js-ir'], this['ktor-ktor-utils-js-ir'], this['ktor-ktor-client-content-negotiation-js-ir'], this['ktor-ktor-client-core-js-ir'], this['ktor-ktor-serialization-kotlinx-json-js-ir'], this['ktor-ktor-http-js-ir'], this['kotlin-wrappers-kotlin-react-js-ir'], this['kotlin-wrappers-kotlin-react-core-js-ir'], this['kotlin-wrappers-kotlin-react-dom-js-ir'], this['kotlinx.coroutines-kotlinx-coroutines-core-js-ir']);
   }
-}(this, function (_, $module$react_dom_client_y5z5eu, $module$react, kotlin_kotlin, kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core, kotlin_org_jetbrains_kotlinx_kotlinx_datetime, kotlin_io_ktor_ktor_client_content_negotiation, kotlin_io_ktor_ktor_client_core, kotlin_io_ktor_ktor_serialization_kotlinx_json, kotlin_io_ktor_ktor_http, kotlin_io_ktor_ktor_utils, kotlin_org_jetbrains_kotlin_wrappers_kotlin_react, kotlin_org_jetbrains_kotlin_wrappers_kotlin_react_core, kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core, kotlin_org_jetbrains_kotlin_wrappers_kotlin_react_dom) {
+}(this, function (_, $module$react_dom_client_y5z5eu, $module$react, kotlin_kotlin, kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core, kotlin_org_jetbrains_kotlinx_kotlinx_datetime, kotlin_io_ktor_ktor_utils, kotlin_io_ktor_ktor_client_content_negotiation, kotlin_io_ktor_ktor_client_core, kotlin_io_ktor_ktor_serialization_kotlinx_json, kotlin_io_ktor_ktor_http, kotlin_org_jetbrains_kotlin_wrappers_kotlin_react, kotlin_org_jetbrains_kotlin_wrappers_kotlin_react_core, kotlin_org_jetbrains_kotlin_wrappers_kotlin_react_dom, kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core) {
   'use strict';
   //region block: imports
   var imul = Math.imul;
@@ -80,6 +80,8 @@
   var LocalDateTime_init_$Create$ = kotlin_org_jetbrains_kotlinx_kotlinx_datetime.$_$.a;
   var println = kotlin_kotlin.$_$.c8;
   var toInstant = kotlin_org_jetbrains_kotlinx_kotlinx_datetime.$_$.d;
+  var getTimeMillis = kotlin_io_ktor_ktor_utils.$_$.g;
+  var toLong = kotlin_kotlin.$_$.q9;
   var Plugin_getInstance = kotlin_io_ktor_ktor_client_content_negotiation.$_$.a;
   var defaultRequest = kotlin_io_ktor_ktor_client_core.$_$.e;
   var json$default = kotlin_io_ktor_ktor_serialization_kotlinx_json.$_$.a;
@@ -108,9 +110,9 @@
   var ensureNotNull = kotlin_kotlin.$_$.oc;
   var create = kotlin_org_jetbrains_kotlin_wrappers_kotlin_react.$_$.b;
   var emptyList = kotlin_kotlin.$_$.q5;
-  var getTimeMillis = kotlin_io_ktor_ktor_utils.$_$.g;
   var isBlank = kotlin_kotlin.$_$.ma;
   var useEffectOnce = kotlin_org_jetbrains_kotlin_wrappers_kotlin_react_core.$_$.a;
+  var ReactHTML_getInstance = kotlin_org_jetbrains_kotlin_wrappers_kotlin_react_dom.$_$.a;
   var KMutableProperty0 = kotlin_kotlin.$_$.da;
   var THROW_ISE = kotlin_kotlin.$_$.cc;
   var getLocalDelegateReference = kotlin_kotlin.$_$.r8;
@@ -119,7 +121,6 @@
   var MainScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.j1;
   var FC = kotlin_org_jetbrains_kotlin_wrappers_kotlin_react.$_$.a;
   var SuspendFunction1 = kotlin_kotlin.$_$.z7;
-  var ReactHTML_getInstance = kotlin_org_jetbrains_kotlin_wrappers_kotlin_react_dom.$_$.a;
   var charSequenceLength = kotlin_kotlin.$_$.k8;
   //endregion
   //region block: pre-declaration
@@ -129,44 +130,60 @@
   $putEventCOROUTINE$1.prototype.constructor = $putEventCOROUTINE$1;
   $getEntriesCOROUTINE$2.prototype = Object.create(CoroutineImpl.prototype);
   $getEntriesCOROUTINE$2.prototype.constructor = $getEntriesCOROUTINE$2;
-  $deleteEntryCOROUTINE$3.prototype = Object.create(CoroutineImpl.prototype);
-  $deleteEntryCOROUTINE$3.prototype.constructor = $deleteEntryCOROUTINE$3;
-  $getEventTypesCOROUTINE$5.prototype = Object.create(CoroutineImpl.prototype);
-  $getEventTypesCOROUTINE$5.prototype.constructor = $getEventTypesCOROUTINE$5;
-  $addTypeCOROUTINE$6.prototype = Object.create(CoroutineImpl.prototype);
-  $addTypeCOROUTINE$6.prototype.constructor = $addTypeCOROUTINE$6;
-  $deleteTypesCOROUTINE$7.prototype = Object.create(CoroutineImpl.prototype);
-  $deleteTypesCOROUTINE$7.prototype.constructor = $deleteTypesCOROUTINE$7;
-  $addUserCOROUTINE$8.prototype = Object.create(CoroutineImpl.prototype);
-  $addUserCOROUTINE$8.prototype.constructor = $addUserCOROUTINE$8;
-  $getUserSessionCOROUTINE$9.prototype = Object.create(CoroutineImpl.prototype);
-  $getUserSessionCOROUTINE$9.prototype.constructor = $getUserSessionCOROUTINE$9;
+  $getFilteredEntriesCOROUTINE$3.prototype = Object.create(CoroutineImpl.prototype);
+  $getFilteredEntriesCOROUTINE$3.prototype.constructor = $getFilteredEntriesCOROUTINE$3;
+  $deleteEntryCOROUTINE$4.prototype = Object.create(CoroutineImpl.prototype);
+  $deleteEntryCOROUTINE$4.prototype.constructor = $deleteEntryCOROUTINE$4;
+  $getEventTypesCOROUTINE$6.prototype = Object.create(CoroutineImpl.prototype);
+  $getEventTypesCOROUTINE$6.prototype.constructor = $getEventTypesCOROUTINE$6;
+  $addTypeCOROUTINE$7.prototype = Object.create(CoroutineImpl.prototype);
+  $addTypeCOROUTINE$7.prototype.constructor = $addTypeCOROUTINE$7;
+  $deleteTypesCOROUTINE$8.prototype = Object.create(CoroutineImpl.prototype);
+  $deleteTypesCOROUTINE$8.prototype.constructor = $deleteTypesCOROUTINE$8;
+  $addUserCOROUTINE$9.prototype = Object.create(CoroutineImpl.prototype);
+  $addUserCOROUTINE$9.prototype.constructor = $addUserCOROUTINE$9;
+  $getUserSessionCOROUTINE$10.prototype = Object.create(CoroutineImpl.prototype);
+  $getUserSessionCOROUTINE$10.prototype.constructor = $getUserSessionCOROUTINE$10;
   home$lambda$lambda$slambda.prototype = Object.create(CoroutineImpl.prototype);
   home$lambda$lambda$slambda.prototype.constructor = home$lambda$lambda$slambda;
-  home$lambda$lambda$lambda$slambda.prototype = Object.create(CoroutineImpl.prototype);
-  home$lambda$lambda$lambda$slambda.prototype.constructor = home$lambda$lambda$lambda$slambda;
-  home$lambda$lambda$lambda$slambda$slambda.prototype = Object.create(CoroutineImpl.prototype);
-  home$lambda$lambda$lambda$slambda$slambda.prototype.constructor = home$lambda$lambda$lambda$slambda$slambda;
-  home$lambda$lambda$lambda$slambda_1.prototype = Object.create(CoroutineImpl.prototype);
-  home$lambda$lambda$lambda$slambda_1.prototype.constructor = home$lambda$lambda$lambda$slambda_1;
-  home$lambda$lambda$lambda$slambda_3.prototype = Object.create(CoroutineImpl.prototype);
-  home$lambda$lambda$lambda$slambda_3.prototype.constructor = home$lambda$lambda$lambda$slambda_3;
-  home$lambda$lambda$lambda$slambda_5.prototype = Object.create(CoroutineImpl.prototype);
-  home$lambda$lambda$lambda$slambda_5.prototype.constructor = home$lambda$lambda$lambda$slambda_5;
-  home$lambda$lambda$lambda$slambda_7.prototype = Object.create(CoroutineImpl.prototype);
-  home$lambda$lambda$lambda$slambda_7.prototype.constructor = home$lambda$lambda$lambda$slambda_7;
-  home$lambda$lambda$lambda$slambda_9.prototype = Object.create(CoroutineImpl.prototype);
-  home$lambda$lambda$lambda$slambda_9.prototype.constructor = home$lambda$lambda$lambda$slambda_9;
-  home$lambda$lambda$lambda$slambda_11.prototype = Object.create(CoroutineImpl.prototype);
-  home$lambda$lambda$lambda$slambda_11.prototype.constructor = home$lambda$lambda$lambda$slambda_11;
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype = Object.create(CoroutineImpl.prototype);
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.constructor = home$lambda$lambda$lambda$lambda$lambda$lambda$slambda;
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda$slambda.prototype = Object.create(CoroutineImpl.prototype);
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda$slambda.prototype.constructor = home$lambda$lambda$lambda$lambda$lambda$lambda$slambda$slambda;
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype = Object.create(CoroutineImpl.prototype);
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype.constructor = home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1;
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype = Object.create(CoroutineImpl.prototype);
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype.constructor = home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3;
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5.prototype = Object.create(CoroutineImpl.prototype);
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5.prototype.constructor = home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5;
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_7.prototype = Object.create(CoroutineImpl.prototype);
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_7.prototype.constructor = home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_7;
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_9.prototype = Object.create(CoroutineImpl.prototype);
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_9.prototype.constructor = home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_9;
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_11.prototype = Object.create(CoroutineImpl.prototype);
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_11.prototype.constructor = home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_11;
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_13.prototype = Object.create(CoroutineImpl.prototype);
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_13.prototype.constructor = home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_13;
   login$lambda$lambda$lambda$lambda$slambda.prototype = Object.create(CoroutineImpl.prototype);
   login$lambda$lambda$lambda$lambda$slambda.prototype.constructor = login$lambda$lambda$lambda$lambda$slambda;
   register$lambda$lambda$lambda$lambda$slambda.prototype = Object.create(CoroutineImpl.prototype);
   register$lambda$lambda$lambda$lambda$slambda.prototype.constructor = register$lambda$lambda$lambda$lambda$slambda;
   //endregion
+  function Const() {
+    Const_instance = this;
+    this.u40_1 = 'st';
+    this.v40_1 = 'et';
+  }
+  Const.$metadata$ = objectMeta('Const');
+  var Const_instance;
+  function Const_getInstance() {
+    if (Const_instance == null)
+      new Const();
+    return Const_instance;
+  }
   function Companion() {
     Companion_instance = this;
-    this.v40_1 = '/entry';
+    this.w40_1 = '/entry';
   }
   Companion.$metadata$ = objectMeta('Companion');
   var Companion_instance;
@@ -182,10 +199,10 @@
     tmp0_serialDesc.h2e('timestamp', false);
     tmp0_serialDesc.h2e('value', false);
     tmp0_serialDesc.h2e('eventTypes', false);
-    this.w40_1 = tmp0_serialDesc;
+    this.x40_1 = tmp0_serialDesc;
   }
   $serializer.prototype.s24 = function () {
-    return this.w40_1;
+    return this.x40_1;
   };
   $serializer.prototype.j2e = function () {
     var tmp$ret$2;
@@ -201,7 +218,7 @@
     return tmp$ret$2;
   };
   $serializer.prototype.u24 = function (decoder) {
-    var tmp0_desc = this.w40_1;
+    var tmp0_desc = this.x40_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
     var tmp3_bitMask0 = 0;
@@ -249,17 +266,17 @@
     tmp8_input.q27(tmp0_desc);
     return Event_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, tmp7_local3, null);
   };
-  $serializer.prototype.x40 = function (encoder, value) {
-    var tmp0_desc = this.w40_1;
+  $serializer.prototype.y40 = function (encoder, value) {
+    var tmp0_desc = this.x40_1;
     var tmp1_output = encoder.p27(tmp0_desc);
-    tmp1_output.w28(tmp0_desc, 0, value.y40_1);
-    tmp1_output.w28(tmp0_desc, 1, value.z40_1);
-    tmp1_output.a29(tmp0_desc, 2, value.a41_1);
-    tmp1_output.b29(tmp0_desc, 3, new ArrayListSerializer(LongSerializer_getInstance()), value.b41_1);
+    tmp1_output.w28(tmp0_desc, 0, value.z40_1);
+    tmp1_output.w28(tmp0_desc, 1, value.a41_1);
+    tmp1_output.a29(tmp0_desc, 2, value.b41_1);
+    tmp1_output.b29(tmp0_desc, 3, new ArrayListSerializer(LongSerializer_getInstance()), value.c41_1);
     tmp1_output.q27(tmp0_desc);
   };
   $serializer.prototype.t24 = function (encoder, value) {
-    return this.x40(encoder, value instanceof Event ? value : THROW_CCE());
+    return this.y40(encoder, value instanceof Event ? value : THROW_CCE());
   };
   $serializer.$metadata$ = objectMeta('$serializer', [GeneratedSerializer]);
   var $serializer_instance;
@@ -270,12 +287,12 @@
   }
   function Event_init_$Init$(seen1, id, timestamp, value, eventTypes, serializationConstructorMarker, $this) {
     if (!(15 === (15 & seen1))) {
-      throwMissingFieldException(seen1, 15, $serializer_getInstance().w40_1);
+      throwMissingFieldException(seen1, 15, $serializer_getInstance().x40_1);
     }
-    $this.y40_1 = id;
-    $this.z40_1 = timestamp;
-    $this.a41_1 = value;
-    $this.b41_1 = eventTypes;
+    $this.z40_1 = id;
+    $this.a41_1 = timestamp;
+    $this.b41_1 = value;
+    $this.c41_1 = eventTypes;
     return $this;
   }
   function Event_init_$Create$(seen1, id, timestamp, value, eventTypes, serializationConstructorMarker) {
@@ -283,27 +300,27 @@
   }
   function Event(id, timestamp, value, eventTypes) {
     Companion_getInstance_2();
-    this.y40_1 = id;
-    this.z40_1 = timestamp;
-    this.a41_1 = value;
-    this.b41_1 = eventTypes;
+    this.z40_1 = id;
+    this.a41_1 = timestamp;
+    this.b41_1 = value;
+    this.c41_1 = eventTypes;
   }
   Event.prototype.b3z = function () {
-    return this.y40_1;
-  };
-  Event.prototype.c41 = function () {
     return this.z40_1;
   };
-  Event.prototype.t = function () {
+  Event.prototype.d41 = function () {
     return this.a41_1;
   };
-  Event.prototype.d41 = function () {
+  Event.prototype.t = function () {
     return this.b41_1;
+  };
+  Event.prototype.e41 = function () {
+    return this.c41_1;
   };
   Event.$metadata$ = classMeta('Event', undefined, undefined, {0: $serializer_getInstance});
   function Companion_0() {
     Companion_instance_0 = this;
-    this.e41_1 = '/type';
+    this.f41_1 = '/type';
   }
   Companion_0.$metadata$ = objectMeta('Companion');
   var Companion_instance_0;
@@ -318,10 +335,10 @@
     tmp0_serialDesc.h2e('id', false);
     tmp0_serialDesc.h2e('text', false);
     tmp0_serialDesc.h2e('selected', false);
-    this.f41_1 = tmp0_serialDesc;
+    this.g41_1 = tmp0_serialDesc;
   }
   $serializer_0.prototype.s24 = function () {
-    return this.f41_1;
+    return this.g41_1;
   };
   $serializer_0.prototype.j2e = function () {
     var tmp$ret$2;
@@ -337,7 +354,7 @@
     return tmp$ret$2;
   };
   $serializer_0.prototype.u24 = function (decoder) {
-    var tmp0_desc = this.f41_1;
+    var tmp0_desc = this.g41_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
     var tmp3_bitMask0 = 0;
@@ -378,16 +395,16 @@
     tmp7_input.q27(tmp0_desc);
     return EventType_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, tmp6_local2, null);
   };
-  $serializer_0.prototype.g41 = function (encoder, value) {
-    var tmp0_desc = this.f41_1;
+  $serializer_0.prototype.h41 = function (encoder, value) {
+    var tmp0_desc = this.g41_1;
     var tmp1_output = encoder.p27(tmp0_desc);
-    tmp1_output.w28(tmp0_desc, 0, value.h41_1);
-    tmp1_output.a29(tmp0_desc, 1, value.i41_1);
-    tmp1_output.s28(tmp0_desc, 2, value.j41_1);
+    tmp1_output.w28(tmp0_desc, 0, value.i41_1);
+    tmp1_output.a29(tmp0_desc, 1, value.j41_1);
+    tmp1_output.s28(tmp0_desc, 2, value.k41_1);
     tmp1_output.q27(tmp0_desc);
   };
   $serializer_0.prototype.t24 = function (encoder, value) {
-    return this.g41(encoder, value instanceof EventType ? value : THROW_CCE());
+    return this.h41(encoder, value instanceof EventType ? value : THROW_CCE());
   };
   $serializer_0.$metadata$ = objectMeta('$serializer', [GeneratedSerializer]);
   var $serializer_instance_0;
@@ -398,11 +415,11 @@
   }
   function EventType_init_$Init$(seen1, id, text, selected, serializationConstructorMarker, $this) {
     if (!(7 === (7 & seen1))) {
-      throwMissingFieldException(seen1, 7, $serializer_getInstance_0().f41_1);
+      throwMissingFieldException(seen1, 7, $serializer_getInstance_0().g41_1);
     }
-    $this.h41_1 = id;
-    $this.i41_1 = text;
-    $this.j41_1 = selected;
+    $this.i41_1 = id;
+    $this.j41_1 = text;
+    $this.k41_1 = selected;
     return $this;
   }
   function EventType_init_$Create$(seen1, id, text, selected, serializationConstructorMarker) {
@@ -410,26 +427,26 @@
   }
   function EventType(id, text, selected) {
     Companion_getInstance_3();
-    this.h41_1 = id;
-    this.i41_1 = text;
-    this.j41_1 = selected;
+    this.i41_1 = id;
+    this.j41_1 = text;
+    this.k41_1 = selected;
   }
   EventType.prototype.b3z = function () {
-    return this.h41_1;
-  };
-  EventType.prototype.k41 = function () {
     return this.i41_1;
   };
   EventType.prototype.l41 = function () {
     return this.j41_1;
   };
+  EventType.prototype.m41 = function () {
+    return this.k41_1;
+  };
   EventType.prototype.toString = function () {
-    return 'EventType(id=' + toString(this.h41_1) + ', text=' + this.i41_1 + ', selected=' + this.j41_1 + ')';
+    return 'EventType(id=' + toString(this.i41_1) + ', text=' + this.j41_1 + ', selected=' + this.k41_1 + ')';
   };
   EventType.prototype.hashCode = function () {
-    var result = this.h41_1.hashCode();
-    result = imul(result, 31) + getStringHashCode(this.i41_1) | 0;
-    result = imul(result, 31) + (this.j41_1 | 0) | 0;
+    var result = this.i41_1.hashCode();
+    result = imul(result, 31) + getStringHashCode(this.j41_1) | 0;
+    result = imul(result, 31) + (this.k41_1 | 0) | 0;
     return result;
   };
   EventType.prototype.equals = function (other) {
@@ -438,19 +455,19 @@
     if (!(other instanceof EventType))
       return false;
     var tmp0_other_with_cast = other instanceof EventType ? other : THROW_CCE();
-    if (!this.h41_1.equals(tmp0_other_with_cast.h41_1))
-      return false;
-    if (!(this.i41_1 === tmp0_other_with_cast.i41_1))
+    if (!this.i41_1.equals(tmp0_other_with_cast.i41_1))
       return false;
     if (!(this.j41_1 === tmp0_other_with_cast.j41_1))
+      return false;
+    if (!(this.k41_1 === tmp0_other_with_cast.k41_1))
       return false;
     return true;
   };
   EventType.$metadata$ = classMeta('EventType', undefined, undefined, {0: $serializer_getInstance_0});
   function Companion_1() {
     Companion_instance_1 = this;
-    this.m41_1 = '/user';
-    this.n41_1 = 'SESSION_KEY';
+    this.n41_1 = '/user';
+    this.o41_1 = 'SESSION_KEY';
   }
   Companion_1.$metadata$ = objectMeta('Companion');
   var Companion_instance_1;
@@ -464,10 +481,10 @@
     var tmp0_serialDesc = new PluginGeneratedSerialDescriptor('User', this, 2);
     tmp0_serialDesc.h2e('email', false);
     tmp0_serialDesc.h2e('password', false);
-    this.o41_1 = tmp0_serialDesc;
+    this.p41_1 = tmp0_serialDesc;
   }
   $serializer_1.prototype.s24 = function () {
-    return this.o41_1;
+    return this.p41_1;
   };
   $serializer_1.prototype.j2e = function () {
     var tmp$ret$2;
@@ -483,7 +500,7 @@
     return tmp$ret$2;
   };
   $serializer_1.prototype.u24 = function (decoder) {
-    var tmp0_desc = this.o41_1;
+    var tmp0_desc = this.p41_1;
     var tmp1_flag = true;
     var tmp2_index = 0;
     var tmp3_bitMask0 = 0;
@@ -517,15 +534,15 @@
     tmp6_input.q27(tmp0_desc);
     return User_init_$Create$(tmp3_bitMask0, tmp4_local0, tmp5_local1, null);
   };
-  $serializer_1.prototype.p41 = function (encoder, value) {
-    var tmp0_desc = this.o41_1;
+  $serializer_1.prototype.q41 = function (encoder, value) {
+    var tmp0_desc = this.p41_1;
     var tmp1_output = encoder.p27(tmp0_desc);
-    tmp1_output.a29(tmp0_desc, 0, value.q41_1);
-    tmp1_output.a29(tmp0_desc, 1, value.r41_1);
+    tmp1_output.a29(tmp0_desc, 0, value.r41_1);
+    tmp1_output.a29(tmp0_desc, 1, value.s41_1);
     tmp1_output.q27(tmp0_desc);
   };
   $serializer_1.prototype.t24 = function (encoder, value) {
-    return this.p41(encoder, value instanceof User ? value : THROW_CCE());
+    return this.q41(encoder, value instanceof User ? value : THROW_CCE());
   };
   $serializer_1.$metadata$ = objectMeta('$serializer', [GeneratedSerializer]);
   var $serializer_instance_1;
@@ -536,10 +553,10 @@
   }
   function User_init_$Init$(seen1, email, password, serializationConstructorMarker, $this) {
     if (!(3 === (3 & seen1))) {
-      throwMissingFieldException(seen1, 3, $serializer_getInstance_1().o41_1);
+      throwMissingFieldException(seen1, 3, $serializer_getInstance_1().p41_1);
     }
-    $this.q41_1 = email;
-    $this.r41_1 = password;
+    $this.r41_1 = email;
+    $this.s41_1 = password;
     return $this;
   }
   function User_init_$Create$(seen1, email, password, serializationConstructorMarker) {
@@ -547,15 +564,15 @@
   }
   function User(email, password) {
     Companion_getInstance_4();
-    this.q41_1 = email;
-    this.r41_1 = password;
+    this.r41_1 = email;
+    this.s41_1 = password;
   }
   User.prototype.toString = function () {
-    return 'User(email=' + this.q41_1 + ', password=' + this.r41_1 + ')';
+    return 'User(email=' + this.r41_1 + ', password=' + this.s41_1 + ')';
   };
   User.prototype.hashCode = function () {
-    var result = getStringHashCode(this.q41_1);
-    result = imul(result, 31) + getStringHashCode(this.r41_1) | 0;
+    var result = getStringHashCode(this.r41_1);
+    result = imul(result, 31) + getStringHashCode(this.s41_1) | 0;
     return result;
   };
   User.prototype.equals = function (other) {
@@ -564,9 +581,9 @@
     if (!(other instanceof User))
       return false;
     var tmp0_other_with_cast = other instanceof User ? other : THROW_CCE();
-    if (!(this.q41_1 === tmp0_other_with_cast.q41_1))
-      return false;
     if (!(this.r41_1 === tmp0_other_with_cast.r41_1))
+      return false;
+    if (!(this.s41_1 === tmp0_other_with_cast.s41_1))
       return false;
     return true;
   };
@@ -580,19 +597,41 @@
     }
     return tmp;
   }
-  function Util() {
+  function Companion_2() {
+    Companion_instance_2 = this;
+    this.t41_1 = 86400000;
   }
-  Util.prototype.s41 = function (timestamp) {
+  Companion_2.$metadata$ = objectMeta('Companion');
+  var Companion_instance_2;
+  function Companion_getInstance_5() {
+    if (Companion_instance_2 == null)
+      new Companion_2();
+    return Companion_instance_2;
+  }
+  function Util() {
+    Companion_getInstance_5();
+  }
+  Util.prototype.u41 = function (timestamp) {
     var instantNow = Companion_getInstance().h3z(timestamp);
     var d = toLocalDateTime(instantNow, Companion_getInstance_0().w3z()).u3z();
     return '' + d.p3z() + '-' + appendZero(this, d.q3z()) + '-' + appendZero(this, d.r3z());
   };
-  Util.prototype.t41 = function (input) {
+  Util.prototype.v41 = function (input) {
     var tmp = charArrayOf([_Char___init__impl__6a9atx(45)]);
     var s = split$default(input, tmp, false, 0, 6, null);
     var date = LocalDateTime_init_$Create$(toInt(s.h(0)), toInt(s.h(1)), toInt(s.h(2)), 0, 0, 0, 0);
     println(date.toString());
     return toInstant(date, Companion_getInstance_0().w3z()).m3z();
+  };
+  Util.prototype.w41 = function () {
+    var instantNow = Companion_getInstance().h3z(getTimeMillis());
+    var tmp$ret$0;
+    // Inline function 'kotlin.Long.minus' call
+    var tmp0_minus = instantNow.m3z();
+    Companion_getInstance_5();
+    var tmp1_minus = 86400000;
+    tmp$ret$0 = tmp0_minus.c6(toLong(tmp1_minus));
+    return tmp$ret$0;
   };
   Util.$metadata$ = classMeta('Util');
   function get_jsonClient() {
@@ -618,38 +657,44 @@
     tmp.sh_1 = null;
     return tmp.yh();
   }
+  function getFilteredEntries(st, et, $cont) {
+    var tmp = new $getFilteredEntriesCOROUTINE$3(st, et, $cont);
+    tmp.rh_1 = Unit_getInstance();
+    tmp.sh_1 = null;
+    return tmp.yh();
+  }
   function deleteEntry(id, $cont) {
-    var tmp = new $deleteEntryCOROUTINE$3(id, $cont);
+    var tmp = new $deleteEntryCOROUTINE$4(id, $cont);
     tmp.rh_1 = Unit_getInstance();
     tmp.sh_1 = null;
     return tmp.yh();
   }
   function getEventTypes(selectedEvent, $cont) {
-    var tmp = new $getEventTypesCOROUTINE$5(selectedEvent, $cont);
+    var tmp = new $getEventTypesCOROUTINE$6(selectedEvent, $cont);
     tmp.rh_1 = Unit_getInstance();
     tmp.sh_1 = null;
     return tmp.yh();
   }
   function addType(type, $cont) {
-    var tmp = new $addTypeCOROUTINE$6(type, $cont);
+    var tmp = new $addTypeCOROUTINE$7(type, $cont);
     tmp.rh_1 = Unit_getInstance();
     tmp.sh_1 = null;
     return tmp.yh();
   }
   function deleteTypes(list, $cont) {
-    var tmp = new $deleteTypesCOROUTINE$7(list, $cont);
+    var tmp = new $deleteTypesCOROUTINE$8(list, $cont);
     tmp.rh_1 = Unit_getInstance();
     tmp.sh_1 = null;
     return tmp.yh();
   }
   function addUser(email, password, $cont) {
-    var tmp = new $addUserCOROUTINE$8(email, password, $cont);
+    var tmp = new $addUserCOROUTINE$9(email, password, $cont);
     tmp.rh_1 = Unit_getInstance();
     tmp.sh_1 = null;
     return tmp.yh();
   }
   function getUserSession(email, password, $cont) {
-    var tmp = new $getUserSessionCOROUTINE$9(email, password, $cont);
+    var tmp = new $getUserSessionCOROUTINE$10(email, password, $cont);
     tmp.rh_1 = Unit_getInstance();
     tmp.sh_1 = null;
     return tmp.yh();
@@ -694,7 +739,7 @@
   }
   function $postEventCOROUTINE$0(event, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.c42_1 = event;
+    this.f42_1 = event;
   }
   $postEventCOROUTINE$0.prototype.yh = function () {
     var suspendResult = this.rh_1;
@@ -705,15 +750,15 @@
           case 0:
             this.qh_1 = 2;
             var tmp_0 = this;
-            tmp_0.d42_1 = get_jsonClient();
+            tmp_0.g42_1 = get_jsonClient();
             var tmp_1 = this;
             Companion_getInstance_2();
-            tmp_1.e42_1 = '/entry';
+            tmp_1.h42_1 = '/entry';
             var tmp_2 = this;
             var tmp0_apply = new HttpRequestBuilder();
-            url(tmp0_apply, this.e42_1);
+            url(tmp0_apply, this.h42_1);
             contentType(tmp0_apply, Application_getInstance().m1p_1);
-            var tmp0_subject = this.c42_1;
+            var tmp0_subject = this.f42_1;
             if (tmp0_subject == null) {
               tmp0_apply.v2z_1 = NullBody_getInstance();
               var tmp_3 = JsType_getInstance();
@@ -733,10 +778,10 @@
               tmp0_apply.t35(typeInfoImpl(tmp_3, tmp_4, tmp_5));
             } else {
               if (tmp0_subject instanceof OutgoingContent) {
-                tmp0_apply.v2z_1 = this.c42_1;
+                tmp0_apply.v2z_1 = this.f42_1;
                 tmp0_apply.t35(null);
               } else {
-                tmp0_apply.v2z_1 = this.c42_1;
+                tmp0_apply.v2z_1 = this.f42_1;
                 var tmp_7 = JsType_getInstance();
                 var tmp_8 = getKClass(Event);
                 var tmp_9;
@@ -755,10 +800,10 @@
               }
             }
 
-            tmp_2.f42_1 = tmp0_apply;
-            this.f42_1.t2z_1 = Companion_getInstance_1().j1v_1;
+            tmp_2.i42_1 = tmp0_apply;
+            this.i42_1.t2z_1 = Companion_getInstance_1().j1v_1;
             this.ph_1 = 1;
-            suspendResult = (new HttpStatement(this.f42_1, this.d42_1)).o3q(this);
+            suspendResult = (new HttpStatement(this.i42_1, this.g42_1)).o3q(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -783,7 +828,7 @@
   $postEventCOROUTINE$0.$metadata$ = classMeta('$postEventCOROUTINE$0', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
   function $putEventCOROUTINE$1(event, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.o42_1 = event;
+    this.r42_1 = event;
   }
   $putEventCOROUTINE$1.prototype.yh = function () {
     var suspendResult = this.rh_1;
@@ -794,15 +839,15 @@
           case 0:
             this.qh_1 = 2;
             var tmp_0 = this;
-            tmp_0.p42_1 = get_jsonClient();
+            tmp_0.s42_1 = get_jsonClient();
             var tmp_1 = this;
             Companion_getInstance_2();
-            tmp_1.q42_1 = '/entry';
+            tmp_1.t42_1 = '/entry';
             var tmp_2 = this;
             var tmp0_apply = new HttpRequestBuilder();
-            url(tmp0_apply, this.q42_1);
+            url(tmp0_apply, this.t42_1);
             contentType(tmp0_apply, Application_getInstance().m1p_1);
-            var tmp0_subject = this.o42_1;
+            var tmp0_subject = this.r42_1;
             if (tmp0_subject == null) {
               tmp0_apply.v2z_1 = NullBody_getInstance();
               var tmp_3 = JsType_getInstance();
@@ -822,10 +867,10 @@
               tmp0_apply.t35(typeInfoImpl(tmp_3, tmp_4, tmp_5));
             } else {
               if (tmp0_subject instanceof OutgoingContent) {
-                tmp0_apply.v2z_1 = this.o42_1;
+                tmp0_apply.v2z_1 = this.r42_1;
                 tmp0_apply.t35(null);
               } else {
-                tmp0_apply.v2z_1 = this.o42_1;
+                tmp0_apply.v2z_1 = this.r42_1;
                 var tmp_7 = JsType_getInstance();
                 var tmp_8 = getKClass(Event);
                 var tmp_9;
@@ -844,10 +889,10 @@
               }
             }
 
-            tmp_2.r42_1 = tmp0_apply;
-            this.r42_1.t2z_1 = Companion_getInstance_1().k1v_1;
+            tmp_2.u42_1 = tmp0_apply;
+            this.u42_1.t2z_1 = Companion_getInstance_1().k1v_1;
             this.ph_1 = 1;
-            suspendResult = (new HttpStatement(this.r42_1, this.p42_1)).o3q(this);
+            suspendResult = (new HttpStatement(this.u42_1, this.s42_1)).o3q(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -882,24 +927,24 @@
           case 0:
             this.qh_1 = 3;
             var tmp_0 = this;
-            tmp_0.a43_1 = get_jsonClient();
+            tmp_0.d43_1 = get_jsonClient();
             var tmp_1 = this;
             var tmp0_apply = new HttpRequestBuilder();
             url(tmp0_apply, '/events');
             ;
-            tmp_1.b43_1 = tmp0_apply;
-            this.b43_1.t2z_1 = Companion_getInstance_1().i1v_1;
+            tmp_1.e43_1 = tmp0_apply;
+            this.e43_1.t2z_1 = Companion_getInstance_1().i1v_1;
             this.ph_1 = 1;
-            suspendResult = (new HttpStatement(this.b43_1, this.a43_1)).o3q(this);
+            suspendResult = (new HttpStatement(this.e43_1, this.d43_1)).o3q(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.c43_1 = suspendResult;
+            this.f43_1 = suspendResult;
             this.ph_1 = 2;
-            var tmp_2 = this.c43_1.a33();
+            var tmp_2 = this.f43_1.a33();
             var tmp_3 = JsType_getInstance();
             var tmp_4 = getKClass(List);
             var tmp_5;
@@ -937,11 +982,84 @@
      while (true);
   };
   $getEntriesCOROUTINE$2.$metadata$ = classMeta('$getEntriesCOROUTINE$2', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
-  function $deleteEntryCOROUTINE$3(id, resultContinuation) {
+  function $getFilteredEntriesCOROUTINE$3(st, et, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.l43_1 = id;
+    this.o43_1 = st;
+    this.p43_1 = et;
   }
-  $deleteEntryCOROUTINE$3.prototype.yh = function () {
+  $getFilteredEntriesCOROUTINE$3.prototype.yh = function () {
+    var suspendResult = this.rh_1;
+    $sm: do
+      try {
+        var tmp = this.ph_1;
+        switch (tmp) {
+          case 0:
+            this.qh_1 = 3;
+            var tmp_0 = this;
+            tmp_0.q43_1 = get_jsonClient();
+            var tmp_1 = this;
+            var tmp0_apply = new HttpRequestBuilder();
+            url(tmp0_apply, '/events');
+            Const_getInstance();
+            parameter(tmp0_apply, 'st', this.o43_1);
+            Const_getInstance();
+            parameter(tmp0_apply, 'et', this.p43_1);
+            ;
+            tmp_1.r43_1 = tmp0_apply;
+            this.r43_1.t2z_1 = Companion_getInstance_1().i1v_1;
+            this.ph_1 = 1;
+            suspendResult = (new HttpStatement(this.r43_1, this.q43_1)).o3q(this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            this.s43_1 = suspendResult;
+            this.ph_1 = 2;
+            var tmp_2 = this.s43_1.a33();
+            var tmp_3 = JsType_getInstance();
+            var tmp_4 = getKClass(List);
+            var tmp_5;
+            try {
+              tmp_5 = createKType(getKClass(List), arrayOf([createInvariantKTypeProjection(createKType(getKClass(Event), arrayOf([]), false))]), false);
+            } catch ($p) {
+              var tmp_6;
+              if ($p instanceof Error) {
+                tmp_6 = null;
+              } else {
+                throw $p;
+              }
+              tmp_5 = tmp_6;
+            }
+
+            suspendResult = tmp_2.d32(typeInfoImpl(tmp_3, tmp_4, tmp_5), this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 2:
+            return (!(suspendResult == null) ? isInterface(suspendResult, List) : false) ? suspendResult : THROW_CCE();
+          case 3:
+            throw this.sh_1;
+        }
+      } catch ($p) {
+        if (this.qh_1 === 3) {
+          throw $p;
+        } else {
+          this.ph_1 = this.qh_1;
+          this.sh_1 = $p;
+        }
+      }
+     while (true);
+  };
+  $getFilteredEntriesCOROUTINE$3.$metadata$ = classMeta('$getFilteredEntriesCOROUTINE$3', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
+  function $deleteEntryCOROUTINE$4(id, resultContinuation) {
+    CoroutineImpl.call(this, resultContinuation);
+    this.b44_1 = id;
+  }
+  $deleteEntryCOROUTINE$4.prototype.yh = function () {
     var suspendResult = this.rh_1;
     $sm: do
       try {
@@ -950,19 +1068,19 @@
           case 0:
             this.qh_1 = 2;
             var tmp_0 = this;
-            tmp_0.m43_1 = get_jsonClient();
+            tmp_0.c44_1 = get_jsonClient();
             var tmp_1 = this;
             Companion_getInstance_2();
-            tmp_1.n43_1 = '/entry';
+            tmp_1.d44_1 = '/entry';
             var tmp_2 = this;
             var tmp0_apply = new HttpRequestBuilder();
-            url(tmp0_apply, this.n43_1);
-            parameter(tmp0_apply, 'id', this.l43_1);
+            url(tmp0_apply, this.d44_1);
+            parameter(tmp0_apply, 'id', this.b44_1);
             ;
-            tmp_2.o43_1 = tmp0_apply;
-            this.o43_1.t2z_1 = Companion_getInstance_1().m1v_1;
+            tmp_2.e44_1 = tmp0_apply;
+            this.e44_1.t2z_1 = Companion_getInstance_1().m1v_1;
             this.ph_1 = 1;
-            suspendResult = (new HttpStatement(this.o43_1, this.m43_1)).o3q(this);
+            suspendResult = (new HttpStatement(this.e44_1, this.c44_1)).o3q(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -984,12 +1102,12 @@
       }
      while (true);
   };
-  $deleteEntryCOROUTINE$3.$metadata$ = classMeta('$deleteEntryCOROUTINE$3', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
-  function $getEventTypesCOROUTINE$5(selectedEvent, resultContinuation) {
+  $deleteEntryCOROUTINE$4.$metadata$ = classMeta('$deleteEntryCOROUTINE$4', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
+  function $getEventTypesCOROUTINE$6(selectedEvent, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.x43_1 = selectedEvent;
+    this.n44_1 = selectedEvent;
   }
-  $getEventTypesCOROUTINE$5.prototype.yh = function () {
+  $getEventTypesCOROUTINE$6.prototype.yh = function () {
     var suspendResult = this.rh_1;
     $sm: do
       try {
@@ -998,27 +1116,27 @@
           case 0:
             this.qh_1 = 3;
             var tmp_0 = this;
-            tmp_0.y43_1 = get_jsonClient();
+            tmp_0.o44_1 = get_jsonClient();
             var tmp_1 = this;
             Companion_getInstance_3();
-            tmp_1.z43_1 = '/type';
+            tmp_1.p44_1 = '/type';
             var tmp_2 = this;
             var tmp0_apply = new HttpRequestBuilder();
-            url(tmp0_apply, this.z43_1);
+            url(tmp0_apply, this.p44_1);
             ;
-            tmp_2.a44_1 = tmp0_apply;
-            this.a44_1.t2z_1 = Companion_getInstance_1().i1v_1;
+            tmp_2.q44_1 = tmp0_apply;
+            this.q44_1.t2z_1 = Companion_getInstance_1().i1v_1;
             this.ph_1 = 1;
-            suspendResult = (new HttpStatement(this.a44_1, this.y43_1)).o3q(this);
+            suspendResult = (new HttpStatement(this.q44_1, this.o44_1)).o3q(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.b44_1 = suspendResult;
+            this.r44_1 = suspendResult;
             this.ph_1 = 2;
-            var tmp_3 = this.b44_1.a33();
+            var tmp_3 = this.r44_1.a33();
             var tmp_4 = JsType_getInstance();
             var tmp_5 = getKClass(List);
             var tmp_6;
@@ -1046,7 +1164,7 @@
             var tmp0_iterator = response.d();
             while (tmp0_iterator.e()) {
               var element = tmp0_iterator.f();
-              list.b(new EventType(element.h41_1, element.i41_1, this.x43_1.b41_1.l1(element.h41_1)));
+              list.b(new EventType(element.i41_1, element.j41_1, this.n44_1.c41_1.l1(element.i41_1)));
             }
 
             return list;
@@ -1063,12 +1181,12 @@
       }
      while (true);
   };
-  $getEventTypesCOROUTINE$5.$metadata$ = classMeta('$getEventTypesCOROUTINE$5', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
-  function $addTypeCOROUTINE$6(type, resultContinuation) {
+  $getEventTypesCOROUTINE$6.$metadata$ = classMeta('$getEventTypesCOROUTINE$6', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
+  function $addTypeCOROUTINE$7(type, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.k44_1 = type;
+    this.a45_1 = type;
   }
-  $addTypeCOROUTINE$6.prototype.yh = function () {
+  $addTypeCOROUTINE$7.prototype.yh = function () {
     var suspendResult = this.rh_1;
     $sm: do
       try {
@@ -1077,15 +1195,15 @@
           case 0:
             this.qh_1 = 2;
             var tmp_0 = this;
-            tmp_0.l44_1 = get_jsonClient();
+            tmp_0.b45_1 = get_jsonClient();
             var tmp_1 = this;
             Companion_getInstance_3();
-            tmp_1.m44_1 = '/type';
+            tmp_1.c45_1 = '/type';
             var tmp_2 = this;
             var tmp0_apply = new HttpRequestBuilder();
-            url(tmp0_apply, this.m44_1);
+            url(tmp0_apply, this.c45_1);
             contentType(tmp0_apply, Application_getInstance().m1p_1);
-            var tmp0_subject = this.k44_1;
+            var tmp0_subject = this.a45_1;
             if (tmp0_subject == null) {
               tmp0_apply.v2z_1 = NullBody_getInstance();
               var tmp_3 = JsType_getInstance();
@@ -1105,10 +1223,10 @@
               tmp0_apply.t35(typeInfoImpl(tmp_3, tmp_4, tmp_5));
             } else {
               if (tmp0_subject instanceof OutgoingContent) {
-                tmp0_apply.v2z_1 = this.k44_1;
+                tmp0_apply.v2z_1 = this.a45_1;
                 tmp0_apply.t35(null);
               } else {
-                tmp0_apply.v2z_1 = this.k44_1;
+                tmp0_apply.v2z_1 = this.a45_1;
                 var tmp_7 = JsType_getInstance();
                 var tmp_8 = PrimitiveClasses_getInstance().lf();
                 var tmp_9;
@@ -1127,10 +1245,10 @@
               }
             }
 
-            tmp_2.n44_1 = tmp0_apply;
-            this.n44_1.t2z_1 = Companion_getInstance_1().j1v_1;
+            tmp_2.d45_1 = tmp0_apply;
+            this.d45_1.t2z_1 = Companion_getInstance_1().j1v_1;
             this.ph_1 = 1;
-            suspendResult = (new HttpStatement(this.n44_1, this.l44_1)).o3q(this);
+            suspendResult = (new HttpStatement(this.d45_1, this.b45_1)).o3q(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -1152,12 +1270,12 @@
       }
      while (true);
   };
-  $addTypeCOROUTINE$6.$metadata$ = classMeta('$addTypeCOROUTINE$6', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
-  function $deleteTypesCOROUTINE$7(list, resultContinuation) {
+  $addTypeCOROUTINE$7.$metadata$ = classMeta('$addTypeCOROUTINE$7', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
+  function $deleteTypesCOROUTINE$8(list, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.w44_1 = list;
+    this.m45_1 = list;
   }
-  $deleteTypesCOROUTINE$7.prototype.yh = function () {
+  $deleteTypesCOROUTINE$8.prototype.yh = function () {
     var suspendResult = this.rh_1;
     $sm: do
       try {
@@ -1166,15 +1284,15 @@
           case 0:
             this.qh_1 = 2;
             var tmp_0 = this;
-            tmp_0.x44_1 = get_jsonClient();
+            tmp_0.n45_1 = get_jsonClient();
             var tmp_1 = this;
             Companion_getInstance_3();
-            tmp_1.y44_1 = '/type';
+            tmp_1.o45_1 = '/type';
             var tmp_2 = this;
             var tmp0_apply = new HttpRequestBuilder();
-            url(tmp0_apply, this.y44_1);
+            url(tmp0_apply, this.o45_1);
             contentType(tmp0_apply, Application_getInstance().m1p_1);
-            var tmp0_subject = this.w44_1;
+            var tmp0_subject = this.m45_1;
             if (tmp0_subject == null) {
               tmp0_apply.v2z_1 = NullBody_getInstance();
               var tmp_3 = JsType_getInstance();
@@ -1194,10 +1312,10 @@
               tmp0_apply.t35(typeInfoImpl(tmp_3, tmp_4, tmp_5));
             } else {
               if (tmp0_subject instanceof OutgoingContent) {
-                tmp0_apply.v2z_1 = this.w44_1;
+                tmp0_apply.v2z_1 = this.m45_1;
                 tmp0_apply.t35(null);
               } else {
-                tmp0_apply.v2z_1 = this.w44_1;
+                tmp0_apply.v2z_1 = this.m45_1;
                 var tmp_7 = JsType_getInstance();
                 var tmp_8 = getKClass(List);
                 var tmp_9;
@@ -1216,10 +1334,10 @@
               }
             }
 
-            tmp_2.z44_1 = tmp0_apply;
-            this.z44_1.t2z_1 = Companion_getInstance_1().m1v_1;
+            tmp_2.p45_1 = tmp0_apply;
+            this.p45_1.t2z_1 = Companion_getInstance_1().m1v_1;
             this.ph_1 = 1;
-            suspendResult = (new HttpStatement(this.z44_1, this.x44_1)).o3q(this);
+            suspendResult = (new HttpStatement(this.p45_1, this.n45_1)).o3q(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -1241,13 +1359,13 @@
       }
      while (true);
   };
-  $deleteTypesCOROUTINE$7.$metadata$ = classMeta('$deleteTypesCOROUTINE$7', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
-  function $addUserCOROUTINE$8(email, password, resultContinuation) {
+  $deleteTypesCOROUTINE$8.$metadata$ = classMeta('$deleteTypesCOROUTINE$8', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
+  function $addUserCOROUTINE$9(email, password, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.i45_1 = email;
-    this.j45_1 = password;
+    this.y45_1 = email;
+    this.z45_1 = password;
   }
-  $addUserCOROUTINE$8.prototype.yh = function () {
+  $addUserCOROUTINE$9.prototype.yh = function () {
     var suspendResult = this.rh_1;
     $sm: do
       try {
@@ -1256,15 +1374,15 @@
           case 0:
             this.qh_1 = 3;
             var tmp_0 = this;
-            tmp_0.k45_1 = get_jsonClient();
+            tmp_0.a46_1 = get_jsonClient();
             var tmp_1 = this;
             Companion_getInstance_4();
-            tmp_1.l45_1 = '/user';
+            tmp_1.b46_1 = '/user';
             var tmp_2 = this;
             var tmp0_apply = new HttpRequestBuilder();
-            url(tmp0_apply, this.l45_1);
+            url(tmp0_apply, this.b46_1);
             contentType(tmp0_apply, Application_getInstance().m1p_1);
-            var tmp0_setBody = new User(this.i45_1, this.j45_1);
+            var tmp0_setBody = new User(this.y45_1, this.z45_1);
             var tmp0_subject = tmp0_setBody;
             if (tmp0_subject == null) {
               tmp0_apply.v2z_1 = NullBody_getInstance();
@@ -1307,19 +1425,19 @@
               }
             }
 
-            tmp_2.m45_1 = tmp0_apply;
-            this.m45_1.t2z_1 = Companion_getInstance_1().j1v_1;
+            tmp_2.c46_1 = tmp0_apply;
+            this.c46_1.t2z_1 = Companion_getInstance_1().j1v_1;
             this.ph_1 = 1;
-            suspendResult = (new HttpStatement(this.m45_1, this.k45_1)).o3q(this);
+            suspendResult = (new HttpStatement(this.c46_1, this.a46_1)).o3q(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.n45_1 = suspendResult;
+            this.d46_1 = suspendResult;
             this.ph_1 = 2;
-            var tmp_11 = this.n45_1.a33();
+            var tmp_11 = this.d46_1.a33();
             var tmp_12 = JsType_getInstance();
             var tmp_13 = PrimitiveClasses_getInstance().lf();
             var tmp_14;
@@ -1356,13 +1474,13 @@
       }
      while (true);
   };
-  $addUserCOROUTINE$8.$metadata$ = classMeta('$addUserCOROUTINE$8', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
-  function $getUserSessionCOROUTINE$9(email, password, resultContinuation) {
+  $addUserCOROUTINE$9.$metadata$ = classMeta('$addUserCOROUTINE$9', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
+  function $getUserSessionCOROUTINE$10(email, password, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.w45_1 = email;
-    this.x45_1 = password;
+    this.m46_1 = email;
+    this.n46_1 = password;
   }
-  $getUserSessionCOROUTINE$9.prototype.yh = function () {
+  $getUserSessionCOROUTINE$10.prototype.yh = function () {
     var suspendResult = this.rh_1;
     $sm: do
       try {
@@ -1371,29 +1489,29 @@
           case 0:
             this.qh_1 = 3;
             var tmp_0 = this;
-            tmp_0.y45_1 = get_jsonClient();
+            tmp_0.o46_1 = get_jsonClient();
             var tmp_1 = this;
             Companion_getInstance_4();
-            tmp_1.z45_1 = '/user';
+            tmp_1.p46_1 = '/user';
             var tmp_2 = this;
             var tmp0_apply = new HttpRequestBuilder();
-            url(tmp0_apply, this.z45_1);
-            tmp0_apply.u2z_1.f1l('email', this.w45_1);
-            tmp0_apply.u2z_1.f1l('password', this.x45_1);
+            url(tmp0_apply, this.p46_1);
+            tmp0_apply.u2z_1.f1l('email', this.m46_1);
+            tmp0_apply.u2z_1.f1l('password', this.n46_1);
             ;
-            tmp_2.a46_1 = tmp0_apply;
-            this.a46_1.t2z_1 = Companion_getInstance_1().i1v_1;
+            tmp_2.q46_1 = tmp0_apply;
+            this.q46_1.t2z_1 = Companion_getInstance_1().i1v_1;
             this.ph_1 = 1;
-            suspendResult = (new HttpStatement(this.a46_1, this.y45_1)).o3q(this);
+            suspendResult = (new HttpStatement(this.q46_1, this.o46_1)).o3q(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.b46_1 = suspendResult;
+            this.r46_1 = suspendResult;
             this.ph_1 = 2;
-            var tmp_3 = this.b46_1.a33();
+            var tmp_3 = this.r46_1.a33();
             var tmp_4 = JsType_getInstance();
             var tmp_5 = PrimitiveClasses_getInstance().lf();
             var tmp_6;
@@ -1430,7 +1548,7 @@
       }
      while (true);
   };
-  $getUserSessionCOROUTINE$9.$metadata$ = classMeta('$getUserSessionCOROUTINE$9', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
+  $getUserSessionCOROUTINE$10.$metadata$ = classMeta('$getUserSessionCOROUTINE$10', undefined, undefined, undefined, undefined, CoroutineImpl.prototype);
   var properties_initialized_ApiClient_kt_hvyiqd;
   function init_properties_ApiClient_kt_yp1dip() {
     if (properties_initialized_ApiClient_kt_hvyiqd) {
@@ -1528,10 +1646,21 @@
       useEffectOnce(home$lambda$lambda(eventEntries$delegate, event$delegate, eventTypes$delegate));
       var tmp = get_navbar();
       $this$FC.d40(tmp, home$lambda$lambda_0);
-      var tmp_0 = get_journalForm();
+      var tmp$ret$6;
+      // Inline function 'react.dom.html.ReactHTML.div' call
+      var tmp2__get_div__e5gx5o = ReactHTML_getInstance();
+      var tmp$ret$5;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$4;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$3;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$3 = 'div';
+      tmp$ret$4 = tmp$ret$3;
+      tmp$ret$5 = tmp$ret$4;
+      tmp$ret$6 = tmp$ret$5;
+      var tmp_0 = tmp$ret$6;
       $this$FC.d40(tmp_0, home$lambda$lambda_1(eventTypes$delegate, event$delegate, eventEntries$delegate));
-      var tmp_1 = get_entryListComponent();
-      $this$FC.d40(tmp_1, home$lambda$lambda_2(eventEntries$delegate, eventTypes$delegate, event$delegate));
     }
     return Unit_getInstance();
   }
@@ -1605,9 +1734,9 @@
     return tmp$ret$0[1](value);
   }
   function home$lambda$lambda$slambda($eventEntries$delegate, $event$delegate, $eventTypes$delegate, resultContinuation) {
-    this.k46_1 = $eventEntries$delegate;
-    this.l46_1 = $event$delegate;
-    this.m46_1 = $eventTypes$delegate;
+    this.a47_1 = $eventEntries$delegate;
+    this.b47_1 = $event$delegate;
+    this.c47_1 = $eventTypes$delegate;
     CoroutineImpl.call(this, resultContinuation);
   }
   home$lambda$lambda$slambda.prototype.y1a = function ($this$launch, $cont) {
@@ -1635,10 +1764,10 @@
 
             continue $sm;
           case 1:
-            this.o46_1 = suspendResult;
-            invoke$lambda_2(this.k46_1, this.o46_1);
+            this.e47_1 = suspendResult;
+            invoke$lambda_2(this.a47_1, this.e47_1);
             this.ph_1 = 2;
-            suspendResult = getEventTypes(invoke$lambda_3(this.l46_1), this);
+            suspendResult = getEventTypes(invoke$lambda_3(this.b47_1), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -1646,7 +1775,7 @@
             continue $sm;
           case 2:
             var ARGUMENT = suspendResult;
-            invoke$lambda_0(this.m46_1, ARGUMENT);
+            invoke$lambda_0(this.c47_1, ARGUMENT);
             return Unit_getInstance();
           case 3:
             throw this.sh_1;
@@ -1662,8 +1791,8 @@
      while (true);
   };
   home$lambda$lambda$slambda.prototype.z1a = function ($this$launch, completion) {
-    var i = new home$lambda$lambda$slambda(this.k46_1, this.l46_1, this.m46_1, completion);
-    i.n46_1 = $this$launch;
+    var i = new home$lambda$lambda$slambda(this.a47_1, this.b47_1, this.c47_1, completion);
+    i.d47_1 = $this$launch;
     return i;
   };
   home$lambda$lambda$slambda.$metadata$ = classMeta('home$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
@@ -1686,22 +1815,22 @@
     init_properties_Home_kt_ssf8dh();
     return Unit_getInstance();
   }
-  function home$lambda$lambda$lambda$slambda($it, $event$delegate, $eventTypes$delegate, resultContinuation) {
-    this.x46_1 = $it;
-    this.y46_1 = $event$delegate;
-    this.z46_1 = $eventTypes$delegate;
+  function home$lambda$lambda$lambda$lambda$lambda$lambda$slambda($it, $event$delegate, $eventTypes$delegate, resultContinuation) {
+    this.n47_1 = $it;
+    this.o47_1 = $event$delegate;
+    this.p47_1 = $eventTypes$delegate;
     CoroutineImpl.call(this, resultContinuation);
   }
-  home$lambda$lambda$lambda$slambda.prototype.y1a = function ($this$launch, $cont) {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.y1a = function ($this$launch, $cont) {
     var tmp = this.z1a($this$launch, $cont);
     tmp.rh_1 = Unit_getInstance();
     tmp.sh_1 = null;
     return tmp.yh();
   };
-  home$lambda$lambda$lambda$slambda.prototype.zh = function (p1, $cont) {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.zh = function (p1, $cont) {
     return this.y1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
   };
-  home$lambda$lambda$lambda$slambda.prototype.yh = function () {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.yh = function () {
     var suspendResult = this.rh_1;
     $sm: do
       try {
@@ -1710,7 +1839,7 @@
           case 0:
             this.qh_1 = 3;
             this.ph_1 = 1;
-            suspendResult = addType(this.x46_1, this);
+            suspendResult = addType(this.n47_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -1718,7 +1847,7 @@
             continue $sm;
           case 1:
             this.ph_1 = 2;
-            suspendResult = getEventTypes(invoke$lambda_3(this.y46_1), this);
+            suspendResult = getEventTypes(invoke$lambda_3(this.o47_1), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -1726,7 +1855,7 @@
             continue $sm;
           case 2:
             var ARGUMENT = suspendResult;
-            invoke$lambda_0(this.z46_1, ARGUMENT);
+            invoke$lambda_0(this.p47_1, ARGUMENT);
             return Unit_getInstance();
           case 3:
             throw this.sh_1;
@@ -1741,42 +1870,42 @@
       }
      while (true);
   };
-  home$lambda$lambda$lambda$slambda.prototype.z1a = function ($this$launch, completion) {
-    var i = new home$lambda$lambda$lambda$slambda(this.x46_1, this.y46_1, this.z46_1, completion);
-    i.a47_1 = $this$launch;
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda.prototype.z1a = function ($this$launch, completion) {
+    var i = new home$lambda$lambda$lambda$lambda$lambda$lambda$slambda(this.n47_1, this.o47_1, this.p47_1, completion);
+    i.q47_1 = $this$launch;
     return i;
   };
-  home$lambda$lambda$lambda$slambda.$metadata$ = classMeta('home$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
-  function home$lambda$lambda$lambda$slambda_0($it, $event$delegate, $eventTypes$delegate, resultContinuation) {
-    var i = new home$lambda$lambda$lambda$slambda($it, $event$delegate, $eventTypes$delegate, resultContinuation);
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda.$metadata$ = classMeta('home$lambda$lambda$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
+  function home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_0($it, $event$delegate, $eventTypes$delegate, resultContinuation) {
+    var i = new home$lambda$lambda$lambda$lambda$lambda$lambda$slambda($it, $event$delegate, $eventTypes$delegate, resultContinuation);
     var l = function ($this$launch, $cont) {
       return i.y1a($this$launch, $cont);
     };
     l.$arity = 1;
     return l;
   }
-  function home$lambda$lambda$lambda($event$delegate, $eventTypes$delegate) {
+  function home$lambda$lambda$lambda$lambda$lambda$lambda($event$delegate, $eventTypes$delegate) {
     return function (it) {
       var tmp = get_mainScope();
-      launch$default(tmp, null, null, home$lambda$lambda$lambda$slambda_0(it, $event$delegate, $eventTypes$delegate, null), 3, null);
+      launch$default(tmp, null, null, home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_0(it, $event$delegate, $eventTypes$delegate, null), 3, null);
       return Unit_getInstance();
     };
   }
-  function home$lambda$lambda$lambda$slambda$slambda($e, $eventTypes$delegate, resultContinuation) {
-    this.j47_1 = $e;
-    this.k47_1 = $eventTypes$delegate;
+  function home$lambda$lambda$lambda$lambda$lambda$lambda$slambda$slambda($e, $eventTypes$delegate, resultContinuation) {
+    this.z47_1 = $e;
+    this.a48_1 = $eventTypes$delegate;
     CoroutineImpl.call(this, resultContinuation);
   }
-  home$lambda$lambda$lambda$slambda$slambda.prototype.y1a = function ($this$launch, $cont) {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda$slambda.prototype.y1a = function ($this$launch, $cont) {
     var tmp = this.z1a($this$launch, $cont);
     tmp.rh_1 = Unit_getInstance();
     tmp.sh_1 = null;
     return tmp.yh();
   };
-  home$lambda$lambda$lambda$slambda$slambda.prototype.zh = function (p1, $cont) {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda$slambda.prototype.zh = function (p1, $cont) {
     return this.y1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
   };
-  home$lambda$lambda$lambda$slambda$slambda.prototype.yh = function () {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda$slambda.prototype.yh = function () {
     var suspendResult = this.rh_1;
     $sm: do
       try {
@@ -1785,7 +1914,7 @@
           case 0:
             this.qh_1 = 2;
             this.ph_1 = 1;
-            suspendResult = getEventTypes(this.j47_1, this);
+            suspendResult = getEventTypes(this.z47_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -1793,7 +1922,7 @@
             continue $sm;
           case 1:
             var ARGUMENT = suspendResult;
-            invoke$lambda_0(this.k47_1, ARGUMENT);
+            invoke$lambda_0(this.a48_1, ARGUMENT);
             return Unit_getInstance();
           case 2:
             throw this.sh_1;
@@ -1808,35 +1937,35 @@
       }
      while (true);
   };
-  home$lambda$lambda$lambda$slambda$slambda.prototype.z1a = function ($this$launch, completion) {
-    var i = new home$lambda$lambda$lambda$slambda$slambda(this.j47_1, this.k47_1, completion);
-    i.l47_1 = $this$launch;
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda$slambda.prototype.z1a = function ($this$launch, completion) {
+    var i = new home$lambda$lambda$lambda$lambda$lambda$lambda$slambda$slambda(this.z47_1, this.a48_1, completion);
+    i.b48_1 = $this$launch;
     return i;
   };
-  home$lambda$lambda$lambda$slambda$slambda.$metadata$ = classMeta('home$lambda$lambda$lambda$slambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
-  function home$lambda$lambda$lambda$slambda$slambda_0($e, $eventTypes$delegate, resultContinuation) {
-    var i = new home$lambda$lambda$lambda$slambda$slambda($e, $eventTypes$delegate, resultContinuation);
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda$slambda.$metadata$ = classMeta('home$lambda$lambda$lambda$lambda$lambda$lambda$slambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
+  function home$lambda$lambda$lambda$lambda$lambda$lambda$slambda$slambda_0($e, $eventTypes$delegate, resultContinuation) {
+    var i = new home$lambda$lambda$lambda$lambda$lambda$lambda$slambda$slambda($e, $eventTypes$delegate, resultContinuation);
     var l = function ($this$launch, $cont) {
       return i.y1a($this$launch, $cont);
     };
     l.$arity = 1;
     return l;
   }
-  function home$lambda$lambda$lambda$slambda_1($event$delegate, $eventTypes$delegate, resultContinuation) {
-    this.u47_1 = $event$delegate;
-    this.v47_1 = $eventTypes$delegate;
+  function home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1($event$delegate, $eventTypes$delegate, resultContinuation) {
+    this.k48_1 = $event$delegate;
+    this.l48_1 = $eventTypes$delegate;
     CoroutineImpl.call(this, resultContinuation);
   }
-  home$lambda$lambda$lambda$slambda_1.prototype.y1a = function ($this$launch, $cont) {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype.y1a = function ($this$launch, $cont) {
     var tmp = this.z1a($this$launch, $cont);
     tmp.rh_1 = Unit_getInstance();
     tmp.sh_1 = null;
     return tmp.yh();
   };
-  home$lambda$lambda$lambda$slambda_1.prototype.zh = function (p1, $cont) {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype.zh = function (p1, $cont) {
     return this.y1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
   };
-  home$lambda$lambda$lambda$slambda_1.prototype.yh = function () {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype.yh = function () {
     var suspendResult = this.rh_1;
     $sm: do
       try {
@@ -1845,17 +1974,17 @@
           case 0:
             this.qh_1 = 2;
             this.ph_1 = 1;
-            suspendResult = deleteTypes(invoke$lambda_3(this.u47_1).b41_1, this);
+            suspendResult = deleteTypes(invoke$lambda_3(this.k48_1).c41_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            var e = new Event(invoke$lambda_3(this.u47_1).y40_1, invoke$lambda_3(this.u47_1).z40_1, invoke$lambda_3(this.u47_1).a41_1, emptyList());
-            invoke$lambda_4(this.u47_1, e);
+            var e = new Event(invoke$lambda_3(this.k48_1).z40_1, invoke$lambda_3(this.k48_1).a41_1, invoke$lambda_3(this.k48_1).b41_1, emptyList());
+            invoke$lambda_4(this.k48_1, e);
             var tmp_0 = get_mainScope();
-            launch$default(tmp_0, null, null, home$lambda$lambda$lambda$slambda$slambda_0(e, this.v47_1, null), 3, null);
+            launch$default(tmp_0, null, null, home$lambda$lambda$lambda$lambda$lambda$lambda$slambda$slambda_0(e, this.l48_1, null), 3, null);
             ;
             return Unit_getInstance();
           case 2:
@@ -1871,42 +2000,42 @@
       }
      while (true);
   };
-  home$lambda$lambda$lambda$slambda_1.prototype.z1a = function ($this$launch, completion) {
-    var i = new home$lambda$lambda$lambda$slambda_1(this.u47_1, this.v47_1, completion);
-    i.w47_1 = $this$launch;
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.prototype.z1a = function ($this$launch, completion) {
+    var i = new home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1(this.k48_1, this.l48_1, completion);
+    i.m48_1 = $this$launch;
     return i;
   };
-  home$lambda$lambda$lambda$slambda_1.$metadata$ = classMeta('home$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
-  function home$lambda$lambda$lambda$slambda_2($event$delegate, $eventTypes$delegate, resultContinuation) {
-    var i = new home$lambda$lambda$lambda$slambda_1($event$delegate, $eventTypes$delegate, resultContinuation);
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1.$metadata$ = classMeta('home$lambda$lambda$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
+  function home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_2($event$delegate, $eventTypes$delegate, resultContinuation) {
+    var i = new home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_1($event$delegate, $eventTypes$delegate, resultContinuation);
     var l = function ($this$launch, $cont) {
       return i.y1a($this$launch, $cont);
     };
     l.$arity = 1;
     return l;
   }
-  function home$lambda$lambda$lambda_0($event$delegate, $eventTypes$delegate) {
+  function home$lambda$lambda$lambda$lambda$lambda$lambda_0($event$delegate, $eventTypes$delegate) {
     return function () {
       var tmp = get_mainScope();
-      launch$default(tmp, null, null, home$lambda$lambda$lambda$slambda_2($event$delegate, $eventTypes$delegate, null), 3, null);
+      launch$default(tmp, null, null, home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_2($event$delegate, $eventTypes$delegate, null), 3, null);
       return Unit_getInstance();
     };
   }
-  function home$lambda$lambda$lambda$slambda_3($e, $eventTypes$delegate, resultContinuation) {
-    this.f48_1 = $e;
-    this.g48_1 = $eventTypes$delegate;
+  function home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3($e, $eventTypes$delegate, resultContinuation) {
+    this.v48_1 = $e;
+    this.w48_1 = $eventTypes$delegate;
     CoroutineImpl.call(this, resultContinuation);
   }
-  home$lambda$lambda$lambda$slambda_3.prototype.y1a = function ($this$launch, $cont) {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype.y1a = function ($this$launch, $cont) {
     var tmp = this.z1a($this$launch, $cont);
     tmp.rh_1 = Unit_getInstance();
     tmp.sh_1 = null;
     return tmp.yh();
   };
-  home$lambda$lambda$lambda$slambda_3.prototype.zh = function (p1, $cont) {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype.zh = function (p1, $cont) {
     return this.y1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
   };
-  home$lambda$lambda$lambda$slambda_3.prototype.yh = function () {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype.yh = function () {
     var suspendResult = this.rh_1;
     $sm: do
       try {
@@ -1915,7 +2044,7 @@
           case 0:
             this.qh_1 = 2;
             this.ph_1 = 1;
-            suspendResult = getEventTypes(this.f48_1, this);
+            suspendResult = getEventTypes(this.v48_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -1923,7 +2052,7 @@
             continue $sm;
           case 1:
             var ARGUMENT = suspendResult;
-            invoke$lambda_0(this.g48_1, ARGUMENT);
+            invoke$lambda_0(this.w48_1, ARGUMENT);
             return Unit_getInstance();
           case 2:
             throw this.sh_1;
@@ -1938,28 +2067,28 @@
       }
      while (true);
   };
-  home$lambda$lambda$lambda$slambda_3.prototype.z1a = function ($this$launch, completion) {
-    var i = new home$lambda$lambda$lambda$slambda_3(this.f48_1, this.g48_1, completion);
-    i.h48_1 = $this$launch;
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.prototype.z1a = function ($this$launch, completion) {
+    var i = new home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3(this.v48_1, this.w48_1, completion);
+    i.x48_1 = $this$launch;
     return i;
   };
-  home$lambda$lambda$lambda$slambda_3.$metadata$ = classMeta('home$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
-  function home$lambda$lambda$lambda$slambda_4($e, $eventTypes$delegate, resultContinuation) {
-    var i = new home$lambda$lambda$lambda$slambda_3($e, $eventTypes$delegate, resultContinuation);
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3.$metadata$ = classMeta('home$lambda$lambda$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
+  function home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_4($e, $eventTypes$delegate, resultContinuation) {
+    var i = new home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_3($e, $eventTypes$delegate, resultContinuation);
     var l = function ($this$launch, $cont) {
       return i.y1a($this$launch, $cont);
     };
     l.$arity = 1;
     return l;
   }
-  function home$lambda$lambda$lambda_1($event$delegate, $eventTypes$delegate) {
+  function home$lambda$lambda$lambda$lambda$lambda$lambda_1($event$delegate, $eventTypes$delegate) {
     return function (id, checked) {
       println('on check changed ' + toString(id) + ' ' + checked);
       var tmp$ret$0;
       // Inline function 'kotlin.collections.mutableListOf' call
       tmp$ret$0 = ArrayList_init_$Create$();
       var list = tmp$ret$0;
-      list.l(invoke$lambda_3($event$delegate).b41_1);
+      list.l(invoke$lambda_3($event$delegate).c41_1);
       var tmp;
       if (checked) {
         list.b(id);
@@ -1968,42 +2097,42 @@
         list.ja(id);
         tmp = Unit_getInstance();
       }
-      var e = new Event(invoke$lambda_3($event$delegate).y40_1, invoke$lambda_3($event$delegate).z40_1, invoke$lambda_3($event$delegate).a41_1, list);
+      var e = new Event(invoke$lambda_3($event$delegate).z40_1, invoke$lambda_3($event$delegate).a41_1, invoke$lambda_3($event$delegate).b41_1, list);
       invoke$lambda_4($event$delegate, e);
       var tmp_0 = get_mainScope();
-      launch$default(tmp_0, null, null, home$lambda$lambda$lambda$slambda_4(e, $eventTypes$delegate, null), 3, null);
+      launch$default(tmp_0, null, null, home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_4(e, $eventTypes$delegate, null), 3, null);
       return Unit_getInstance();
     };
   }
-  function home$lambda$lambda$lambda_2($event$delegate) {
+  function home$lambda$lambda$lambda$lambda$lambda$lambda_2($event$delegate) {
     return function (it) {
-      invoke$lambda_4($event$delegate, new Event(invoke$lambda_3($event$delegate).y40_1, invoke$lambda_3($event$delegate).z40_1, it, invoke$lambda_3($event$delegate).b41_1));
+      invoke$lambda_4($event$delegate, new Event(invoke$lambda_3($event$delegate).z40_1, invoke$lambda_3($event$delegate).a41_1, it, invoke$lambda_3($event$delegate).c41_1));
       return Unit_getInstance();
     };
   }
-  function home$lambda$lambda$lambda_3($event$delegate) {
+  function home$lambda$lambda$lambda$lambda$lambda$lambda_3($event$delegate) {
     return function (it) {
-      invoke$lambda_4($event$delegate, new Event(invoke$lambda_3($event$delegate).y40_1, it, invoke$lambda_3($event$delegate).a41_1, invoke$lambda_3($event$delegate).b41_1));
+      invoke$lambda_4($event$delegate, new Event(invoke$lambda_3($event$delegate).z40_1, it, invoke$lambda_3($event$delegate).b41_1, invoke$lambda_3($event$delegate).c41_1));
       return Unit_getInstance();
     };
   }
-  function home$lambda$lambda$lambda$slambda_5($this_invoke, $eventEntries$delegate, $event$delegate, $eventTypes$delegate, resultContinuation) {
-    this.q48_1 = $this_invoke;
-    this.r48_1 = $eventEntries$delegate;
-    this.s48_1 = $event$delegate;
-    this.t48_1 = $eventTypes$delegate;
+  function home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5($this_invoke, $eventEntries$delegate, $event$delegate, $eventTypes$delegate, resultContinuation) {
+    this.g49_1 = $this_invoke;
+    this.h49_1 = $eventEntries$delegate;
+    this.i49_1 = $event$delegate;
+    this.j49_1 = $eventTypes$delegate;
     CoroutineImpl.call(this, resultContinuation);
   }
-  home$lambda$lambda$lambda$slambda_5.prototype.y1a = function ($this$launch, $cont) {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5.prototype.y1a = function ($this$launch, $cont) {
     var tmp = this.z1a($this$launch, $cont);
     tmp.rh_1 = Unit_getInstance();
     tmp.sh_1 = null;
     return tmp.yh();
   };
-  home$lambda$lambda$lambda$slambda_5.prototype.zh = function (p1, $cont) {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5.prototype.zh = function (p1, $cont) {
     return this.y1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
   };
-  home$lambda$lambda$lambda$slambda_5.prototype.yh = function () {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5.prototype.yh = function () {
     var suspendResult = this.rh_1;
     $sm: do
       try {
@@ -2011,16 +2140,16 @@
         switch (tmp) {
           case 0:
             this.qh_1 = 7;
-            if (this.q48_1.selectedEvent.y40_1.equals(new Long(0, 0))) {
+            if (this.g49_1.selectedEvent.z40_1.equals(new Long(0, 0))) {
               this.ph_1 = 2;
-              suspendResult = postEvent(this.q48_1.selectedEvent, this);
+              suspendResult = postEvent(this.g49_1.selectedEvent, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
               continue $sm;
             } else {
               this.ph_1 = 1;
-              suspendResult = putEvent(this.q48_1.selectedEvent, this);
+              suspendResult = putEvent(this.g49_1.selectedEvent, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
@@ -2043,22 +2172,22 @@
 
             continue $sm;
           case 4:
-            this.v48_1 = suspendResult;
-            invoke$lambda_2(this.r48_1, this.v48_1);
+            this.l49_1 = suspendResult;
+            invoke$lambda_2(this.h49_1, this.l49_1);
             this.ph_1 = 5;
-            suspendResult = getEventTypes(invoke$lambda_3(this.s48_1), this);
+            suspendResult = getEventTypes(invoke$lambda_3(this.i49_1), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 5:
-            this.w48_1 = suspendResult;
-            invoke$lambda_0(this.t48_1, this.w48_1);
-            this.x48_1 = new Event(new Long(0, 0), getTimeMillis(), '', emptyList());
-            invoke$lambda_4(this.s48_1, this.x48_1);
+            this.m49_1 = suspendResult;
+            invoke$lambda_0(this.j49_1, this.m49_1);
+            this.n49_1 = new Event(new Long(0, 0), getTimeMillis(), '', emptyList());
+            invoke$lambda_4(this.i49_1, this.n49_1);
             this.ph_1 = 6;
-            suspendResult = getEventTypes(this.x48_1, this);
+            suspendResult = getEventTypes(this.n49_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -2066,7 +2195,7 @@
             continue $sm;
           case 6:
             var ARGUMENT = suspendResult;
-            invoke$lambda_0(this.t48_1, ARGUMENT);
+            invoke$lambda_0(this.j49_1, ARGUMENT);
             return Unit_getInstance();
           case 7:
             throw this.sh_1;
@@ -2081,42 +2210,42 @@
       }
      while (true);
   };
-  home$lambda$lambda$lambda$slambda_5.prototype.z1a = function ($this$launch, completion) {
-    var i = new home$lambda$lambda$lambda$slambda_5(this.q48_1, this.r48_1, this.s48_1, this.t48_1, completion);
-    i.u48_1 = $this$launch;
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5.prototype.z1a = function ($this$launch, completion) {
+    var i = new home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5(this.g49_1, this.h49_1, this.i49_1, this.j49_1, completion);
+    i.k49_1 = $this$launch;
     return i;
   };
-  home$lambda$lambda$lambda$slambda_5.$metadata$ = classMeta('home$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
-  function home$lambda$lambda$lambda$slambda_6($this_invoke, $eventEntries$delegate, $event$delegate, $eventTypes$delegate, resultContinuation) {
-    var i = new home$lambda$lambda$lambda$slambda_5($this_invoke, $eventEntries$delegate, $event$delegate, $eventTypes$delegate, resultContinuation);
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5.$metadata$ = classMeta('home$lambda$lambda$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
+  function home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_6($this_invoke, $eventEntries$delegate, $event$delegate, $eventTypes$delegate, resultContinuation) {
+    var i = new home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_5($this_invoke, $eventEntries$delegate, $event$delegate, $eventTypes$delegate, resultContinuation);
     var l = function ($this$launch, $cont) {
       return i.y1a($this$launch, $cont);
     };
     l.$arity = 1;
     return l;
   }
-  function home$lambda$lambda$lambda_4($this_invoke, $eventEntries$delegate, $event$delegate, $eventTypes$delegate) {
+  function home$lambda$lambda$lambda$lambda$lambda$lambda_4($this_invoke, $eventEntries$delegate, $event$delegate, $eventTypes$delegate) {
     return function () {
       var tmp = get_mainScope();
-      launch$default(tmp, null, null, home$lambda$lambda$lambda$slambda_6($this_invoke, $eventEntries$delegate, $event$delegate, $eventTypes$delegate, null), 3, null);
+      launch$default(tmp, null, null, home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_6($this_invoke, $eventEntries$delegate, $event$delegate, $eventTypes$delegate, null), 3, null);
       return Unit_getInstance();
     };
   }
-  function home$lambda$lambda$lambda$slambda_7($event$delegate, $eventTypes$delegate, resultContinuation) {
-    this.g49_1 = $event$delegate;
-    this.h49_1 = $eventTypes$delegate;
+  function home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_7($event$delegate, $eventTypes$delegate, resultContinuation) {
+    this.w49_1 = $event$delegate;
+    this.x49_1 = $eventTypes$delegate;
     CoroutineImpl.call(this, resultContinuation);
   }
-  home$lambda$lambda$lambda$slambda_7.prototype.y1a = function ($this$launch, $cont) {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_7.prototype.y1a = function ($this$launch, $cont) {
     var tmp = this.z1a($this$launch, $cont);
     tmp.rh_1 = Unit_getInstance();
     tmp.sh_1 = null;
     return tmp.yh();
   };
-  home$lambda$lambda$lambda$slambda_7.prototype.zh = function (p1, $cont) {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_7.prototype.zh = function (p1, $cont) {
     return this.y1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
   };
-  home$lambda$lambda$lambda$slambda_7.prototype.yh = function () {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_7.prototype.yh = function () {
     var suspendResult = this.rh_1;
     $sm: do
       try {
@@ -2124,10 +2253,10 @@
         switch (tmp) {
           case 0:
             this.qh_1 = 2;
-            this.j49_1 = new Event(new Long(0, 0), getTimeMillis(), '', emptyList());
-            invoke$lambda_4(this.g49_1, this.j49_1);
+            this.z49_1 = new Event(new Long(0, 0), getTimeMillis(), '', emptyList());
+            invoke$lambda_4(this.w49_1, this.z49_1);
             this.ph_1 = 1;
-            suspendResult = getEventTypes(this.j49_1, this);
+            suspendResult = getEventTypes(this.z49_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -2135,7 +2264,7 @@
             continue $sm;
           case 1:
             var ARGUMENT = suspendResult;
-            invoke$lambda_0(this.h49_1, ARGUMENT);
+            invoke$lambda_0(this.x49_1, ARGUMENT);
             return Unit_getInstance();
           case 2:
             throw this.sh_1;
@@ -2150,56 +2279,103 @@
       }
      while (true);
   };
-  home$lambda$lambda$lambda$slambda_7.prototype.z1a = function ($this$launch, completion) {
-    var i = new home$lambda$lambda$lambda$slambda_7(this.g49_1, this.h49_1, completion);
-    i.i49_1 = $this$launch;
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_7.prototype.z1a = function ($this$launch, completion) {
+    var i = new home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_7(this.w49_1, this.x49_1, completion);
+    i.y49_1 = $this$launch;
     return i;
   };
-  home$lambda$lambda$lambda$slambda_7.$metadata$ = classMeta('home$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
-  function home$lambda$lambda$lambda$slambda_8($event$delegate, $eventTypes$delegate, resultContinuation) {
-    var i = new home$lambda$lambda$lambda$slambda_7($event$delegate, $eventTypes$delegate, resultContinuation);
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_7.$metadata$ = classMeta('home$lambda$lambda$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
+  function home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_8($event$delegate, $eventTypes$delegate, resultContinuation) {
+    var i = new home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_7($event$delegate, $eventTypes$delegate, resultContinuation);
     var l = function ($this$launch, $cont) {
       return i.y1a($this$launch, $cont);
     };
     l.$arity = 1;
     return l;
   }
-  function home$lambda$lambda$lambda_5($event$delegate, $eventTypes$delegate) {
+  function home$lambda$lambda$lambda$lambda$lambda$lambda_5($event$delegate, $eventTypes$delegate) {
     return function () {
       var tmp = get_mainScope();
-      launch$default(tmp, null, null, home$lambda$lambda$lambda$slambda_8($event$delegate, $eventTypes$delegate, null), 3, null);
+      launch$default(tmp, null, null, home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_8($event$delegate, $eventTypes$delegate, null), 3, null);
       return Unit_getInstance();
     };
   }
-  function home$lambda$lambda_1($eventTypes$delegate, $event$delegate, $eventEntries$delegate) {
+  function home$lambda$lambda$lambda$lambda$lambda($eventTypes$delegate, $event$delegate, $eventEntries$delegate) {
     return function ($this$invoke) {
       $this$invoke.types = invoke$lambda($eventTypes$delegate);
       $this$invoke.selectedEvent = invoke$lambda_3($event$delegate);
-      $this$invoke.onTypeAdded = home$lambda$lambda$lambda($event$delegate, $eventTypes$delegate);
-      $this$invoke.onTypesDeleted = home$lambda$lambda$lambda_0($event$delegate, $eventTypes$delegate);
-      $this$invoke.onCheckChange = home$lambda$lambda$lambda_1($event$delegate, $eventTypes$delegate);
-      $this$invoke.onTextChanged = home$lambda$lambda$lambda_2($event$delegate);
-      $this$invoke.onTimestampChanged = home$lambda$lambda$lambda_3($event$delegate);
-      $this$invoke.onSaveEvent = home$lambda$lambda$lambda_4($this$invoke, $eventEntries$delegate, $event$delegate, $eventTypes$delegate);
-      $this$invoke.onNewEventClick = home$lambda$lambda$lambda_5($event$delegate, $eventTypes$delegate);
+      $this$invoke.onTypeAdded = home$lambda$lambda$lambda$lambda$lambda$lambda($event$delegate, $eventTypes$delegate);
+      $this$invoke.onTypesDeleted = home$lambda$lambda$lambda$lambda$lambda$lambda_0($event$delegate, $eventTypes$delegate);
+      $this$invoke.onCheckChange = home$lambda$lambda$lambda$lambda$lambda$lambda_1($event$delegate, $eventTypes$delegate);
+      $this$invoke.onTextChanged = home$lambda$lambda$lambda$lambda$lambda$lambda_2($event$delegate);
+      $this$invoke.onTimestampChanged = home$lambda$lambda$lambda$lambda$lambda$lambda_3($event$delegate);
+      $this$invoke.onSaveEvent = home$lambda$lambda$lambda$lambda$lambda$lambda_4($this$invoke, $eventEntries$delegate, $event$delegate, $eventTypes$delegate);
+      $this$invoke.onNewEventClick = home$lambda$lambda$lambda$lambda$lambda$lambda_5($event$delegate, $eventTypes$delegate);
       return Unit_getInstance();
     };
   }
-  function home$lambda$lambda$lambda$slambda_9($it, $eventEntries$delegate, resultContinuation) {
-    this.s49_1 = $it;
-    this.t49_1 = $eventEntries$delegate;
+  function home$lambda$lambda$lambda$lambda($eventTypes$delegate, $event$delegate, $eventEntries$delegate) {
+    return function ($this$invoke) {
+      var tmp$ret$2;
+      // Inline function 'csstype.ClassName' call
+      var tmp$ret$1;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$0 = 'col';
+      tmp$ret$1 = tmp$ret$0;
+      tmp$ret$2 = tmp$ret$1;
+      $this$invoke.className = tmp$ret$2;
+      var tmp = get_journalForm();
+      $this$invoke.d40(tmp, home$lambda$lambda$lambda$lambda$lambda($eventTypes$delegate, $event$delegate, $eventEntries$delegate));
+      return Unit_getInstance();
+    };
+  }
+  function home$lambda$lambda$lambda($eventTypes$delegate, $event$delegate, $eventEntries$delegate) {
+    return function ($this$invoke) {
+      var tmp$ret$2;
+      // Inline function 'csstype.ClassName' call
+      var tmp$ret$1;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$0 = 'row';
+      tmp$ret$1 = tmp$ret$0;
+      tmp$ret$2 = tmp$ret$1;
+      $this$invoke.className = tmp$ret$2;
+      var tmp$ret$6;
+      // Inline function 'react.dom.html.ReactHTML.div' call
+      var tmp0__get_div__2k2o9m = ReactHTML_getInstance();
+      var tmp$ret$5;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$4;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$3;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$3 = 'div';
+      tmp$ret$4 = tmp$ret$3;
+      tmp$ret$5 = tmp$ret$4;
+      tmp$ret$6 = tmp$ret$5;
+      var tmp = tmp$ret$6;
+      $this$invoke.d40(tmp, home$lambda$lambda$lambda$lambda($eventTypes$delegate, $event$delegate, $eventEntries$delegate));
+      return Unit_getInstance();
+    };
+  }
+  function home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_9($it, $eventEntries$delegate, resultContinuation) {
+    this.i4a_1 = $it;
+    this.j4a_1 = $eventEntries$delegate;
     CoroutineImpl.call(this, resultContinuation);
   }
-  home$lambda$lambda$lambda$slambda_9.prototype.y1a = function ($this$launch, $cont) {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_9.prototype.y1a = function ($this$launch, $cont) {
     var tmp = this.z1a($this$launch, $cont);
     tmp.rh_1 = Unit_getInstance();
     tmp.sh_1 = null;
     return tmp.yh();
   };
-  home$lambda$lambda$lambda$slambda_9.prototype.zh = function (p1, $cont) {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_9.prototype.zh = function (p1, $cont) {
     return this.y1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
   };
-  home$lambda$lambda$lambda$slambda_9.prototype.yh = function () {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_9.prototype.yh = function () {
     var suspendResult = this.rh_1;
     $sm: do
       try {
@@ -2208,7 +2384,7 @@
           case 0:
             this.qh_1 = 3;
             this.ph_1 = 1;
-            suspendResult = deleteEntry(this.s49_1, this);
+            suspendResult = deleteEntry(this.i4a_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -2224,7 +2400,7 @@
             continue $sm;
           case 2:
             var ARGUMENT = suspendResult;
-            invoke$lambda_2(this.t49_1, ARGUMENT);
+            invoke$lambda_2(this.j4a_1, ARGUMENT);
             return Unit_getInstance();
           case 3:
             throw this.sh_1;
@@ -2239,43 +2415,43 @@
       }
      while (true);
   };
-  home$lambda$lambda$lambda$slambda_9.prototype.z1a = function ($this$launch, completion) {
-    var i = new home$lambda$lambda$lambda$slambda_9(this.s49_1, this.t49_1, completion);
-    i.u49_1 = $this$launch;
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_9.prototype.z1a = function ($this$launch, completion) {
+    var i = new home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_9(this.i4a_1, this.j4a_1, completion);
+    i.k4a_1 = $this$launch;
     return i;
   };
-  home$lambda$lambda$lambda$slambda_9.$metadata$ = classMeta('home$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
-  function home$lambda$lambda$lambda$slambda_10($it, $eventEntries$delegate, resultContinuation) {
-    var i = new home$lambda$lambda$lambda$slambda_9($it, $eventEntries$delegate, resultContinuation);
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_9.$metadata$ = classMeta('home$lambda$lambda$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
+  function home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_10($it, $eventEntries$delegate, resultContinuation) {
+    var i = new home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_9($it, $eventEntries$delegate, resultContinuation);
     var l = function ($this$launch, $cont) {
       return i.y1a($this$launch, $cont);
     };
     l.$arity = 1;
     return l;
   }
-  function home$lambda$lambda$lambda_6($eventEntries$delegate) {
+  function home$lambda$lambda$lambda$lambda$lambda$lambda_6($eventEntries$delegate) {
     return function (it) {
       var tmp = get_mainScope();
-      launch$default(tmp, null, null, home$lambda$lambda$lambda$slambda_10(it, $eventEntries$delegate, null), 3, null);
+      launch$default(tmp, null, null, home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_10(it, $eventEntries$delegate, null), 3, null);
       return Unit_getInstance();
     };
   }
-  function home$lambda$lambda$lambda$slambda_11($it, $event$delegate, $eventTypes$delegate, resultContinuation) {
-    this.d4a_1 = $it;
-    this.e4a_1 = $event$delegate;
-    this.f4a_1 = $eventTypes$delegate;
+  function home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_11($it, $event$delegate, $eventTypes$delegate, resultContinuation) {
+    this.t4a_1 = $it;
+    this.u4a_1 = $event$delegate;
+    this.v4a_1 = $eventTypes$delegate;
     CoroutineImpl.call(this, resultContinuation);
   }
-  home$lambda$lambda$lambda$slambda_11.prototype.y1a = function ($this$launch, $cont) {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_11.prototype.y1a = function ($this$launch, $cont) {
     var tmp = this.z1a($this$launch, $cont);
     tmp.rh_1 = Unit_getInstance();
     tmp.sh_1 = null;
     return tmp.yh();
   };
-  home$lambda$lambda$lambda$slambda_11.prototype.zh = function (p1, $cont) {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_11.prototype.zh = function (p1, $cont) {
     return this.y1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
   };
-  home$lambda$lambda$lambda$slambda_11.prototype.yh = function () {
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_11.prototype.yh = function () {
     var suspendResult = this.rh_1;
     $sm: do
       try {
@@ -2283,9 +2459,9 @@
         switch (tmp) {
           case 0:
             this.qh_1 = 2;
-            invoke$lambda_4(this.e4a_1, this.d4a_1);
+            invoke$lambda_4(this.u4a_1, this.t4a_1);
             this.ph_1 = 1;
-            suspendResult = getEventTypes(this.d4a_1, this);
+            suspendResult = getEventTypes(this.t4a_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -2293,7 +2469,7 @@
             continue $sm;
           case 1:
             var ARGUMENT = suspendResult;
-            invoke$lambda_0(this.f4a_1, ARGUMENT);
+            invoke$lambda_0(this.v4a_1, ARGUMENT);
             return Unit_getInstance();
           case 2:
             throw this.sh_1;
@@ -2308,33 +2484,224 @@
       }
      while (true);
   };
-  home$lambda$lambda$lambda$slambda_11.prototype.z1a = function ($this$launch, completion) {
-    var i = new home$lambda$lambda$lambda$slambda_11(this.d4a_1, this.e4a_1, this.f4a_1, completion);
-    i.g4a_1 = $this$launch;
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_11.prototype.z1a = function ($this$launch, completion) {
+    var i = new home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_11(this.t4a_1, this.u4a_1, this.v4a_1, completion);
+    i.w4a_1 = $this$launch;
     return i;
   };
-  home$lambda$lambda$lambda$slambda_11.$metadata$ = classMeta('home$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
-  function home$lambda$lambda$lambda$slambda_12($it, $event$delegate, $eventTypes$delegate, resultContinuation) {
-    var i = new home$lambda$lambda$lambda$slambda_11($it, $event$delegate, $eventTypes$delegate, resultContinuation);
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_11.$metadata$ = classMeta('home$lambda$lambda$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
+  function home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_12($it, $event$delegate, $eventTypes$delegate, resultContinuation) {
+    var i = new home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_11($it, $event$delegate, $eventTypes$delegate, resultContinuation);
     var l = function ($this$launch, $cont) {
       return i.y1a($this$launch, $cont);
     };
     l.$arity = 1;
     return l;
   }
-  function home$lambda$lambda$lambda_7($event$delegate, $eventTypes$delegate) {
+  function home$lambda$lambda$lambda$lambda$lambda$lambda_7($event$delegate, $eventTypes$delegate) {
     return function (it) {
       var tmp = get_mainScope();
-      launch$default(tmp, null, null, home$lambda$lambda$lambda$slambda_12(it, $event$delegate, $eventTypes$delegate, null), 3, null);
+      launch$default(tmp, null, null, home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_12(it, $event$delegate, $eventTypes$delegate, null), 3, null);
       return Unit_getInstance();
     };
   }
-  function home$lambda$lambda_2($eventEntries$delegate, $eventTypes$delegate, $event$delegate) {
+  function home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_13($st, $et, $eventEntries$delegate, resultContinuation) {
+    this.f4b_1 = $st;
+    this.g4b_1 = $et;
+    this.h4b_1 = $eventEntries$delegate;
+    CoroutineImpl.call(this, resultContinuation);
+  }
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_13.prototype.y1a = function ($this$launch, $cont) {
+    var tmp = this.z1a($this$launch, $cont);
+    tmp.rh_1 = Unit_getInstance();
+    tmp.sh_1 = null;
+    return tmp.yh();
+  };
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_13.prototype.zh = function (p1, $cont) {
+    return this.y1a((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $cont);
+  };
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_13.prototype.yh = function () {
+    var suspendResult = this.rh_1;
+    $sm: do
+      try {
+        var tmp = this.ph_1;
+        switch (tmp) {
+          case 0:
+            this.qh_1 = 2;
+            this.ph_1 = 1;
+            suspendResult = getFilteredEntries(this.f4b_1, this.g4b_1, this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            var ARGUMENT = suspendResult;
+            invoke$lambda_2(this.h4b_1, ARGUMENT);
+            return Unit_getInstance();
+          case 2:
+            throw this.sh_1;
+        }
+      } catch ($p) {
+        if (this.qh_1 === 2) {
+          throw $p;
+        } else {
+          this.ph_1 = this.qh_1;
+          this.sh_1 = $p;
+        }
+      }
+     while (true);
+  };
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_13.prototype.z1a = function ($this$launch, completion) {
+    var i = new home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_13(this.f4b_1, this.g4b_1, this.h4b_1, completion);
+    i.i4b_1 = $this$launch;
+    return i;
+  };
+  home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_13.$metadata$ = classMeta('home$lambda$lambda$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
+  function home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_14($st, $et, $eventEntries$delegate, resultContinuation) {
+    var i = new home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_13($st, $et, $eventEntries$delegate, resultContinuation);
+    var l = function ($this$launch, $cont) {
+      return i.y1a($this$launch, $cont);
+    };
+    l.$arity = 1;
+    return l;
+  }
+  function home$lambda$lambda$lambda$lambda$lambda$lambda_8($eventEntries$delegate) {
+    return function (st, et) {
+      var tmp = get_mainScope();
+      launch$default(tmp, null, null, home$lambda$lambda$lambda$lambda$lambda$lambda$slambda_14(st, et, $eventEntries$delegate, null), 3, null);
+      return Unit_getInstance();
+    };
+  }
+  function home$lambda$lambda$lambda$lambda$lambda$lambda_9(st, et) {
+    init_properties_Home_kt_ssf8dh();
+    var tmp$ret$1;
+    // Inline function 'org.w3c.dom.get' call
+    var tmp0_get = sessionStorage;
+    Companion_getInstance_4();
+    var tmp1_get = 'SESSION_KEY';
+    var tmp$ret$0;
+    // Inline function 'kotlin.js.asDynamic' call
+    tmp$ret$0 = tmp0_get;
+    tmp$ret$1 = tmp$ret$0[tmp1_get];
+    var session = tmp$ret$1;
+    var tmp0_safe_receiver = session;
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      var tmp$ret$2;
+      // Inline function 'kotlin.let' call
+      // Inline function 'kotlin.contracts.contract' call
+      var tmp = window;
+      Companion_getInstance_4();
+      Const_getInstance();
+      var tmp_0 = toString(st);
+      Const_getInstance();
+      tmp.open('/export?' + 'SESSION_KEY' + '=' + session + '&' + 'st' + '=' + tmp_0 + '&' + 'et' + '=' + toString(et));
+      tmp$ret$2 = Unit_getInstance();
+    }
+    return Unit_getInstance();
+  }
+  function home$lambda$lambda$lambda$lambda$lambda_0($eventEntries$delegate, $eventTypes$delegate, $event$delegate) {
     return function ($this$invoke) {
-      $this$invoke.onDelete = home$lambda$lambda$lambda_6($eventEntries$delegate);
+      $this$invoke.onDelete = home$lambda$lambda$lambda$lambda$lambda$lambda_6($eventEntries$delegate);
       $this$invoke.types = invoke$lambda($eventTypes$delegate);
       $this$invoke.events = invoke$lambda_1($eventEntries$delegate);
-      $this$invoke.onEventClick = home$lambda$lambda$lambda_7($event$delegate, $eventTypes$delegate);
+      $this$invoke.onEventClick = home$lambda$lambda$lambda$lambda$lambda$lambda_7($event$delegate, $eventTypes$delegate);
+      $this$invoke.onFilterEvents = home$lambda$lambda$lambda$lambda$lambda$lambda_8($eventEntries$delegate);
+      $this$invoke.onExportEvents = home$lambda$lambda$lambda$lambda$lambda$lambda_9;
+      return Unit_getInstance();
+    };
+  }
+  function home$lambda$lambda$lambda$lambda_0($eventEntries$delegate, $eventTypes$delegate, $event$delegate) {
+    return function ($this$invoke) {
+      var tmp$ret$2;
+      // Inline function 'csstype.ClassName' call
+      var tmp$ret$1;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$0 = 'col';
+      tmp$ret$1 = tmp$ret$0;
+      tmp$ret$2 = tmp$ret$1;
+      $this$invoke.className = tmp$ret$2;
+      var tmp = get_entryListComponent();
+      $this$invoke.d40(tmp, home$lambda$lambda$lambda$lambda$lambda_0($eventEntries$delegate, $eventTypes$delegate, $event$delegate));
+      return Unit_getInstance();
+    };
+  }
+  function home$lambda$lambda$lambda_0($eventEntries$delegate, $eventTypes$delegate, $event$delegate) {
+    return function ($this$invoke) {
+      var tmp$ret$2;
+      // Inline function 'csstype.ClassName' call
+      var tmp$ret$1;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$0 = 'row';
+      tmp$ret$1 = tmp$ret$0;
+      tmp$ret$2 = tmp$ret$1;
+      $this$invoke.className = tmp$ret$2;
+      var tmp$ret$6;
+      // Inline function 'react.dom.html.ReactHTML.div' call
+      var tmp0__get_div__2k2o9m = ReactHTML_getInstance();
+      var tmp$ret$5;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$4;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$3;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$3 = 'div';
+      tmp$ret$4 = tmp$ret$3;
+      tmp$ret$5 = tmp$ret$4;
+      tmp$ret$6 = tmp$ret$5;
+      var tmp = tmp$ret$6;
+      $this$invoke.d40(tmp, home$lambda$lambda$lambda$lambda_0($eventEntries$delegate, $eventTypes$delegate, $event$delegate));
+      return Unit_getInstance();
+    };
+  }
+  function home$lambda$lambda_1($eventTypes$delegate, $event$delegate, $eventEntries$delegate) {
+    return function ($this$invoke) {
+      var tmp$ret$2;
+      // Inline function 'csstype.ClassName' call
+      var tmp$ret$1;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$0 = 'container div-padded';
+      tmp$ret$1 = tmp$ret$0;
+      tmp$ret$2 = tmp$ret$1;
+      $this$invoke.className = tmp$ret$2;
+      var tmp$ret$6;
+      // Inline function 'react.dom.html.ReactHTML.div' call
+      var tmp0__get_div__2k2o9m = ReactHTML_getInstance();
+      var tmp$ret$5;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$4;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$3;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$3 = 'div';
+      tmp$ret$4 = tmp$ret$3;
+      tmp$ret$5 = tmp$ret$4;
+      tmp$ret$6 = tmp$ret$5;
+      var tmp = tmp$ret$6;
+      $this$invoke.d40(tmp, home$lambda$lambda$lambda($eventTypes$delegate, $event$delegate, $eventEntries$delegate));
+      var tmp$ret$10;
+      // Inline function 'react.dom.html.ReactHTML.div' call
+      var tmp1__get_div__r5s89x = ReactHTML_getInstance();
+      var tmp$ret$9;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$8;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$7;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$7 = 'div';
+      tmp$ret$8 = tmp$ret$7;
+      tmp$ret$9 = tmp$ret$8;
+      tmp$ret$10 = tmp$ret$9;
+      var tmp_0 = tmp$ret$10;
+      $this$invoke.d40(tmp_0, home$lambda$lambda$lambda_0($eventEntries$delegate, $eventTypes$delegate, $event$delegate));
       return Unit_getInstance();
     };
   }
@@ -2580,8 +2947,8 @@
     };
   }
   function login$lambda$lambda$lambda$lambda$slambda($email$delegate, $password$delegate, resultContinuation) {
-    this.p4a_1 = $email$delegate;
-    this.q4a_1 = $password$delegate;
+    this.r4b_1 = $email$delegate;
+    this.s4b_1 = $password$delegate;
     CoroutineImpl.call(this, resultContinuation);
   }
   login$lambda$lambda$lambda$lambda$slambda.prototype.y1a = function ($this$launch, $cont) {
@@ -2602,7 +2969,7 @@
           case 0:
             this.qh_1 = 2;
             this.ph_1 = 1;
-            suspendResult = getUserSession(invoke$lambda_5(this.p4a_1), invoke$lambda_7(this.q4a_1), this);
+            suspendResult = getUserSession(invoke$lambda_5(this.r4b_1), invoke$lambda_7(this.s4b_1), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -2633,8 +3000,8 @@
      while (true);
   };
   login$lambda$lambda$lambda$lambda$slambda.prototype.z1a = function ($this$launch, completion) {
-    var i = new login$lambda$lambda$lambda$lambda$slambda(this.p4a_1, this.q4a_1, completion);
-    i.r4a_1 = $this$launch;
+    var i = new login$lambda$lambda$lambda$lambda$slambda(this.r4b_1, this.s4b_1, completion);
+    i.t4b_1 = $this$launch;
     return i;
   };
   login$lambda$lambda$lambda$lambda$slambda.$metadata$ = classMeta('login$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
@@ -2792,7 +3159,7 @@
     // Inline function 'kotlin.js.unsafeCast' call
     var tmp$ret$0;
     // Inline function 'kotlin.js.asDynamic' call
-    tmp$ret$0 = 'navbar navbar-expand-lg bg-body-tertiary';
+    tmp$ret$0 = 'navbar navbar-expand-lg navbar-dark bg-primary';
     tmp$ret$1 = tmp$ret$0;
     tmp$ret$2 = tmp$ret$1;
     $this$invoke.className = tmp$ret$2;
@@ -3266,8 +3633,8 @@
     };
   }
   function register$lambda$lambda$lambda$lambda$slambda($email$delegate, $password$delegate, resultContinuation) {
-    this.a4b_1 = $email$delegate;
-    this.b4b_1 = $password$delegate;
+    this.c4c_1 = $email$delegate;
+    this.d4c_1 = $password$delegate;
     CoroutineImpl.call(this, resultContinuation);
   }
   register$lambda$lambda$lambda$lambda$slambda.prototype.y1a = function ($this$launch, $cont) {
@@ -3288,7 +3655,7 @@
           case 0:
             this.qh_1 = 2;
             this.ph_1 = 1;
-            suspendResult = addUser(invoke$lambda_9(this.a4b_1), invoke$lambda_11(this.b4b_1), this);
+            suspendResult = addUser(invoke$lambda_9(this.c4c_1), invoke$lambda_11(this.d4c_1), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -3316,8 +3683,8 @@
      while (true);
   };
   register$lambda$lambda$lambda$lambda$slambda.prototype.z1a = function ($this$launch, completion) {
-    var i = new register$lambda$lambda$lambda$lambda$slambda(this.a4b_1, this.b4b_1, completion);
-    i.c4b_1 = $this$launch;
+    var i = new register$lambda$lambda$lambda$lambda$slambda(this.c4c_1, this.d4c_1, completion);
+    i.e4c_1 = $this$launch;
     return i;
   };
   register$lambda$lambda$lambda$lambda$slambda.$metadata$ = classMeta('register$lambda$lambda$lambda$lambda$slambda', undefined, undefined, undefined, [1], CoroutineImpl.prototype);
@@ -3473,6 +3840,16 @@
     return deleteButtonComponent;
   }
   var deleteButtonComponent;
+  function get_filterButton() {
+    init_properties_ButtonComponent_kt_hmmtm1();
+    return filterButton;
+  }
+  var filterButton;
+  function get_markdownButton() {
+    init_properties_ButtonComponent_kt_hmmtm1();
+    return markdownButton;
+  }
+  var markdownButton;
   function newButton$lambda($this$FC, props) {
     init_properties_ButtonComponent_kt_hmmtm1();
     var clickHandler = newButton$lambda$lambda(props);
@@ -3692,6 +4069,152 @@
       return Unit_getInstance();
     };
   }
+  function filterButton$lambda($this$FC, props) {
+    init_properties_ButtonComponent_kt_hmmtm1();
+    var clickHandler = filterButton$lambda$lambda(props);
+    var tmp$ret$3;
+    // Inline function 'react.dom.html.ReactHTML.a' call
+    var tmp0__get_a__f88l3e = ReactHTML_getInstance();
+    var tmp$ret$2;
+    // Inline function 'react.IntrinsicType' call
+    var tmp$ret$1;
+    // Inline function 'kotlin.js.unsafeCast' call
+    var tmp$ret$0;
+    // Inline function 'kotlin.js.asDynamic' call
+    tmp$ret$0 = 'a';
+    tmp$ret$1 = tmp$ret$0;
+    tmp$ret$2 = tmp$ret$1;
+    tmp$ret$3 = tmp$ret$2;
+    var tmp = tmp$ret$3;
+    $this$FC.d40(tmp, filterButton$lambda$lambda_0(clickHandler));
+    return Unit_getInstance();
+  }
+  function filterButton$lambda$lambda($props) {
+    return function (it) {
+      $props.onClick();
+      return Unit_getInstance();
+    };
+  }
+  function filterButton$lambda$lambda$lambda($clickHandler) {
+    return function ($this$invoke) {
+      var tmp$ret$2;
+      // Inline function 'csstype.ClassName' call
+      var tmp$ret$1;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$0 = 'fa fa-solid fa-filter fa-lg';
+      tmp$ret$1 = tmp$ret$0;
+      tmp$ret$2 = tmp$ret$1;
+      $this$invoke.className = tmp$ret$2;
+      $this$invoke.onClick = $clickHandler;
+      return Unit_getInstance();
+    };
+  }
+  function filterButton$lambda$lambda_0($clickHandler) {
+    return function ($this$invoke) {
+      var tmp$ret$2;
+      // Inline function 'csstype.ClassName' call
+      var tmp$ret$1;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$0 = 'btn';
+      tmp$ret$1 = tmp$ret$0;
+      tmp$ret$2 = tmp$ret$1;
+      $this$invoke.className = tmp$ret$2;
+      $this$invoke.href = '#';
+      var tmp$ret$6;
+      // Inline function 'react.dom.html.ReactHTML.i' call
+      var tmp0__get_i__f88laa = ReactHTML_getInstance();
+      var tmp$ret$5;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$4;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$3;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$3 = 'i';
+      tmp$ret$4 = tmp$ret$3;
+      tmp$ret$5 = tmp$ret$4;
+      tmp$ret$6 = tmp$ret$5;
+      var tmp = tmp$ret$6;
+      $this$invoke.d40(tmp, filterButton$lambda$lambda$lambda($clickHandler));
+      return Unit_getInstance();
+    };
+  }
+  function markdownButton$lambda($this$FC, props) {
+    init_properties_ButtonComponent_kt_hmmtm1();
+    var clickHandler = markdownButton$lambda$lambda(props);
+    var tmp$ret$3;
+    // Inline function 'react.dom.html.ReactHTML.a' call
+    var tmp0__get_a__f88l3e = ReactHTML_getInstance();
+    var tmp$ret$2;
+    // Inline function 'react.IntrinsicType' call
+    var tmp$ret$1;
+    // Inline function 'kotlin.js.unsafeCast' call
+    var tmp$ret$0;
+    // Inline function 'kotlin.js.asDynamic' call
+    tmp$ret$0 = 'a';
+    tmp$ret$1 = tmp$ret$0;
+    tmp$ret$2 = tmp$ret$1;
+    tmp$ret$3 = tmp$ret$2;
+    var tmp = tmp$ret$3;
+    $this$FC.d40(tmp, markdownButton$lambda$lambda_0(clickHandler));
+    return Unit_getInstance();
+  }
+  function markdownButton$lambda$lambda($props) {
+    return function (it) {
+      $props.onClick();
+      return Unit_getInstance();
+    };
+  }
+  function markdownButton$lambda$lambda$lambda($clickHandler) {
+    return function ($this$invoke) {
+      var tmp$ret$2;
+      // Inline function 'csstype.ClassName' call
+      var tmp$ret$1;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$0 = 'fa fa-solid fa-download fa-lg';
+      tmp$ret$1 = tmp$ret$0;
+      tmp$ret$2 = tmp$ret$1;
+      $this$invoke.className = tmp$ret$2;
+      $this$invoke.onClick = $clickHandler;
+      return Unit_getInstance();
+    };
+  }
+  function markdownButton$lambda$lambda_0($clickHandler) {
+    return function ($this$invoke) {
+      var tmp$ret$2;
+      // Inline function 'csstype.ClassName' call
+      var tmp$ret$1;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$0 = 'btn';
+      tmp$ret$1 = tmp$ret$0;
+      tmp$ret$2 = tmp$ret$1;
+      $this$invoke.className = tmp$ret$2;
+      $this$invoke.href = '#';
+      var tmp$ret$6;
+      // Inline function 'react.dom.html.ReactHTML.i' call
+      var tmp0__get_i__f88laa = ReactHTML_getInstance();
+      var tmp$ret$5;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$4;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$3;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$3 = 'i';
+      tmp$ret$4 = tmp$ret$3;
+      tmp$ret$5 = tmp$ret$4;
+      tmp$ret$6 = tmp$ret$5;
+      var tmp = tmp$ret$6;
+      $this$invoke.d40(tmp, markdownButton$lambda$lambda$lambda($clickHandler));
+      return Unit_getInstance();
+    };
+  }
   var properties_initialized_ButtonComponent_kt_99gb7p;
   function init_properties_ButtonComponent_kt_hmmtm1() {
     if (properties_initialized_ButtonComponent_kt_99gb7p) {
@@ -3700,6 +4223,8 @@
       newButton = FC(newButton$lambda);
       saveButtonComponent = FC(saveButtonComponent$lambda);
       deleteButtonComponent = FC(deleteButtonComponent$lambda);
+      filterButton = FC(filterButton$lambda);
+      markdownButton = FC(markdownButton$lambda);
     }
   }
   function get_eventTypeCheckboxComponent() {
@@ -3848,15 +4373,15 @@
   }
   function dateComponent$lambda$lambda($props) {
     return function (it) {
-      println((new Util()).t41(it.target.value));
-      $props.onTimestampChanged((new Util()).t41(it.target.value));
+      println((new Util()).v41(it.target.value));
+      $props.onTimestampChanged((new Util()).v41(it.target.value));
       return Unit_getInstance();
     };
   }
   function dateComponent$lambda$lambda_0($props, $changeHandler) {
     return function ($this$invoke) {
       $this$invoke.type = (/*union*/{button: 'button', checkbox: 'checkbox', color: 'color', date: 'date', datetimeLocal: 'datetime-local', email: 'email', file: 'file', hidden: 'hidden', image: 'image', month: 'month', number: 'number', password: 'password', radio: 'radio', range: 'range', reset: 'reset', search: 'search', submit: 'submit', tel: 'tel', text: 'text', time: 'time', url: 'url', week: 'week'}/*union*/).date;
-      $this$invoke.value = (new Util()).s41($props.timestamp);
+      $this$invoke.value = (new Util()).u41($props.timestamp);
       $this$invoke.onChange = $changeHandler;
       return Unit_getInstance();
     };
@@ -3901,7 +4426,7 @@
   }
   function eventEntryComponent$lambda$lambda$lambda$lambda$lambda$lambda$lambda($props) {
     return function ($this$invoke) {
-      $this$invoke.timestamp = $props.selectedEvent.z40_1;
+      $this$invoke.timestamp = $props.selectedEvent.a41_1;
       $this$invoke.onTimestampChanged = eventEntryComponent$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda($props);
       return Unit_getInstance();
     };
@@ -3928,7 +4453,7 @@
       var tmp;
       var tmp$ret$0;
       // Inline function 'kotlin.text.isNotBlank' call
-      var tmp0_isNotBlank = $props.selectedEvent.a41_1;
+      var tmp0_isNotBlank = $props.selectedEvent.b41_1;
       tmp$ret$0 = !isBlank(tmp0_isNotBlank);
       if (tmp$ret$0) {
         tmp = $props.onSaveEvent();
@@ -4087,7 +4612,7 @@
   function eventEntryComponent$lambda$lambda$lambda$lambda$lambda_0($props) {
     return function ($this$invoke) {
       $this$invoke.onChange = eventEntryComponent$lambda$lambda$lambda$lambda$lambda$lambda_2($props);
-      $this$invoke.text = $props.selectedEvent.a41_1;
+      $this$invoke.text = $props.selectedEvent.b41_1;
       $this$invoke.rows = 20;
       $this$invoke.cols = 50;
       return Unit_getInstance();
@@ -4200,21 +4725,23 @@
   var entryListComponent;
   function entryListComponent$lambda($this$FC, props) {
     init_properties_EventTableComponent_kt_f0ctth();
+    var startTime$delegate = useState((new Util()).w41());
+    var endTime$delegate = useState(getTimeMillis());
     var tmp$ret$3;
-    // Inline function 'react.dom.html.ReactHTML.h4' call
-    var tmp0__get_h4__p4e2wr = ReactHTML_getInstance();
+    // Inline function 'react.dom.html.ReactHTML.table' call
+    var tmp0__get_table__krka6b = ReactHTML_getInstance();
     var tmp$ret$2;
     // Inline function 'react.IntrinsicType' call
     var tmp$ret$1;
     // Inline function 'kotlin.js.unsafeCast' call
     var tmp$ret$0;
     // Inline function 'kotlin.js.asDynamic' call
-    tmp$ret$0 = 'h4';
+    tmp$ret$0 = 'table';
     tmp$ret$1 = tmp$ret$0;
     tmp$ret$2 = tmp$ret$1;
     tmp$ret$3 = tmp$ret$2;
     var tmp = tmp$ret$3;
-    $this$FC.d40(tmp, entryListComponent$lambda$lambda);
+    $this$FC.d40(tmp, entryListComponent$lambda$lambda(startTime$delegate, endTime$delegate, props));
     var tmp$ret$7;
     // Inline function 'react.dom.html.ReactHTML.table' call
     var tmp1__get_table__pm8xdu = ReactHTML_getInstance();
@@ -4232,45 +4759,309 @@
     $this$FC.d40(tmp_0, entryListComponent$lambda$lambda_0(props));
     return Unit_getInstance();
   }
-  function entryListComponent$lambda$lambda($this$invoke) {
+  function invoke$lambda_15($startTime$delegate) {
     init_properties_EventTableComponent_kt_f0ctth();
-    $this$invoke.c40('Entries');
-    return Unit_getInstance();
+    var tmp$ret$1;
+    // Inline function 'react.StateInstance.getValue' call
+    var tmp0_getValue = getLocalDelegateReference('startTime', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    var tmp$ret$0;
+    // Inline function 'kotlin.js.asDynamic' call
+    tmp$ret$0 = $startTime$delegate;
+    tmp$ret$1 = tmp$ret$0[0];
+    return tmp$ret$1;
   }
-  function entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda($element, $props) {
+  function invoke$lambda_16($startTime$delegate, value) {
+    init_properties_EventTableComponent_kt_f0ctth();
+    var tmp0_setValue = getLocalDelegateReference('startTime', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    var tmp$ret$0;
+    // Inline function 'kotlin.js.asDynamic' call
+    tmp$ret$0 = $startTime$delegate;
+    return tmp$ret$0[1](value);
+  }
+  function invoke$lambda_17($endTime$delegate) {
+    init_properties_EventTableComponent_kt_f0ctth();
+    var tmp$ret$1;
+    // Inline function 'react.StateInstance.getValue' call
+    var tmp0_getValue = getLocalDelegateReference('endTime', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    var tmp$ret$0;
+    // Inline function 'kotlin.js.asDynamic' call
+    tmp$ret$0 = $endTime$delegate;
+    tmp$ret$1 = tmp$ret$0[0];
+    return tmp$ret$1;
+  }
+  function invoke$lambda_18($endTime$delegate, value) {
+    init_properties_EventTableComponent_kt_f0ctth();
+    var tmp0_setValue = getLocalDelegateReference('endTime', KMutableProperty0, true, function () {
+      return THROW_ISE();
+    });
+    var tmp$ret$0;
+    // Inline function 'kotlin.js.asDynamic' call
+    tmp$ret$0 = $endTime$delegate;
+    return tmp$ret$0[1](value);
+  }
+  function entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda($startTime$delegate) {
+    return function (it) {
+      invoke$lambda_16($startTime$delegate, it);
+      return Unit_getInstance();
+    };
+  }
+  function entryListComponent$lambda$lambda$lambda$lambda$lambda($startTime$delegate) {
     return function ($this$invoke) {
-      $this$invoke.id = $element.y40_1;
+      $this$invoke.timestamp = invoke$lambda_15($startTime$delegate);
+      $this$invoke.onTimestampChanged = entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda($startTime$delegate);
+      return Unit_getInstance();
+    };
+  }
+  function entryListComponent$lambda$lambda$lambda$lambda($startTime$delegate) {
+    return function ($this$invoke) {
+      var tmp$ret$2;
+      // Inline function 'csstype.ClassName' call
+      var tmp$ret$1;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$0 = 'td-datepicker';
+      tmp$ret$1 = tmp$ret$0;
+      tmp$ret$2 = tmp$ret$1;
+      $this$invoke.className = tmp$ret$2;
+      var tmp = get_dateComponent();
+      $this$invoke.d40(tmp, entryListComponent$lambda$lambda$lambda$lambda$lambda($startTime$delegate));
+      return Unit_getInstance();
+    };
+  }
+  function entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_0($endTime$delegate) {
+    return function (it) {
+      invoke$lambda_18($endTime$delegate, it);
+      return Unit_getInstance();
+    };
+  }
+  function entryListComponent$lambda$lambda$lambda$lambda$lambda_0($endTime$delegate) {
+    return function ($this$invoke) {
+      $this$invoke.timestamp = invoke$lambda_17($endTime$delegate);
+      $this$invoke.onTimestampChanged = entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_0($endTime$delegate);
+      return Unit_getInstance();
+    };
+  }
+  function entryListComponent$lambda$lambda$lambda$lambda_0($endTime$delegate) {
+    return function ($this$invoke) {
+      var tmp$ret$2;
+      // Inline function 'csstype.ClassName' call
+      var tmp$ret$1;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$0 = 'td-datepicker';
+      tmp$ret$1 = tmp$ret$0;
+      tmp$ret$2 = tmp$ret$1;
+      $this$invoke.className = tmp$ret$2;
+      var tmp = get_dateComponent();
+      $this$invoke.d40(tmp, entryListComponent$lambda$lambda$lambda$lambda$lambda_0($endTime$delegate));
+      return Unit_getInstance();
+    };
+  }
+  function entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_1($props, $startTime$delegate, $endTime$delegate) {
+    return function () {
+      $props.onFilterEvents(invoke$lambda_15($startTime$delegate), invoke$lambda_17($endTime$delegate));
+      return Unit_getInstance();
+    };
+  }
+  function entryListComponent$lambda$lambda$lambda$lambda$lambda_1($props, $startTime$delegate, $endTime$delegate) {
+    return function ($this$invoke) {
+      $this$invoke.onClick = entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_1($props, $startTime$delegate, $endTime$delegate);
+      return Unit_getInstance();
+    };
+  }
+  function entryListComponent$lambda$lambda$lambda$lambda_1($props, $startTime$delegate, $endTime$delegate) {
+    return function ($this$invoke) {
+      var tmp = get_filterButton();
+      $this$invoke.d40(tmp, entryListComponent$lambda$lambda$lambda$lambda$lambda_1($props, $startTime$delegate, $endTime$delegate));
+      return Unit_getInstance();
+    };
+  }
+  function entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_2($props, $startTime$delegate, $endTime$delegate) {
+    return function () {
+      $props.onExportEvents(invoke$lambda_15($startTime$delegate), invoke$lambda_17($endTime$delegate));
+      return Unit_getInstance();
+    };
+  }
+  function entryListComponent$lambda$lambda$lambda$lambda$lambda_2($props, $startTime$delegate, $endTime$delegate) {
+    return function ($this$invoke) {
+      $this$invoke.onClick = entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_2($props, $startTime$delegate, $endTime$delegate);
+      return Unit_getInstance();
+    };
+  }
+  function entryListComponent$lambda$lambda$lambda$lambda_2($props, $startTime$delegate, $endTime$delegate) {
+    return function ($this$invoke) {
+      var tmp = get_markdownButton();
+      $this$invoke.d40(tmp, entryListComponent$lambda$lambda$lambda$lambda$lambda_2($props, $startTime$delegate, $endTime$delegate));
+      return Unit_getInstance();
+    };
+  }
+  function entryListComponent$lambda$lambda$lambda($startTime$delegate, $endTime$delegate, $props) {
+    return function ($this$invoke) {
+      var tmp$ret$3;
+      // Inline function 'react.dom.html.ReactHTML.td' call
+      var tmp0__get_td__p4dsv3 = ReactHTML_getInstance();
+      var tmp$ret$2;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$1;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$0 = 'td';
+      tmp$ret$1 = tmp$ret$0;
+      tmp$ret$2 = tmp$ret$1;
+      tmp$ret$3 = tmp$ret$2;
+      var tmp = tmp$ret$3;
+      $this$invoke.d40(tmp, entryListComponent$lambda$lambda$lambda$lambda($startTime$delegate));
+      var tmp$ret$7;
+      // Inline function 'react.dom.html.ReactHTML.td' call
+      var tmp1__get_td__sddrnk = ReactHTML_getInstance();
+      var tmp$ret$6;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$5;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$4;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$4 = 'td';
+      tmp$ret$5 = tmp$ret$4;
+      tmp$ret$6 = tmp$ret$5;
+      tmp$ret$7 = tmp$ret$6;
+      var tmp_0 = tmp$ret$7;
+      $this$invoke.d40(tmp_0, entryListComponent$lambda$lambda$lambda$lambda_0($endTime$delegate));
+      var tmp$ret$11;
+      // Inline function 'react.dom.html.ReactHTML.td' call
+      var tmp2__get_td__vmdqg1 = ReactHTML_getInstance();
+      var tmp$ret$10;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$9;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$8;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$8 = 'td';
+      tmp$ret$9 = tmp$ret$8;
+      tmp$ret$10 = tmp$ret$9;
+      tmp$ret$11 = tmp$ret$10;
+      var tmp_1 = tmp$ret$11;
+      $this$invoke.d40(tmp_1, entryListComponent$lambda$lambda$lambda$lambda_1($props, $startTime$delegate, $endTime$delegate));
+      var tmp$ret$15;
+      // Inline function 'react.dom.html.ReactHTML.td' call
+      var tmp3__get_td__yvdp8i = ReactHTML_getInstance();
+      var tmp$ret$14;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$13;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$12;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$12 = 'td';
+      tmp$ret$13 = tmp$ret$12;
+      tmp$ret$14 = tmp$ret$13;
+      tmp$ret$15 = tmp$ret$14;
+      var tmp_2 = tmp$ret$15;
+      $this$invoke.d40(tmp_2, entryListComponent$lambda$lambda$lambda$lambda_2($props, $startTime$delegate, $endTime$delegate));
+      return Unit_getInstance();
+    };
+  }
+  function entryListComponent$lambda$lambda($startTime$delegate, $endTime$delegate, $props) {
+    return function ($this$invoke) {
+      var tmp$ret$2;
+      // Inline function 'csstype.ClassName' call
+      var tmp$ret$1;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$0 = 'table-datepicker';
+      tmp$ret$1 = tmp$ret$0;
+      tmp$ret$2 = tmp$ret$1;
+      $this$invoke.className = tmp$ret$2;
+      var tmp$ret$6;
+      // Inline function 'react.dom.html.ReactHTML.tr' call
+      var tmp0__get_tr__p4dsj1 = ReactHTML_getInstance();
+      var tmp$ret$5;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$4;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$3;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$3 = 'tr';
+      tmp$ret$4 = tmp$ret$3;
+      tmp$ret$5 = tmp$ret$4;
+      tmp$ret$6 = tmp$ret$5;
+      var tmp = tmp$ret$6;
+      $this$invoke.d40(tmp, entryListComponent$lambda$lambda$lambda($startTime$delegate, $endTime$delegate, $props));
+      return Unit_getInstance();
+    };
+  }
+  function entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_3($element, $props) {
+    return function ($this$invoke) {
+      $this$invoke.id = $element.z40_1;
       $this$invoke.onDelete = $props.onDelete;
       return Unit_getInstance();
     };
   }
-  function entryListComponent$lambda$lambda$lambda$lambda$lambda($element, $props) {
+  function entryListComponent$lambda$lambda$lambda$lambda$lambda_3($element, $props) {
     return function ($this$invoke) {
       var tmp = get_deleteButtonComponent();
-      $this$invoke.d40(tmp, entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda($element, $props));
+      $this$invoke.d40(tmp, entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_3($element, $props));
       return Unit_getInstance();
     };
   }
-  function entryListComponent$lambda$lambda$lambda$lambda$lambda_0($element) {
+  function entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_4($element) {
     return function ($this$invoke) {
-      var d = new Date($element.z40_1);
+      var tmp$ret$2;
+      // Inline function 'csstype.ClassName' call
+      var tmp$ret$1;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$0 = 'text-nowrap';
+      tmp$ret$1 = tmp$ret$0;
+      tmp$ret$2 = tmp$ret$1;
+      $this$invoke.className = tmp$ret$2;
+      var d = new Date($element.a41_1);
       $this$invoke.c40(d.toDateString());
       return Unit_getInstance();
     };
   }
-  function entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_0($element) {
+  function entryListComponent$lambda$lambda$lambda$lambda$lambda_4($element) {
     return function ($this$invoke) {
-      $this$invoke.c40($element.a41_1);
+      var tmp$ret$3;
+      // Inline function 'react.dom.html.ReactHTML.span' call
+      var tmp0__get_span__8hjtqf = ReactHTML_getInstance();
+      var tmp$ret$2;
+      // Inline function 'react.IntrinsicType' call
+      var tmp$ret$1;
+      // Inline function 'kotlin.js.unsafeCast' call
+      var tmp$ret$0;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp$ret$0 = 'span';
+      tmp$ret$1 = tmp$ret$0;
+      tmp$ret$2 = tmp$ret$1;
+      tmp$ret$3 = tmp$ret$2;
+      var tmp = tmp$ret$3;
+      $this$invoke.d40(tmp, entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_4($element));
       return Unit_getInstance();
     };
   }
-  function entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_1($props, $element) {
+  function entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_5($element) {
+    return function ($this$invoke) {
+      $this$invoke.c40($element.b41_1);
+      return Unit_getInstance();
+    };
+  }
+  function entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_6($props, $element) {
     return function (it) {
       $props.onEventClick($element);
       return Unit_getInstance();
     };
   }
-  function entryListComponent$lambda$lambda$lambda$lambda$lambda_1($element, $props) {
+  function entryListComponent$lambda$lambda$lambda$lambda$lambda_5($element, $props) {
     return function ($this$invoke) {
       var tmp$ret$3;
       // Inline function 'react.dom.html.ReactHTML.div' call
@@ -4286,15 +5077,15 @@
       tmp$ret$2 = tmp$ret$1;
       tmp$ret$3 = tmp$ret$2;
       var tmp = tmp$ret$3;
-      $this$invoke.d40(tmp, entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_0($element));
-      $this$invoke.onClick = entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_1($props, $element);
+      $this$invoke.d40(tmp, entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_5($element));
+      $this$invoke.onClick = entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_6($props, $element);
       return Unit_getInstance();
     };
   }
   function entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda($tmp1_let) {
     return function ($this$invoke) {
       var tmp0_safe_receiver = $tmp1_let;
-      var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.i41_1;
+      var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.j41_1;
       var e = tmp1_elvis_lhs == null ? '' : tmp1_elvis_lhs;
       $this$invoke.c40(e);
       return Unit_getInstance();
@@ -4320,9 +5111,9 @@
       return Unit_getInstance();
     };
   }
-  function entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_2($element, $props) {
+  function entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_7($element, $props) {
     return function ($this$invoke) {
-      var tmp0_forEach = $element.b41_1;
+      var tmp0_forEach = $element.c41_1;
       var tmp0_iterator = tmp0_forEach.d();
       while (tmp0_iterator.e()) {
         var element = tmp0_iterator.f();
@@ -4340,7 +5131,7 @@
             var element_0 = tmp0_iterator_0.f();
             var tmp$ret$0;
             // Inline function 'component.entryListComponent.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-            tmp$ret$0 = element_0.h41_1.equals(element);
+            tmp$ret$0 = element_0.i41_1.equals(element);
             if (tmp$ret$0) {
               tmp$ret$1 = element_0;
               break $l$block;
@@ -4371,7 +5162,7 @@
       return Unit_getInstance();
     };
   }
-  function entryListComponent$lambda$lambda$lambda$lambda$lambda_2($element, $props) {
+  function entryListComponent$lambda$lambda$lambda$lambda$lambda_6($element, $props) {
     return function ($this$invoke) {
       var tmp$ret$3;
       // Inline function 'react.dom.html.ReactHTML.ul' call
@@ -4387,11 +5178,11 @@
       tmp$ret$2 = tmp$ret$1;
       tmp$ret$3 = tmp$ret$2;
       var tmp = tmp$ret$3;
-      $this$invoke.d40(tmp, entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_2($element, $props));
+      $this$invoke.d40(tmp, entryListComponent$lambda$lambda$lambda$lambda$lambda$lambda_7($element, $props));
       return Unit_getInstance();
     };
   }
-  function entryListComponent$lambda$lambda$lambda$lambda($element, $props) {
+  function entryListComponent$lambda$lambda$lambda$lambda_3($element, $props) {
     return function ($this$invoke) {
       var tmp$ret$3;
       // Inline function 'react.dom.html.ReactHTML.td' call
@@ -4407,7 +5198,7 @@
       tmp$ret$2 = tmp$ret$1;
       tmp$ret$3 = tmp$ret$2;
       var tmp = tmp$ret$3;
-      $this$invoke.d40(tmp, entryListComponent$lambda$lambda$lambda$lambda$lambda($element, $props));
+      $this$invoke.d40(tmp, entryListComponent$lambda$lambda$lambda$lambda$lambda_3($element, $props));
       var tmp$ret$7;
       // Inline function 'react.dom.html.ReactHTML.td' call
       var tmp1__get_td__sddrnk = ReactHTML_getInstance();
@@ -4422,7 +5213,7 @@
       tmp$ret$6 = tmp$ret$5;
       tmp$ret$7 = tmp$ret$6;
       var tmp_0 = tmp$ret$7;
-      $this$invoke.d40(tmp_0, entryListComponent$lambda$lambda$lambda$lambda$lambda_0($element));
+      $this$invoke.d40(tmp_0, entryListComponent$lambda$lambda$lambda$lambda$lambda_4($element));
       var tmp$ret$11;
       // Inline function 'react.dom.html.ReactHTML.td' call
       var tmp2__get_td__vmdqg1 = ReactHTML_getInstance();
@@ -4437,7 +5228,7 @@
       tmp$ret$10 = tmp$ret$9;
       tmp$ret$11 = tmp$ret$10;
       var tmp_1 = tmp$ret$11;
-      $this$invoke.d40(tmp_1, entryListComponent$lambda$lambda$lambda$lambda$lambda_1($element, $props));
+      $this$invoke.d40(tmp_1, entryListComponent$lambda$lambda$lambda$lambda$lambda_5($element, $props));
       var tmp$ret$15;
       // Inline function 'react.dom.html.ReactHTML.td' call
       var tmp3__get_td__yvdp8i = ReactHTML_getInstance();
@@ -4452,11 +5243,11 @@
       tmp$ret$14 = tmp$ret$13;
       tmp$ret$15 = tmp$ret$14;
       var tmp_2 = tmp$ret$15;
-      $this$invoke.d40(tmp_2, entryListComponent$lambda$lambda$lambda$lambda$lambda_2($element, $props));
+      $this$invoke.d40(tmp_2, entryListComponent$lambda$lambda$lambda$lambda$lambda_6($element, $props));
       return Unit_getInstance();
     };
   }
-  function entryListComponent$lambda$lambda$lambda($props) {
+  function entryListComponent$lambda$lambda$lambda_0($props) {
     return function ($this$invoke) {
       var tmp0_forEach = $props.events;
       var tmp0_iterator = tmp0_forEach.d();
@@ -4477,7 +5268,7 @@
         tmp$ret$2 = tmp$ret$1;
         tmp$ret$3 = tmp$ret$2;
         var tmp = tmp$ret$3;
-        $this$invoke.d40(tmp, entryListComponent$lambda$lambda$lambda$lambda(element, $props));
+        $this$invoke.d40(tmp, entryListComponent$lambda$lambda$lambda$lambda_3(element, $props));
       }
       return Unit_getInstance();
     };
@@ -4490,7 +5281,7 @@
       // Inline function 'kotlin.js.unsafeCast' call
       var tmp$ret$0;
       // Inline function 'kotlin.js.asDynamic' call
-      tmp$ret$0 = 'table table-hover table-bordered';
+      tmp$ret$0 = 'table table-hover table-bordered styled-table';
       tmp$ret$1 = tmp$ret$0;
       tmp$ret$2 = tmp$ret$1;
       $this$invoke.className = tmp$ret$2;
@@ -4508,7 +5299,7 @@
       tmp$ret$5 = tmp$ret$4;
       tmp$ret$6 = tmp$ret$5;
       var tmp = tmp$ret$6;
-      $this$invoke.d40(tmp, entryListComponent$lambda$lambda$lambda($props));
+      $this$invoke.d40(tmp, entryListComponent$lambda$lambda$lambda_0($props));
       return Unit_getInstance();
     };
   }
@@ -4527,7 +5318,7 @@
   var eventTypeComponent;
   function eventTypeComponent$lambda($this$FC, props) {
     init_properties_EventTypeComponent_kt_mdizvz();
-    var newLabelText$delegate = useState('');
+    var newEventTypeText$delegate = useState('');
     var tmp$ret$3;
     // Inline function 'react.dom.html.ReactHTML.div' call
     var tmp0__get_div__2k2o9m = ReactHTML_getInstance();
@@ -4542,50 +5333,50 @@
     tmp$ret$2 = tmp$ret$1;
     tmp$ret$3 = tmp$ret$2;
     var tmp = tmp$ret$3;
-    $this$FC.d40(tmp, eventTypeComponent$lambda$lambda(props, newLabelText$delegate));
+    $this$FC.d40(tmp, eventTypeComponent$lambda$lambda(props, newEventTypeText$delegate));
     return Unit_getInstance();
   }
-  function invoke$lambda_15($newLabelText$delegate) {
+  function invoke$lambda_19($newEventTypeText$delegate) {
     init_properties_EventTypeComponent_kt_mdizvz();
     var tmp$ret$1;
     // Inline function 'react.StateInstance.getValue' call
-    var tmp0_getValue = getLocalDelegateReference('newLabelText', KMutableProperty0, true, function () {
+    var tmp0_getValue = getLocalDelegateReference('newEventTypeText', KMutableProperty0, true, function () {
       return THROW_ISE();
     });
     var tmp$ret$0;
     // Inline function 'kotlin.js.asDynamic' call
-    tmp$ret$0 = $newLabelText$delegate;
+    tmp$ret$0 = $newEventTypeText$delegate;
     tmp$ret$1 = tmp$ret$0[0];
     return tmp$ret$1;
   }
-  function invoke$lambda_16($newLabelText$delegate, value) {
+  function invoke$lambda_20($newEventTypeText$delegate, value) {
     init_properties_EventTypeComponent_kt_mdizvz();
-    var tmp0_setValue = getLocalDelegateReference('newLabelText', KMutableProperty0, true, function () {
+    var tmp0_setValue = getLocalDelegateReference('newEventTypeText', KMutableProperty0, true, function () {
       return THROW_ISE();
     });
     var tmp$ret$0;
     // Inline function 'kotlin.js.asDynamic' call
-    tmp$ret$0 = $newLabelText$delegate;
+    tmp$ret$0 = $newEventTypeText$delegate;
     return tmp$ret$0[1](value);
   }
-  function eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda$lambda($props, $newLabelText$delegate) {
+  function eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda$lambda($props, $newEventTypeText$delegate) {
     return function () {
       var tmp;
       var tmp$ret$0;
       // Inline function 'kotlin.text.isNotEmpty' call
-      var tmp0_isNotEmpty = invoke$lambda_15($newLabelText$delegate);
+      var tmp0_isNotEmpty = invoke$lambda_19($newEventTypeText$delegate);
       tmp$ret$0 = charSequenceLength(tmp0_isNotEmpty) > 0;
       if (tmp$ret$0) {
-        $props.onTypeAdded(invoke$lambda_15($newLabelText$delegate));
-        invoke$lambda_16($newLabelText$delegate, '');
+        $props.onTypeAdded(invoke$lambda_19($newEventTypeText$delegate));
+        invoke$lambda_20($newEventTypeText$delegate, '');
         tmp = Unit_getInstance();
       }
       return Unit_getInstance();
     };
   }
-  function eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda($props, $newLabelText$delegate) {
+  function eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda($props, $newEventTypeText$delegate) {
     return function ($this$invoke) {
-      $this$invoke.onSubmit = eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda$lambda($props, $newLabelText$delegate);
+      $this$invoke.onSubmit = eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda$lambda($props, $newEventTypeText$delegate);
       return Unit_getInstance();
     };
   }
@@ -4607,16 +5398,16 @@
       return Unit_getInstance();
     };
   }
-  function eventTypeComponent$lambda$lambda$lambda$lambda$lambda($props, $newLabelText$delegate) {
+  function eventTypeComponent$lambda$lambda$lambda$lambda$lambda($props, $newEventTypeText$delegate) {
     return function ($this$invoke) {
       var tmp = get_newButton();
-      $this$invoke.d40(tmp, eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda($props, $newLabelText$delegate));
+      $this$invoke.d40(tmp, eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda($props, $newEventTypeText$delegate));
       var tmp_0 = get_deleteButtonComponent();
       $this$invoke.d40(tmp_0, eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda_0($props));
       return Unit_getInstance();
     };
   }
-  function eventTypeComponent$lambda$lambda$lambda$lambda($props, $newLabelText$delegate) {
+  function eventTypeComponent$lambda$lambda$lambda$lambda($props, $newEventTypeText$delegate) {
     return function ($this$invoke) {
       var tmp$ret$3;
       // Inline function 'react.dom.html.ReactHTML.div' call
@@ -4632,26 +5423,26 @@
       tmp$ret$2 = tmp$ret$1;
       tmp$ret$3 = tmp$ret$2;
       var tmp = tmp$ret$3;
-      $this$invoke.d40(tmp, eventTypeComponent$lambda$lambda$lambda$lambda$lambda($props, $newLabelText$delegate));
+      $this$invoke.d40(tmp, eventTypeComponent$lambda$lambda$lambda$lambda$lambda($props, $newEventTypeText$delegate));
       return Unit_getInstance();
     };
   }
-  function eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda($newLabelText$delegate) {
+  function eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda($newEventTypeText$delegate) {
     return function (it) {
-      invoke$lambda_16($newLabelText$delegate, it);
+      invoke$lambda_20($newEventTypeText$delegate, it);
       return Unit_getInstance();
     };
   }
-  function eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1($newLabelText$delegate) {
+  function eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1($newEventTypeText$delegate) {
     return function ($this$invoke) {
-      $this$invoke.text = invoke$lambda_15($newLabelText$delegate);
+      $this$invoke.text = invoke$lambda_19($newEventTypeText$delegate);
       $this$invoke.rows = 1;
       $this$invoke.cols = 20;
-      $this$invoke.onChange = eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda($newLabelText$delegate);
+      $this$invoke.onChange = eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda($newEventTypeText$delegate);
       return Unit_getInstance();
     };
   }
-  function eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda_1($newLabelText$delegate) {
+  function eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda_1($newEventTypeText$delegate) {
     return function ($this$invoke) {
       var tmp$ret$2;
       // Inline function 'csstype.ClassName' call
@@ -4664,11 +5455,11 @@
       tmp$ret$2 = tmp$ret$1;
       $this$invoke.className = tmp$ret$2;
       var tmp = get_inputComponent();
-      $this$invoke.d40(tmp, eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1($newLabelText$delegate));
+      $this$invoke.d40(tmp, eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1($newEventTypeText$delegate));
       return Unit_getInstance();
     };
   }
-  function eventTypeComponent$lambda$lambda$lambda$lambda$lambda_0($newLabelText$delegate) {
+  function eventTypeComponent$lambda$lambda$lambda$lambda$lambda_0($newEventTypeText$delegate) {
     return function ($this$invoke) {
       var tmp$ret$3;
       // Inline function 'react.dom.html.ReactHTML.div' call
@@ -4684,11 +5475,11 @@
       tmp$ret$2 = tmp$ret$1;
       tmp$ret$3 = tmp$ret$2;
       var tmp = tmp$ret$3;
-      $this$invoke.d40(tmp, eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda_1($newLabelText$delegate));
+      $this$invoke.d40(tmp, eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda_1($newEventTypeText$delegate));
       return Unit_getInstance();
     };
   }
-  function eventTypeComponent$lambda$lambda$lambda$lambda_0($newLabelText$delegate) {
+  function eventTypeComponent$lambda$lambda$lambda$lambda_0($newEventTypeText$delegate) {
     return function ($this$invoke) {
       var tmp$ret$3;
       // Inline function 'react.dom.html.ReactHTML.td' call
@@ -4704,21 +5495,21 @@
       tmp$ret$2 = tmp$ret$1;
       tmp$ret$3 = tmp$ret$2;
       var tmp = tmp$ret$3;
-      $this$invoke.d40(tmp, eventTypeComponent$lambda$lambda$lambda$lambda$lambda_0($newLabelText$delegate));
+      $this$invoke.d40(tmp, eventTypeComponent$lambda$lambda$lambda$lambda$lambda_0($newEventTypeText$delegate));
       return Unit_getInstance();
     };
   }
   function eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2($props, $element) {
     return function () {
-      $props.onCheckChange($element.h41_1, !$element.j41_1);
-      println($element.j41_1);
+      $props.onCheckChange($element.i41_1, !$element.k41_1);
+      println($element.k41_1);
       return Unit_getInstance();
     };
   }
   function eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda_2($element, $props) {
     return function ($this$invoke) {
-      $this$invoke.text = $element.i41_1;
-      $this$invoke.selected = $element.j41_1;
+      $this$invoke.text = $element.j41_1;
+      $this$invoke.selected = $element.k41_1;
       $this$invoke.onSubmit = eventTypeComponent$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2($props, $element);
       return Unit_getInstance();
     };
@@ -4756,7 +5547,7 @@
       return Unit_getInstance();
     };
   }
-  function eventTypeComponent$lambda$lambda$lambda($props, $newLabelText$delegate) {
+  function eventTypeComponent$lambda$lambda$lambda($props, $newEventTypeText$delegate) {
     return function ($this$invoke) {
       var tmp$ret$3;
       // Inline function 'react.dom.html.ReactHTML.tr' call
@@ -4772,7 +5563,7 @@
       tmp$ret$2 = tmp$ret$1;
       tmp$ret$3 = tmp$ret$2;
       var tmp = tmp$ret$3;
-      $this$invoke.d40(tmp, eventTypeComponent$lambda$lambda$lambda$lambda($props, $newLabelText$delegate));
+      $this$invoke.d40(tmp, eventTypeComponent$lambda$lambda$lambda$lambda($props, $newEventTypeText$delegate));
       var tmp$ret$7;
       // Inline function 'react.dom.html.ReactHTML.tr' call
       var tmp1__get_tr__sddrbi = ReactHTML_getInstance();
@@ -4787,7 +5578,7 @@
       tmp$ret$6 = tmp$ret$5;
       tmp$ret$7 = tmp$ret$6;
       var tmp_0 = tmp$ret$7;
-      $this$invoke.d40(tmp_0, eventTypeComponent$lambda$lambda$lambda$lambda_0($newLabelText$delegate));
+      $this$invoke.d40(tmp_0, eventTypeComponent$lambda$lambda$lambda$lambda_0($newEventTypeText$delegate));
       var tmp$ret$11;
       // Inline function 'react.dom.html.ReactHTML.tr' call
       var tmp2__get_tr__vmdq3z = ReactHTML_getInstance();
@@ -4806,7 +5597,7 @@
       return Unit_getInstance();
     };
   }
-  function eventTypeComponent$lambda$lambda($props, $newLabelText$delegate) {
+  function eventTypeComponent$lambda$lambda($props, $newEventTypeText$delegate) {
     return function ($this$invoke) {
       var tmp$ret$3;
       // Inline function 'react.dom.html.ReactHTML.table' call
@@ -4822,7 +5613,7 @@
       tmp$ret$2 = tmp$ret$1;
       tmp$ret$3 = tmp$ret$2;
       var tmp = tmp$ret$3;
-      $this$invoke.d40(tmp, eventTypeComponent$lambda$lambda$lambda($props, $newLabelText$delegate));
+      $this$invoke.d40(tmp, eventTypeComponent$lambda$lambda$lambda($props, $newEventTypeText$delegate));
       return Unit_getInstance();
     };
   }
@@ -4939,6 +5730,8 @@
       $this$invoke.onNewEventClick = $props.onNewEventClick;
       $this$invoke.onTimestampChanged = $props.onTimestampChanged;
       $this$invoke.onTextChanged = $props.onTextChanged;
+      $this$invoke.onFilterEvents = $props.onFilterEvents;
+      $this$invoke.onExportEvents = $props.onExportEvents;
       return Unit_getInstance();
     };
   }
@@ -5012,7 +5805,7 @@
       // Inline function 'kotlin.js.unsafeCast' call
       var tmp$ret$0;
       // Inline function 'kotlin.js.asDynamic' call
-      tmp$ret$0 = 'container text-left div-padded';
+      tmp$ret$0 = 'container text-left';
       tmp$ret$1 = tmp$ret$0;
       tmp$ret$2 = tmp$ret$1;
       $this$invoke.className = tmp$ret$2;

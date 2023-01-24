@@ -23,6 +23,16 @@ external interface DeleteButtonProps : Props {
 
 }
 
+
+external interface FilterButtonProps : Props {
+    var onClick: () -> Unit
+}
+external interface MarkdownButtonProps : Props {
+    var onClick: () -> Unit
+    var startTime: (Long) -> Unit
+    var endTime: (Long) -> Unit
+}
+
 val newButton = FC<AddButtonProps> { props ->
 
     val clickHandler: MouseEventHandler<HTMLElement> = {
@@ -71,6 +81,44 @@ val deleteButtonComponent = FC<DeleteButtonProps> { props ->
         href = "#"
         ReactHTML.i {
             className = ClassName("fa fa-solid fa-trash fa-lg")
+            onClick = clickHandler
+        }
+    }
+
+
+}
+
+
+val filterButton = FC<FilterButtonProps> { props ->
+
+    val clickHandler: MouseEventHandler<HTMLElement> = {
+        props.onClick()
+    }
+
+    ReactHTML.a {
+        className = ClassName("btn")
+        href = "#"
+        ReactHTML.i {
+            className = ClassName("fa fa-solid fa-filter fa-lg")
+            onClick = clickHandler
+        }
+    }
+
+
+}
+
+val markdownButton= FC<MarkdownButtonProps> { props ->
+
+    val clickHandler: MouseEventHandler<HTMLElement> = {
+        props.onClick()
+
+    }
+
+    ReactHTML.a {
+        className = ClassName("btn")
+        href = "#"
+        ReactHTML.i {
+            className = ClassName("fa fa-solid fa-download fa-lg")
             onClick = clickHandler
         }
     }
