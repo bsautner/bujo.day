@@ -18,76 +18,11 @@ import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import kotlinx.html.*
-
-fun HTML.index() {
-    head {
-        title("BUJO!")
-        link(rel = "stylesheet", type = "text/css", href = "/static/bootstrap5/css/bootstrap.css")
-        link(rel = "stylesheet", type = "text/css", href = "/static/app.css")
-
-//        link(rel = "stylesheet", type = "text/css", href = "/static/bootstrap/css/bootstrap-responsive.css")
-
-        link(rel = "stylesheet", type = "text/css", href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
-//
-//        meta {
-//            name = "theme-color"
-//            content = "#712cf9"
-//        }
-    }
-    body {
-        div {
-            id = "root"
-        }
-
-        script(src = "/static/bujo.js") {}
-        script(src = "/static/bootstrap5/js/bootstrap.bundle.js") {}
-    }
-}
-
-fun HTML.login() {
-    head {
-        title("BUJO!")
-        link(rel = "stylesheet", type = "text/css", href = "/static/bootstrap5/css/bootstrap.css")
-         link(rel = "stylesheet", type = "text/css", href = "/static/signin.css")
-         link(rel = "stylesheet", type = "text/css", href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
-        meta {
-            name = "theme-color"
-            content = "#7952b3"
-        }
-    }
-    body(classes = "text-center") {
-
-        div {
-            id = "login"
-        }
-
-        script(src = "/static/bujo.js") {}
-        script(src = "/static/bootstrap5/js/bootstrap.bundle.js") {}
-    }
-}
+import org.bujo.web.html.index
+import org.bujo.web.html.login
+import org.bujo.web.html.register
 
 
-fun HTML.register() {
-    head {
-        title("BUJO!")
-        link(rel = "stylesheet", type = "text/css", href = "/static/bootstrap5/css/bootstrap.css")
-        link(rel = "stylesheet", type = "text/css", href = "/static/signin.css")
-        link(rel = "stylesheet", type = "text/css", href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
-        meta {
-            name = "theme-color"
-            content = "#7952b3"
-        }
-    }
-    body(classes = "text-center") {
-
-        div {
-            id = "register"
-        }
-
-        script(src = "/static/bujo.js") {}
-        script(src = "/static/bootstrap5/js/bootstrap.bundle.js") {}
-    }
-}
 
 fun main() {
     println("Starting Up")
@@ -95,6 +30,9 @@ fun main() {
 }
 
 fun Application.applicationModule() {
+
+    val dao = DAO("192.168.1.114:3306", -1L, "ben",  "Secret_Password!@#$1234")
+
     install(ContentNegotiation) {
         json()
     }
@@ -122,7 +60,7 @@ fun Application.applicationModule() {
             post {
                 val user = call.receive<User>()
                 println("adding user ${user.email}")
-                val guid = DAO.insertUser(user)
+                val guid = dao.insertUser(user)
                 println(guid)
                 call.respond(HttpStatusCode.OK, guid)
             }
@@ -130,7 +68,7 @@ fun Application.applicationModule() {
                 val email = call.request.headers.get("email")
                 val password = call.request.headers.get("password")
                 println("logging in with $email $password")
-                val guid = password?.let { it1 -> email?.let { it2 -> DAO.getUserSession(it2, it1) } }
+                val guid = password?.let { it1 -> email?.let { it2 -> dao.getUserSession(it2, it1) } }
                 if (guid != null) {
                     call.respond(HttpStatusCode.OK, guid)
                 } else {
@@ -157,11 +95,11 @@ fun Application.applicationModule() {
                 println("Session Detected $guid")
                 guid?.let {
                     if (call.parameters.contains(Const.ST) && call.parameters.contains(Const.ET)) {
-                        call.respond(DAO.getFilteredEntries(it, call.parameters[Const.ST]!!.toLong(), call.parameters[Const.ET]!!.toLong()))
+                        call.respond(dao.getFilteredEntries(it, call.parameters[Const.ST]!!.toLong(), call.parameters[Const.ET]!!.toLong()))
 
                     } else {
 
-                        call.respond(DAO.getAllEntries(it))
+                        call.respond(dao.getAllEntries(it))
 
                     }
                 }
@@ -174,7 +112,7 @@ fun Application.applicationModule() {
                 call.parameters["id"]?.let {
 
                     val id = it.toLong()
-                    val event = DAO.getEvent(id)
+                    val event = dao.getEvent(id)
                     call.respond(event)
                 }
             }
@@ -184,7 +122,7 @@ fun Application.applicationModule() {
                 val event = call.receive<Event>()
                 val guid = call.request.headers[User.SESSION_KEY]
                 guid?.let {
-                    DAO.insertEvent(it, event)
+                    dao.insertEvent(it, event)
 
                     call.respond(HttpStatusCode.OK)
                 }
@@ -194,7 +132,7 @@ fun Application.applicationModule() {
             delete {
                 call.parameters["id"]?.let {
                     val id = it.toLong()
-                    DAO.deleteEvent(id)
+                    dao.deleteEvent(id)
                     call.respond(HttpStatusCode.OK)
                 }
 
@@ -204,7 +142,7 @@ fun Application.applicationModule() {
 
                 val event = call.receive<Event>()
                 println(event.timestamp)
-                DAO.updateEvent(event)
+                dao.updateEvent(event)
                 call.respond(HttpStatusCode.OK)
             }
         }
@@ -212,7 +150,7 @@ fun Application.applicationModule() {
             get {
                 val guid = call.request.headers[User.SESSION_KEY]
                 guid?.let {
-                    call.respond(DAO.getAllTypes(it))
+                    call.respond(dao.getAllTypes(it))
                 }
 
 
@@ -221,14 +159,14 @@ fun Application.applicationModule() {
                 val type = call.receive<String>()
                 val guid = call.request.headers[User.SESSION_KEY]
                 guid?.let {
-                    DAO.insertType(guid, type)
+                    dao.insertType(guid, type)
                     call.respond(HttpStatusCode.OK)
                 }
 
             }
             delete {
                 val types = call.receive<List<Long>>()
-                DAO.deleteTypes(types)
+                dao.deleteTypes(types)
                 call.respond(HttpStatusCode.OK)
             }
         }
@@ -241,7 +179,7 @@ fun Application.applicationModule() {
                         call.response.headers.append("Content-Type","text/x-markdown")
                         val sb = java.lang.StringBuilder()
                         sb.append(":Y: Yesterday:\n")
-                        val y = DAO.getFilteredEntries(it, call.parameters[Const.ST]!!.toLong(), call.parameters[Const.ET]!!.toLong())
+                        val y = dao.getFilteredEntries(it, call.parameters[Const.ST]!!.toLong(), call.parameters[Const.ET]!!.toLong())
                         y.forEach {event ->
                             sb.append("* ${event.value}\n")
 

@@ -47,11 +47,11 @@
   },
   entry: {
     main: [
-      '/home/ben/code/bujo.day/build/js/packages/bujo/kotlin/bujo.js'
+      '/Users/benjamin/IdeaProjects/bujo.day/build/js/packages/bujo/kotlin/bujo.js'
     ]
   },
   output: {
-    path: '/home/ben/code/bujo.day/build/distributions',
+    path: '/Users/benjamin/IdeaProjects/bujo.day/build/distributions',
     filename: [Function: filename],
     library: 'bujo',
     libraryTarget: 'umd',

@@ -90,7 +90,7 @@ suspend fun deleteTypes(list: List<Long>) {
 suspend fun addUser(email: String, password: String) : String  {
     return jsonClient.post(User.path) {
         contentType(ContentType.Application.Json)
-        setBody(User(email, password))
+        setBody(User("", email, password))
     }.body()
 }
 

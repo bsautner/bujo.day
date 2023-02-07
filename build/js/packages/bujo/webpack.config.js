@@ -13,11 +13,11 @@ let config = {
 
 // entry
 config.entry = {
-    main: ["/home/ben/code/bujo.day/build/js/packages/bujo/kotlin/bujo.js"]
+    main: ["/Users/benjamin/IdeaProjects/bujo.day/build/js/packages/bujo/kotlin/bujo.js"]
 };
 
 config.output = {
-    path: "/home/ben/code/bujo.day/build/distributions",
+    path: "/Users/benjamin/IdeaProjects/bujo.day/build/distributions",
     filename: (chunkData) => {
         return chunkData.chunk.name === 'main'
             ? "bujo.js"
@@ -44,7 +44,7 @@ config.ignoreWarnings = [/Failed to parse source map/]
     const handler = (percentage, message, ...args) => {
         const p = percentage * 100;
         let msg = `${Math.trunc(p / 10)}${Math.trunc(p % 10)}% ${message} ${args.join(' ')}`;
-        msg = msg.replace("/home/ben/code/bujo.day/build/js", '');;
+        msg = msg.replace("/Users/benjamin/IdeaProjects/bujo.day/build/js", '');;
         console.log(msg);
     };
 
@@ -90,7 +90,7 @@ if (config.devServer) {
     const util = require('util');
     const fs = require('fs');
     const evaluatedConfig = util.inspect(config, {showHidden: false, depth: null, compact: false});
-    fs.writeFile("/home/ben/code/bujo.day/build/reports/webpack/bujo/webpack.config.evaluated.js", evaluatedConfig, function (err) {});
+    fs.writeFile("/Users/benjamin/IdeaProjects/bujo.day/build/reports/webpack/bujo/webpack.config.evaluated.js", evaluatedConfig, function (err) {});
 })(config);
 
 module.exports = config
